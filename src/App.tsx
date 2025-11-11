@@ -1,17 +1,16 @@
-import ListGroup from "./components/ListGroup";
+import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 
 function App() {
-  let items = ["Bogos Binted", "Boat Goes Binted", "Bongos Binted", "Skibidi"];
-
-  const handleSelection = (item: string) => {
-    console.log(item);
-  };
+  const [alertVisible, setAlertVisibility] = useState(false);
 
   return (
     <div>
-      <Button color="secondary">Button Goes Binted.</Button>
+      {alertVisible && <Alert>Bogos Binted</Alert>}
+      <Button color="secondary" onClick={() => setAlertVisibility(true)}>
+        Button Goes Binted.
+      </Button>
     </div>
   );
 }
