@@ -7,7 +7,9 @@ function App() {
 
   return (
     <div>
-      {alertVisible && <Alert>Bogos Binted</Alert>}
+      {alertVisible && (
+        <Alert onClick={() => setAlertVisibility(false)}>Bogos Binted</Alert>
+      )}
       <Button color="secondary" onClick={() => setAlertVisibility(true)}>
         Button Goes Binted.
       </Button>
