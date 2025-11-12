@@ -1,18 +1,9 @@
-import { useState } from "react";
-import Alert from "./components/Alert";
-import Button from "./components/Button";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [alertVisible, setAlertVisibility] = useState(false);
-
   return (
     <div>
-      {alertVisible && (
-        <Alert onClick={() => setAlertVisibility(false)}>Bogos Binted</Alert>
-      )}
-      <Button color="secondary" onClick={() => setAlertVisibility(true)}>
-        Button Goes Binted.
-      </Button>
+      <Navbar></Navbar>
     </div>
   );
 }
