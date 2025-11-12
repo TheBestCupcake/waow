@@ -1,0 +1,11 @@
+.navbar{
+    background-color:deepskyblue;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.navButton{
+    color:white;
+    text-align: center;
+}
