@@ -11,7 +11,7 @@ let routeVariables = [
 
 function Navbar() {
   const browserRouterObjects = routeVariables.map((variable) => (
-    <Link to={variable.path} className="d-inline-flex">
+    <Link to={variable.path} className="navButton">
       {variable.name}
     </Link>
   ));
@@ -23,7 +23,10 @@ function Navbar() {
   return (
     <>
       <BrowserRouter>
-        <nav>{browserRouterObjects}</nav>
+        <nav className="navbar">
+          Logo
+          {browserRouterObjects}
+        </nav>
 
         <Routes>{routesObjects}</Routes>
       </BrowserRouter>
