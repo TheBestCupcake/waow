@@ -4,9 +4,9 @@ import Games from "../pages/Games";
 import Home from "../pages/Home";
 
 let routeVariables = [
-  { path: "/", name: <Home />, component: "Home" },
-  { path: "/Anime", name: <Anime />, component: "Anime" },
-  { path: "/Games", name: <Games />, component: "Games" },
+  { path: "/", name: "Home", component: <Home /> },
+  { path: "/Anime", name: "Anime", component: <Anime /> },
+  { path: "/Games", name: "Games", component: <Games /> },
 ];
 
 function Navbar() {

@@ -9,3 +9,14 @@
     color:white;
     text-align: center;
 }
+
+.videoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoDisplay{
+    width: 65%;
+    height: auto;
+}
