@@ -1,5 +1,11 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
+
+//Used to allow requests from the frontends origin.
+app.use(cors({
+  origin: 'http://localhost:5173',
+}));
 
 const port = process.env.PORT || 3000
 
