@@ -1,7 +1,7 @@
 function Games() {
   return (
     <>
-      <div>Games</div>
+      <h1>Bogos binted.</h1>
     </>
   );
 }
