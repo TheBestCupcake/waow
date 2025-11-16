@@ -21,10 +21,14 @@ function Anime() {
       <h1>{videoName}</h1>
       <div className="videoContainer">
         {videoUrl ? ( //CHecks for videoUrl to not be empty first.
-          <video controls className="videoDisplay">
-            <source src={videoUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <iframe
+            className="videoDisplay"
+            src={videoUrl}
+            title={videoName}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         ) : (
           <p>Loading video...</p> //This displays while videoUrl is loading.
         )}
