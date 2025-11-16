@@ -17,6 +17,7 @@
 }
 
 .videoDisplay{
-    width: 65%;
-    height: auto;
+     width: 65%;
+     height: auto;
+     aspect-ratio: 16 / 9; 
 }
