@@ -11,7 +11,7 @@ let routeVariables = [
 
   { path: "/Anime", name: "Anime", component: <Anime /> },
   //Subpaths for Anime.
-  //{ path: "/Anime/:name", name: ":name", component: <VideoDisplay /> },
+  { path: "/Anime/:name", name: ":name", component: <VideoDisplay /> },
 
   { path: "/Games", name: "Games", component: <Games /> },
 ];

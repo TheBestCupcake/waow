@@ -1,38 +1,39 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { fetchVideos } from "../utils/videoServices";
+import VideoDisplay from "../components/VideoDisplay";
+
+interface videoTitleProps {
+  name: string;
+}
 
 function Anime() {
-  //Logic for getting the video url.
-  const [videoUrl, setVideoUrl] = useState("");
-  const [videoName, setVideoName] = useState("");
+  const [videoList, setVideoList] = useState([]);
 
   useEffect(() => {
-    const loadVideo = async () => {
+    const getVideos = async () => {
       const data = await fetchVideos();
-      setVideoUrl(data.url);
-      setVideoName(data.name);
+      setVideoList(data);
     };
 
-    loadVideo();
+    getVideos();
   }, []);
+
+  videoList.map((data: videoTitleProps) => data.name);
+
+  const videoRouterObjects = videoList.map((video: videoTitleProps) => (
+    <Link
+      key={`/Anime/${video.name}`}
+      to={`/Anime/${video.name}`}
+      className="animePageLinks"
+    >
+      {video.name}
+    </Link>
+  ));
 
   return (
     <>
-      <h1>{videoName}</h1>
-      <div className="videoContainer">
-        {videoUrl ? ( //CHecks for videoUrl to not be empty first.
-          <iframe
-            className="videoDisplay"
-            src={videoUrl}
-            title={videoName}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
-        ) : (
-          <p>Loading video...</p> //This displays while videoUrl is loading.
-        )}
-      </div>
+      <nav className="animePageWrapper">{videoRouterObjects}</nav>
     </>
   );
 }
