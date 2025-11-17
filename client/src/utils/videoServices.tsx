@@ -8,7 +8,7 @@ export const fetchVideos = async () => {
 };
 
 export const fetchVideoByName = async (name: string) => {
-  const response = await fetch(`${apiURL}/Anime/${name}`);
+  const response = await fetch(`${apiURL}${name}`);
 
   const data = await response.json();
   return data;

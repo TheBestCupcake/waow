@@ -8,5 +8,9 @@ exports.getAllVideos = async (req, res) => {
 }
 
 exports.getVideo = async (req, res) => {
-    return res.status(200).send(`${req.params.name}`)
+    const pathName = req.params.name;
+    const name = decodeURIComponent(pathName.split('/').pop());
+
+    videoJson = await dbGetVideoByName(name);
+    return res.status(200).json(videoJson);
 }

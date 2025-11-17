@@ -1,15 +1,20 @@
 import { useEffect, useState } from "react";
-import { fetchVideos } from "../utils/videoServices";
+import { fetchVideoByName } from "../utils/videoServices";
+import { useLocation } from "react-router-dom";
 
 function VideoDisplay() {
   //Logic for getting the video url.
   const [videoUrl, setVideoUrl] = useState("");
   const [videoName, setVideoName] = useState("");
 
+  let location = useLocation();
+  console.log("KEY");
+  console.log(location.pathname);
+
   useEffect(() => {
     const loadVideo = async () => {
-      const data = await fetchVideos();
-      setVideoUrl(data.url);
+      const data = await fetchVideoByName(location.pathname);
+      setVideoUrl(data.link);
       setVideoName(data.name);
     };
 
