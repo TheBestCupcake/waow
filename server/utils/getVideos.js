@@ -5,14 +5,25 @@ const db = pgp(connection);
 
 
 
-async function getVideo() {
+async function dbGetVideoByName() {
     try{
         //Change hardcoded name to ${name} later for dynamic inputs.
         //Needs to use `` as the outside to have JS ${}.
         //Needs to use '' around the name string else database does not connect.
-        const data = await db.any(`SELECT * FROM videos WHERE name = 'When Gigi is your Neighbor (A Minecraft Story)'`, [true]);
+        const video = await db.any(`SELECT * FROM videos WHERE name = 'When Gigi is your Neighbor (A Minecraft Story)'`, [true]);
         console.log("DATABASE REACHED");
-        console.log(data);
+        console.log(video);
+    }
+    catch(e){
+        console.log("ERROR CAUGHT");
+        console.log(e);
+    }
+}
+
+async function dbGetAllVideos() {
+    try{
+        const videoList = await db.any(`SELECT name FROM videos`, [true]);
+        return videoList;
     }
     catch(e){
         console.log("ERROR CAUGHT");
@@ -24,5 +35,6 @@ async function getVideo() {
 
 
 module.exports = {
-    getVideo
+    dbGetVideoByName,
+    dbGetAllVideos
 }

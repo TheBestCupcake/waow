@@ -1,11 +1,10 @@
-const {getVideo} = require("../utils/getVideos");
+const {dbGetVideoByName, dbGetAllVideos} = require("../utils/getVideos");
 //Logic for all of the api routes.
 
 exports.getAllVideos = async (req, res) => {
-    console.log("BEFORE GET VIDEO");
-    getVideo();
-    console.log("AFTER GET VIDEO");
-    return res.status(200).json({name: "When Gigi is your Neighbor (A Minecraft Story)", url: "https://www.youtube.com/embed/ZvzPCaXaejI"});
+    videoList = await dbGetAllVideos();
+    console.log(videoList);
+    return res.status(200).json(videoList);
 }
 
 exports.getVideo = async (req, res) => {
