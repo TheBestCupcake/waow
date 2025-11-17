@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Anime from "../pages/Anime";
 import Games from "../pages/Games";
 import Home from "../pages/Home";
@@ -11,25 +11,17 @@ let routeVariables = [
 
 function Navbar() {
   const browserRouterObjects = routeVariables.map((variable) => (
-    <Link to={variable.path} className="navButton">
+    <Link key={variable.path} to={variable.path} className="navButton">
       {variable.name}
     </Link>
   ));
 
-  const routesObjects = routeVariables.map((variable) => (
-    <Route path={variable.path} element={variable.component} />
-  ));
-
   return (
     <>
-      <BrowserRouter>
-        <nav className="navbar">
-          Logo
-          {browserRouterObjects}
-        </nav>
-
-        <Routes>{routesObjects}</Routes>
-      </BrowserRouter>
+      <nav className="navbar">
+        Logo
+        {browserRouterObjects}
+      </nav>
     </>
   );
 }
