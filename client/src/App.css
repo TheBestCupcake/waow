@@ -21,3 +21,15 @@
      height: auto;
      aspect-ratio: 16 / 9; 
 }
+
+.animePageWrapper{
+    color:rgb(110, 174, 230);
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.animePageLinks{
+    color: black;
+    text-align: center;
+}
