@@ -23,7 +23,7 @@ function Anime() {
 
   const videoRouterObjects = videoList.map((video: videoTitleProps) => (
     <Link
-      key={`/Anime/${video.name}`}
+      key={`${video.name}`}
       to={`/Anime/${video.name}`}
       className="animePageLinks"
     >
