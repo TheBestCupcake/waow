@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 
 import Anime from "../pages/Anime";
-import VideoDisplay from "../components/VideoDisplay";
+import VideoDisplay from "../pages/VideoDisplay";
 
 import Games from "../pages/Games";
 import Home from "../pages/Home";
+import Barony_Home from "../pages/Barony_Home";
 
 let routeVariables = [
   { path: "/", name: "Home", component: <Home /> },
@@ -14,6 +15,8 @@ let routeVariables = [
   { path: "/Anime/:name", name: ":name", component: <VideoDisplay /> },
 
   { path: "/Games", name: "Games", component: <Games /> },
+
+  { path: "/Barony", name: "Barony", component: <Barony_Home /> },
 ];
 
 function RoutesProvider() {

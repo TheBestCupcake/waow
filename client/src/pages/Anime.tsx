@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchVideos } from "../utils/videoServices";
-import VideoDisplay from "../components/VideoDisplay";
 
 interface videoTitleProps {
   name: string;
