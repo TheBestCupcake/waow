@@ -6,11 +6,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div>
+        <header id="Navbar">
           <Navbar />
-        </div>
+        </header>
 
-        <div>
+        <div id="Page">
           <RoutesProvider />
         </div>
       </BrowserRouter>
