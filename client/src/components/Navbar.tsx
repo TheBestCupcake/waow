@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import Anime from "../pages/Anime";
 import Games from "../pages/Games";
 import Home from "../pages/Home";
+import Barony_Home from "../pages/barony/Barony_Home";
 
 let routeVariables = [
   { path: "/", name: "Home", component: <Home /> },
   { path: "/Anime", name: "Anime", component: <Anime /> },
   { path: "/Games", name: "Games", component: <Games /> },
+  { path: "/Barony", name: "Barony", component: <Barony_Home /> },
 ];
 
 function Navbar() {

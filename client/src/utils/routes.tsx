@@ -5,7 +5,7 @@ import VideoDisplay from "../pages/VideoDisplay";
 
 import Games from "../pages/Games";
 import Home from "../pages/Home";
-import Barony_Home from "../pages/Barony_Home";
+import Barony_Home from "../pages/barony/Barony_Home";
 
 let routeVariables = [
   { path: "/", name: "Home", component: <Home /> },
