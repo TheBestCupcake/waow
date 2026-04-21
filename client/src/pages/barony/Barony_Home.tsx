@@ -10,7 +10,10 @@ function Barony_Home() {
   const items: NavItem[] = [
     { label: "Races", to: "/Races" },
     { label: "Classes", to: "/Classes" },
-    { label: "Weapons", to: "/Weapons" },
+    { label: "Stats", to: "/Stats" },
+    { label: "Items", to: "/Items" },
+    { label: "Monsters", to: "/Monsters" },
+    { label: "Levels", to: "/Levels" },
   ];
 
   return (
