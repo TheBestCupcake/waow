@@ -8,12 +8,12 @@ type NavItem = {
 
 function Barony_Home() {
   const items: NavItem[] = [
-    { label: "Races", to: "/Races" },
-    { label: "Classes", to: "/Classes" },
-    { label: "Stats", to: "/Stats" },
-    { label: "Items", to: "/Items" },
-    { label: "Monsters", to: "/Monsters" },
-    { label: "Levels", to: "/Levels" },
+    { label: "Races", to: "/Barony/Races" },
+    { label: "Classes", to: "/Barony/Classes" },
+    { label: "Stats", to: "/Barony/Stats" },
+    { label: "Items", to: "/Barony/Items" },
+    { label: "Monsters", to: "/Barony/Monsters" },
+    { label: "Levels", to: "/Barony/Levels" },
   ];
 
   return (
