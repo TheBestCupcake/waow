@@ -41,7 +41,7 @@ function Barony_Home() {
 
   return (
     <div className="baronyContainer">
-      <div className="baronyWelcome">
+      <div className="baronyHeader">
         <h1>Welcome to the Barony Wiki</h1>
       </div>
 

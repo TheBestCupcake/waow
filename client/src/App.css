@@ -56,15 +56,15 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
-        "welcome welcome welcome"
+        "header header header"
         "description links links"
         "footer footer footer";
 }
 
-.baronyWelcome{
+.baronyHeader{
     color: white;
     border: 1px solid #dabfff;
-    grid-area: welcome;
+    grid-area: header;
     text-align: center;
 }
 
@@ -104,7 +104,7 @@ body{
 
 .baronyGrid ul{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);;
+    grid-template-columns: repeat(4, 1fr);;
     list-style-type: none;
     margin: auto;
     gap: 5px;
