@@ -6,6 +6,7 @@ import VideoDisplay from "../pages/VideoDisplay";
 import Games from "../pages/Games";
 import Home from "../pages/Home";
 import Barony_Home from "../pages/barony/Barony_Home";
+import Barony_Races from "../pages/barony/Barony_Races";
 
 let routeVariables = [
   { path: "/", name: "Home", component: <Home /> },
@@ -17,6 +18,12 @@ let routeVariables = [
   { path: "/Games", name: "Games", component: <Games /> },
 
   { path: "/Barony", name: "Barony", component: <Barony_Home /> },
+  //Subpaths for Barony.
+  {
+    path: "/Barony/Races",
+    name: "Barony Races",
+    component: <Barony_Races />,
+  },
 ];
 
 function RoutesProvider() {
