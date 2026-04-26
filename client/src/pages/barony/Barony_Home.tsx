@@ -7,6 +7,7 @@ import ItemImage from "../../assets/Scroll_Icon.png";
 import StatIcon from "../../assets/Perception_Icon.png";
 import MonsterIcon from "../../assets/Skeleton_Male_Icon.png";
 import LevelIcon from "../../assets/Magic_Mapping_Icon.png";
+import SkillIcon from "../../assets/Stealth_Icon.png";
 
 type NavItem = {
   label: string;
@@ -34,11 +35,18 @@ function Barony_Home() {
     },
     { label: "Monsters", to: "/Barony/Monsters", img: MonsterIcon },
     { label: "Levels", to: "/Barony/Levels", img: LevelIcon },
+
+    { label: "Skills", to: "/Barony/Skills", img: SkillIcon },
   ];
 
   return (
-    <div className="barony">
-      <div>
+    <div className="baronyContainer">
+      <div className="baronyWelcome">
+        <h1>Welcome to the Barony Wiki</h1>
+      </div>
+
+      <div className="barony">
+        <h1>About Barony</h1>
         <p>
           Barony is the premier first-person roguelike with cooperative play!
           Adventure alone, or gather a party with iconic and unusual RPG classes
@@ -48,8 +56,9 @@ function Barony_Home() {
         </p>
       </div>
 
-      <div>
-        <ul className="baronyGrid">
+      <div className="baronyGrid">
+        <h1>Links</h1>
+        <ul>
           <GridTable
             items={items}
             getKey={(item) => item.to}
@@ -62,6 +71,10 @@ function Barony_Home() {
             )}
           ></GridTable>
         </ul>
+      </div>
+
+      <div className="baronyFooter">
+        <h1>Footer</h1>
       </div>
     </div>
   );
