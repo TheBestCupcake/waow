@@ -8,6 +8,7 @@ import Home from "../pages/Home";
 import Barony_Home from "../pages/barony/Barony_Home";
 import Barony_Races from "../pages/barony/Barony_Races";
 import Barony_Classes from "../pages/barony/Barony_Classes";
+import Barony_Class from "../pages/barony/Barony_Class";
 
 let routeVariables = [
   { path: "/", name: "Home", component: <Home /> },
@@ -30,6 +31,12 @@ let routeVariables = [
     path: "/Barony/Classes",
     name: "Barony Classes",
     component: <Barony_Classes />,
+  },
+
+  {
+    path: "/Barony/Classes/:class",
+    name: ":class",
+    component: <Barony_Class />,
   },
 ];
 
