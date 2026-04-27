@@ -1,0 +1,36 @@
+{
+    "Classes": [
+        {"id": "Barbarian",
+            "Description": "The Barbarian is a class in Barony that specializes in Axes. They forgo Constitution in favor of brute Strength.",
+            "classInfo": "A skilled combatant. What they lack in armor they make up for in strength and fighting prowess. Barbarians can quickly dispatch lesser foes before taking any hits by using the right weapon for the job. A surprise assault is the key to a swift victory. Staying light-footed will allow a Barbarian to avoid damage.",
+            "startingEquipment": [
+                {
+                    "category": "Equipped",
+                    "items": [
+                        "Rough ring of might",
+                        "Serviceable wooden shield",
+                        "Worn leather helm",
+                        "Serviceable iron Axe"
+                    ]
+                },
+                {
+                    "category": "Inventory",
+                    "items": [
+                        "x2 Slightly-aged bread",
+                        "Slightly-aged meat",
+                        "Bubbly bottle of booeze",
+                        "x2 Worn torch",
+                        "x2 Decrepit bronze tomohawk"
+                    ]
+                },
+                {
+                    "category": "Monster Races",
+                    "items": [
+                        "x2 Bubbly potion of polymorph",
+                        "(Goatman Only) x3 Bubbly bottle of booze"
+                    ]
+                }
+            ]
+        }
+    ]
+}
