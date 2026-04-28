@@ -8,15 +8,12 @@ type CharacterList = {
 };
 
 function JsonList({ data }: CharacterList) {
-  return (
-    <div>
-      {data.map((item) => (
-        <li>
-          {item.key} <br /> {item.value}
-        </li>
-      ))}
-    </div>
-  );
+  const tableItems = data.map((item) => (
+    <li key={item.key}>
+      {item.key} {item.value}
+    </li>
+  ));
+  return tableItems;
 }
 
 export default JsonList;

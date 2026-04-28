@@ -20,13 +20,17 @@ function Barony_Class() {
         <h1>{classInfo.id}</h1>
         <p>{classInfo.Description}</p>
 
-        <ul>
-          <JsonList data={classInfo.stats}></JsonList>
-        </ul>
+        <div className="baronyStatGrid">
+          <ul>
+            <JsonList data={classInfo.stats}></JsonList>
+          </ul>
+        </div>
 
-        <ul>
-          <JsonList data={classInfo.skills}></JsonList>
-        </ul>
+        <div className="baronyStatGrid">
+          <ul>
+            <JsonList data={classInfo.skills}></JsonList>
+          </ul>
+        </div>
       </div>
 
       <div className="baronyDescription">

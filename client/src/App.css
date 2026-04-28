@@ -88,6 +88,34 @@ body{
     text-align: center;
 }
 
+.baronyStatGrid{
+    width:100%;
+    border: 1px solid #dabfff;
+}
+
+.baronyStatGrid ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    margin: auto;
+    gap: 5px;
+    padding: 5px;
+}
+
+.baronyStatGrid li{
+    display: flex;
+    border: 1px solid #dabfff;
+    justify-content: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.baronyStatGrid li b{
+    font-size: large;
+    color: #dabfff;
+}
+
+
 .baronyDescription{
     grid-area:main;
     width:100%;
@@ -132,7 +160,7 @@ body{
 
 .baronyGrid ul{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);;
+    grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
     margin: auto;
     gap: 5px;
