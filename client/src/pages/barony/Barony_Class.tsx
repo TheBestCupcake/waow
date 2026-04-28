@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import classData from "../../data/classes.json";
 import JsonArrayList from "../../components/JsonArrayList";
+import JsonList from "../../components/JsonList";
 
 function Barony_Class() {
   const { class: className } = useParams();
@@ -18,6 +19,14 @@ function Barony_Class() {
       <div className="barony">
         <h1>{classInfo.id}</h1>
         <p>{classInfo.Description}</p>
+
+        <ul>
+          <JsonList data={classInfo.stats}></JsonList>
+        </ul>
+
+        <ul>
+          <JsonList data={classInfo.skills}></JsonList>
+        </ul>
       </div>
 
       <div className="baronyDescription">

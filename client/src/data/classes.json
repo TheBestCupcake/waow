@@ -30,6 +30,32 @@
                         "(Goatman Only) x3 Bubbly bottle of booze"
                     ]
                 }
+            ],
+            "stats": [
+                {"key": "STR", "value": "2"},
+                {"key": "DEX", "value": "0"},
+                {"key": "CON", "value": "1"},
+                {"key": "INT", "value": "-2"},
+                {"key": "PER", "value": "0"},
+                {"key": "CHR", "value": "-1"}
+            ],
+            "skills": [
+                {"key": "Leadership", "value": "0"},
+                {"key": "Stealth", "value": "0"},
+                {"key": "Trading", "value": "0"},
+                {"key": "Blocking", "value": "0"},
+                {"key": "Lore", "value": "0"},
+                {"key": "Ranged", "value": "0"},
+                {"key": "Tinkering", "value": "0"},
+                {"key": "Unarmed", "value": "20"},
+                {"key": "Alchemy", "value": "10"},
+                {"key": "Swords", "value": "0"},
+                {"key": "Sorcery", "value": "0"},
+                {"key": "Polearms", "value": "0"},
+                {"key": "Mysticism", "value": "0"},
+                {"key": "Axes", "value": "50"},
+                {"key": "Thauma", "value": "0"},
+                {"key": "Maces", "value": "25"}
             ]
         }
     ]
