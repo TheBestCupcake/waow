@@ -26,6 +26,12 @@ function Barony_Class() {
 
         <div className="baronyStatGrid">
           <ul>
+            <JsonList data={classInfo.information}></JsonList>
+          </ul>
+        </div>
+
+        <div className="baronyStatGrid">
+          <ul>
             <JsonList data={classInfo.stats}></JsonList>
           </ul>
         </div>

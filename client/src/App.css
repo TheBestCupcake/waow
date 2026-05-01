@@ -81,6 +81,7 @@ body{
 }
 
 .barony h1{
+    width: 100%;
     vertical-align: text-top;
     text-align: center;
     border-bottom: 1px solid #dabfff;
@@ -93,8 +94,6 @@ body{
 
 .barony img{
     margin: auto;
-
-    
 }
 
 
@@ -166,7 +165,7 @@ body{
 /* Barony Character */
 
 .baronyStatGrid{
-    width:100%;
+    width:50%;
     border: 1px solid #dabfff;
 }
 

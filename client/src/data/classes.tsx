@@ -5,6 +5,11 @@ export type EquipmentCategory = {
   items: string[];
 };
 
+export type Information = {
+  key: string;
+  value: string;
+};
+
 export type Stat = {
   key: string;
   value: string;
@@ -20,6 +25,7 @@ export type ClassData = {
   description: string;
   classInfo: string;
   startingEquipment: EquipmentCategory[];
+  information: Information[];
   stats: Stat[];
   skills: Skill[];
   characterImage: string;
@@ -59,6 +65,12 @@ export const classes: ClassData[] = [
           "(Goatman Only) x3 Bubbly bottle of booze",
         ],
       },
+    ],
+    information: [
+      { key: "HP", value: "40" },
+      { key: "Survival", value: "✰✰✰" },
+      { key: "MP", value: "20" },
+      { key: "Complexity", value: "✰✰" },
     ],
     stats: [
       { key: "STR", value: "2" },
