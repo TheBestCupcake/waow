@@ -165,7 +165,7 @@ body{
 /* Barony Character */
 
 .baronyStatGrid{
-    width:50%;
+    width:100%;
     border: 1px solid #dabfff;
 }
 
@@ -201,6 +201,13 @@ body{
 .baronyDescription h1{
     color: white;
     text-align: center;
+    border-bottom: 1px solid #dabfff;
+}
+
+.baronyDescription h2{
+    color: white;
+    text-align: left;
+    padding-left: 5px;
     border-bottom: 1px solid #dabfff;
 }
 

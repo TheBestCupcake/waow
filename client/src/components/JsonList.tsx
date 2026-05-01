@@ -1,6 +1,7 @@
 type CharacterStats = {
   key: string;
   value: string;
+  image?: string;
 };
 
 type CharacterList = {
@@ -10,7 +11,8 @@ type CharacterList = {
 function JsonList({ data }: CharacterList) {
   const tableItems = data.map((item) => (
     <li key={item.key}>
-      {item.key} {item.value}
+      <img src={item.image}></img>
+      {item.key}: {item.value}
     </li>
   ));
   return tableItems;

@@ -24,18 +24,21 @@ function Barony_Class() {
         <img src={classInfo.characterImage}></img>
         <p>A Human Barbarian</p>
 
+        <h2>Information</h2>
         <div className="baronyStatGrid">
           <ul>
             <JsonList data={classInfo.information}></JsonList>
           </ul>
         </div>
 
+        <h2>Stats</h2>
         <div className="baronyStatGrid">
           <ul>
             <JsonList data={classInfo.stats}></JsonList>
           </ul>
         </div>
 
+        <h2>Skills</h2>
         <div className="baronyStatGrid">
           <ul>
             <JsonList data={classInfo.skills}></JsonList>
@@ -48,6 +51,9 @@ function Barony_Class() {
         <p>{classInfo.classInfo}</p>
 
         <JsonArrayList data={classInfo.startingEquipment} />
+
+        <h2>Strategy</h2>
+        <p>Hi</p>
       </div>
     </div>
   );
