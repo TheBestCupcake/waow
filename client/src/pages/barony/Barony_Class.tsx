@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
-import classData from "../../data/classes.json";
 import JsonArrayList from "../../components/JsonArrayList";
 import JsonList from "../../components/JsonList";
+
+import { classes } from "../../data/classes";
 
 function Barony_Class() {
   const { class: className } = useParams();
 
-  const classInfo = classData.Classes.find(
+  const classInfo = classes.find(
     (cl) => cl.id.toLowerCase() == className?.toLowerCase(),
   );
 
@@ -18,7 +19,9 @@ function Barony_Class() {
     <div className="baronyContainer">
       <div className="barony">
         <h1>{classInfo.id}</h1>
-        <p>{classInfo.Description}</p>
+        <p>{classInfo.description}</p>
+
+        <img className="baronyImage" src={classInfo.characterImage}></img>
 
         <div className="baronyStatGrid">
           <ul>

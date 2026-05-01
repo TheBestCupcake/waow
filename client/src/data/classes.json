@@ -56,7 +56,8 @@
                 {"key": "Axes", "value": "50"},
                 {"key": "Thauma", "value": "0"},
                 {"key": "Maces", "value": "25"}
-            ]
+            ],
+            "CharacterImage": "/Barbarian_Human_Male.png"
         }
     ]
 }
