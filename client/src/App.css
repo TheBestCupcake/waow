@@ -179,9 +179,10 @@ body{
 }
 
 .baronyStatGrid li{
-    display: flex;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+     align-items: center;
     border: 1px solid #dabfff;
-    justify-content: center;
     padding: 5px;
     text-decoration: none;
 }
@@ -193,7 +194,11 @@ body{
 
 .baronyStatGrid li b{
     font-size: large;
-    color: #dabfff;
+    color: white
+}
+
+.baronyStatGrid li .text {
+    text-align: center;
 }
 
 
