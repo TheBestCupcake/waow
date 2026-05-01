@@ -186,6 +186,11 @@ body{
     text-decoration: none;
 }
 
+.baronyStatGrid li img{
+    max-width: 24px;
+    max-height: 24px;
+}
+
 .baronyStatGrid li b{
     font-size: large;
     color: #dabfff;

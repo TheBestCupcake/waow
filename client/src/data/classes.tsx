@@ -41,11 +41,13 @@ export type Information = {
 export type Stat = {
   key: string;
   value: string;
+  image?: string;
 };
 
 export type Skill = {
   key: string;
   value: string;
+  image?: string;
 };
 
 export type ClassData = {
@@ -101,30 +103,30 @@ export const classes: ClassData[] = [
       { key: "Complexity", value: "✰✰" },
     ],
     stats: [
-      { key: "STR", value: "2" },
-      { key: "DEX", value: "0" },
-      { key: "CON", value: "1" },
-      { key: "INT", value: "-2" },
-      { key: "PER", value: "0" },
-      { key: "CHR", value: "-1" },
+      { key: "STR", value: "2", image: StrengthImage },
+      { key: "DEX", value: "0", image: DexterityImage },
+      { key: "CON", value: "1", image: ConstitutionImage },
+      { key: "INT", value: "-2", image: IntelligenceImage },
+      { key: "PER", value: "0", image: PerceptionImage },
+      { key: "CHR", value: "-1", image: CharismaImage },
     ],
     skills: [
-      { key: "Leadership", value: "0" },
-      { key: "Stealth", value: "0" },
-      { key: "Trading", value: "0" },
-      { key: "Blocking", value: "0" },
-      { key: "Lore", value: "0" },
-      { key: "Ranged", value: "0" },
-      { key: "Tinkering", value: "0" },
-      { key: "Unarmed", value: "20" },
-      { key: "Alchemy", value: "10" },
-      { key: "Swords", value: "0" },
-      { key: "Sorcery", value: "0" },
-      { key: "Polearms", value: "0" },
-      { key: "Mysticism", value: "0" },
-      { key: "Axes", value: "50" },
-      { key: "Thauma", value: "0" },
-      { key: "Maces", value: "25" },
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "0", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "0", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "20", image: UnarmedImage },
+      { key: "Alchemy", value: "10", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "0", image: MysticismImage },
+      { key: "Axes", value: "50", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "25", image: MacesImage },
     ],
     characterImage: BarbImage,
   },

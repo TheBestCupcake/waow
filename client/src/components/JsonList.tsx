@@ -11,8 +11,9 @@ type CharacterList = {
 function JsonList({ data }: CharacterList) {
   const tableItems = data.map((item) => (
     <li key={item.key}>
-      <img src={item.image}></img>
-      {item.key}: {item.value}
+      <div>
+        <img src={item.image} /> {item.key}: {item.value}
+      </div>
     </li>
   ));
   return tableItems;
