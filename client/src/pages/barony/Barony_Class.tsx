@@ -56,7 +56,7 @@ function Barony_Class() {
         <JsonArrayList data={classInfo.startingEquipment} />
 
         <h2>Strategy</h2>
-        <p>Hi</p>
+        <p>{classInfo.strategy}</p>
       </div>
     </div>
   );

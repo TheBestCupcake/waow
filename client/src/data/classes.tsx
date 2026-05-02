@@ -59,6 +59,8 @@ export type ClassData = {
   stats: Stat[];
   skills: Skill[];
   characterImage: string;
+
+  strategy: string;
 };
 
 export const classes: ClassData[] = [
@@ -129,5 +131,6 @@ export const classes: ClassData[] = [
       { key: "Maces", value: "25", image: MacesImage },
     ],
     characterImage: BarbImage,
+    strategy: "Playstyle and strategies for Barbarian.",
   },
 ];
