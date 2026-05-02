@@ -75,9 +75,6 @@ body{
 
     color: white;
     border: 1px solid #dabfff;
-
-    display: grid;
-    place-items: center;
 }
 
 .barony h1{
@@ -91,12 +88,6 @@ body{
     margin: 5px;
     text-align: center;
 }
-
-.barony img{
-    margin: auto;
-}
-
-
 
 
 .baronyGrid{
@@ -163,6 +154,11 @@ body{
 }
 
 /* Barony Character */
+
+.baronyImageContainer{
+    display: grid;
+    place-items: center;
+}
 
 .baronyStatGrid{
     width:100%;
