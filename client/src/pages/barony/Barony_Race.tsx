@@ -3,14 +3,15 @@ import { useParams } from "react-router-dom";
 import { races } from "../../data/races";
 
 function Barony_Race() {
-  const { class: raceName } = useParams();
+  const { race: raceName } = useParams();
 
   const raceInfo = races.find(
     (ra) => ra.id.toLowerCase() == raceName?.toLowerCase(),
   );
 
   if (!raceInfo) {
-    return <h1>Class not found</h1>;
+    console.log(raceInfo);
+    return <h1>Race not found</h1>;
   }
 
   return (
