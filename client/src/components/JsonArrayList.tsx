@@ -12,7 +12,7 @@ function JsonArrayList({ data }: EquipmentProps) {
     <div>
       {data.map((section) => (
         <div>
-          <p>{section.category}</p>
+          <h2>{section.category}</h2>
           <ul>
             {section.items.map((item) => (
               <li>{item}</li>
