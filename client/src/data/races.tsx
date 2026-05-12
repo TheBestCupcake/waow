@@ -13,6 +13,7 @@ export type RaceData = {
   gimmick?: string;
   features: RaceFeatures[];
 
+  characterImageDescription: string;
   characterImage: string;
 };
 
@@ -33,6 +34,7 @@ export const races: RaceData[] = [
       { category: "Friendly With", items: ["Humans", "Automatons"] },
     ],
 
+    characterImageDescription: "A Human Barbarian",
     characterImage: HumanImage,
   },
 ];

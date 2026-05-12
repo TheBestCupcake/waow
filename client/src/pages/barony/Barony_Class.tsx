@@ -25,7 +25,7 @@ function Barony_Class() {
           <img src={classInfo.characterImage} />
         </div>
 
-        <p>A Human Barbarian</p>
+        <p>{classInfo.characterImageDescription}</p>
 
         <h2>Information</h2>
         <div className="baronyStatGrid">

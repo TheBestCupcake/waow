@@ -24,6 +24,8 @@ function Barony_Race() {
           <img src={raceInfo.characterImage} />
         </div>
 
+        <p>{raceInfo.characterImageDescription}</p>
+
         <JsonArrayList data={raceInfo.features} />
       </div>
 

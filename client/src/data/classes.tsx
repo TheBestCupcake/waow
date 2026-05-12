@@ -58,6 +58,7 @@ export type ClassData = {
   information: Information[];
   stats: Stat[];
   skills: Skill[];
+  characterImageDescription: string;
   characterImage: string;
 
   strategy: string;
@@ -130,6 +131,7 @@ export const classes: ClassData[] = [
       { key: "Thauma", value: "0", image: ThaumaImage },
       { key: "Maces", value: "25", image: MacesImage },
     ],
+    characterImageDescription: "A Human Barbarian",
     characterImage: BarbImage,
     strategy: "Playstyle and strategies for Barbarian.",
   },
