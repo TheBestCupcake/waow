@@ -10,6 +10,8 @@ import Barony_Races from "../pages/barony/Barony_Races";
 import Barony_Classes from "../pages/barony/Barony_Classes";
 import Barony_Class from "../pages/barony/Barony_Class";
 import Barony_Race from "../pages/barony/Barony_Race";
+import Barony_NPCs from "../pages/barony/Barony_NPCs";
+import Barony_NPC from "../pages/barony/Barony_NPC";
 
 let routeVariables = [
   { path: "/", name: "Home", component: <Home /> },
@@ -44,6 +46,18 @@ let routeVariables = [
     path: "/Barony/Classes/:class",
     name: ":class",
     component: <Barony_Class />,
+  },
+
+  {
+    path: "/Barony/NPCs",
+    name: "Barony NPCs",
+    component: <Barony_NPCs />,
+  },
+
+  {
+    path: "/Barony/NPC",
+    name: "Barony NPC",
+    component: <Barony_NPC />,
   },
 ];
 
