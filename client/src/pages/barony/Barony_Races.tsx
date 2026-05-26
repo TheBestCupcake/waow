@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import GridTable from "../../components/GridTable";
+import GridList from "../../components/GridList";
 
 type NavItem = {
   label: string;
@@ -58,7 +58,7 @@ function Barony_Races() {
       <div className="baronyGrid">
         <h1>List of Races</h1>
         <ul>
-          <GridTable
+          <GridList
             items={items}
             getKey={(item) => item.to}
             renderItem={(item) => (
@@ -66,7 +66,7 @@ function Barony_Races() {
                 <b>{item.label}</b>
               </Link>
             )}
-          ></GridTable>
+          ></GridList>
         </ul>
       </div>
     </div>

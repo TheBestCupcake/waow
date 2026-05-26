@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import GridTable from "../../components/GridTable";
+import GridList from "../../components/GridList";
 
 import BarbImage from "../../assets/Barbarian_Icon.png";
 import WarriorImage from "../../assets/Warrior_Icon.png";
@@ -85,7 +85,7 @@ function Barony_Classes() {
       <div className="baronyGrid">
         <h1>List of Classes</h1>
         <ul>
-          <GridTable
+          <GridList
             items={items}
             getKey={(item) => item.to}
             renderItem={(item) => (
@@ -95,7 +95,7 @@ function Barony_Classes() {
                 <b>{item.label}</b>
               </Link>
             )}
-          ></GridTable>
+          ></GridList>
         </ul>
       </div>
     </div>

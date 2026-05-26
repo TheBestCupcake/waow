@@ -1,4 +1,4 @@
-import GridTable from "../../components/GridTable";
+import GridList from "../../components/GridList";
 import { Link } from "react-router-dom";
 
 import ClassImage from "../../assets/Warrior_Icon.png";
@@ -33,7 +33,7 @@ function Barony_Home() {
       to: "/Barony/Items",
       img: ItemImage,
     },
-    { label: "Monsters", to: "/Barony/Monsters", img: MonsterIcon },
+    { label: "NPCs", to: "/Barony/NPCs", img: MonsterIcon },
     { label: "Levels", to: "/Barony/Levels", img: LevelIcon },
 
     { label: "Skills", to: "/Barony/Skills", img: SkillIcon },
@@ -59,7 +59,7 @@ function Barony_Home() {
       <div className="baronyGrid">
         <h1>Links</h1>
         <ul>
-          <GridTable
+          <GridList
             items={items}
             getKey={(item) => item.to}
             renderItem={(item) => (
@@ -69,7 +69,7 @@ function Barony_Home() {
                 <b>{item.label}</b>
               </Link>
             )}
-          ></GridTable>
+          ></GridList>
         </ul>
       </div>
 
