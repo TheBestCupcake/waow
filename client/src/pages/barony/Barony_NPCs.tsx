@@ -1,28 +1,42 @@
 import { Link } from "react-router-dom";
-import GridList from "../../components/GridList";
+import CategoryTable from "../../components/CategoryTable";
 
-type NavItem = {
+type TableData = {
   label: string;
   to: string;
   img?: string;
 };
+type TableRow = {
+  rowHeader: string;
+  rowData: TableData[];
+};
 
 function Barony_NPCs() {
-  const items: NavItem[] = [
-    { label: "Human", to: "/Barony/Races/Human" },
-    { label: "Skeleton", to: "/Barony/Races/Skeleton" },
-    { label: "Vampire", to: "/Barony/Races/Vampire" },
-    { label: "Succubus", to: "/Barony/Races/Succubus" },
-    { label: "Goatman", to: "/Barony/Races/Goatman" },
-    { label: "Automaton", to: "/Barony/Races/Automaton" },
-    { label: "Incubus", to: "/Barony/Races/Incubus" },
-    { label: "Goblin", to: "/Barony/Races/Goblin" },
-    { label: "Insectoid", to: "/Barony/Races/Insectoid" },
-    { label: "Gnome", to: "/Barony/Races/Gnome" },
-    { label: "Gremlin", to: "/Barony/Races/Gremlin" },
-    { label: "Dryad", to: "/Barony/Races/Dryad" },
-    { label: "Myconid", to: "/Barony/Races/Myconid" },
-    { label: "Salamander", to: "/Barony/Races/Salamander" },
+  const tableData: TableRow[] = [
+    {
+      rowHeader: "Humanoids",
+      rowData: [
+        { label: "Human", to: "/Barony/NPCs/Human" },
+        { label: "Goblin", to: "/Barony/NPCs/Goblin" },
+        { label: "Gnome", to: "/Barony/NPCs/Gnome" },
+        { label: "Gnome Thief", to: "/Barony/NPCs/GnomeThief" },
+        { label: "Shopkeeper", to: "/Barony/NPCs/Shopkeeper" },
+        { label: "Mysterious Merchant", to: "/Barony/NPCs/MysteriousMerchant" },
+      ],
+    },
+    {
+      rowHeader: "Beasts",
+      rowData: [
+        { label: "Rat", to: "/Barony/NPCs/Rat" },
+        { label: "Spider", to: "/Barony/NPCs/Spider" },
+        { label: "Troll", to: "/Barony/NPCs/Troll" },
+        { label: "Bat", to: "/Barony/NPCs/Bat" },
+        { label: "Scorpion", to: "/Barony/NPCs/Scorpion" },
+        { label: "Scarab", to: "/Barony/NPCs/Scarab" },
+        { label: "Cockatrice", to: "/Barony/NPCs/Cockatrice" },
+        { label: "Minotaur", to: "/Barony/NPCs/Minotaur" },
+      ],
+    },
   ];
 
   return (
@@ -66,43 +80,19 @@ function Barony_NPCs() {
         <h1>List of NPCs</h1>
 
         <h2>Normal</h2>
-        <ul>
-          <GridList
-            items={items}
-            getKey={(item) => item.to}
-            renderItem={(item) => (
-              <Link className="gridLink" to={item.to}>
-                <b>{item.label}</b>
-              </Link>
-            )}
-          ></GridList>
-        </ul>
+
+        <CategoryTable
+          data={tableData}
+          renderItem={(item) => (
+            <Link className="gridLink" to={item.to}>
+              <b>{item.label}</b>
+            </Link>
+          )}
+        />
 
         <h2>Champions</h2>
-        <ul>
-          <GridList
-            items={items}
-            getKey={(item) => item.to}
-            renderItem={(item) => (
-              <Link className="gridLink" to={item.to}>
-                <b>{item.label}</b>
-              </Link>
-            )}
-          ></GridList>
-        </ul>
 
         <h2>Bosses</h2>
-        <ul>
-          <GridList
-            items={items}
-            getKey={(item) => item.to}
-            renderItem={(item) => (
-              <Link className="gridLink" to={item.to}>
-                <b>{item.label}</b>
-              </Link>
-            )}
-          ></GridList>
-        </ul>
       </div>
     </div>
   );
