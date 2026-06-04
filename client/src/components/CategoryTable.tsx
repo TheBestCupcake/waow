@@ -13,7 +13,7 @@ function CategoryTable<T>({ data, renderItem }: Props<T>) {
     <table>
       {data.map((row) => (
         <tr>
-          <td>{row.rowHeader}</td>
+          <th>{row.rowHeader}</th>
 
           {row.rowData.map((item) => (
             <td>{renderItem(item)}</td>
