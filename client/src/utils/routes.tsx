@@ -55,8 +55,8 @@ let routeVariables = [
   },
 
   {
-    path: "/Barony/NPC",
-    name: "Barony NPC",
+    path: "/Barony/NPCs/:NPC",
+    name: ":NPC",
     component: <Barony_NPC />,
   },
 ];
