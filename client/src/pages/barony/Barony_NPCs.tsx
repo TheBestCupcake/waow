@@ -372,7 +372,30 @@ function Barony_NPCs() {
           denizens, including lore and statistics, can also be found in-game via
           the Compendium.{" "}
         </p>
-
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h2>Champions</h2>
         <p>
           Some denizens have miniboss variants, referred to as Champions, which
@@ -381,6 +404,27 @@ function Barony_NPCs() {
           followers. Some variants are predetermined spawns and can only be
           encountered on specific dungeon floors.{" "}
         </p>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
         <h2>Bosses</h2>
         <p>
