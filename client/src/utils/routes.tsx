@@ -13,6 +13,8 @@ import Barony_Race from "../pages/barony/Barony_Race";
 import Barony_NPCs from "../pages/barony/Barony_NPCs";
 import Barony_NPC from "../pages/barony/Barony_NPC";
 import Barony_Stats from "../pages/barony/Barony_Stats";
+import Barony_Skills from "../pages/barony/Barony_Skills";
+import Barony_Skill from "../pages/barony/Barony_Skill";
 
 let routeVariables = [
   { path: "/", name: "Home", component: <Home /> },
@@ -65,6 +67,17 @@ let routeVariables = [
     path: "/Barony/Stats",
     name: "Barony Stats",
     component: <Barony_Stats />,
+  },
+
+  {
+    path: "/Barony/Skills",
+    name: "Barony Skills",
+    component: <Barony_Skills />,
+  },
+  {
+    path: "/Barony/Skills/:skill",
+    name: ":skill",
+    component: <Barony_Skill />,
   },
 ];
 
