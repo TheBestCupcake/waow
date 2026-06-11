@@ -59,6 +59,8 @@ body{
         "header header header"
         "aside main main"
         "footer footer footer";
+    
+    text-align: center;
 }
 
 .baronyContainer b{
@@ -84,7 +86,7 @@ body{
 .barony h1{
     width: 100%;
     vertical-align: text-top;
-    text-align: center;
+    padding-left: 5px;
     border-bottom: 1px solid #dabfff;
 }
 
@@ -97,7 +99,6 @@ body{
 
 .barony p{
     margin: 5px;
-    text-align: center;
 }
 
 
