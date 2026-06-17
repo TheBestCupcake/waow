@@ -1,4 +1,6 @@
 import BarbImage from "../assets/Barbarian_Human_Male.png";
+import WarriorImage from "../assets/Human_Warrior_Male.webp";
+import HealerImage from "../assets/Human_Healer_Male.webp";
 
 import LeadershipImage from "../assets/Leadership_Icon.png";
 import StealthImage from "../assets/Stealth_Icon.png";
@@ -157,6 +159,217 @@ export const classes: ClassData[] = [
         sectionContent: (
           <>
             <p>Barbarian Strategy.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Warrior",
+    description:
+      "The Warrior is a class in Barony that specializes in Polearms. Starting with 8 Armor Class and high Leadership, the Warrior is a sturdy class with aptitude for recruiting Humans to fight for their side.",
+
+    information: [
+      { key: "HP", value: "30", image: HealthImage },
+      { key: "Survival", value: "✰✰✰✰" },
+      { key: "MP", value: "20", image: MagickaImage },
+      { key: "Complexity", value: "✰" },
+    ],
+    stats: [
+      { key: "STR", value: "1", image: StrengthImage },
+      { key: "DEX", value: "1", image: DexterityImage },
+      { key: "CON", value: "0", image: ConstitutionImage },
+      { key: "INT", value: "-2", image: IntelligenceImage },
+      { key: "PER", value: "-1", image: PerceptionImage },
+      { key: "CHR", value: "1", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "40", image: LeadershipImage },
+      { key: "Stealth", value: "0", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "25", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "25", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "10", image: UnarmedImage },
+      { key: "Alchemy", value: "0", image: AlchemyImage },
+      { key: "Swords", value: "25", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "50", image: PolearmsImage },
+      { key: "Mysticism", value: "0", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "The trained soldier.",
+    characterImage: WarriorImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              The trained soldier. They are heavily armored and make capable
+              leaders.
+            </p>
+            <p>
+              Warriors are well equipped for most fights, assuming they know how
+              to block at the right times.
+            </p>
+            <p>
+              But hubris is the downfall of many Warriors, whether waddling too
+              slowly near traps, or allowing magic to strike through their
+              armor.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Serviceable bronze shield",
+                  "Serviceable iron spear",
+                  "Serviceable iron breastpiece",
+                  "Worn leather helm",
+                  "Worn leather boots",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: ["Slightly-aged bread", "Slightly-aged fish"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Warrior Strategy.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Healer",
+    description:
+      "The Healer is a class in Barony that specializes in Polearms. Although a poor fighter, they come armed with Healing and Cure Ailment to ensure their allies stay alive.",
+
+    information: [
+      { key: "HP", value: "20", image: HealthImage },
+      { key: "Survival", value: "✰✰✰✰" },
+      { key: "MP", value: "40", image: MagickaImage },
+      { key: "Complexity", value: "✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-1", image: StrengthImage },
+      { key: "DEX", value: "-1", image: DexterityImage },
+      { key: "CON", value: "2", image: ConstitutionImage },
+      { key: "INT", value: "1", image: IntelligenceImage },
+      { key: "PER", value: "0", image: PerceptionImage },
+      { key: "CHR", value: "0", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "0", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "10", image: BlockingImage },
+      { key: "Lore", value: "10", image: LoreImage },
+      { key: "Ranged", value: "0", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "30", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "25", image: PolearmsImage },
+      { key: "Mysticism", value: "25", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "50", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A talented physician.",
+    characterImage: HealerImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              A talented physician. Though they are poor fighters, they come
+              stocked with medical supplies and other healing abilities.
+            </p>
+            <p>
+              Compared to other magic users, the Healer is a more durable and
+              well-rounded hero as they grow in experience.
+            </p>
+            <p>With care, they may become a very tough spellcaster.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Serviceable phrygian hat",
+                  "Serviceable cloak",
+                  "Serviceable healer doublet",
+                  "Serviceable quarter staff",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "x3 Bubbly potion of extra healing",
+                  "Fresh fish",
+                  "Slightly-aged apple",
+                  "Serviceable magicstaff of slow ",
+                  "Serviceable towel",
+                  "Brand-new spellbook of cure ailment",
+                  "Brand-new spellbook of healing",
+                ],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Healer Strategy.</p>
           </>
         ),
       },
