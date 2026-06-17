@@ -51,12 +51,14 @@ function Barony_Class() {
 
       <div className="baronyDescription">
         <h1>Equipment</h1>
-        <p>{classInfo.classInfo}</p>
 
-        <JsonArrayList data={classInfo.startingEquipment} />
+        {classInfo.classSections.map((section) => (
+          <>
+            {section.sectionName != "" && <h2>{section.sectionName}</h2>}
 
-        <h2>Strategy</h2>
-        <p>{classInfo.strategy}</p>
+            {section.sectionContent}
+          </>
+        ))}
       </div>
     </div>
   );

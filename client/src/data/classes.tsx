@@ -26,42 +26,32 @@ import CharismaImage from "../assets/Charisma_Icon.png";
 
 import HealthImage from "../assets/Health_Icon.png";
 import MagickaImage from "../assets/Magicka_Icon.png";
+import type { ReactNode } from "react";
+import JsonArrayList from "../components/JsonArrayList";
 
-export type EquipmentCategory = {
-  category: string;
-  items: string[];
-};
-
-export type Information = {
+export type Attribute = {
   key: string;
   value: string;
   image?: string;
 };
 
-export type Stat = {
-  key: string;
-  value: string;
-  image?: string;
-};
-
-export type Skill = {
-  key: string;
-  value: string;
-  image?: string;
+export type ClassSection = {
+  sectionName: string;
+  sectionContent: ReactNode;
 };
 
 export type ClassData = {
   id: string;
   description: string;
-  classInfo: string;
-  startingEquipment: EquipmentCategory[];
-  information: Information[];
-  stats: Stat[];
-  skills: Skill[];
+
+  information: Attribute[];
+  stats: Attribute[];
+  skills: Attribute[];
+
   characterImageDescription: string;
   characterImage: string;
 
-  strategy: string;
+  classSections: ClassSection[];
 };
 
 export const classes: ClassData[] = [
@@ -69,36 +59,7 @@ export const classes: ClassData[] = [
     id: "Barbarian",
     description:
       "The Barbarian is a class in Barony that specializes in Axes. They forgo Constitution in favor of brute Strength.",
-    classInfo:
-      "A skilled combatant. What they lack in armor they make up for in strength and fighting prowess. Barbarians can quickly dispatch lesser foes before taking any hits by using the right weapon for the job. A surprise assault is the key to a swift victory. Staying light-footed will allow a Barbarian to avoid damage.",
-    startingEquipment: [
-      {
-        category: "Equipped",
-        items: [
-          "Rough ring of might",
-          "Serviceable wooden shield",
-          "Worn leather helm",
-          "Serviceable iron Axe",
-        ],
-      },
-      {
-        category: "Inventory",
-        items: [
-          "x2 Slightly-aged bread",
-          "Slightly-aged meat",
-          "Bubbly bottle of booeze",
-          "x2 Worn torch",
-          "x2 Decrepit bronze tomohawk",
-        ],
-      },
-      {
-        category: "Monster Races",
-        items: [
-          "x2 Bubbly potion of polymorph",
-          "(Goatman Only) x3 Bubbly bottle of booze",
-        ],
-      },
-    ],
+
     information: [
       { key: "HP", value: "40", image: HealthImage },
       { key: "Survival", value: "✰✰✰" },
@@ -133,6 +94,72 @@ export const classes: ClassData[] = [
     ],
     characterImageDescription: "A Human Barbarian",
     characterImage: BarbImage,
-    strategy: "Playstyle and strategies for Barbarian.",
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              A skilled combatant. What they lack in armor they make up for in
+              strength and fighting prowess.{" "}
+            </p>
+            <p>
+              Barbarians can quickly dispatch lesser foes before taking any hits
+              by using the right weapon for the job.{" "}
+            </p>
+            <p>
+              A surprise assault is the key to a swift victory. Staying
+              light-footed will allow a Barbarian to avoid damage.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Rough ring of might",
+                  "Serviceable wooden shield",
+                  "Worn leather helm",
+                  "Serviceable iron Axe",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "x2 Slightly-aged bread",
+                  "Slightly-aged meat",
+                  "Bubbly bottle of booeze",
+                  "x2 Worn torch",
+                  "x2 Decrepit bronze tomohawk",
+                ],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Barbarian Strategy.</p>
+          </>
+        ),
+      },
+    ],
   },
 ];
