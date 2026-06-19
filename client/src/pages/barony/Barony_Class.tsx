@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import JsonArrayList from "../../components/JsonArrayList";
 import JsonList from "../../components/JsonList";
 
 import { classes } from "../../data/classes";
