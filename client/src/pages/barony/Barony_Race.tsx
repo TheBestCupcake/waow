@@ -26,18 +26,19 @@ function Barony_Race() {
 
         <p>{raceInfo.characterImageDescription}</p>
 
-        <JsonArrayList data={raceInfo.features} />
+        <JsonArrayList data={raceInfo.raceFeatures} />
       </div>
 
       <div className="baronyDescription">
         <h1>Description</h1>
-        <p>{raceInfo.description}</p>
 
-        <h2>{raceInfo.gimmickName}</h2>
-        <p>{raceInfo.gimmick}</p>
+        {raceInfo.raceSections.map((section) => (
+          <>
+            {section.sectionName != "" && <h2>{section.sectionName}</h2>}
 
-        <h2>Social Standings</h2>
-        <p>{raceInfo.standings}</p>
+            {section.sectionContent}
+          </>
+        ))}
       </div>
     </div>
   );
