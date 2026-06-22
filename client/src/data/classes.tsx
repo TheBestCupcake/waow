@@ -19,6 +19,11 @@ import MechanistImage from "../assets/Automaton_Mechanist_Male.webp";
 import PunisherImage from "../assets/Incubus_Punisher_Male.webp";
 import ShamanImage from "../assets/Goblin_Shaman_Male.png";
 import HunterImage from "../assets/Insectoid_Hunter_Male.webp";
+import BardImage from "../assets/300px-Bard_Gnome.webp";
+import SapperImage from "../assets/300px-Sapper_Gremlin.webp";
+import ScionImage from "../assets/300px-Scion_Dryad.webp";
+import HermitImage from "../assets/300px-Hermit_Myconid.webp";
+import PaladinImage from "../assets/300px-Paladin_Salamander.webp";
 
 import LeadershipImage from "../assets/Leadership_Icon.png";
 import StealthImage from "../assets/Stealth_Icon.png";
@@ -2784,17 +2789,27 @@ export const classes: ClassData[] = [
       { key: "Thauma", value: "0", image: ThaumaImage },
       { key: "Maces", value: "0", image: MacesImage },
     ],
-    characterImageDescription: "",
-    characterImage: RogueImage,
+    characterImageDescription: "A boistrous adventurer.",
+    characterImage: BardImage,
 
     classSections: [
       {
         sectionName: "Class Info",
         sectionContent: (
           <>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p>
+              This boistrous adventurer may not look like much of a fighter,
+              magician, or rogue, but a swift blade and sharp wit makes the Bard
+              a very capable combatant.
+            </p>
+            <p>
+              Bards will need to master parrying with their sword to survive in
+              close quarters.
+            </p>
+            <p>
+              The right song for the right situation can bring swift success to
+              a Bard's party.
+            </p>
           </>
         ),
       },
@@ -2806,11 +2821,25 @@ export const classes: ClassData[] = [
             data={[
               {
                 category: "Equipped",
-                items: [""],
+                items: [
+                  "Worn rapier",
+                  "Excellent flute",
+                  "Excellent plumed cap",
+                  "Excellent bandit leather",
+                  "Serviceable loafers",
+                ],
               },
               {
                 category: "Inventory",
-                items: [""],
+                items: [
+                  "Excellent lyre",
+                  "Bubbly potion of restore magic",
+                  "2x Fresh fish",
+                ],
+              },
+              {
+                category: "Spells",
+                items: ["Alter Instrument"],
               },
               {
                 category: "Monster Races",
@@ -2825,10 +2854,665 @@ export const classes: ClassData[] = [
       },
 
       {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>The Rapier weapon is unique to the bard: </p>
+            <ul>
+              <li>
+                Can perform a riposte by pressing Defend while holding Attack.
+                The riposte window is 700ms
+              </li>
+              <li>
+                While riposting, offhand's shield's AC is ignored, but
+                additional ACs are given instead, from the ATK stat and Sword
+                skill
+              </li>
+              <li>Scales with 50% DEX instead of STR</li>
+              <li>Higher critical damages</li>
+            </ul>
+            <p>
+              The bard also starts with instruments: the Flute, the Lyre, as
+              well as a spell to alter them:{" "}
+            </p>
+            <ul>
+              <li>Playing an instrument can slowly train Lore</li>
+              <li>
+                Lore determines the buff duration, which in turn determines the
+                mana economy of the spell
+              </li>
+              <li>
+                Instruments' inspiration tier and stat bonuses are ultimately
+                determined by Charisma
+              </li>
+              <li>
+                Each instruments give different inspiration bonuses. The stats
+                modified by Inspirations give better bonuses the longer time is
+                spent playing
+              </li>
+            </ul>
+
+            <table>
+              <tr>
+                <td>Instrument</td>
+                <td>Charisma -7</td>
+                <td>Charisma 8-19</td>
+                <td>Charisma 20+</td>
+              </tr>
+
+              <tr>
+                <td>Flute</td>
+                <td>5 DEX</td>
+                <td>6-8 DEX (+1 DEX per 3 CHR)</td>
+                <td>9+ DEX (+1 DEX per 5 CHR)</td>
+              </tr>
+
+              <tr>
+                <td>Lyre</td>
+                <td>5 PER</td>
+                <td>6-8 PER (+1 PER per 3 CHR)</td>
+                <td>9+ PER (+1 PER per 5 CHR)</td>
+              </tr>
+
+              <tr>
+                <td>Drum</td>
+                <td>5 STR</td>
+                <td>6-8 STR (+1 STR per 3 CHR)</td>
+                <td>9+ STR (+1 STR per 5 CHR)</td>
+              </tr>
+
+              <tr>
+                <td>Lute</td>
+                <td>15% PWR</td>
+                <td>18%-24% PWR (+3% PWR per 3 CHR)</td>
+                <td>27%+ PWR (+3% PWR per 5 CHR)</td>
+              </tr>
+
+              <tr>
+                <td>Horn</td>
+                <td>5 CON</td>
+                <td>6-8 CON (+1 CON per 3 CHR)</td>
+                <td>9+ CON (+1 CON per 5 CHR)</td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <td>Instrument</td>
+                <td>Charisma 4-</td>
+                <td>Charisma 5-19</td>
+                <td>Charisma 20-39</td>
+                <td>Charisma 40+</td>
+              </tr>
+
+              <tr>
+                <td>Flute</td>
+                <td>20% Critical Charge Speed</td>
+                <td>20% to 30% Critical Charge Speed </td>
+                <td>20% to 40% Critical Charge Speed</td>
+                <td>20% to 50% Critical Charge Speed </td>
+              </tr>
+
+              <tr>
+                <td>Lyre</td>
+                <td>20% Damage Resistance</td>
+                <td>20% to 25% Damage Resistance </td>
+                <td>20% to 30% Damage Resistance </td>
+                <td>20% to 35% Damage Resistance </td>
+              </tr>
+
+              <tr>
+                <td>Drum</td>
+                <td>10% Melee Armor Pierce</td>
+                <td>10% to 15% Melee Armor Pierce </td>
+                <td>10% to 20% Melee Armor Pierce </td>
+                <td>10% to 25% Melee Armor Pierce</td>
+              </tr>
+
+              <tr>
+                <td>Lute</td>
+                <td>10% Evasion</td>
+                <td>10% to 12% Evasion </td>
+                <td>10% to 15% Evasion </td>
+                <td>10% to 18% Evasion </td>
+              </tr>
+
+              <tr>
+                <td>Horn</td>
+                <td>2 Retaliation Damage</td>
+                <td>2 to 5 Retaliation Damage</td>
+                <td>2 to 8 Retaliation Damage</td>
+                <td>2 to 10 Retaliation Damage</td>
+              </tr>
+            </table>
+          </>
+        ),
+      },
+
+      {
         sectionName: "Strategy",
         sectionContent: (
           <>
-            <p></p>
+            <p>Bard Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Sapper",
+    description:
+      "The Sapper is a class in Barony that was initially introduced in the Deserters & Disciples DLC. It is associated with the Gremlin race.",
+
+    information: [
+      { key: "HP", value: "30", image: HealthImage },
+      { key: "Survival", value: "✰✰✰✰" },
+      { key: "MP", value: "25", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "1", image: StrengthImage },
+      { key: "DEX", value: "1", image: DexterityImage },
+      { key: "CON", value: "-3", image: ConstitutionImage },
+      { key: "INT", value: "-2", image: IntelligenceImage },
+      { key: "PER", value: "0", image: PerceptionImage },
+      { key: "CHR", value: "-3", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "25", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "15", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "25", image: AlchemyImage },
+      { key: "Swords", value: "15", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "0", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "50", image: MacesImage },
+    ],
+    characterImageDescription: "A resourceful soldier.",
+    characterImage: SapperImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              A resourceful soldier, the Sapper has several tools that help
+              destroy foes beyond the front lines.
+            </p>
+            <p>
+              But lacking the defensive prowess of other fighters, they must
+              take care not to be overwhelmed by close-quarters combat.
+            </p>
+            <p>
+              Successful Sappers combine their tools to secure decisive victory.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Serviceable steel flail",
+                  "Excellent teal hood",
+                  "Excellent shawl",
+                  "Worn leather gloves",
+                  "Worn cleats",
+                  "Worn eyepatch",
+                  "Flawless amulet of burning resistance",
+                  "Excellent frypan",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "3x Serviceable bolas",
+                  "3x Serviceable towel",
+                  "Mouldy meat",
+                  "Mouldy bread",
+                ],
+              },
+              {
+                category: "Spells",
+                items: ["Booby Trap"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>
+              Sapper begins the game with a frypan Frypan Icon.png, which is
+              otherwise not guaranteed to obtain within a run. It allows early
+              Cooking.
+            </p>
+            <p>
+              The Booby Trap Booby Trap Icon.png spell is also unique to the
+              Sapper.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Sapper Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Scion",
+    description:
+      "The Scion is a class in Barony that was initially introduced in the Deserters & Disciples DLC. It is associated with the Dryad race.",
+
+    information: [
+      { key: "HP", value: "20", image: HealthImage },
+      { key: "Survival", value: "✰✰" },
+      { key: "MP", value: "50", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-2", image: StrengthImage },
+      { key: "DEX", value: "-2", image: DexterityImage },
+      { key: "CON", value: "0", image: ConstitutionImage },
+      { key: "INT", value: "3", image: IntelligenceImage },
+      { key: "PER", value: "1", image: PerceptionImage },
+      { key: "CHR", value: "-1", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "0", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "10", image: LoreImage },
+      { key: "Ranged", value: "0", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "10", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "40", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "40", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "40", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A disciple of all magic.",
+    characterImage: ScionImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              Though very well trained in all known disciplines of magic, the
+              Scion is ill-fit for physical battle.
+            </p>
+            <p>
+              Nevertheless, the Scion has ways to keep enemies at bay while a
+              spell does the work.
+            </p>
+            <p>
+              A successful Scion is very capable in the learning of new spells
+              on their quest.
+            </p>
+            <p>They should expect to adapt with that advantage.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Excellent archon scepter",
+                  "Serviceable wizard robe",
+                  "Worn quilted boots",
+                  "Excellent icon of void rift",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "2x Worn silver key",
+                  "2x Plain potion of restore magic",
+                  "Plain potion of healing",
+                  "2x Slightly-aged bread (+1)",
+                ],
+              },
+              {
+                category: "Spells",
+                items: ["Summon Earth Sprite", "Telekinesis", "Blessed Meals"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>
+              The archon scepter weapon and the icon of void rift are unique to
+              the scion.
+            </p>
+            <p>
+              The Summon Earth Sprite spell is also exclusive to the Scion:{" "}
+            </p>
+            <ul>
+              <li>
+                The Earth Sprite's level and stats scale with the caster's
+                Mysticism PWR
+              </li>
+              <li>At base 100% PWR, the sprite is summoned at level 5</li>
+              <li>
+                It gains 1 level for every 10% extra PWR, up to level 20 once
+                250% PWR is reached
+              </li>
+              <li>
+                Thus, unlike other followers, the sprite does not gain EXP from
+                killing enemies
+              </li>
+            </ul>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Scion Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Hermit",
+    description:
+      "The Hermit is a class in Barony that was initially introduced in the Deserters & Disciples DLC. It is associated with the Myconid race. The Hermit uses a duck to distract enemies while defending themselves with Magicians' Bubble and Deep Shade all to to keep foes in line. Their spirit projection manifests a duck while putting their body to sleep, allowing them to perform the same actions as a player Ghost as long as the body is defended or hidden away. ",
+
+    information: [
+      { key: "HP", value: "30", image: HealthImage },
+      { key: "Survival", value: "✰✰✰" },
+      { key: "MP", value: "30", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-2", image: StrengthImage },
+      { key: "DEX", value: "-2", image: DexterityImage },
+      { key: "CON", value: "2", image: ConstitutionImage },
+      { key: "INT", value: "1", image: IntelligenceImage },
+      { key: "PER", value: "0", image: PerceptionImage },
+      { key: "CHR", value: "1", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "25", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "0", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "10", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "15", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "40", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "25", image: MacesImage },
+    ],
+    characterImageDescription: "A spiritual drifter.",
+    characterImage: HermitImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              Though not equipped with traditional battle gear, the Hermit
+              survives by combining both magical and physical aptitude
+            </p>
+            <p>Though isolated, the Hermit is not alone. </p>
+            <p>
+              A loyal pet serves as an exceptional distractoin, and the
+              unbreakable shillelagh is devastating against hindered foes.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Worn shillelagh",
+                  "Serviceable leather boots",
+                  "Serviceable cloak of protection",
+                  "Flawed amulet of olympic swimming",
+                  "Excellent duck",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "Worn pipe",
+                  "Bubbly potion of restore magic",
+                  "Bubbly potion of booze",
+                  "3x Slightly-aged apple",
+                  "Fresh meat",
+                ],
+              },
+              {
+                category: "Spells",
+                items: ["Magicians' Bubble", "Project Spirit", "Deep Shade"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>The shillelagh weapon is unique to the hermit.</p>
+            <p>
+              The duck is unique to the hermit. It has 4 possible variants:{" "}
+            </p>
+            <ul>
+              <li>Mallard</li>
+              <li>Brown</li>
+              <li>Grey</li>
+              <li>White</li>
+            </ul>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Hermit Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Paladin",
+    description:
+      "The Paladin is a class in Barony that was initially introduced in the Deserters & Disciples DLC. It is associated with the Salamander race and comes with the Claymore and Symbol of Sanctuary, allowing a unique mix of parrying, sweeping critical hits, and temporary armor buffs for allies. They have access to the Spell of Divine Zeal, increasing their attack power against undead and demonic foes. ",
+
+    information: [
+      { key: "HP", value: "30", image: HealthImage },
+      { key: "Survival", value: "✰✰✰✰" },
+      { key: "MP", value: "25", image: MagickaImage },
+      { key: "Complexity", value: "✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "1", image: StrengthImage },
+      { key: "DEX", value: "-1", image: DexterityImage },
+      { key: "CON", value: "0", image: ConstitutionImage },
+      { key: "INT", value: "1", image: IntelligenceImage },
+      { key: "PER", value: "-1", image: PerceptionImage },
+      { key: "CHR", value: "1", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "10", image: LeadershipImage },
+      { key: "Stealth", value: "0", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "10", image: BlockingImage },
+      { key: "Lore", value: "25", image: LoreImage },
+      { key: "Ranged", value: "0", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "0", image: AlchemyImage },
+      { key: "Swords", value: "50", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "0", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "25", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A holy soldier.",
+    characterImage: PaladinImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              Wielding a large blade and divine magic, the Paladin's solutions
+              are simple and effective.{" "}
+            </p>
+            <p>
+              While adept at dealing with martial challengers, a Paladin must
+              rise to the occasion when honorable fights aren't on offer.
+            </p>
+            <p>
+              Continued discipline with miraculous magics may improve
+              adaptability.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Serviceable claymore",
+                  "Excellent chain coif",
+                  "Excellent chain hauberk",
+                  "Excellent symbol of sanctuary",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "4x Bubbly potion of water (+4)",
+                  "3x Slightly-aged bread",
+                ],
+              },
+              {
+                category: "Spells",
+                items: ["Divine Zeal"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>The symbol of sanctuary is unique to the paladin. </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Paladin Strategy</p>
           </>
         ),
       },
