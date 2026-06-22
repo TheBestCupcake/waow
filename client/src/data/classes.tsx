@@ -6,6 +6,19 @@ import WandererImage from "../assets/Human_Wanderer_Male.webp";
 import ClericImage from "../assets/Human_Cleric_Male.webp";
 import MerchantImage from "../assets/Human_Merchant_Male.webp";
 import WizardImage from "../assets/Human_Wizard_Male.webp";
+import ArcanistImage from "../assets/Human_Arcanist_Male.webp";
+import JokerImage from "../assets/Human_Joker_Male.webp";
+import SextonImage from "../assets/Human_Sexton_Male.webp";
+import NinjaImage from "../assets/Human_Ninja_Male.webp";
+import MonkImage from "../assets/Human_Monk_Male.webp";
+import ConjurerImage from "../assets/Skeleton_Conjurer_Male.webp";
+import AccursedImage from "../assets/Vampire_Accursed_Male.webp";
+import MesmerImage from "../assets/Succubus_Mesmer_Female.webp";
+import BrewerImage from "../assets/Goatman_Brewer_Male.webp";
+import MechanistImage from "../assets/Automaton_Mechanist_Male.webp";
+import PunisherImage from "../assets/Incubus_Punisher_Male.webp";
+import ShamanImage from "../assets/Goblin_Shaman_Male.png";
+import HunterImage from "../assets/Insectoid_Hunter_Male.webp";
 
 import LeadershipImage from "../assets/Leadership_Icon.png";
 import StealthImage from "../assets/Stealth_Icon.png";
@@ -948,25 +961,929 @@ export const classes: ClassData[] = [
   },
 
   {
-    id: "",
-    description: "",
+    id: "Arcanist",
+    description:
+      "The Arcanist is a class in Barony that specializes in both Ranged and Magic. They start with multiple spells, magicstaffs, and a crossbow, allowing them to safely dispatch enemies at a range. However, due to their poor Constitution and lack of melee options, they can find themselves in trouble should an enemy find their way towards them.",
 
     information: [
-      { key: "HP", value: "", image: HealthImage },
-      { key: "Survival", value: "✰✰" },
-      { key: "MP", value: "", image: MagickaImage },
+      { key: "HP", value: "25", image: HealthImage },
+      { key: "Survival", value: "✰✰✰" },
+      { key: "MP", value: "40", image: MagickaImage },
       { key: "Complexity", value: "✰✰✰" },
     ],
     stats: [
-      { key: "STR", value: "", image: StrengthImage },
-      { key: "DEX", value: "", image: DexterityImage },
-      { key: "CON", value: "", image: ConstitutionImage },
-      { key: "INT", value: "", image: IntelligenceImage },
-      { key: "PER", value: "", image: PerceptionImage },
-      { key: "CHR", value: "", image: CharismaImage },
+      { key: "STR", value: "-1", image: StrengthImage },
+      { key: "DEX", value: "1", image: DexterityImage },
+      { key: "CON", value: "-1", image: ConstitutionImage },
+      { key: "INT", value: "1", image: IntelligenceImage },
+      { key: "PER", value: "1", image: PerceptionImage },
+      { key: "CHR", value: "-1", image: CharismaImage },
     ],
     skills: [
       { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "25", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "25", image: RangedImage },
+      { key: "Tinkering", value: "25", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "0", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "30", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "0", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A cunning spellcaster.",
+    characterImage: ArcanistImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              A cunning spellcaster. Less magically adept than the Wizard, but
+              with more diverse talents and gear.
+            </p>
+            <p>
+              Due to having mundane and magical ranged attacks at their
+              disposal, successful Arcanists rely on mobility to keep threats at
+              a distance.{" "}
+            </p>
+            <p>
+              Adding special ammo or spells will allow the Arcanist to improve
+              in power.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Serviceable leather breastpiece",
+                  "Serviceable leather boots",
+                  "Worn apprentice's hood",
+                  "Worn cloak",
+                  "Worn crossbow",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "x2 Brand-new scroll of charging",
+                  "Bubbly potion of restore magic",
+                  "Serviceable magicstaff of opening",
+                  "Serviceable magicstaff of fire",
+                  "Faded spellbook of forcebolt",
+                  "x15 Serviceable quiver of fire ammo",
+                ],
+              },
+              {
+                category: "Spells",
+                items: ["Windgate"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Arcanist Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Joker",
+    description: "The Joker is a class in Barony.",
+
+    information: [
+      { key: "HP", value: "30", image: HealthImage },
+      { key: "Survival", value: "✰" },
+      { key: "MP", value: "30", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-1", image: StrengthImage },
+      { key: "DEX", value: "0", image: DexterityImage },
+      { key: "CON", value: "-1", image: ConstitutionImage },
+      { key: "INT", value: "1", image: IntelligenceImage },
+      { key: "PER", value: "0", image: PerceptionImage },
+      { key: "CHR", value: "1", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "20", image: LeadershipImage },
+      { key: "Stealth", value: "10", image: StealthImage },
+      { key: "Trading", value: "25", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "20", image: RangedImage },
+      { key: "Tinkering", value: "25", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "10", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "10", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "25", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "The wild card.",
+    characterImage: JokerImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>The wild card. </p>
+            <p>
+              Jokers come with very little equipment, but they have a few tricks
+              up their sleeves, nonetheless.{" "}
+            </p>
+            <p>
+              Jokers tend to gravitate toward magical trickery and commanding
+              followers, but their chaotic nature results in a lack of
+              focus.{" "}
+            </p>
+            <p>Best to improvise and stay flexible.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: ["Serviceable jester hat (+1)"],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "Excellent slingshot",
+                  "Flawed ring of levitation",
+                  "Faded spellbook of confuse",
+                  "Excellent lockpick",
+                  "Serviceable blindfold",
+                  "Bubbly potion of polymorph",
+                  "x8 Slightly-aged cream pie",
+                  "x3 Brand-new scroll of teleportation",
+                  "Brand-new scroll of food",
+                  "Flawless Luckstone",
+                ],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Joker Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Sexton",
+    description: "The Sexton is a class in Barony. ",
+
+    information: [
+      { key: "HP", value: "30", image: HealthImage },
+      { key: "Survival", value: "✰✰✰" },
+      { key: "MP", value: "35", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-1", image: StrengthImage },
+      { key: "DEX", value: "1", image: DexterityImage },
+      { key: "CON", value: "-1", image: ConstitutionImage },
+      { key: "INT", value: "1", image: IntelligenceImage },
+      { key: "PER", value: "0", image: PerceptionImage },
+      { key: "CHR", value: "0", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "40", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "10", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "20", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "20", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "40", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "10", image: MacesImage },
+    ],
+    characterImageDescription: "A temple officer.",
+    characterImage: SextonImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              A temple officer who serves unseen, using stealth and magic to
+              slip their way through the dungeon with the air of a few rare
+              tools.{" "}
+            </p>
+            <p>
+              Sextons are fastidious planners, and their diverse talents bring
+              success when they make time to approach each problem thoughtfully.
+            </p>
+            <p>Sextons who panic fail to use the tools at their disposal.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Serviceable fez",
+                  "Worn leather breastpiece",
+                  "Serviceable leather boots",
+                  "Serviceable bronze mace ",
+                  "2x Serviceable crystal shard",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "3x Serviceable steel chakram",
+                  "Faded spellbook of sleep",
+                  "Faded spellbook of opening",
+                  "Faded spellbook of locking",
+                  "Slightly-aged bread",
+                  "Slightly-aged tomalley",
+                ],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Sexton Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Ninja",
+    description:
+      "The Ninja is a class in Barony. They start with very high skills in Stealth and Swords. They also carry a variety of equipment to help them dispatch enemies before even being seen.",
+
+    information: [
+      { key: "HP", value: "35", image: HealthImage },
+      { key: "Survival", value: "✰✰" },
+      { key: "MP", value: "20", image: MagickaImage },
+      { key: "Complexity", value: "✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "0", image: StrengthImage },
+      { key: "DEX", value: "2", image: DexterityImage },
+      { key: "CON", value: "-1", image: ConstitutionImage },
+      { key: "INT", value: "-2", image: IntelligenceImage },
+      { key: "PER", value: "1", image: PerceptionImage },
+      { key: "CHR", value: "0", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "60", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "40", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "0", image: AlchemyImage },
+      { key: "Swords", value: "60", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "0", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A highly specialized assassin.",
+    characterImage: NinjaImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              A highly specialyzed assassin. They ambush foes with swords or
+              ranged weapons, using a few other tricks to get out of bad
+              situations.{" "}
+            </p>
+            <p>
+              Ninjas do well to find backup blades. Their fragile sword is
+              sharp, but a break at the wrong time can be fatal.{" "}
+            </p>
+            <p>
+              To improve their chances, a Ninja must remain in control of how a
+              fight begins.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Decrepit crystal sword",
+                  "Serviceable assassin's hood",
+                  "Serviceable tunic",
+                  "Serviceable leather boots of speed",
+                  "Serviceable bandit mask",
+                  "Excellent black cloak",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "5x Worn iron dagger",
+                  "x Serviceable beartrap",
+                  "Bubbly potion of paralysis",
+                  "Bubbly potion of invisibility",
+                  "3x Marked scroll of teleportation",
+                ],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Ninja Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Monk",
+    description:
+      "The Monk is a class in Barony that specializes in Unarmed. Starting with high Unarmed, Blocking, and Constitution, it allows the Monk to excel in fights with only their fists. ",
+
+    information: [
+      { key: "HP", value: "40", image: HealthImage },
+      { key: "Survival", value: "✰✰✰✰" },
+      { key: "MP", value: "30", image: MagickaImage },
+      { key: "Complexity", value: "✰" },
+    ],
+    stats: [
+      { key: "STR", value: "1", image: StrengthImage },
+      { key: "DEX", value: "0", image: DexterityImage },
+      { key: "CON", value: "2", image: ConstitutionImage },
+      { key: "INT", value: "0", image: IntelligenceImage },
+      { key: "PER", value: "-1", image: PerceptionImage },
+      { key: "CHR", value: "0", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "10", image: LeadershipImage },
+      { key: "Stealth", value: "0", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "40", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "0", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "50", image: UnarmedImage },
+      { key: "Alchemy", value: "20", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "0", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "25", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A disciplined and hardy martialist.",
+    characterImage: MonkImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              Disciplined and hardy. With little in the way of offensive
+              training and material goods, Monks rely on their excellent
+              fortitude and adaptability.{" "}
+            </p>
+            <p>
+              The Monk is exceptional at blocking attacks, and is very slow to
+              hunger.{" "}
+            </p>
+            <p>
+              Approaching challenges patiently plays to the Monk's strengths.
+              Keep a torch or shield at hand.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Excellent tunic",
+                  "Excellent brass knuckles",
+                  "Flawed ring of slow digestion",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: ["Faded spellbook of light", "Worn torch"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Monk Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Conjurer",
+    description:
+      "The Conjurer is a class in Barony that was initially introduced in the Myths & Outcasts DLC. It is associated with the Skeleton race and comes with the unique Conjure Skeleton spell, allowing the user to raise an army to fight on their side. ",
+
+    information: [
+      { key: "HP", value: "30", image: HealthImage },
+      { key: "Survival", value: "✰✰✰" },
+      { key: "MP", value: "45", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "0", image: StrengthImage },
+      { key: "DEX", value: "-1", image: DexterityImage },
+      { key: "CON", value: "2", image: ConstitutionImage },
+      { key: "INT", value: "1", image: IntelligenceImage },
+      { key: "PER", value: "-2", image: PerceptionImage },
+      { key: "CHR", value: "0", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "40", image: LeadershipImage },
+      { key: "Stealth", value: "20", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "20", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "20", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "40", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "15", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A frail but adept magic user.",
+    characterImage: ConjurerImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              A frail but adept magic user, able to conjure allies with a
+              reliable spell.
+            </p>
+            <p>
+              Unavailable to any other class, the Conjure Skeleton spell
+              provides a persistent companion, even if it is killed.
+            </p>
+            <p>
+              Conjured allies grow in power, so long as they are permitted to
+              kill foes and grow in experience. Nurture these allies to succeed.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Excellent magicstaff of lightning",
+                  "Excellent lantern",
+                  "Serviceable apprentice's hood",
+                  "Serviceable cloak",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "Bubbly potion of restore magic",
+                  "Torn spellbook of poison",
+                ],
+              },
+              {
+                category: "Spells",
+                items: ["Conjure skeleton"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>
+              The Conjure Skeleton spell conjures 1 Knight (melee) Skeleton by
+              default.{" "}
+            </p>
+            <ul>
+              <li>
+                Once the player's Mysticism skill reaches IV (Mysticism +
+                Intelligence = 60), the spell summons an extra Sentinel (ranged)
+                Skeleton.
+              </li>
+              <li>
+                The conjured Skeletons' gears are upgraded every 5 levels. The
+                last gear upgrade is gained upon them reaching level 30.
+              </li>
+              <li>
+                Conjured skeletons keep their level inbetween deaths and
+                resummons, but lose their EXP progress to the next level.
+              </li>
+            </ul>
+            <p>Like any other followers, the Conjurer's summons: </p>
+            <ul>
+              <li>Will NOT get EXP when other players kill the enemies.</li>
+              <li>
+                Will get individual bonus EXP if dealing the killing blow.
+              </li>
+            </ul>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Conjurer Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Accursed",
+    description:
+      "The Accursed is a class in Barony that was initially introduced in the Myths & Outcasts DLC. It is associated with the Vampire race and gains powerful stats bonuses, at the cost of losing hunger at a rapid rate.",
+
+    information: [
+      { key: "HP", value: "30", image: HealthImage },
+      { key: "Survival", value: "✰" },
+      { key: "MP", value: "40", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-2", image: StrengthImage },
+      { key: "DEX", value: "-3", image: DexterityImage },
+      { key: "CON", value: "-2", image: ConstitutionImage },
+      { key: "INT", value: "5", image: IntelligenceImage },
+      { key: "PER", value: "-1", image: PerceptionImage },
+      { key: "CHR", value: "0", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "40", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "20", image: LoreImage },
+      { key: "Ranged", value: "0", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "40", image: UnarmedImage },
+      { key: "Alchemy", value: "0", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "60", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "20", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "The insatiable fiend.",
+    characterImage: AccursedImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              The Accursed suffer from bestial hunger, but gain supernatural
+              magic power and speed.{" "}
+            </p>
+            <p>
+              An arcane library found deep within the dungeon may have a
+              cure.{" "}
+            </p>
+            <p>
+              While afflicted, the Accursed must move quickly to evade
+              starvation. However powerful, those lacking expertise will
+              fail.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Excellent silver doublet",
+                  "Serviceable suede gloves",
+                  "Serviceable suede boots",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "x2 Bubbly potion of restore magic",
+                  "x3 Fresh vial of blood",
+                  "Faded spellbook of invisibility",
+                ],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>
+              Chance for enemies to drop blood vials Vial Red Icon.png on death.
+              Blood vials will only drop if at least one person on the team is a
+              vampire or the accursed class.
+            </p>
+            <ul>
+              <li>
+                Entities without "blood" won't drop blood vials. That includes:
+                Slimes, Skeletons, Crystal Golems, Shadows, Automatons, or
+                Tinkering Creations.
+              </li>
+              <li>Blood vials can be consumed to feed.</li>
+            </ul>
+
+            <table>
+              <tr>
+                <th>Event</th>
+                <td>Bleed Effect Left?</td>
+                <td>Chance</td>
+                <td>Note</td>
+              </tr>
+              <tr>
+                <th>Backstab / Flanking kill</th>
+                <td>N/A</td>
+                <td>100%</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <th>Killing blow with Bloodletting</th>
+                <td>N/A</td>
+                <td>100%</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>Killing blow</td>
+                <td>5+ seconds</td>
+                <td>50%</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>Killing blow</td>
+                <td>3-5 seconds</td>
+                <td>25%</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>Killing blow</td>
+                <td>0-3 seconds</td>
+                <td>12.5%</td>
+                <td>Not 0s</td>
+              </tr>
+              <tr>
+                <td>Killing blow</td>
+                <td>None</td>
+                <td>10%</td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td>Vampiric Curse/Aura</td>
+                <td>N/A</td>
+                <td>20%</td>
+                <td>Bonus vial</td>
+              </tr>
+            </table>
+
+            <p>Starts with the Vampiric Curse:</p>
+            <ul>
+              <li>+3 Strength</li>
+              <li>+3 Dexterity</li>
+              <li>
+                300% Hunger rate, losing 5 points every second. If hunger is
+                disabled, afflicted player takes damage over time.
+              </li>
+              <li>
+                The ring of slow digestion has no effect, but the Sweetgrass
+                Sprig does work.
+              </li>
+              <li>Chance to cause Bleed status with Unarmed attacks.</li>
+              <li>Chance to steal HP on Unarmed assassinations.</li>
+            </ul>
+            <p>
+              The curse can be cured at the Mystic Library. If a player has
+              selected the accursed class, it is guaranteed that a spellbook of
+              Vampiric Aura will appear in a chest.
+            </p>
+            <p>
+              This chest will have a particle effect emanating from it, being
+              the same red particle effect that the Accursed is associated with.
+            </p>
+            <p>
+              The Vampiric Aura will turn off the curse permanently by replacing
+              it. The Aura effects are silimar but more extreme than the
+              curse's:{" "}
+            </p>
+            <ul>
+              <li>
+                Percentage increase to Strength and Dexterity, instead of a flat
+                value.
+              </li>
+              <li>600% Hunger rate.</li>
+              <li>Lifesteal on hit instead of kill.</li>
+              <li>HP regen is disabled.</li>
+              <li>It costs 3 mana per second to maintain the Aura.</li>
+              <li>Can be toggled on and off at will.</li>
+            </ul>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Accursed Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Mesmer",
+    description:
+      "The Mesmer is a class in Barony that was initially introduced in the Myths & Outcasts DLC. It is associated with the Succubus race and comes with the unique Charm Monster spell, allowing the user to recruit monsters without Charm Staff and before learning Dominate. ",
+
+    information: [
+      { key: "HP", value: "25", image: HealthImage },
+      { key: "Survival", value: "✰✰✰" },
+      { key: "MP", value: "40", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-2", image: StrengthImage },
+      { key: "DEX", value: "-2", image: DexterityImage },
+      { key: "CON", value: "-3", image: ConstitutionImage },
+      { key: "INT", value: "2", image: IntelligenceImage },
+      { key: "PER", value: "2", image: PerceptionImage },
+      { key: "CHR", value: "4", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "60", image: LeadershipImage },
       { key: "Stealth", value: "0", image: StealthImage },
       { key: "Trading", value: "0", image: TradingImage },
       { key: "Blocking", value: "0", image: BlockingImage },
@@ -976,9 +1893,893 @@ export const classes: ClassData[] = [
       { key: "Unarmed", value: "0", image: UnarmedImage },
       { key: "Alchemy", value: "0", image: AlchemyImage },
       { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "25", image: SorceryImage },
+      { key: "Polearms", value: "20", image: PolearmsImage },
+      { key: "Mysticism", value: "60", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A captivating temptress.",
+    characterImage: MesmerImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              The Mesmer uses the Charm spell and leadership ability to enlist
+              powerful allies.{" "}
+            </p>
+            <p>
+              Mermers may only Charm one at a time, so they should be strategic
+              with recruiting.{" "}
+            </p>
+            <p>
+              Charmed allies get stronger with experience; Nurturing them can be
+              wise. The Charm spell is difficult to learn; Successful Mesmers
+              must practice other kinds of magic.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Excellent magicstaff of charm monster (+1)",
+                  "Serviceable apprentice's hood",
+                  "Serviceable silver cloak",
+                  "Flawless ring of protection (+2)",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "Serviceable magicstaff of cold",
+                  "2x Bubbly potion of restore magic",
+                  "3x Bubbly potion of confusion ",
+                  "Torn spellbook of charm monster",
+                ],
+              },
+              {
+                category: "Spells",
+                items: ["Compel"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>
+              The spellbook of charm monster and its Charm Monster spell are
+              native to the Mesmer.
+            </p>
+            <ul>
+              <li>
+                The spell can only be learned when reaching Mysticism V (level
+                80) skill tier.
+              </li>
+            </ul>
+            <p>
+              Much like the magicstaff of charm monster, the Charm Monster
+              spells:{" "}
+            </p>
+            <ul>
+              <li>
+                Attempts to charm a monster into an ally (success varies with
+                monster type).
+              </li>
+              <li>Inflicts Pacify if unable to charm.</li>
+              <li>+30% success chance on drunk or confused monsters.</li>
+              <li>+X% success chance, where X is your intelligence 2x.</li>
+              <li>
+                Additional chance based on your leadership skill and charisma
+                stat.
+              </li>
+              <li>Can charm drunk or confused humans.</li>
+              <li>Can only charm 1 entity at once.</li>
+            </ul>
+            <p>Like any other followers, the Mesmer's charmed monsters: </p>
+            <ul>
+              <li>Will NOT get EXP when other players kill the enemies.</li>
+              <li>
+                Will get individual bonus EXP if dealing the killing blow.
+              </li>
+            </ul>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Mesmer Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Brewer",
+    description:
+      "The Brewer is a class in Barony that was initially introduced in the Myths & Outcasts DLC. It is associated with the Goatmen race.",
+
+    information: [
+      { key: "HP", value: "40", image: HealthImage },
+      { key: "Survival", value: "✰✰" },
+      { key: "MP", value: "20", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-2", image: StrengthImage },
+      { key: "DEX", value: "1", image: DexterityImage },
+      { key: "CON", value: "-2", image: ConstitutionImage },
+      { key: "INT", value: "-2", image: IntelligenceImage },
+      { key: "PER", value: "1", image: PerceptionImage },
+      { key: "CHR", value: "1", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "25", image: LeadershipImage },
+      { key: "Stealth", value: "0", image: StealthImage },
+      { key: "Trading", value: "10", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "10", image: LoreImage },
+      { key: "Ranged", value: "0", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "25", image: UnarmedImage },
+      { key: "Alchemy", value: "50", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
       { key: "Sorcery", value: "0", image: SorceryImage },
       { key: "Polearms", value: "0", image: PolearmsImage },
       { key: "Mysticism", value: "0", image: MysticismImage },
+      { key: "Axes", value: "10", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A talented alchemist.",
+    characterImage: BrewerImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              A talented alchemist who is also comfortable with the
+              relationships and bar-room brawls that a good brew will
+              bring.{" "}
+            </p>
+            <p>
+              Successful Brewers make it a priority to collect, brew, and
+              duplicate potions to never run on short supply.{" "}
+            </p>
+            <p>
+              A backpack full of bottles allows the Brewer to adapt with short
+              notice.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "3x Serviceable empty bottle",
+                  "Worn iron boots",
+                  "Serviceable backpack",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "Excellent iron axe",
+                  "Torn copy of Bottle Book",
+                  "Excellent alembic",
+                  "Slightly-aged bread",
+                  "2x Bubbly potion of firestorm",
+                  "2x Bubbly potion of acid",
+                  "3x Bubbly bottle of booze",
+                  "2x Bubbly bottle of fruit juice ",
+                  "Bubbly potion of polymorph ",
+                  "2x Bubbly potion of blindness",
+                  "Bubbly potion of speed",
+                ],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>
+              Brewer begins the game with an alembic, which is otherwise not
+              guaranteed to obtain within a run. It allows early Alchemy.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Brewer Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Mechanist",
+    description:
+      "The Mechanist is a class in Barony that was initially introduced in the Legends & Pariahs DLC. It is associated with the Automaton race and excels in using the Tinkering Kit to turn useless items into scrap to create turrets, traps, and more. ",
+
+    information: [
+      { key: "HP", value: "25", image: HealthImage },
+      { key: "Survival", value: "✰✰" },
+      { key: "MP", value: "20", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-2", image: StrengthImage },
+      { key: "DEX", value: "0", image: DexterityImage },
+      { key: "CON", value: "-3", image: ConstitutionImage },
+      { key: "INT", value: "1", image: IntelligenceImage },
+      { key: "PER", value: "0", image: PerceptionImage },
+      { key: "CHR", value: "0", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "0", image: StealthImage },
+      { key: "Trading", value: "10", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "10", image: RangedImage },
+      { key: "Tinkering", value: "40", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "10", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "0", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A skilled craftsman.",
+    characterImage: MechanistImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              A skilled craftsman, the Mechanist uses a toolkit to make and
+              maintain mechanical weapons, letting contraptions do the dirty
+              work.
+            </p>
+            <p>
+              Successful Mechanists use foresight to plan ahead and are prepared
+              with the right tool for any problem.
+            </p>
+            <p>Those who rely on strength and speed may struggle. </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Excellent crossbow ",
+                  "Excellent leather apron",
+                  "Excellent tinkering kit",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "Excellent beartrap",
+                  "Excellent sleep trap ",
+                  "Excellent lockpick",
+                  "Serviceable empty bottle",
+                  "Simple dummybot",
+                  "Simple sentry bot",
+                  "Marked scroll of fire ",
+                  "x8 Decrepit magic scrap",
+                  "x16 Decrepit metal scrap",
+                ],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>
+              The Leather Apron is native to the mechanist, and gives the
+              following buff:{" "}
+            </p>
+            <ul>
+              <li>
+                Burning Resistance: grants immunity to the burning effect and
+                lava.
+              </li>
+            </ul>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Mechanist Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Punisher",
+    description:
+      "The Punisher is a class in Barony that was introduced in the Legends & Pariahs DLC. It is associated with the Incubus race and comes with the exclusive Whip weapon, Executioner Hood, and Inner Demon spell. ",
+
+    information: [
+      { key: "HP", value: "30", image: HealthImage },
+      { key: "Survival", value: "✰✰" },
+      { key: "MP", value: "30", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-1", image: StrengthImage },
+      { key: "DEX", value: "1", image: DexterityImage },
+      { key: "CON", value: "-1", image: ConstitutionImage },
+      { key: "INT", value: "-1", image: IntelligenceImage },
+      { key: "PER", value: "0", image: PerceptionImage },
+      { key: "CHR", value: "0", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "0", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "25", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "0", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "20", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "20", image: MysticismImage },
+      { key: "Axes", value: "25", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "A harbinger of pain and suffering.",
+    characterImage: PunisherImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              The Punisher picks unfair fights, toying with foes using dark
+              magic and a whip before making the execution, or releasing one's
+              inner demons to do the job.{" "}
+            </p>
+            <p>
+              Punishers are not durable and must maintain control in
+              combat.{" "}
+            </p>
+            <p>
+              Staying mobile is the key to exploiting their unique whip's longer
+              attack range.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: ["Worn whip", "Serviceable executioner hood"],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "Decrepit crystal axe",
+                  "Rough ring of conflict",
+                  "Fresh meat",
+                ],
+              },
+              {
+                category: "Spells",
+                items: ["Teleport Other", "Inner Demon"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>The Whip weapon is native to the punisher: </p>
+            <ul>
+              <li>Unbreakable ranged weapon with slower attacks.</li>
+              <li>+50% melee attack range.</li>
+              <li>Scales with STR/2 + DEX/2.</li>
+              <li>+100% disarm chance on immobile or disoriented foes</li>
+              <li>+33% disarm chance on drunk or confused foes</li>
+              <li>+100% bleed chance on disarming strikes</li>
+              <li>+20% bleed chance on backstab strikes</li>
+            </ul>
+            <p>The Inner Demon spell is unique to the punisher: </p>
+            <ul>
+              <li>Exorcises an inner demon that inflicts provoke.</li>
+              <li>Damage delt to the demon is returned to the attacker.</li>
+              <li>Spell consumes health equal to 10% of caster's max HP.</li>
+              <li>Demon's stats are based on caster's.</li>
+              <li>Only useable on each enemy once.</li>
+            </ul>
+            <p>
+              The Executioner Hood is native to the punisher, and gives the
+              following buff:{" "}
+            </p>
+            <ul>
+              <li>Grants MP regen when inflicting Bleed on foes.</li>
+            </ul>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Punisher Strategy</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Shaman",
+    description:
+      "The Shaman is a class in Barony that was initially introduced in the Legends & Pariahs DLC. It is associated with the Goblin race and possesses the unique ability to transform into different enemies in the dungeon, gaining their powers in the process. ",
+
+    information: [
+      { key: "HP", value: "35", image: HealthImage },
+      { key: "Survival", value: "✰✰" },
+      { key: "MP", value: "40", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-1", image: StrengthImage },
+      { key: "DEX", value: "0", image: DexterityImage },
+      { key: "CON", value: "0", image: ConstitutionImage },
+      { key: "INT", value: "2", image: IntelligenceImage },
+      { key: "PER", value: "1", image: PerceptionImage },
+      { key: "CHR", value: "1", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "10", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "0", image: LoreImage },
+      { key: "Ranged", value: "0", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "10", image: UnarmedImage },
+      { key: "Alchemy", value: "10", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "40", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription:
+      "The Shaman is a class in Barony that was initially introduced in the Legends & Pariahs DLC. It is associated with the Goblin race and possesses the unique ability to transform into different enemies in the dungeon, gaining their powers in the process. ",
+    characterImage: ShamanImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              The Shaman is a mystic whose connection to nature spirits allows
+              them to shapeshift into bestial forms.{" "}
+            </p>
+            <p>
+              Each form's talents provide diverse advantages in the
+              dungeon.{" "}
+            </p>
+            <p>
+              While transformed, Shamans make different friends, and can
+              tolerate different food. Being a beast will influence how the
+              Shaman grows.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Excellent magicstaff of poison ",
+                  "Serviceable shaman mask",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "Excellent Enchanted Feather ",
+                  "Worn bronze sword",
+                  "x3 Rough rock ",
+                ],
+              },
+              {
+                category: "Spells",
+                items: ["Rat Form", "Arthropod Form", "Troll Form", "Imp Form"],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>The shaman can Shapeshift into different forms: </p>
+            <ul>
+              <li>Rat form</li>
+              <li>
+                <ul>
+                  <li>
+                    x1.25 Dexterity, x1.25 Intelligence, and x1.25 Perception
+                    multipliers.
+                  </li>
+                  <li>
+                    Grants the spells: Detect Food, and Speed (at lvl. 3+).
+                  </li>
+                  <li>Can recruit Rats.</li>
+                </ul>
+              </li>
+
+              <li>Arthropod (Spider) form (at lvl. 3+)</li>
+              <li>
+                <ul>
+                  <li>
+                    x1.25 Strength, x1.25 Constitution, and x1.33 Perception
+                    multipliers.
+                  </li>
+                  <li>
+                    Grants the spells: Spray Web, and Poison (at lvl. 6+).
+                  </li>
+                  <li>Charged attacks have 25% chance to poison the target.</li>
+                  <li>Can recruit Arthropods, Scarabs and Scorpions.</li>
+                </ul>
+              </li>
+
+              <li>Troll form (at lvl. 6+)</li>
+              <li>
+                <ul>
+                  <li>
+                    x1.33 Strength, x0.67 Dexterity, x1.33 Constitution
+                    multipliers.
+                  </li>
+                  <li>
+                    Grants the spells: Power Strike, Troll's Blood (at lvl.
+                    12+), and Fear (at lvl. 15+).
+                  </li>
+                  <li>
+                    Power Strike: Charge a melee strike dealing 4x ATK damage.
+                    This attack can dig boulders and walls on impact.
+                  </li>
+                  <li>Can recruit Trolls. Gnomes are neutral.</li>
+                </ul>
+              </li>
+
+              <li>Imp form (at lvl. 12+)</li>
+              <li>
+                <ul>
+                  <li>x1.33 Intelligence, x1.25 Perception multipliers.</li>
+                  <li>Has Levitation.</li>
+                  <li>
+                    Grants the spells: Lightning, Confuse, and Elemental Focus
+                    (at lvl. 15+).
+                  </li>
+                  <li>
+                    Can hold magicstaffs and use spellbooks to cast spells.
+                  </li>
+                  <li>Can recruit Imps.</li>
+                </ul>
+              </li>
+            </ul>
+
+            <p>While shapeshifted:</p>
+            <ul>
+              <li>
+                The player can cast spells, but won't be able to use most items.
+              </li>
+              <li>
+                The Revert Form spell is granted to remove any
+                shapeshifted/polymorphed effect at will.
+              </li>
+              <li>
+                Equipments do NOT provide armor, but their bonus effects stay.
+              </li>
+              <li>
+                Leveling up will give different stat ups according to the form's
+                stat weights.
+              </li>
+            </ul>
+            <p>
+              The Shaman Mask is native to the shaman, and gives the following
+              buff:{" "}
+            </p>
+            <ul>
+              <li>+1 MP regen while shapeshifted.</li>
+            </ul>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Shaman Strategy.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Hunter",
+    description:
+      "The Hunter is a class in Barony that specializes in ranged and was introduced in the Legends & Pariahs DLC. It is associated with the Insectoid race and comes with a variety of ranged tools and the exclusive Boomerang weapon to keep the opponents at bay. ",
+
+    information: [
+      { key: "HP", value: "20", image: HealthImage },
+      { key: "Survival", value: "✰✰" },
+      { key: "MP", value: "20", image: MagickaImage },
+      { key: "Complexity", value: "✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-3", image: StrengthImage },
+      { key: "DEX", value: "1", image: DexterityImage },
+      { key: "CON", value: "-1", image: ConstitutionImage },
+      { key: "INT", value: "-3", image: IntelligenceImage },
+      { key: "PER", value: "3", image: PerceptionImage },
+      { key: "CHR", value: "0", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "0", image: LeadershipImage },
+      { key: "Stealth", value: "25", image: StealthImage },
+      { key: "Trading", value: "0", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "20", image: LoreImage },
+      { key: "Ranged", value: "50", image: RangedImage },
+      { key: "Tinkering", value: "10", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "0", image: AlchemyImage },
+      { key: "Swords", value: "0", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "0", image: MysticismImage },
+      { key: "Axes", value: "0", image: AxesImage },
+      { key: "Thauma", value: "0", image: ThaumaImage },
+      { key: "Maces", value: "0", image: MacesImage },
+    ],
+    characterImageDescription: "An astute tracker.",
+    characterImage: HunterImage,
+
+    classSections: [
+      {
+        sectionName: "Class Info",
+        sectionContent: (
+          <>
+            <p>
+              Equipped to track and bring foes down from afar, the Hunter uses
+              special arrows and a magic boomerang to ensure they never have to
+              toe-to-toe.{" "}
+            </p>
+            <p>Hunters are frail and must avoid being backed into a corner. </p>
+            <p>
+              Staying hidden and using ammo wisely is the key to their survival.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <JsonArrayList
+            data={[
+              {
+                category: "Equipped",
+                items: [
+                  "Excellent longbow",
+                  "Excellent leather boots",
+                  "Worn iron bracers",
+                  "Flawed amulet of poison resistance",
+                ],
+              },
+              {
+                category: "Inventory",
+                items: [
+                  "Excellent blindfold of telepathy",
+                  "Decrepit boomerang",
+                  "x40 Serviceable quiver of silver ammo",
+                  "x40 Serviceable quiver of swift ammo",
+                  "x20 Serviceable quiver of hunting ammo",
+                  "x2 Bubbly potion of speed",
+                  "x2 Brand-new scroll of conjure arrow",
+                  "Fresh meat",
+                  "Fresh fish",
+                ],
+              },
+              {
+                category: "Monster Races",
+                items: [
+                  "x2 Bubbly potion of polymorph",
+                  "(Goatman Only) x3 Bubbly bottle of booze",
+                ],
+              },
+            ]}
+          />
+        ),
+      },
+
+      {
+        sectionName: "Native Mechanics",
+        sectionContent: (
+          <>
+            <p>The Boomerang is native to the hunter: </p>
+            <ul>
+              <li>
+                Unbreakable throw weapon that always comes back to the player.
+              </li>
+              <li>
+                Changing floors while the boomerang is coming back is safe, the
+                boomerang will return to the player's inventory.
+              </li>
+            </ul>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Strategy",
+        sectionContent: (
+          <>
+            <p>Hunter Strategy.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Bard",
+    description:
+      "The Bard is a class in Barony that was initially introduced in the Deserters & Disciples DLC. It is associated with the Gnome race. Bards play multiple instruments which apply extraordinary buffs to themselves and allies scaling with level. Their class-unique Rapier allows the Bard to implement a mix of offence and defense by combining parrying with Alter Instrument, preparing themselves for a variety of situations within the dungeon. ",
+
+    information: [
+      { key: "HP", value: "25", image: HealthImage },
+      { key: "Survival", value: "✰✰✰" },
+      { key: "MP", value: "35", image: MagickaImage },
+      { key: "Complexity", value: "✰✰✰" },
+    ],
+    stats: [
+      { key: "STR", value: "-2", image: StrengthImage },
+      { key: "DEX", value: "1", image: DexterityImage },
+      { key: "CON", value: "-2", image: ConstitutionImage },
+      { key: "INT", value: "0", image: IntelligenceImage },
+      { key: "PER", value: "0", image: PerceptionImage },
+      { key: "CHR", value: "3", image: CharismaImage },
+    ],
+    skills: [
+      { key: "Leadership", value: "15", image: LeadershipImage },
+      { key: "Stealth", value: "15", image: StealthImage },
+      { key: "Trading", value: "15", image: TradingImage },
+      { key: "Blocking", value: "0", image: BlockingImage },
+      { key: "Lore", value: "50", image: LoreImage },
+      { key: "Ranged", value: "0", image: RangedImage },
+      { key: "Tinkering", value: "0", image: TinkeringImage },
+      { key: "Unarmed", value: "0", image: UnarmedImage },
+      { key: "Alchemy", value: "0", image: AlchemyImage },
+      { key: "Swords", value: "20", image: SwordsImage },
+      { key: "Sorcery", value: "0", image: SorceryImage },
+      { key: "Polearms", value: "0", image: PolearmsImage },
+      { key: "Mysticism", value: "15", image: MysticismImage },
       { key: "Axes", value: "0", image: AxesImage },
       { key: "Thauma", value: "0", image: ThaumaImage },
       { key: "Maces", value: "0", image: MacesImage },
