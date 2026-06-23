@@ -1015,29 +1015,151 @@ export const races: RaceData[] = [
   },
 
   {
-    id: "",
+    id: "Salamander",
 
     raceFeatures: [
       {
-        category: "Traits",
-        items: [""],
+        category: "Innate Spells",
+        items: ["Breathe Fire"],
       },
-      { category: "Resistances", items: [""] },
-      { category: "Weaknesses", items: [""] },
-      { category: "Friendly With", items: [""] },
+      {
+        category: "Traits",
+        items: [
+          "Uses Fervor (FR) to cast spells",
+          "Regens up to 50% FR naturally",
+          "Gaining XP increases FR",
+          "Turns Radiant Form using Breathe Fire at 75%+ FR, form runs out at 60% FR",
+          "Turns into Stone Form at 25%- FR",
+          "Charisma buffs forms and FR gain",
+          "+35% Hungrier",
+          "Welcomed by Shopkeepers",
+        ],
+      },
+      {
+        category: "Resistances",
+        items: ["Swords (20%)", "Unarmed (10%)", "Fire"],
+      },
+      { category: "Weaknesses", items: ["Polearms (20%)", "Ranged (10%)"] },
+      {
+        category: "Friendly With",
+        items: ["Salamanders", "Automatons", "Humans (Neutral)"],
+      },
     ],
-    characterImageDescription: "",
-    characterImage: HumanImage,
+    characterImageDescription:
+      "A Salamander as its signature class, the Paladin",
+    characterImage: SalamanderImage,
 
     raceSections: [
       {
         sectionName: "",
-        sectionContent: <></>,
+        sectionContent: (
+          <>
+            <p>
+              Salamanders are a race option in Barony, introduced in the
+              Deserters & Disciples DLC alongside four other races.{" "}
+            </p>
+          </>
+        ),
       },
 
       {
         sectionName: "Description",
-        sectionContent: <></>,
+        sectionContent: (
+          <>
+            <p>
+              Salamanders manage their unique resource called Fervor (FR) to
+              transform into alternate forms that benefit them. Salamanders can
+              also use their innate spell Breathe Fire to apply a stacking
+              debuff to enemies (Divine Fire) that will make them more
+              vulnerable to damage. Being at 25% or less on FR will transform
+              Salamanders into Stone Form granting temporary invulnerability and
+              extra AC at the cost of speed. At 75%+ FR casting Breathe Fire
+              will transform Salamanders into Radiant Form, granting them spell
+              PWR, free spells for a brief period, and Levitation at the cost of
+              reduced CON. CHR will also buff your forms and FR gain. All this
+              versatility however comes at the cost of being 35% hungrier.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Fervor",
+        sectionContent: (
+          <>
+            <p>
+              The Salamander Race has a unique resource called Fervor (FR)
+              instead of MP. Salamanders can passively regenerate (RGN) FR up to
+              50% of their maximum FR just like ordinary MP. Once FR is at least
+              50% full, RGN will stop. Salamanders can also gain FR in a few
+              different ways.
+            </p>
+            <ul>
+              <li>
+                Casting Breathe Fire on monsters. When a flame particle from
+                fire breath hits an enemy, the Salamander responsible for the
+                fire restores FR equal to 1 + (X / 4), where X is the number of
+                divine fire stacks on the monster.
+              </li>
+              <li>
+                Slaying monsters. When a Salamander gains EXP from a monster's
+                death, they restore FR equal to 2% max FR + (CHR / 10) + enemy
+                divine fire stacks. This restores a minimum of 1 FR.
+              </li>
+              <li>
+                Skill Training. When a Salamander gains a skill point, they
+                restore FR equal to 2% max FR + (CHR / 10). This restores a
+                minimum of 1 FR.
+              </li>
+            </ul>
+
+            <table>
+              <tr>
+                <td>Heart Status</td>
+                <td>FR%</td>
+                <td>Effect</td>
+              </tr>
+
+              <tr>
+                <td>Radiant Heart</td>
+                <td>75%+ FR</td>
+                <td>
+                  Gain Levitation, +25% Fire Resistance, +PWR/-CON from CHR
+                  Drain 2% max FR every 3 seconds
+                </td>
+              </tr>
+
+              <tr>
+                <td>Normal Heart</td>
+                <td>40-60% FR</td>
+                <td>Dissipates, returning you to normal</td>
+              </tr>
+
+              <tr>
+                <td>Stone Heart</td>
+                <td>0-25%</td>
+                <td>
+                  Immune to Physical Damage, +STR/CON from CHR, -DEX from CHR
+                </td>
+              </tr>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Social Standings",
+        sectionContent: (
+          <>
+            <p>Salamanders are friendly with other Salamanders. </p>
+            <p>
+              Salamanders are neutral towards humans, meaning they can trade
+              with Shopkeepers and not be attacked on sight. Humans will behave
+              neutrally towards Salamander players, meaning they cannot be
+              recruited and will be disinterested when seeing the player.{" "}
+            </p>
+          </>
+        ),
       },
     ],
   },
