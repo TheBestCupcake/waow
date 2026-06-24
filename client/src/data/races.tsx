@@ -1015,6 +1015,1264 @@ export const races: RaceData[] = [
   },
 
   {
+    id: "Incubus",
+
+    raceFeatures: [
+      {
+        category: "Innate Spells",
+        items: ["Teleport", "Arcane Mark"],
+      },
+      {
+        category: "Traits",
+        items: [
+          "Cursed equipment can be removed; gives bonuses",
+          "Blessed equipment is not removable; gives bonuses",
+          "Can learn spells from cursed Spellbooks",
+          "+MP from Strangulation",
+        ],
+      },
+      { category: "Resistances", items: ["Polearms (30%)", "Magic (20%)"] },
+      {
+        category: "Weaknesses",
+        items: ["Ranged (30%)", "Swords (20%)", "Smite"],
+      },
+      { category: "Friendly With", items: ["Succubi", "Incubi", "Automatons"] },
+    ],
+    characterImageDescription:
+      "An Incubus as its signature class, the Punisher",
+    characterImage: IncubusImage,
+
+    raceSections: [
+      {
+        sectionName: "",
+        sectionContent: (
+          <>
+            <p>
+              Incubus are a monster race option in Barony, introduced in the
+              Legends and Pariahs DLC alongside three other monster races. They
+              follow a similar pattern to their female counterparts, the
+              Succubus, using curses as blessings and several innate spells
+              which allow them to terrorize single targets.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Incubus follow a lot of the same beats as their close relatives,
+              the Succubus, being granted a lot of similar abilities and quirks,
+              while still putting a few different tricks to keep each other
+              different to how they approach enemies and use their spells.
+            </p>
+            <p>
+              Like Succubus, Incubus treat blessed items as cursed, still being
+              granted bonuses to AC or damage but unable to remove those items
+              once worn. Cursed items now provide bonuses to AC and damage, as
+              well as being able to be removed from the player at will. To
+              counteract blessed items from sticking, the player should either
+              use Potions of Polymorph to remove them as a human, or used cursed
+              bottles of water, which are found randomly through the dungeon, or
+              brewed up by cursed alembics.
+            </p>
+            <p>
+              Innate spells is where the Incubus breaks away from their female
+              counterpart. As expected, they start with the Teleport spell for
+              quick and chaotic escape. However, Incubus are presented with an
+              exclusive spell: Arcane Mark. This spell allows the player to mark
+              a single target, highlighting it on the map and nullifying any of
+              its resistances to damage types. Having a marked target will also
+              augment the Teleportation, reducing its mana cost by half and
+              directly teleporting behind the marked target.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Social Standings",
+        sectionContent: (
+          <>
+            <p>
+              Areas such as the Caves or the Citadel have Incubus wandering the
+              floors naturally. Plus, Bram's Castle is home to three powerful
+              Succubus found inside the second floor of that area, whom cast
+              bolts of bloodletting.{" "}
+            </p>
+            <p>
+              Since Incubus are a monster race, they are naturally targeted by
+              both Humans and Shopkeepers, requiring a fight or a quick escape
+              if they see the player.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Trivia",
+        sectionContent: (
+          <>
+            <p>Incubus can only be selected as a male character.</p>
+            <p>
+              Attempting to toggle to Female will instead change to the Succubus
+              if the player also owns the Myths and Outcasts DLC.
+            </p>
+            <p>
+              Attempting to toggle without the DLC will instead merely select
+              the Human female.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Goblin",
+
+    raceFeatures: [
+      {
+        category: "Traits",
+        items: [
+          "Worn Equipment has lower change to degrade",
+          "Raising any Melee Weapon Skill raises all of them",
+          "Weapon Skills raise slower",
+          "Cannot Memorize new spells",
+        ],
+      },
+      { category: "Resistances", items: ["Unarmed (20%)", "Swords (10%)"] },
+      {
+        category: "Weaknesses",
+        items: ["Axes (10%)", "Polearms (10%)", "Ranged (10%)"],
+      },
+      { category: "Friendly With", items: ["Goblins", "Automatons"] },
+    ],
+    characterImageDescription: "A goblin as its signature class, the Shaman",
+    characterImage: GoblinImage,
+
+    raceSections: [
+      {
+        sectionName: "",
+        sectionContent: (
+          <>
+            <p>
+              Goblins are a monster race option in Barony, introduced in the
+              Legends and Pariahs DLC alongside three other monster races. They
+              take pride their physical prowess, utilizing items for longer
+              before degradation, as well as attributing weapon proficiency to
+              all types of weapons.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              The Goblin's traits allow the race to be effective paired with any
+              class. When a Goblin increases their proficiency of any melee
+              weapon, all melee weapon proficiencies will increase. While this
+              perk is balanced by an overall slower gain of points, it allows a
+              Goblin to be able to more freely swap between weapon types on a
+              whim to benefit from the various perks that weapon proficiency
+              provides without sacrificing any potential points, as well as
+              gaining 10 experience instead of 2 when their melee skills
+              improve.
+            </p>
+            <p>
+              Goblins also have a lower chance to have their items degrade. This
+              includes any armor, weapons, and offhand items like shields or
+              spellbooks.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Weapon Degradation",
+        sectionContent: (
+          <>
+            <table>
+              <tr>
+                <th>Item Type</th>
+                <th>Normal degrade chance</th>
+                <th>Goblin degrade chance</th>
+              </tr>
+              <tr>
+                <td>Spellbook</td>
+                <td>1/8</td>
+                <td>1/16</td>
+              </tr>
+              <tr>
+                <td>Bow</td>
+                <td>1/50</td>
+                <td>1/70</td>
+              </tr>
+              <tr>
+                <td>Melee Weapon</td>
+                <td>1/50</td>
+                <td>1/70</td>
+              </tr>
+              <tr>
+                <td>Crystal Weapon</td>
+                <td>1/40</td>
+                <td>1/70</td>
+              </tr>
+              <tr>
+                <td>Fist Weapons</td>
+                <td>1/8</td>
+                <td>1/12</td>
+              </tr>
+              <tr>
+                <td>Armor</td>
+                <td>1/25</td>
+                <td>1/35</td>
+              </tr>
+              <tr>
+                <td>Crystal Armor</td>
+                <td>1/15</td>
+                <td>1/25</td>
+              </tr>
+              <tr>
+                <td>Shields</td>
+                <td>1/10</td>
+                <td>1/20</td>
+              </tr>
+              <tr>
+                <td>Pickaxe</td>
+                <td>1/2</td>
+                <td>1/4</td>
+              </tr>
+            </table>
+
+            <table>
+              <tr>
+                <th>Action</th>
+                <th>Normal skill chance</th>
+                <th>Goblin skill chance</th>
+              </tr>
+              <tr>
+                <td>Non-lethal hit</td>
+                <td>1/10</td>
+                <td>1/14</td>
+              </tr>
+              <tr>
+                <td>Lethal hit</td>
+                <td>1/8</td>
+                <td>1/12</td>
+              </tr>
+              <tr>
+                <td>Crystal weapon hit</td>
+                <td>1/6</td>
+                <td>1/10</td>
+              </tr>
+            </table>
+
+            <p>
+              Goblins are unable to read and memorize spells from spellbooks.
+              They are still able to memorize spells learned innately from your
+              class. This can make inventory management more difficult for a
+              Goblin, however their doubled spellbook durability allows them to
+              be very effective casters.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Social Standings",
+        sectionContent: (
+          <>
+            <p>
+              The Swamp is predominated by Goblins, meaning a Goblin player can
+              easily recruit a full party before proceeding further into the
+              dungeon. Past that point, goblins are scantily featured in the
+              Sand Labyrinth and the Ruins, meaning a player should be ready to
+              begin recruiting Automatons when proceeding past Baron Herx.{" "}
+            </p>
+            <p>
+              Since Goblins are a monster race, they are naturally targeted by
+              both Humans and Shopkeepers, requiring a fight or a quick escape
+              if they see the player.{" "}
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Insectoid",
+
+    raceFeatures: [
+      {
+        category: "Innate Spells",
+        items: ["Flutter", "Dash", "Spray Acid"],
+      },
+      {
+        category: "Traits",
+        items: [
+          "Requires Energy (EN) to survive and cast spells",
+          "Regain EN by consuming food and sweet liquids",
+          "Immune to Poison",
+          "Immune to rotten food",
+        ],
+      },
+      { category: "Resistances", items: ["Maces (30%)", "Unarmed (20%)"] },
+      {
+        category: "Weaknesses",
+        items: ["Axes (30%)", "Polearms (30%)", "Ranged (10%)"],
+      },
+      {
+        category: "Friendly With",
+        items: ["Insectoids", "Scarabs", "Scorpions", "Automatons"],
+      },
+    ],
+    characterImageDescription:
+      "An insectoid as its signature class, the Hunter",
+    characterImage: InsectoidImage,
+
+    raceSections: [
+      {
+        sectionName: "",
+        sectionContent: (
+          <>
+            <p>
+              Insectoids are a monster race option in Barony, introduced in the
+              Legends and Pariahs DLC alongside three other monster races. It
+              enables the player to use an alternative form of mana in Energy,
+              allowing them to use a widened variety of food options to fuel
+              their spells, or to just keep a more detailed eye on their
+              hunger.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Insectoids are characterized by their alternative to mana, that
+              being Energy (EN), which is tied directly to the player's current
+              level of hunger. When the player feeds, their hunger becomes
+              placated and any missing Energy is restored. To compliment this
+              system, Insectoids can also dine on any edible food item,
+              regardless if it is cursed or has a poor quality associated with
+              it.
+            </p>
+            <p>
+              Insectoids begin their games with three innate spells. Flutter
+              enables Insectoids to fly over gaps, Dash thrusts the player in
+              the direction they are moving and Spray Acid to round out the
+              spell set. These spells enable Insectoids to have short-span
+              Levitation. Thus, poor level layouts that would otherwise restrict
+              the player from entering The Gnomish Mines are circumvented, as
+              well as other difficult areas to traverse such as the Underworld
+              or The Mystic Library are far more accessible.
+            </p>
+            <p>
+              Given the interactions between certain items and mana restoration,
+              the Insectoid has some interesting behavior when consuming "sweet
+              liquids", which includes potions such as bottles of booze, bottles
+              of fruit juice, and potions of mana restoration. Consuming any of
+              these will result in an extra portion of Energy being restored.
+            </p>
+            <p>
+              Insectoids are also immune to poison, which means being struck
+              with hunting arrows from arrow traps or enemies, drinking cursed
+              potions of healing, or battling it out with Spiders are all much
+              less punishing to the player. It effectively equips a passive
+              amulet of poison resistance, opening up that slot for other more
+              powerful amulets.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Energy and Hunger",
+        sectionContent: (
+          <>
+            <p>
+              Insectoids have their Hunger and Mana values conjoined in the form
+              of Energy (EN). Mana potions restore both hunger and Energy. When
+              an insectoid casts a spell or loses mana for some other reason,
+              their food level is also reduced. Insectoids have different
+              thresholds for their various hunger levels as described below.
+            </p>
+
+            <table>
+              <caption>
+                Alternate food level values for Insectoid Characters
+              </caption>
+              <tr>
+                <th>Property</th>
+                <th>Oversatiated</th>
+                <th>Normal</th>
+                <th>Hungry</th>
+                <th>Weak</th>
+                <th>Starving</th>
+              </tr>
+              <tr>
+                <td>Food</td>
+                <td>N/A</td>
+                <td>1000</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>EN</td>
+                <td>N/A</td>
+                <td>100</td>
+                <td>5</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>EN (hunger disabled)</td>
+                <td>N/A</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>10</td>
+              </tr>
+            </table>
+
+            <p>
+              To somewhat compensate for the lowered food ceiling, insectoids
+              enjoy an innate 0.67x multiplier to the rate at which their energy
+              and food level declines. This multiplier stacks with other effects
+              that slow hunger.
+            </p>
+            <p>
+              Insectoids consume the same sources of food that other normal
+              races consume. This comes with the added bonus of ignoring food
+              qualities all together, as well as gaining bonuses from consuming
+              "sweet liquids", including fruit juice, restore magic potions and
+              booze.
+            </p>
+            <p>
+              Overeating or drinking too much booze will cause the Insectoid to
+              vomit, resulting in a "projectile acid". Projectile acid equates
+              to casting spray acid, except it does not consume any Energy.
+            </p>
+            <p>
+              Various EN values for different food sources are listed below.
+              Note that these values scale with the player's max EN (up to 100):
+            </p>
+
+            <table>
+              <tr>
+                <td>Food Name</td>
+                <td>Hunger/EN Value restored (at EN 100)</td>
+              </tr>
+              <tr>
+                <td>Cheese</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Ration</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Apple</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Cream Pie</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Tomalley</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>Bread</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>Fish</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Meat</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>Tin</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>Fruit Juice</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Booze</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>Restore Magic</td>
+                <td>Mana restored</td>
+              </tr>
+              <tr>
+                <td>Blood vial (Accursed only)</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Backstab (Accursed only)</td>
+                <td>10</td>
+              </tr>
+            </table>
+
+            <b>Hunger Timer</b>
+            <p>
+              The time it takes to lose 1 EN can vary with the MAX amount of EN
+              you have, 20 EN taking the longest to lose 1 EN, but also getting
+              less EN from food.
+            </p>
+            <p>
+              Ring of Slow Digestion and Sweet Spring can help slow down the
+              hunger, and unlike the ring, Sweet Spring can be blessed to a max
+              of 3 times to slow down even more the hunger, here are the values
+              for 50 EN:
+            </p>
+
+            <table>
+              <caption>Hunger Timer to lose 1 EN</caption>
+              <tr>
+                <th></th>
+                <th>Base</th>
+                <th>Ring</th>
+                <th>Sweetgrass Sprig</th>
+                <th>Sprig +1</th>
+                <th>Sprig +2</th>
+                <th>Sprig +3</th>
+              </tr>
+              <tr>
+                <td>Seconds</td>
+                <td>18s</td>
+                <td>72s</td>
+                <td>22.4s</td>
+                <td>26.8s</td>
+                <td>31.2s</td>
+                <td>36s</td>
+              </tr>
+              <tr>
+                <td>Multiplier</td>
+                <td>1x</td>
+                <td>4x</td>
+                <td>1.24x</td>
+                <td>1.48x</td>
+                <td>1.74x</td>
+                <td>2x</td>
+              </tr>
+              <tr>
+                <th>Ring + Sprig</th>
+                <th>X</th>
+                <th>X</th>
+                <th>Sweetgrass Sprig</th>
+                <th>Sprig +1</th>
+                <th>Sprig +2</th>
+                <th>Sprig +3</th>
+              </tr>
+              <tr>
+                <td>Seconds</td>
+                <td>X</td>
+                <td>X</td>
+                <td>90s</td>
+                <td>108s</td>
+                <td>126s</td>
+                <td>144s</td>
+              </tr>
+              <tr>
+                <td>Multiplier</td>
+                <td>X</td>
+                <td>X</td>
+                <td>5x</td>
+                <td>6x</td>
+                <td>7x</td>
+                <td>8x</td>
+              </tr>
+            </table>
+
+            <b>Energy with Disabled Hunger</b>
+            <p>
+              When hunger is disabled, insectoids experience stat debuffs
+              related to their mana level instead of their hunger level, and the
+              penalties are more severe than normal. At 2/5 of their maximum
+              mana, their dexterity and perception are reduced by one and then
+              by an additional 25% of the remaining value. At the 1/5 of maximum
+              mana, their dexterity and perception are reduced by two and then
+              by an additional 50% of the remaining value.
+            </p>
+            <b>Notes</b>
+            <p>
+              If the player somehow manages to get their food and mana levels
+              out of sync behind the scenes (by restoring energy while enabling
+              / disabling hunger in a game), the character can end up starving
+              when their mana is above zero, or even full. To fix this, the
+              character must find a way to restore their food level to full,
+              regardless of what their mana level is.
+            </p>
+            <b>Insectoid Accursed</b>
+            <p>
+              If the Player choose to play as the Accursed Class, the player
+              will be able to gain EN by drinking (and dropping) blood vials and
+              by backstab kills.
+            </p>
+            <p>
+              To compensate for the new ways you have of feeding and gaining EN,
+              your EN drains 3 times faster. Despite that, the new ways of
+              feeding and being able to eat anything can negate that debuff
+              pretty easily.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Social Standings",
+        sectionContent: (
+          <>
+            <p>
+              Compared to other races, Insectoids have a very odd curve to how
+              many allies they can accrue through the dungeon, being able to
+              ally with other Insectoids, Scorpions and Scarabs. This means
+              traveling through the Sand Labyrinth is far less of a hassle in
+              the normal levels, but also punishes players who do not enable
+              friendly fire by excluding them from so much experience.
+            </p>
+            <p>
+              The large variety of affiliate characters also allows for several
+              areas of the dungeon to provide some potential party members for
+              the player, notably in the Sand Labyrinth as well as the Caves
+              with Scarabs and Insectoids and wandering the two locations.
+            </p>
+            <p>
+              Since Insectoids are a monster race, they are targeted by both
+              Humans and Shopkeepers, requiring a fight or a quick escape if
+              they see the player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Gnome",
+
+    raceFeatures: [
+      {
+        category: "Traits",
+        items: [
+          "Sense gold (when Blind)",
+          "Increased MP Regen from hoarding gold",
+          "Improved Pickaxe combat",
+          "20% reduced STR growth",
+          "Recruits with forged Jewels",
+          "Gets extra gold from breakables",
+          "Welcomed by Shopkeepers",
+        ],
+      },
+      { category: "Resistances", items: ["Polearms (10%)", "Swords (10%)"] },
+      { category: "Weaknesses", items: ["Magic (10%)", "Ranged (10%)"] },
+      {
+        category: "Friendly With",
+        items: ["Automatons", "Trolls (Neutral)", "Humans (neutral)"],
+      },
+    ],
+    characterImageDescription: "A Gnome as its signature class, the Bard",
+    characterImage: GnomeImage,
+
+    raceSections: [
+      {
+        sectionName: "",
+        sectionContent: (
+          <>
+            <p>
+              Gnomes are a race option in Barony, introduced in the Deserters &
+              Disciples DLC alongside four other races.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Gnomes increase their mana regeneration by stockpiling large
+              reserves of gold. The value of items in your inventory does not
+              affect the Wealth buff, only gold in your purse. Gnomes are
+              well-versed in pickaxe combat, inflicting bonus knockback and
+              never degrading when hitting enemies, as well as dealing bonus
+              damage to breakable objects. Gnomes see where loose gold and item
+              boxes containing gold are when afflicted with Blindness, and
+              receive twice as much gold from breakables.
+            </p>
+
+            <table>
+              <caption>Effects of Wealth</caption>
+              <tr>
+                <td>Gold Hoarded</td>
+                <td>MP Regen</td>
+              </tr>
+              <tr>
+                <td>100</td>
+                <td>+10% Change: +1 mp while regenerating MP</td>
+              </tr>
+              <tr>
+                <td>1000</td>
+                <td>+20% Change: +1 mp while regenerating MP</td>
+              </tr>
+              <tr>
+                <td>5000</td>
+                <td>+30% Change: +1 mp while regenerating MP</td>
+              </tr>
+              <tr>
+                <td>20000</td>
+                <td>+40% Change: +1 mp while regenerating MP</td>
+              </tr>
+            </table>
+
+            <p>
+              Gnomes start with the unique spell Forge Jewel innately learned.
+              Using Forge Jewel on gems or worthless glass will let you spend
+              gold to upgrade them into jewels. The cost of this Mysticism spell
+              scales with your PWR. At a base PWR of 100 you will pay double the
+              difference in value between the gem and jewel, lowering by 2% for
+              every PWR. At 150 or more PWR the cost is equal to the price
+              difference, allowing you to compact gems into fewer inventory
+              slots without losing any money. Gems worth 2,000 or more gold will
+              become a jewel worth 2,000 gold, as that is the highest tier.
+            </p>
+            <p>
+              Jewels can be sold to shopkeepers or thrown at humanoids to
+              recruit them. This includes Gnome, Goblin, Human, Gremlin,
+              Succubus, Goatman, Kobold, Insectoid, Dryad, Myconid, Bugbear,
+              Incubus, Vampire, Salamander, and the rare variants of them such
+              as Potato King or the ZAP Brigade. The ability to recruit
+              followers is based on the area you're in, not the person you are
+              trying to recruit.
+            </p>
+
+            <table>
+              <caption>Jewel tiers</caption>
+              <tr>
+                <th>Price</th>
+                <th>Depth limit</th>
+              </tr>
+              <tr>
+                <td>250</td>
+                <td>Mines</td>
+              </tr>
+              <tr>
+                <td>500</td>
+                <td>Swamp</td>
+              </tr>
+              <tr>
+                <td>1000</td>
+                <td>Labyrinth</td>
+              </tr>
+              <tr>
+                <td>2000</td>
+                <td>Anywhere</td>
+              </tr>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Social Standings",
+        sectionContent: (
+          <>
+            <p>
+              Gnomes are neutral towards humans and trolls, meaning they can
+              trade with Shopkeepers and not be attacked on sight. Humans and
+              trolls will behave neutrally towards Gnome players, meaning they
+              cannot be recruited and will be disinterested when seeing the
+              player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Gremlin",
+
+    raceFeatures: [
+      {
+        category: "Innate Spells",
+        items: ["Deface"],
+      },
+      {
+        category: "Traits",
+        items: [
+          "Adept at breaking objects, granting speed, mana regen, and melee damage as more are broken",
+          "Evasive when Slippery",
+          "Improved Sneak Vision",
+          "20% reduced CON growth",
+        ],
+      },
+      {
+        category: "Resistances",
+        items: [
+          "Polearms (20%)",
+          "Magic (20%)",
+          "Ranged (10%)",
+          "Unarmed (10%)",
+          "Maces (10%)",
+        ],
+      },
+      { category: "Weaknesses", items: ["Swords (30%)", "Axes (10%)"] },
+      { category: "Friendly With", items: ["Gremlins", "Goblins (neutral)"] },
+    ],
+    characterImageDescription: "A Gremlin as its signature class, the Sapper",
+    characterImage: GremlinImage,
+
+    raceSections: [
+      {
+        sectionName: "",
+        sectionContent: (
+          <>
+            <p>
+              Gremlins are a monster race option in Barony, introduced in the
+              Deserters & Disciples DLC alongside four other races.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Gremlins slowly build up stacks of Vandal as they cause
+              destruction in a floor, staying permanently until descending to
+              the next floor which resets it back to tier 0. Gremlins accumulate
+              Vandal stacks by destroying chairs, tables, beds, chests, doors,
+              crumbling walls, equipment worn by enemies, defaced objects,
+              Automaton, Crystal Golems, Mimics, and item boxes such as crates,
+              carts, and tree stumps.
+            </p>
+            <p>
+              Gremlins start with the unique spell Deface innately learned. It
+              can be cast on sinks, graves, cauldrons, and workbenches to
+              destroy them. Destroying sinks can yield grease balls, slop balls,
+              potions of sickness, metal or magic scrap, or hostile slimes.
+              Destroying graves can yield clothing, meat, hostile ghouls, or
+              hostile shadows.
+            </p>
+            <p>
+              Destroying workbenches can yield metal or magic scrap, skeleton
+              keys, lockpicks, quivers of springshot ammo, noisemakers and blank
+              scrolls, while defacing cauldrons can yield grease and slop balls,
+              torches, rations, various potions, wooden shields and luckstones.
+            </p>
+            <p>
+              Additionally, Gremlins gain 20% Evasion while afflicted with the
+              status Slippery and Improved Sneak Vision.
+            </p>
+            <p>
+              Gremlins are short, and therefore cannot see through doors and
+              suffer 20% reduced CON growth.
+            </p>
+
+            <table>
+              <caption>Vandal effects</caption>
+              <tbody>
+                <tr>
+                  <th>Tier</th>
+                  <th>
+                    Stacks
+                    <p>Required</p>
+                  </th>
+                  <th>
+                    Melee
+                    <p>Damage</p>
+                  </th>
+                  <th>
+                    Cast
+                    <p>Speed</p>
+                  </th>
+                  <th>
+                    Movement
+                    <p>Speed</p>
+                  </th>
+                  <th>
+                    Tripled
+                    <p>Mana Regen</p>
+                  </th>
+                </tr>
+                <tr>
+                  <td>Tier 0</td>
+                  <td>0</td>
+                  <td>+1</td>
+                  <td>+0%</td>
+                  <td>+0%</td>
+                  <td>0s</td>
+                </tr>
+                <tr>
+                  <td>Tier 1</td>
+                  <td>10</td>
+                  <td>+2</td>
+                  <td>+5%</td>
+                  <td>+5%</td>
+                  <td>10s</td>
+                </tr>
+                <tr>
+                  <td>Tier 2</td>
+                  <td>20</td>
+                  <td>+3</td>
+                  <td>+10%</td>
+                  <td>+10%</td>
+                  <td>15s</td>
+                </tr>
+                <tr>
+                  <td>Tier 3</td>
+                  <td>30</td>
+                  <td>+4</td>
+                  <td>+15%</td>
+                  <td>+15%</td>
+                  <td>20s</td>
+                </tr>
+                <tr>
+                  <td>Tier 4</td>
+                  <td>50</td>
+                  <td>+5</td>
+                  <td>+20%</td>
+                  <td>+20%; +8% max</td>
+                  <td>25s</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              Melee damage bonus is applied after AC and resistances, making it
+              particularly effective against objects and high resistance
+              creatures like Mimics or Shopkeepers
+            </p>
+
+            <table>
+              <caption>Vandalize buildup</caption>
+              <tbody>
+                <tr>
+                  <th>Object Destroyed</th>
+                  <th>
+                    Stacks
+                    <p>Gained</p>
+                  </th>
+                </tr>
+                <tr>
+                  <td>Furniture</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Item box</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Door</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Fragile wall</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Chest</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Equipment</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Living construct</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Defaced object</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Social Standings",
+        sectionContent: (
+          <>
+            <p>
+              Gremlins are friendly with other Gremlins, and also neutral to
+              Goblins making Swamp much easier to traverse as a Gremlin.
+            </p>
+            <p>
+              Gremlins are a monster race, they are targeted by both Humans and
+              Shopkeepers, requiring a fight or a quick escape if they see the
+              player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Dryad",
+
+    raceFeatures: [
+      {
+        category: "Innate Spells",
+        items: ["Germinate", "Thorns"],
+      },
+      {
+        category: "Traits",
+        items: [
+          "Growth foliage on LVL up without headwear",
+          "Foliage provides +PWR, +MP Regen, but lowers movement speed",
+          "Growth % from water consumed",
+          "Short form buffs chance % and +5% evasion",
+          "20% reduced CHR growth",
+          "Welcomed by Shopkeepers",
+        ],
+      },
+      {
+        category: "Resistances",
+        items: ["Ranged (30%)", "Unarmed (20%)", "Polearms (10%)"],
+      },
+      {
+        category: "Weaknesses",
+        items: ["Fire", "Axes (30%)", "Swords (30%)", "Magic (10%)"],
+      },
+      { category: "Friendly With", items: ["Dryads", "Humans (neutral)"] },
+    ],
+    characterImageDescription: "A Dryad as its signature class, the Scion",
+    characterImage: DryadImage,
+
+    raceSections: [
+      {
+        sectionName: "",
+        sectionContent: (
+          <>
+            <p>
+              Dryads are a race option in Barony, introduced in the Deserters &
+              Disciples DLC alongside four other races.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <table>
+              <caption>Foliage effects</caption>
+              <tbody>
+                <tr>
+                  <th>Tier</th>
+                  <th>Spell Power</th>
+                  <th>Mana regen</th>
+                  <th>Movement speed</th>
+                  <th>Fire vulnerability</th>
+                </tr>
+                <tr>
+                  <td>Tier 0</td>
+                  <td>+0%</td>
+                  <td>+0%</td>
+                  <td>-0%</td>
+                  <td>+0%</td>
+                </tr>
+                <tr>
+                  <td>Tier 1</td>
+                  <td>+10%</td>
+                  <td>+10%</td>
+                  <td>-5%</td>
+                  <td>+5%</td>
+                </tr>
+                <tr>
+                  <td>Tier 2</td>
+                  <td>+20%</td>
+                  <td>+20%</td>
+                  <td>-10%</td>
+                  <td>+10%</td>
+                </tr>
+                <tr>
+                  <td>Tier 3</td>
+                  <td>+30%</td>
+                  <td>+30%</td>
+                  <td>-15%</td>
+                  <td>+15%</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              Tall/short Dryads have a 5/10% chance to gain foliage from sinks,
+              and a 10/20% chance from water bottles. Small Dryad has 5%
+              evasion. Tall Dryad can see through the windows of doors.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Social Standings",
+        sectionContent: (
+          <>
+            <p>Dryads are friendly with other Dryads.</p>
+            <p>
+              Dryads are neutral towards humans, meaning they can trade with
+              Shopkeepers and not be attacked on sight. Humans will behave
+              neutrally towards Dryad players, meaning they cannot be recruited
+              and will be disinterested when seeing the player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Myconid",
+
+    raceFeatures: [
+      {
+        category: "Innate Spells",
+        items: ["Germinate", "Spores"],
+      },
+      {
+        category: "Traits",
+        items: [
+          "Growth foliage on LVL up without headwear",
+          "Foliage provides physical defense, but lowers movement speed",
+          "+MP and +Growth % from rotten food",
+          "Short form buffs chance %, but has a higher knockback",
+          "20% reduced DEX growth",
+          "Immune to rotten food and nausea",
+          "Welcomed by Shopkeepers",
+        ],
+      },
+      { category: "Resistances", items: ["Maces (30%)", "Magic (30%)"] },
+      { category: "Weaknesses", items: ["Swords (30%)", "Axes (10%)"] },
+      { category: "Friendly With", items: ["Myconids", "Humans (neutral)"] },
+    ],
+    characterImageDescription: "A Myconid as its signature class, the Hermit",
+    characterImage: MyconidImage,
+
+    raceSections: [
+      {
+        sectionName: "",
+        sectionContent: (
+          <>
+            <p>
+              Myconids are a race option in Barony, introduced in the Deserters
+              & Disciples DLC alongside four other races.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <table>
+              <caption>Cap effects</caption>
+              <tbody>
+                <tr>
+                  <th>Tier</th>
+                  <th>Physical resistance</th>
+                  <th>Poison strength</th>
+                  <th>Movement speed</th>
+                  <th>Germinate damage</th>
+                  <th>Spore cloud frequency</th>
+                </tr>
+                <tr>
+                  <td>Tier 0</td>
+                  <td>0%, 0 AC</td>
+                  <td>+0 DMG, +0% speed</td>
+                  <td>-0%</td>
+                  <td>+0%</td>
+                  <td>+0%</td>
+                </tr>
+                <tr>
+                  <td>Tier 1</td>
+                  <td>5%, 1 AC</td>
+                  <td>+1 DMG, +20% speed</td>
+                  <td>-10%</td>
+                  <td>+100%</td>
+                  <td>+20%</td>
+                </tr>
+                <tr>
+                  <td>Tier 2</td>
+                  <td>10%, 2 AC</td>
+                  <td>+2 DMG, +35% speed</td>
+                  <td>-20%</td>
+                  <td>+200%</td>
+                  <td>+35%</td>
+                </tr>
+                <tr>
+                  <td>Tier 3</td>
+                  <td>15%, 3 AC</td>
+                  <td>+3 DMG, +50% speed</td>
+                  <td>-30%</td>
+                  <td>+300%</td>
+                  <td>+50%</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              Myconid's cap gains one foliage tier every time you level up with
+              an empty head slot. Myconids are unable to vomit for any reason,
+              rendering them immune to sickness from food. When a tall Myconid
+              eats rotten food, they have an 8.33% chance to gain a foliage
+              tier, whereas short Myconids have a 16.67% chance to gain a
+              foliage tier. Both Myconid variants have a 33% chance to gain MP
+              regeneration upon eating rotten food. Short Myconids also receive
+              a large amount of knockback when hit from behind, and are too
+              short to see through the windows of doors.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "",
+        sectionContent: (
+          <>
+            <p>Myconids are friendly with other Myconids.</p>
+            <p>
+              Myconids are neutral towards humans, meaning they can trade with
+              Shopkeepers and not be attacked on sight. Humans will behave
+              neutrally towards Myconid players, meaning they cannot be
+              recruited and will be disinterested when seeing the player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
     id: "Salamander",
 
     raceFeatures: [
@@ -1042,7 +2300,7 @@ export const races: RaceData[] = [
       { category: "Weaknesses", items: ["Polearms (20%)", "Ranged (10%)"] },
       {
         category: "Friendly With",
-        items: ["Salamanders", "Automatons", "Humans (Neutral)"],
+        items: ["Salamanders", "Automatons", "Humans (neutral)"],
       },
     ],
     characterImageDescription:
