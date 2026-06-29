@@ -2334,11 +2334,7 @@ export const skills: Skill[] = [
                   <th>Notes</th>
                 </tr>
                 <tr>
-                  <td rowSpan={4}>
-                    <a href="/wiki/Sentrybot" title="Sentrybot">
-                      Sentrybot
-                    </a>
-                  </td>
+                  <td rowSpan={4}>Sentrybot</td>
                   <td>Simple</td>
                   <td>40</td>
                   <td>3</td>
@@ -2416,11 +2412,7 @@ export const skills: Skill[] = [
                   <td>Replaces forcebolt with magic missile</td>
                 </tr>
                 <tr>
-                  <td rowSpan={4}>
-                    <a href="/wiki/Dummybot" title="Dummybot">
-                      Dummybot
-                    </a>
-                  </td>
+                  <td rowSpan={4}>Dummybot</td>
                   <td>Simple</td>
                   <td>20</td>
                   <td>3</td>
@@ -2452,11 +2444,7 @@ export const skills: Skill[] = [
                   <td>15</td>
                 </tr>
                 <tr>
-                  <td rowSpan={4}>
-                    <a href="/wiki/Gyrobot" title="Gyrobot">
-                      Gyrobot
-                    </a>
-                  </td>
+                  <td rowSpan={4}>Gyrobot</td>
                   <td>Simple</td>
                   <td>20</td>
                   <td>1</td>
