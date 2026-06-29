@@ -2320,7 +2320,290 @@ export const skills: Skill[] = [
               The quality of a robot determines what commands can be issued and
               which functions are available, as well as influencing damage.
             </p>
-            <table></table>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Robot type</th>
+                  <th>Quality</th>
+                  <th>Skill required</th>
+                  <th>Level</th>
+                  <th>Health</th>
+                  <th>Armor Class</th>
+                  <th>ATK</th>
+                  <th>New Functions</th>
+                  <th>Notes</th>
+                </tr>
+                <tr>
+                  <td rowSpan={4}>
+                    <a href="/wiki/Sentrybot" title="Sentrybot">
+                      Sentrybot
+                    </a>
+                  </td>
+                  <td>Simple</td>
+                  <td>40</td>
+                  <td>3</td>
+                  <td>50</td>
+                  <td>0</td>
+                  <td>16</td>
+                  <td>Hold Aim</td>
+                  <td rowSpan={4}>Deals ranged damage</td>
+                </tr>
+                <tr>
+                  <td>Complex</td>
+                  <td>60</td>
+                  <td>5</td>
+                  <td>75</td>
+                  <td>3</td>
+                  <td>20</td>
+                  <td>Look at(stops sentry from spinning 360)</td>
+                </tr>
+                <tr>
+                  <td>Intricate</td>
+                  <td>80</td>
+                  <td>10</td>
+                  <td>125</td>
+                  <td>6</td>
+                  <td>24</td>
+                  <td>Attack</td>
+                </tr>
+                <tr>
+                  <td>Artisan</td>
+                  <td>100</td>
+                  <td>15</td>
+                  <td>150</td>
+                  <td>9</td>
+                  <td>28</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td rowSpan={4}>Spellbot</td>
+                  <td>Simple</td>
+                  <td>60</td>
+                  <td>3</td>
+                  <td>50</td>
+                  <td>0</td>
+                  <td>15</td>
+                  <td>Hold Aim</td>
+                  <td rowSpan={4}>
+                    Deals magic damage, quality jumps from complex to Artisan
+                  </td>
+                </tr>
+                <tr>
+                  <td>Complex</td>
+                  <td>80</td>
+                  <td>5</td>
+                  <td>75</td>
+                  <td>3</td>
+                  <td>15</td>
+                  <td>Look at(stops sentry from spinning 360)</td>
+                </tr>
+                <tr>
+                  <td>Intricate</td>
+                  <td>-</td>
+                  <td>10</td>
+                  <td>125</td>
+                  <td>6</td>
+                  <td>15</td>
+                  <td>Attack</td>
+                </tr>
+                <tr>
+                  <td>Artisan</td>
+                  <td>100</td>
+                  <td>15</td>
+                  <td>150</td>
+                  <td>9</td>
+                  <td>30</td>
+                  <td>Replaces forcebolt with magic missile</td>
+                </tr>
+                <tr>
+                  <td rowSpan={4}>
+                    <a href="/wiki/Dummybot" title="Dummybot">
+                      Dummybot
+                    </a>
+                  </td>
+                  <td>Simple</td>
+                  <td>20</td>
+                  <td>3</td>
+                  <td>50</td>
+                  <td>5</td>
+                  <td rowSpan={8}>-</td>
+                  <td rowSpan={4}>-</td>
+                  <td rowSpan={4}>Can train weapon skill up to 20</td>
+                </tr>
+                <tr>
+                  <td>Complex</td>
+                  <td>40</td>
+                  <td>5</td>
+                  <td>100</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Intricate</td>
+                  <td>60</td>
+                  <td>10</td>
+                  <td>150</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Artisan</td>
+                  <td>80</td>
+                  <td>15</td>
+                  <td>200</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td rowSpan={4}>
+                    <a href="/wiki/Gyrobot" title="Gyrobot">
+                      Gyrobot
+                    </a>
+                  </td>
+                  <td>Simple</td>
+                  <td>20</td>
+                  <td>1</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>Can carry deployed turrets to next level</td>
+                  <td rowSpan={4}>
+                    Ignored by enemies, boulder can still kill them
+                    <p>Can't set up beartraps</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Complex</td>
+                  <td>40</td>
+                  <td>5</td>
+                  <td>35</td>
+                  <td>0</td>
+                  <td>
+                    Emits light,has a radar that can detect metal/magic
+                    scrap,traps and exits
+                  </td>
+                </tr>
+                <tr>
+                  <td>Intricate</td>
+                  <td>60</td>
+                  <td>10</td>
+                  <td>60</td>
+                  <td>0</td>
+                  <td>
+                    Gains access to monster radar, can interact with levers +
+                    pick up and set up traps
+                  </td>
+                </tr>
+                <tr>
+                  <td>Artisan</td>
+                  <td>80</td>
+                  <td>15</td>
+                  <td>85</td>
+                  <td>0</td>
+                  <td>
+                    Gains access to valuable radar, letting you detect high
+                    value items
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Bombs</h3>
+            <p>
+              Traps, also referred to as Bombs or Charges, are a group of
+              explosive items in Barony created through tinkering, used by the
+              player by tossing them onto the ground or onto objects where they
+              will arm and detonate when an enemy comes close.
+            </p>
+            <p>
+              Traps can be tossed by the player and begin to arm themselves once
+              they land on a surface. They also have the added bonus of latching
+              onto walls or destructible objects such as furniture, doors or
+              chests, making trap set-ups very flexible. Traps ignore other
+              traps, so a player can stack many traps onto a single area for
+              concentrated bursts of damage to whatever triggers the payload. It
+              should be noted, however, that sometimes - cause unknown - not all
+              the traps may trigger properly when all stacked in one place,
+              leading to wasted traps. Players should take care as to their trap
+              placement and if possible spread their traps out slightly to
+              prevent this issue.
+            </p>
+            <p>
+              Once an enemy is in close proximity, the trap will detonate,
+              releasing its payload in a small area around itself. The effect of
+              traps when detonating depends on the type of trap being activated,
+              with some dealing damage directly to the target, while others
+              inflict status effects which can subdue or deter enemies which set
+              them off. Detonation preference can also be changed by using a
+              Lockpick.
+            </p>
+            <h3>Trap Types</h3>
+            <p>
+              Currently there are four different types of traps that the player
+              can craft in Barony, each with a different role as a trap. Some
+              traps serve only to deal damage, while others simply disorient or
+              impair enough for a player to safely dispatch the threat.
+            </p>
+            <p>
+              Traps which damage entities that are caught in their blast have a
+              base damage, as well as having their damage scale in proportion
+              with the player’s Perception stat.
+            </p>
+
+            <table>
+              <tr>
+                <td>Trap Type</td>
+                <td>Description</td>
+              </tr>
+
+              <tr>
+                <td>Flame Trap</td>
+                <td>
+                  Deals 30 damage, increasing damage for every two points of
+                  Perception the player has. Inflicts burning to those caught in
+                  the blast.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Freeze Trap</td>
+                <td>
+                  {" "}
+                  Deals 25 damage, increasing damage for every four points of
+                  Perception the player has. Inflicts slowing to those caught in
+                  the blast.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Sleep Trap</td>
+                <td>Inflicts sleep to those caught in the blast.</td>
+              </tr>
+
+              <tr>
+                <td>Teleportation Trap</td>
+                <td>
+                  Teleports those caught in the blast to a random part of the
+                  current floor.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Detonator</td>
+                <td>
+                  Trap component left behind after a trap has exploded.
+                  Functionally inert, used for scraping in order to make more
+                  items in tinkering.
+                </td>
+              </tr>
+            </table>
+
+            <h3>Repair</h3>
+            <p>
+              A character can repair most items with a tinkering kit if they
+              have sufficient skill. For the most part, if a character can craft
+              an item, they can also repair it. For items that can't be crafted,
+              the requirements for repairing them are determined by their scrap
+              value, and they must be either weapons or armor. Just like with
+              crafting, the skill level for meeting these requirements is your
+              tinkering skill plus your perception.
+            </p>
           </>,
         ],
       },
