@@ -66,26 +66,12 @@ function Barony_NPC() {
       </div>
 
       <div className="baronyGrid">
-        <h1>Description</h1>
-        <p>{NPCInfo.description}</p>
-
-        <h2>Spawn Locations</h2>
-        <ul>
-          {NPCInfo.spawnLocations.map((location) => (
-            <li>
-              <b>{location}</b>
-            </li>
-          ))}
-        </ul>
-
-        <h2> Behaviour</h2>
-        <p>{NPCInfo.behavior}</p>
-
-        <h2>Loot</h2>
-        <p>{NPCInfo.loot}</p>
-
-        <h2>Affinity</h2>
-        <p>{NPCInfo.affinity}</p>
+        {NPCInfo.descriptionSections.map((section) => (
+          <>
+            <h2>{section.sectionName}</h2>
+            {section.sectionContent}
+          </>
+        ))}
       </div>
     </div>
   );
