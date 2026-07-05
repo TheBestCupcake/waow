@@ -525,7 +525,7 @@ export const npcs: NPCData[] = [
   },
 
   {
-    id: "Gnome Thief",
+    id: "Gnome_Thief",
     image: GnomeThief,
     levelDescription: "Level 10 Humanoid",
     stats: [
@@ -1221,9 +1221,9 @@ export const npcs: NPCData[] = [
   },
 
   {
-    id: "Human",
-    image: Human,
-    levelDescription: "Level 3 Humanoid",
+    id: "Rat",
+    image: Rat,
+    levelDescription: "Level 1 Beast",
     stats: [
       { key: "HP", value: "30" },
       { key: "ATK", value: "8" },
