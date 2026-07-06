@@ -1347,6 +1347,953 @@ export const npcs: NPCData[] = [
       },
     ],
   },
+
+  {
+    id: "Spider",
+    image: Spider,
+    levelDescription: "Level 5 Beast",
+    stats: [
+      { key: "HP", value: "50" },
+      { key: "ATK", value: "11" },
+      { key: "AC", value: "4" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "8" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "98 - 110" },
+      { key: "ATK", value: "15 - 16" },
+      { key: "AC", value: "5" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10 - 11" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "+20%" },
+      { key: "Mace", value: "+10%" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "+10%" },
+      { key: "Ranged", value: "+10%" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: ["Posioned Attacks", "Spray Web"],
+    inventory: ["-"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Spiders, or Crabs with Arachnophobia Mode on, are low level Beasts
+              that appear early into the adventurer's descent into the dungeon.
+              Their most striking feature is their higher speed relative to
+              other Denizens appearing that early. As the player progresses
+              deeper, Spiders fall out in favor of other, stronger enemies.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Mines</h3>
+            <p>
+              Spiders already appear in the first level of the game. They spawn
+              uncommonly. Spiders cannot spawn randomly on Floor 1 of the game;
+              they only appear in certain setpieces, and they are always locked
+              behind bars in all of them. Starting Floor 2, Spiders may spawn
+              randomly as enemies.
+            </p>
+
+            <h3>The Swamp</h3>
+            <p>
+              Spiders spawn less frequently in The Swamp than they do in The
+              Mines. The more open nature of this level, as well as the player's
+              strength, makes Spiders less dangerous overall.
+            </p>
+
+            <h3>Sand Labyrinth</h3>
+            <p>
+              In Sand Labyrinth Spiders only spawn as a part of a setpiece
+              inside a room initially blocked off by Web obstacles. This room
+              will have a few Spiders inside of it.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Spiders primarily use their melee attacks to damage the player;
+              these attacks have a chance to inflict Poison and display a
+              corresponding message "The Spider injects venom into its bite!"
+              The spell Blood Ward protects against this Poison, as well as
+              reducing the Spider's direct damage. Occasionally, the Spider will
+              break up its attack cycle to wind up a cast of Spray Web instead
+              which slows the player down as well as making them take knockback
+              from melee hits. Similarly to Ghouls, Spiders do not turn around
+              while standing in spot. This can be taken advantage of for a
+              stealth attack, but the player should keep in mind the Spider's
+              increased field of vision. Spiders start backpedalling on low
+              health, except they will always hunt down Webbed targets.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Spiders do not have any natural drops. They are however still
+              eligiuble to drop Vials of Blood when a Vampire or Accursed player
+              is in the party, or Meat when wearing a Chef's Toque.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Shelob</h3>
+            <p>
+              Shelob is a rare monster variant that has a 2% chance to replace
+              any given Spider spawn. She always spawns alongside a few Spiders
+              that follow her as their leader. Her drops always include a
+              Decrepit +1 Dyrnwyn and a -5 Ring of Invisibility. The player
+              should keep in mind that Bubbles, the replacement for Shelob when
+              Arachnophobia Mode is turned on, has no unique model, making it
+              visually indistinguishable from regular Crabs.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Spiders are neutral with Scarabs. They are always hostile to the
+              player unless they use the Arthropod Form Spell, at which point
+              they may be recruited.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Troll",
+    image: Troll,
+    levelDescription: "Level 12 Beast",
+    stats: [
+      { key: "HP", value: "100 - 120" },
+      { key: "ATK", value: "23" },
+      { key: "AC", value: "5" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "0" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "196 - 260" },
+      { key: "ATK", value: "38 - 43" },
+      { key: "AC", value: "6 - 7" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "1" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+10%" },
+      { key: "Polearm", value: "-20%" },
+      { key: "Mace", value: "-20%" },
+      { key: "Axe", value: "+10%" },
+      { key: "Unarmed", value: "-20%" },
+      { key: "Ranged", value: "-10%" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: ["-"],
+    inventory: ["Miscellaneous dungeon floor loot", "Roses"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Trolls are bulky, slow Beasts that appear early on in the
+              adventurer's journey. Their stats are overall higher than other
+              enemies the player will encounter, with a notable exception to
+              their Perception.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Mines</h3>
+            <p>
+              Trolls spawn infrequently in The Mines. Here they are the toughest
+              regular enemy that spawns naturally. Trolls cannot spawn randomly
+              on Floor 1 of the game; they only appear in certain setpieces, and
+              they are always locked behind bars in all of them. Starting Floor
+              2, Trolls may spawn randomly as enemies.
+            </p>
+
+            <h3>The Gnomish Mines</h3>
+            <p>
+              Trolls spawn alongside Gnomes in The Gnomish Mines. Troll spawns
+              in the Gnomish Mines are always fixed; they always start in the
+              same position and there is the same number of them each run, but
+              their drops vary based on map seed.
+            </p>
+
+            <h3>The Swamp</h3>
+            <p>Trolls spawn very rarely in the swamp.</p>
+
+            <h3>The Temple</h3>
+            <p>
+              In the first secret level of The Swamp, a large number of Trolls
+              will be locked behind bars initially. These bars automatically
+              open upon grabbing the Silver Key or the Infected Branch Bow deep
+              within the Temple.
+            </p>
+
+            <h3>The Sand Labyrinth</h3>
+            <p>Trolls spawn uncommonly in The Sand Labyrinth.</p>
+
+            <h3>The Ruins</h3>
+            <p>
+              There is a single setpiece in The Ruins that has Trolls locked in
+              some sort of prison. Otherwise, Trolls do not naturally spawn on
+              this level.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Trolls use their melee attacks to damage the player. They do not
+              have any special abilities, but their damage is significant,
+              especially early into the player's descent. Trolls have bad
+              vision, making stealth tactics particularly effective against
+              them. They are also quite slow. Sometimes, they may be found
+              Sleeping. Trolls start backpedalling on low health.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Trolls have a 1/20 chance to drop a Rose of any condition with -1
+              to +1 Enchantment. They also have a 1/3 chance to drop 1-3 random
+              items based on the level curve, plus 10 floors; these items appear
+              in any condition with -1 to +1 beatitude. In other words, Trolls
+              drop the sort of items one could expect to find lying on the
+              ground 10 floors deeper.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Thumpus the Troll</h3>
+            <p>
+              Thumpus the Troll is a rare monster variant that has a 2% chance
+              of replacing any spawned Troll. He is alwaus accompanied by a
+              group of 3 Gnomes who follow him as their leader. Thumpus always
+              drops 3-4 Roses on death as well as some Gold and the usual Troll
+              loot.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Trolls are neutral with Gnomes and Gnome Thieves. Trolls are
+              currently the only monster in the game that is not neutral with
+              itself - Trolls will attack each other. They are also neutral to
+              the player should they play as the Gnome race, as well as being
+              recruitable if the player uses the Troll Form spell.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Bat",
+    image: Bat,
+    levelDescription: "Level 1 Beast",
+    stats: [
+      { key: "HP", value: "10 - 40" },
+      { key: "ATK", value: "8 - 13" },
+      { key: "AC", value: "0" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "0 - 3" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "26 - 100" },
+      { key: "ATK", value: "12 - 18" },
+      { key: "AC", value: "1" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "1 - 4" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-50%" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: ["Levitation", "Evasion", "Bleeding Attacks", "Indominable"],
+    inventory: ["-"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Bats are evasive Beasts with low stats. They appear throughout the
+              entire dungeon, scaling in stats the further the player descends.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Ceilings</h3>
+            <p>
+              Bats are most commonly seen hanging from ceilings on non-secret
+              floors. The player will know when Bats may spawn on the current
+              floor if it is a dark floor - there will be no Torches on walls.
+              They spawn this way in every level, except in Underworld and Hell.
+              There are always at least 2 Bats hanging from the ceiling in one
+              spot, but the number of them rises the deeper in the dungeon they
+              are.
+            </p>
+
+            <h3>Breakable objects</h3>
+            <p>
+              Bats may also uncommonly be found inside breakable objects from
+              which they will bust out should the player come close to them.
+              They can spawn this way even in Underworld. The floor does not
+              have to be a dark floor for Bats to spawn in this manner.
+            </p>
+
+            <h3>Bells</h3>
+            <p>
+              Bats have a 25% chance to spawn from any bell that does not
+              contain an item when it is first pulled by the player. Similarly
+              to other spawning methods, they will always appear in groups by
+              this method. The floor does not have to be a dark floor for Bats
+              to spawn in this manner.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Bats will remain motionless until the player disturbs them by
+              getting close or under them. They will chase the player and damage
+              them with their bite which can also inflict Bleeding. After a Bat
+              loses its attention on the player, it will roam shortly before
+              situating itself on the ceiling again. Unless the ceiling is very
+              low, Bats are not damageable while they are resting on it except
+              with certain special means. The player thus usually has to awaken
+              them in order to defeat them. Bats have a 60% base chance to evade
+              melee attacks, but they cannot dodge magic or ranged attacks. The
+              dodge chance is also reduced to a 40% if the player's hit is a
+              flanking attack. Backstabs never miss Bats and neither does the
+              legendary polearm Gungnir. Bats are immune to Charm / Pacify, as
+              well as the Dominate spell. Their attack animation also has a
+              longer windup than most other Denizens, so it is easy to react to
+              it with a block or a parry. Bats start backpedalling on low
+              health.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Bats do not have any natural drops. They are however still
+              eligiuble to drop Vials of Blood when a Vampire or Accursed player
+              is in the party, or Meat when wearing a Chef's Toque.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Bats are neutral with Shadows. They are always hostile to the
+              player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Scorpion",
+    image: Scorpion,
+    levelDescription: "Level 7 Beast",
+    stats: [
+      { key: "HP", value: "70" },
+      { key: "ATK", value: "21" },
+      { key: "AC", value: "4" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "3" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "134 - 150" },
+      { key: "ATK", value: "33 - 36" },
+      { key: "AC", value: "5" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "4" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-10%" },
+      { key: "Polearm", value: "+30%" },
+      { key: "Mace", value: "+10%" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "+20%" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: ["Paralyzing Attacks"],
+    inventory: ["-"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Scorpions are arthropod Beasts with fairly low stats but a
+              dangerous paralyzing sting that proves troublesome for
+              adventurers.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Sand Labyrinth</h3>
+            <p>
+              Scorpions only naturally appear in the Sand Labyrinth level of the
+              game. Here they are a common enemy alongside its arthropod allies
+              Scarabs and Lesser Insectoids. They are often solitary, with the
+              exception of appearance alongside Skrabblag.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Scorpions use their stings to hurt the player which has a chance
+              to Paralyze them, making them particularly dangerous when cornered
+              or in bigger groups as the effect's duration can be refreshed even
+              while the player is still suffering from it. Scorpions are unable
+              to inflict Paralysis through a fully blocked hit. Otherwise,
+              keeping distance and avoiding hits is preferable when fighting
+              them. The spell Blood Ward reduces damage from Scorpions, as they
+              count as poisonous creatures.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Scorpions do not have any natural drops. They are however still
+              eligiuble to drop Vials of Blood when a Vampire or Accursed player
+              is in the party, or Meat when wearing a Chef's Toque.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Skrabblag</h3>
+            <p>
+              Skrabblag is the special, tougher variant of Scorpions that has a
+              2% chance to replace any given Scorpion spawn. It is always
+              accompanied by a group of regular Scorpions. The player should be
+              careful when engaging Skrabblag and its group, as they could be
+              overwhelmed with Paralysis. Skrabblag drops a Ruby on defeat.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Scorpions are neutral with Scarabs and Insectoids. The player can
+              recruit Scorpions as a true Insectoid or with the usage of
+              Arthropod Form.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Scarab",
+    image: Scarab,
+    levelDescription: "Level 10-15 Beasts",
+    stats: [
+      { key: "HP", value: "60" },
+      { key: "ATK", value: "18" },
+      { key: "AC", value: "2" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "12" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "124 - 140" },
+      { key: "ATK", value: "30 - 33" },
+      { key: "AC", value: "3" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "14 - 16" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+50%" },
+      { key: "Polearm", value: "-30%" },
+      { key: "Mace", value: "+10%" },
+      { key: "Axe", value: "+40%" },
+      { key: "Unarmed", value: "+40%" },
+      { key: "Ranged", value: "+10%" },
+      { key: "Magic", value: "-80%" },
+    ],
+    abilities: ["Weakness inflicting attacks"],
+    inventory: ["Tomalleys", "Low value gemstones"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Scarabs are somewhat weak Beasts that have high Magic Resistance.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Sand Labyrinth</h3>
+            <p>
+              Scarabs first start appearing in Sand Labyrinth. Here they are a
+              somewhat common enemy but also the weakest one. They can also
+              break out from certain objects, like pots.
+            </p>
+
+            <h3>Crystal Caves</h3>
+            <p>
+              Scarabs only start naturally reappearing at the beginning of Act 2
+              in Crystal Caves, where they are once again fairly common but
+              still the weakest enemy in the level, despite scaling up somewhat.
+              There also exists a trap setpiece which spawns a random amount of
+              Scarabs once the player triggers it. They may also rarely come out
+              from breakable objects.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Scarabs exclusively use their melee attacks to damage the player.
+              Their attacks may inflict the Weakness status effect which reduces
+              physical damage dealt by the afflicted. While this status effect
+              is troublesome, the Scarab's low stats make them unthreatening
+              enemies even while suffering from Weakness. Scarabs cannot inflict
+              Weakness through a fully blocked hit. They pose a staggering 80%
+              Resistance to magic, making its usage impractical. Scarabs start
+              backpedalling on low health.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Scarabs commonly drop Tomalleys which provide serviceable hunger
+              when consumed, but the variance in Quality of Tomalleys dropped by
+              Scarabs means it is not an entirely reliable source of Food. They
+              may also rarely drop low value Gemstones.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <p>
+              Xyggi is an elite variant that has a 2% chance of replacing any
+              given Scarab spawn. He will always spawn with a group of regular
+              Scarabs who follow him as their leader. Xyggi will use the Cold
+              spell to fight the player and has innate Magic Reflection to
+              stifle any attempts at magic usage. Xyggi always drops the coveted
+              Enchanted Feather as well as regular Scarab drops.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Scarabs are neutral with Scorpions, Insectoids and Spiders. They
+              are recruitable and friendly to the player if they are a true
+              Insectoid.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Cockatrice",
+    image: Cockatrice,
+    levelDescription: "Level 35 Beast",
+    stats: [
+      { key: "HP", value: "500 - 600" },
+      { key: "ATK", value: "73 - 83" },
+      { key: "AC", value: "20" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "8" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "916 - 1220" },
+      { key: "ATK", value: "126 - 163" },
+      { key: "AC", value: "23 - 25" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10-11" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+60%" },
+      { key: "Polearm", value: "+80%" },
+      { key: "Mace", value: "+10%" },
+      { key: "Axe", value: "+30%" },
+      { key: "Unarmed", value: "-20%" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "-50%" },
+    ],
+    abilities: ["Stoneblood", "Levitation", "Double Strike"],
+    inventory: [
+      "Enchanted Feathers",
+      "Spellbook of Stoneblood",
+      "Magistaffs of Stoneblood",
+      "Gemstones",
+      "Potions of Invisibility",
+      "Potions of Paralysis",
+      "Rocks",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Cockatrices are the most formidable regularly spawning enemy in
+              the game, boasting incredible stats across the board and dangerous
+              special abilities to boot. They start appearing only after Act 1
+              of the game is finished.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Crystal Caves</h3>
+            <p>
+              Crystal Caves is the first level where the player may encounter
+              Cockatrices. While they are rarer than other enemies, it should
+              still be expected to encounter at least a few while venturing the
+              floors.
+            </p>
+
+            <h3>The Citadel</h3>
+            <p>
+              Cockatrices also spawn in the final level of the game. The tight
+              corridors and small rooms of this level can amplify the dangers
+              Cockatrices threaten.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Cockatrices primarily use their strong melee attacks to damage the
+              player, but they also occasionally break their attack cycles to
+              use either Double Strike or cast Stoneblood, both of which should
+              be avoided. It is generally ill advised to exchange blows with the
+              Cockatrice, for their damage output is hard to outright nullify.
+              Stone Blood's windup is fairly long and telegraphed, but it can
+              spell death to the player should it land. Double Strike's windup
+              is somewhat shorter, which should be taken into consideration
+              during combat to differentiate between what the Cockatrice is
+              doing. Cockatrices are immune to Paralysis, Sleep and Charm /
+              Pacification, but they can be inflicted with Slow and Fear. Their
+              Levitation allows them to chase the player even above liquids and
+              bottomless pits.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Cockatrices drop an assortment of loot. Most notably, they drop
+              the Spellbook of Stoneblood as well as Enchanted Feathers . They
+              are also a consistent source of Potions of Invisibility which are
+              particularly useful in brewing.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Cockatrice (Lair)</h3>
+            <p>
+              The Cockatrice that appears at the end of the secret floor
+              Cockatrice Lair is a unique variant of the regular Cockatrice.
+              While visually and functionally identical to normal Cockatrices,
+              the Lair Cockatrice has some different stats. More specifically,
+              it is of a higher Level (50) and it has less Armor Class, while
+              also being Indominable, unlike regular Cockatrices.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Cockatrice are neutral to Insectoids, Incubi, Goatmen, Vampires,
+              Shadows, Imps, Slimes, and Ghouls. They are always hostile to the
+              player regardless of race.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Minotaur",
+    image: Minotaur,
+    levelDescription: "Level 20 Beast",
+    stats: [
+      { key: "HP", value: "400 (Act 1) 800 (Act 2)" },
+      { key: "ATK", value: "43 (Act 1) 68 (Act 2)" },
+      { key: "AC", value: "15 (Act 1) 20 (Act 2)" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "15 (Act 1) 20 (Act 2)" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "736 - 820 (Act 1) 1456 - 1620 (Act 2)" },
+      { key: "ATK", value: "73 - 83 (Act 1) 117 - 133 (Act 2)" },
+      { key: "AC", value: "17 - 19 (Act 1) 23 - 25 (Act 2))" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "17 - 19 (Act 1) 23 - 26 (Act 2)" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [
+      "Levitation",
+      "Destroy Obstacle",
+      "Telepathy",
+      "Indominable",
+      "Resist Magic (Maze Only)",
+      " Troll's Blood (Maze Only)",
+      "HP Regeneration (Maze Only)",
+      "Red Mystic Orb Buff (Maze Only)",
+      "Vampiric Aura (Act 2)",
+    ],
+    inventory: ["High value gemstones"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              A very powerful enemy, and the Baron's pet, the Minotaur will pulp
+              any dungeon delvers foolish enough to ignore its master's
+              warnings.
+            </p>
+            <p>
+              It can show up multiple times in a playthrough, even if it's
+              already been killed.
+            </p>
+            <p>
+              The Minotaur will appear in the spawn room after 2:30 minutes, or
+              3:30 minutes in the Mines, in the Sand Labyrinth, and after
+              Hamlet, then instantly barrel towards the nearest player. On those
+              floors, a Daedalus Shrine will be present to assist the player in
+              escaping.
+            </p>
+            <p>
+              The ZAP Brigade has 20% chance of appearing on a Minotaur floor,
+              where they will wait to battle with it. The Minotaur will ignores
+              them until it gets hit by one of their attacks. They have a good
+              chance to defeat the Minotaur if they manage to take its aggro. As
+              the Brigadiers are all human, they will attack monster races not
+              friendly with them, like regular Humans.
+            </p>
+            <p>
+              There is a 50% chance for the Minotaur to appear on the 2nd and
+              3rd floors of each zone, and it will always spawn in the the
+              Minotaur Maze. Two Minotaurs will also spawn after defeating
+              Baphomet on the final floor of Hell.
+            </p>
+            <p>
+              Upon its death, the Minotaur will drop an emerald, sapphire, ruby,
+              or diamond of flawless quality.
+            </p>
+            <p>
+              The Minotaur levitates and breaks walls, including the ceiling. It
+              is immune to charm, paralysis and sleep.
+            </p>
+            <p>
+              A slowing effect, like a Cold or Slow spell still works on the
+              Minotaur.
+            </p>
+
+            <p>
+              Inside its maze, the Minotaur gains multiple buffs (see "Maze
+              only" abilities). Talking the Gungnir from its pedestal will
+              remove most of these buffs. It also gives the minotaur Slow and
+              Hungover. These effects are not permanent and will wear off quite
+              quickly.
+            </p>
+            <p>
+              Once its master Baron Herx dies (either directly, or by defeating
+              Baphomet), the Minotaur becomes stronger (see "Act 2" stats).
+            </p>
+            <p>
+              The Vampiric Aura from the Act 2 adds 5 non-reductible damages to
+              the Minotaur's base attack.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 /* 
