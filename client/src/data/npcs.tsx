@@ -2838,41 +2838,811 @@ export const npcs: NPCData[] = [
   },
 
   {
-    id: "Human",
-    image: Human,
-    levelDescription: "Level 3 Humanoid",
+    id: "Skeleton",
+    image: Skeleton,
+    levelDescription: "Level 2 Undead",
     stats: [
-      { key: "HP", value: "30 - 50" },
-      { key: "ATK", value: "7 - 14" },
-      { key: "AC", value: "0 - 9" },
-      { key: "ATK", value: "9 - 16" },
-      { key: "SPD", value: "4 - 7" },
+      { key: "HP", value: "40" },
+      { key: "ATK", value: "8 - 12" },
+      { key: "AC", value: "1 - 6" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "1" },
       { key: "PWR", value: "-" },
     ],
     hardcoreStats: [
-      { key: "HP", value: "30 - 50" },
-      { key: "ATK", value: "7 - 14" },
-      { key: "AC", value: "0 - 9" },
-      { key: "ATK", value: "9 - 16" },
-      { key: "SPD", value: "4 - 7" },
+      { key: "HP", value: "88 - 100" },
+      { key: "ATK", value: "12 - 17" },
+      { key: "AC", value: "2 - 7" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "2" },
       { key: "PWR", value: "-" },
     ],
     damageTypeEffectiveness: [
-      { key: "Sword", value: "-" },
-      { key: "Polearm", value: "-" },
-      { key: "Mace", value: "-" },
-      { key: "Axe", value: "-" },
-      { key: "Unarmed", value: "-" },
-      { key: "Ranged", value: "-" },
-      { key: "Magic", value: "-" },
+      { key: "Sword", value: "-50%" },
+      { key: "Polearm", value: "+30%" },
+      { key: "Mace", value: "+40%" },
+      { key: "Axe", value: "-20%" },
+      { key: "Unarmed", value: "+10%" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "-20%" },
     ],
-    abilities: [""],
-    inventory: [""],
+    abilities: ["-"],
+    inventory: [
+      "Bronze / Iron Swords",
+      "Iron Spears",
+      "Bronze / Iron Axes",
+      "Shortbows / Crossbows",
+      "Magistaffs of Cold",
+      "Quivers of Swift / Springshot Arrows",
+      "Bronze / Iron Shields",
+      "Leather / Iron Helmets",
+    ],
 
     descriptionSections: [
       {
         sectionName: "Description",
-        sectionContent: <></>,
+        sectionContent: (
+          <>
+            <p>
+              Skeletons are the first Undead Denizens the player will encounter
+              in the dungeon. Their gear is commonly cursed, so the player
+              should beware not to carelessly equip loot dropped from Skeletons.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Mines</h3>
+            <p>
+              Skeletons immediately appear in the first level of the game and
+              they are the most common enemy in it, alongside Rats. They
+              sometimes spawn in setpieces - one of which is the rare setpiece
+              where a Skeleton with ranged equipment will guard an area.
+            </p>
+
+            <h3>Underworld</h3>
+            <p>
+              Skeletons may randomly appear on this level, but they are also
+              commonly part of trap rooms, where they can overwhelm the player
+              with numbers. Here they often use ranged equipment, such as
+              Crossbows and Magistaffs of Cold.
+            </p>
+
+            <h3>The Swamp</h3>
+            <p>
+              In The Swamp Skeletons exclusively spawn in setpieces - either
+              trap rooms, or the ranged Skeleton setpiece.
+            </p>
+
+            <h3>The Ruins</h3>
+            <p>
+              Similarly to The Swamp, Skeletons only appear in setpieces on this
+              level. By this point, they should be of no threat to the player.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Skeletons use their equipment to attack the player. They have no
+              special abilities. Skeletons are extremely resistant to Swords and
+              Ranged damage, so classes that rely on those may initially
+              struggle with Skeletons. Conversely, they are very weak to Maces,
+              which are always worthwhile picking up should the player find
+              themselves struggling against Skeletons. They are immune to
+              Burning and Bleeding. Skeletons are also weak to Blessed Water,
+              which may be thrown to greatly damage them. Like all Undead, they
+              are also weak to the Smite effect. Skeletons have a large variance
+              in their AC levels, which may significantly affect the damage
+              dealt to them, so the player should take note of what armor they
+              see on the skeleton.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Skeletons only drop the equipment they wear. Their gear can never
+              be blessed, and each item has a 50% chance to be cursed. As such,
+              most of their gear may be too dangerous to use or outright
+              useless, unless the player is an Incubus or a Succubus.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Funny Bones</h3>
+            <p>
+              Funny Bones is the elite variant that has a 2% chance of replacing
+              any given Skeleton spawn. He always drops a +1 Blessed Parashu, as
+              well as his Cloak of Protection and Eyepatch.
+            </p>
+
+            <h3>Skeleton Knight, Sentinel and Mage</h3>
+            <p>
+              Skeleton Knights, Sentinels and Mages are unique Skeleton variants
+              found only on the secret floor Bram's Castle. They are of higher
+              level than regular Skeletons and carry better gear, such as steel
+              equipment. Their equipment can also be blessed, unlike regular
+              Skeletons.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Skeletons are neutral with all Undead and Demonic Denizens. They
+              are always hostile to the player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Ghoul",
+    image: Ghoul,
+    levelDescription: "Level 7 Undead",
+    stats: [
+      { key: "HP", value: "90" },
+      { key: "ATK", value: "16" },
+      { key: "AC", value: "-1" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "0" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "170 - 190" },
+      { key: "ATK", value: "24 - 26" },
+      { key: "AC", value: "0" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "1" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "+10%" },
+      { key: "Mace", value: "+20%" },
+      { key: "Axe", value: "-20%" },
+      { key: "Unarmed", value: "+10%" },
+      { key: "Ranged", value: "-40%" },
+      { key: "Magic", value: "-20%" },
+    ],
+    abilities: ["-"],
+    inventory: [
+      "Meat",
+      "Pickaxes",
+      "Towels",
+      "Lockpics",
+      "Beartraps",
+      "Blindfolds",
+      "Torches",
+      "lanterns",
+      "Blessed Water",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Ghouls are somewhat common Undead Denizens that start appearing
+              early in the player's adventure.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Underworld</h3>
+            <p>
+              Depending on when the player descends into it, Underworld may be
+              the first area the player encounters naturally spawning Ghouls.
+              They spawn often, both randomly and in setpieces.
+            </p>
+            <h3>Swamp</h3>
+            <p>
+              Ghouls spawn uncommonly in The Swamp and may also appear in
+              certain setpieces, most commonly trap rooms.
+            </p>
+            <h3>Sand Labyrinth</h3>
+            <p>
+              Ghouls become exceedingly rare in Sand Labyrinth. They sometimes
+              spawn in certain maze layouts marked by a gravestone and a
+              campfire, and may also come out from coffins.
+            </p>
+            <h3>Gravestones</h3>
+            <p>
+              Gravestones can be found almost anywhere in the dungeon and have a
+              chance to summon a Ghoul when read. Large groups of gravestones in
+              trap rooms will spawn a Ghoul from each one when walked nearby or
+              otherwise triggered. From The Ruins onward, gravestones will
+              instead summon Enslaved Ghouls.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            Ghouls use their melee attacks to damage the player and have no
+            special abilities. They are slow and as such easy to kite for the
+            player. Ghouls are weak to Blessed Water, which may be thrown to
+            greatly damage them. Like all Undead, they are also weak to the
+            Smite effect. Despite their relatively high ATK, they are overall
+            not very dangerous monsters. While they are standing still, Ghouls
+            do not turn around, allowing for easy backstabs.
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Ghouls drop a variety of loot, of which most common items are -1
+              Cursed Mouldy Meat and +1 Blessed Water. While their Meat drops
+              are useless in most scenarios, they are particularly great for
+              Insectoid and Myconid players, who can ignore the downsides of bad
+              food.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <h3>Coral Grimes</h3>
+            <p>
+              Coral Grimes is the elite variant that has a 2% chance to replace
+              any Ghoul spawn. He is always accompanied by 3 Ghouls who follow
+              him as their leader. He drops the Bounty Hunter Hat and a Ruby.
+            </p>
+            <h3>Ghoul Chef</h3>
+            <p>
+              This one-of-a-kind Ghoul resides in Bram's Castle. It is visually
+              distinguishable by the Chef's Toque Hat Chef Icon.png on his head.
+              The Ghoul Chef is the only natural source of Rotten food in the
+              game.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Ghouls are neutral with all Undead and Demonic Denizens. They are
+              friendly and may be recruited by the player if they are a true
+              Skeleton, and a player of any race can become neutral to Ghouls if
+              they equip the Spooky Mask.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Enslaved_Ghoul",
+    image: EnslavedGhoul,
+    levelDescription: "Level 10 Undead",
+    stats: [
+      { key: "HP", value: "110" },
+      { key: "ATK", value: "21" },
+      { key: "AC", value: "-1" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "5" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "206 - 230" },
+      { key: "ATK", value: "33 - 36" },
+      { key: "AC", value: "0" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "6 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "+10%" },
+      { key: "Mace", value: "+20%" },
+      { key: "Axe", value: "-20%" },
+      { key: "Unarmed", value: "+10%" },
+      { key: "Ranged", value: "-40%" },
+      { key: "Magic", value: "-20%" },
+    ],
+    abilities: ["Vampiric Aura"],
+    inventory: [
+      "Meat",
+      "Pickaxes",
+      "Towels",
+      "Lockpics",
+      "Beartraps",
+      "Blindfolds",
+      "Torches",
+      "lanterns",
+      "Blessed Water",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Enslaved Ghouls are the stronger variant of the regular Ghoul,
+              boasting better overall stats, most notably a significantly higher
+              SPD. They generally appear in later floors and may sometimes have
+              the Vampiric Aura buff.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Haunted Castle</h3>
+            <p>
+              Enslaved Ghouls spawn from every single Gravestone that appears
+              after the player takes either the Gold or the Oracle's Treads
+              inside the castle. The player should take great care not to be
+              overwhelmed by the large number of Enslaved Ghouls on this secret
+              floor.
+            </p>
+
+            <h3>The Ruins</h3>
+            <p>
+              The Ruins is the first level where Enslaved Ghouls start regularly
+              replacing normal Ghoul spawns. There are a few setpieces with
+              scattered Gravestones where Enslaved Ghouls may come from. The
+              rare Young Vampire may also sometimes spawn, who will have a squad
+              of Enslaved Ghouls following it as their leader.
+            </p>
+
+            <h3>Underworld</h3>
+            <p>
+              Enslaved Ghouls spawn somewhat frequently in the second
+              Underworld. Trap room setpieces with Gravestones are also common
+              in this level.
+            </p>
+
+            <h3>Bram's Castle</h3>
+            <p>
+              On the second floor past the Succubus Consorts, the last two doors
+              lead to a room with five Enslaved Ghouls, all of which always have
+              the Vampiric Aura buff.
+            </p>
+
+            <h3>Gravestones</h3>
+            <p>
+              Gravestones can be found almost anywhere in the dungeon and have a
+              chance to summon an Enslaved Ghoul when read. Large groups of
+              gravestones in trap rooms will spawn an Enslaved Ghoul from each
+              one when walked nearby or otherwise triggered. Before The Ruins,
+              gravestones will instead summon Ghouls.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Enslaved Ghouls use exclusively their melee attacks to damage the
+              player. Enslaved Ghouls are weak to Blessed Water which may be
+              thrown to damage them. Like all Undead, they are also weak to the
+              Smite effect. Enslaved Ghouls are not very dangerous enemies,
+              unless they are under the effect of the Vampiric Aura buff, which
+              improves their SPD and ATK while also giving them special life
+              draining capabilities on-hit, as well the ability to inflict Heavy
+              Bleed. The Vampiric Aura buff gives the Enslaved Ghouls effective
+              true damage - they will always deal a minimum of 5 damage through
+              all AC. While they are standing still, Enslaved Ghouls do not turn
+              around, allowing for easy backstabs.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Enslaved Ghouls drop a variety of loot, of which most common items
+              are -1 Cursed Mouldy Meat and +1 Blessed Water. While their Meat
+              drops are useless in most scenarios, they are particularly great
+              for Insectoid and Myconid players, who can ignore the downsides of
+              bad food.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Coral Grimes</h3>
+            <p>
+              Coral Grimes is the elite variant that has a 2% chance to replace
+              any Ghoul spawn. He is always accompanied by 3 Ghouls who follow
+              him as their leader. He drops the Bounty Hunter Hat and a Ruby.
+            </p>
+            <h3>Ghoul Chef</h3>
+            <p>
+              This one-of-a-kind Ghoul resides in Bram's Castle. It is visually
+              distinguishable by the Chef's Toque Hat Chef Icon.png on his head.
+              The Ghoul Chef is the only natural source of Rotten food in the
+              game.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Enslaved Ghouls are neutral with all Undead and Demonic Denizens.
+              They are friendly and may be recruited by the player if they are a
+              true Skeleton, and a player of any race can become neutral to
+              Enslaved Ghouls if they equip the Spooky Mask.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Vampire",
+    image: Vampire,
+    levelDescription: "Level 30 Undead",
+    stats: [
+      { key: "HP", value: "400" },
+      { key: "ATK", value: "48 - 58" },
+      { key: "AC", value: "0" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "8" },
+      { key: "PWR", value: "30" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "736 - 820" },
+      { key: "ATK", value: "82 - 108" },
+      { key: "AC", value: "1" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10 - 11" },
+      { key: "PWR", value: "30" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-20%" },
+      { key: "Polearm", value: "+10%" },
+      { key: "Mace", value: "+20%" },
+      { key: "Axe", value: "-20%" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "-20%" },
+    ],
+    abilities: ["Drain Soul", "Vampiric Aura"],
+    inventory: ["Magicstaffs of Bloodletting", "Vampire Doublet"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Vampires are a late game Undead enemy with impressive stats and a
+              few special abilities. They only appear in Act 2 on the final
+              level of the game.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Citadel</h3>
+            <p>
+              The Citadel is the only level in the game where Vampires naturally
+              spawn. They appear alone and as frequently as most other enemies
+              in that level.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Vampires primarily use their melee attacks to damage the player.
+              Some of them might carry a Magistaff of Bloodletting, which they
+              will then fire at the player. Otherwise, they go unarmed. Vampires
+              will occasionally break their attack cycle to channel a spell,
+              either Drain Soul or Vampiric Aura. Drain Soul replenishes their
+              HP and also damages the player's own HP and MP, but it deals
+              relatively low damage. Vampiric Aura is more dangerous, as it
+              greatly improves their SPD and damage output. Vampires are thus
+              best dealt with quickly, which may prove difficult due to their
+              high HP and good resistances. They have no status immunities
+              though, and are weak to Smite like all undead enemies.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Vampires only drop 2 items, both of which are quite strong for
+              caster classes. Their unique drop is the Vampire Doublet, which
+              provides bonus MP Regeneration at the cost of all HP regeneration.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Young Vampire</h3>
+            <p>
+              Young Vampire is the only Vampire variant that may naturally spawn
+              before Hamlet, appearing at a very rare rate naturally in Ruins or
+              from broken coffins in the same level. They are weaker than
+              standard Vampires, but unlike them often come accompanied by a
+              group of up to 3 Enslaved Ghouls. They otherwise behave the same
+              as regular Vampires and may even also drop the Vampire Doublet.
+            </p>
+            <h3>Bram Kindly</h3>
+            <p>
+              Bram Kindly is an elite variant of the Vampire that always spawns
+              in Bram's Castle. He always wields a Magistaff of Bloodletting and
+              wears the Wraith's Gown, both of which he will always drop on
+              death. Bram Kindly has bonus Resistance to Magic.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Vampires are neutral with Cockatrices, Goatmen, Crystal Golems,
+              Automata, Slimes and all other Undeads and Demonics. The player
+              may recruit Vampires if they are playing as the Vampire race.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Shadow",
+    image: Shadow,
+    levelDescription: "Level 25 Undead",
+    stats: [
+      { key: "HP", value: "170" },
+      { key: "ATK", value: "28 - 33" },
+      { key: "AC", value: "2 - 4" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10 - 15" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "314 - 350" },
+      { key: "ATK", value: "47 - 63" },
+      { key: "AC", value: "3 - 5" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "12 - 19" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-50%" },
+      { key: "Polearm", value: "-50%" },
+      { key: "Mace", value: "-50%" },
+      { key: "Axe", value: "-50%" },
+      { key: "Unarmed", value: "-50%" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "+100%" },
+    ],
+    abilities: ["Mimic Other", "Levitation", "Teleportation", "Indominable"],
+    inventory: ["Spooky Masks"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Shadows are strong Undead that copy the player's equipment and
+              spells to use against them. They are mostly found in the later
+              parts of the dungeon, but may also be encountered earlier with
+              unconventional means.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Underworld</h3>
+            <p>
+              Underworld is the earliest location in the game where Shadows
+              naturally spawn. They may prove especially dangerous depending on
+              how early the player enters Underworld, and the level's terrain
+              also provides an advantage to the Levitating Shadow.
+            </p>
+            <h3>Hell</h3>
+            <p>
+              Shadows may uncommonly appear in the alternate route's final level
+              of Act 1. The generally open layouts may make Shadows troublesome
+              in tandem with the other numerous enemies.
+            </p>
+            <h3>The Citadel</h3>
+            <p>
+              Shadows spawn in the final level of the game as well. At this
+              point, Shadows are not the most dangerous enemy anymore.
+            </p>
+            <h3>Bram's Castle</h3>
+            <p>
+              There are 4 Shadows that always appear on the 2nd floor of Bram's
+              Castle behind some bookshelf wall tiles. These spawns are always
+              fixed and consistent throughout every run. If the player is fast
+              enough, they may be able to avoid them entirely.
+            </p>
+            <h3>Defacing Graves</h3>
+            <p>
+              Using the true Gremlin's innate spell Deface on a Gravestone can
+              spawn a Shadow ~13.5% of the time from the destroyed Gravestone.
+              Depending on when the player does this, it can prove fatal to
+              carelessly destroy graves.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Shadows will initially use their special ability Mimic Other when
+              they spot their target, which will copy their weapon, shield and
+              spells while also buffing the Shadow's STR and DEX if the target
+              has more in any of those stats (20% of the stat difference is
+              added each Mimic Other attempt). Stealth is not viable as Shadows
+              sport some of the best vision of all enemies in the game, spotting
+              targets from up to 48 tiles of distance away and ignoring
+              Invisibility effects. The player will be notified of a Shadow's
+              Mimic Other attempt by a loud sound cue and a message in the chat.
+              Shadows may be hit freely hit during its usage of Mimic Other.
+              Shortly after mimicking the player, Shadows will Teleport Teleport
+              Icon.png somewhere near them and also become nigh invisible, only
+              emitting black particle effects. The player can still hit them
+              during this invisibility but that may prove difficult, compounded
+              further by Shadow's high movement speed. Shadows will chase the
+              player virtually endlessly and their Levitation makes disengaging
+              difficult. They also copy the player's learned spells, but not all
+              spells are eligible for Shadows to use. Currently, this list
+              includes the following spells: Forcebolt, Spray Acid, Lightning,
+              Fireball, Cold, Magic Missile, Confuse, Slow, Sleep, Bloodletting
+              and Stone Blood. After a certain period, Shadows will recast Mimic
+              Other, repeating all the behaviour that comes during and after its
+              use. Shadows are difficult foes, but they are particularly
+              vulnerable to Paralysis and Magic, so the player should make
+              liberal use of them to defeat Shadows especially if they are
+              fought earlier in the dungeon. Shadows are immune to Rooted,
+              Disorientated, Charm / Pacification and Fear debuffs, as well as
+              Cowardice and Compel Spells. Like all Undead, they are also weak
+              to the Smite effect. Shadows may also Teleport while not fighting
+              anything.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Shadows only drop Spooky Masks which are useful for providing
+              neutrality to Shadows.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Artemisia</h3>
+            <p>
+              Artemisia is a wholly unique variant of the Shadow that appears
+              only on the 2nd floor of the first Underworld accessed from floor
+              5's intermission stage. She wields and drops the magical bow
+              Khryselakatos and is the earliest consistent source of the bow.
+              Her behaviour is otherwise identical to regular Shadows, but she
+              will use her bow to damage the player instead of mimicking the
+              player's weapon.
+            </p>
+            <h3>Baratheon</h3>
+            <p>
+              Baratheon is an elite variant that has a 2% chance of replacing
+              any Shadow spawn. They are functionally identical to regular
+              Shadows with the only differences being Baratheon's visual
+              distinction and his higher level. As a level 50-51 Undead,
+              Baratheon gives the most EXP of all Denizens only tied with
+              Orpheus and Erudyce.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Shadows are neutral with all Denizens besides Humans. They are
+              always hostile to the player, unless they are wearing the Spooky
+              Mask.
+            </p>
+          </>
+        ),
       },
     ],
   },
@@ -2893,23 +3663,23 @@ export const npcs: NPCData[] = [
 /*
 
 {
-    id: "Human",
-    image: Human,
-    levelDescription: "Level 3 Humanoid",
+    id: "",
+    image: ,
+    levelDescription: "Level ",
     stats: [
-      { key: "HP", value: "30 - 50" },
-      { key: "ATK", value: "7 - 14" },
-      { key: "AC", value: "0 - 9" },
-      { key: "ATK", value: "9 - 16" },
-      { key: "SPD", value: "4 - 7" },
+      { key: "HP", value: "-" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "-" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "-" },
       { key: "PWR", value: "-" },
     ],
     hardcoreStats: [
-      { key: "HP", value: "30 - 50" },
-      { key: "ATK", value: "7 - 14" },
-      { key: "AC", value: "0 - 9" },
-      { key: "ATK", value: "9 - 16" },
-      { key: "SPD", value: "4 - 7" },
+      { key: "HP", value: "-" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "-" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "-" },
       { key: "PWR", value: "-" },
     ],
     damageTypeEffectiveness: [
@@ -2929,6 +3699,30 @@ export const npcs: NPCData[] = [
     descriptionSections: [
     {
     sectionName: "Description",
+        sectionContent: 
+        <>
+        
+        </>
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: 
+        <>
+        
+        </>
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: 
+        <>
+        
+        </>
+      },
+
+      {
+        sectionName: "Loot",
         sectionContent: 
         <>
         
