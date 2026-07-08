@@ -2294,6 +2294,588 @@ export const npcs: NPCData[] = [
       },
     ],
   },
+
+  {
+    id: "Insectoid",
+    image: Insectoid,
+    levelDescription: "Level 25 Beastfolk",
+    stats: [
+      { key: "HP", value: "130 - 155" },
+      { key: "ATK", value: "26 - 40" },
+      { key: "AC", value: "15 - 24" },
+      { key: "ATK", value: "33 - 40" },
+      { key: "SPD", value: "9" },
+      { key: "PWR", value: "30" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "242 - 315" },
+      { key: "ATK", value: "41 - 65" },
+      { key: "AC", value: "17 - 28" },
+      { key: "ATK", value: "49 - 63" },
+      { key: "SPD", value: "11 - 12" },
+      { key: "PWR", value: "30" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "+30%" },
+      { key: "Mace", value: "-30%" },
+      { key: "Axe", value: "+30%" },
+      { key: "Unarmed", value: "-20%" },
+      { key: "Ranged", value: "+10%" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: ["Spray Acid"],
+    inventory: [
+      "Iron / Steel / Crystal Boots",
+      "Iron / Steel / Crystal Shields",
+      "Steel / Crystal Swords ",
+      "Steel / Crystal Polearms",
+      "Shortbows / Longbows / Compound Bows",
+      "Iron Daggers",
+      "Spellbooks of Acid Spray",
+      "Quivers of Hunting / Piercing Arrows",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Insectoids are Beastfolk that primarily reside in Sand Labyrinth
+              and Crystal Caves. They are similar to the Goblins the player
+              comes into contact with prior, but with a few key differences in
+              behaviour and generally better equipment.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn locations",
+        sectionContent: (
+          <>
+            <h3>Sand Labyrinth</h3>
+            <p>
+              Insectoids first start naturally appearing in Sand Labyrinth. Here
+              they are labelled as "Lesser Insectoids", alluding to the fact
+              they are weaker than their counterparts that appear on much later
+              floors. They spawn decently commonly, but are almost never in big
+              groups.
+            </p>
+
+            <h3>Crystal Caves</h3>
+            <p>
+              Regular Insectoids start appearing in Crystal Caves. Here they get
+              better equipment than their lesser counterparts and also come in
+              greater numbers.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Insectoids will primarily use their weapon to attack the player.
+              Bow-wielding Insectoids have dangerous quivers that pierce armor
+              or slow the player down, hence they should be avoided. Insectoids
+              occasionally break their attack cycles to wind up an Iron Dagger
+              throw or an Acid Spray spell, both of which are visually
+              telegraphed in the same manner. The dagger throw can be caught
+              mid-air with enough reflexes or outright dodged, while Acid Spray
+              should generally be avoided due to its armor-melting properties.
+              The spell Blood Ward reduces the direct damage from Insectoids, as
+              well as the damage from their Hunting Arrows and Acid Spray spell.
+              Insectoids start backpedalling on low health.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Insectoids drop the equipment they wear and use, as well as
+              uncommonly dropping the Spellbook of Acid Spray.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Tortured Insectoids</h3>
+            <p>
+              A setpiece in the Crystal Caves has 4 jailed Tortured Insectoids.
+              They are functionally identical to regular Insectoids, except they
+              initially have no equipment.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Insectoids are friendly with Scarabs, Scorpions and Kobolds. The
+              player may recruit Insectoids if they are playing as the Insectoid
+              race.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Bugbear",
+    image: Bugbear,
+    levelDescription: "Level 14 Beastfolk",
+    stats: [
+      { key: "HP", value: "130 - 150" },
+      { key: "ATK", value: "18 - 28" },
+      { key: "AC", value: "8 - 15" },
+      { key: "ATK", value: "15 - 22" },
+      { key: "SPD", value: "3" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "242 - 310" },
+      { key: "ATK", value: "30 - 43" },
+      { key: "AC", value: "9 - 17" },
+      { key: "ATK", value: "23 - 33" },
+      { key: "SPD", value: "4" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+30%" },
+      { key: "Polearm", value: "-30%" },
+      { key: "Mace", value: "+20%" },
+      { key: "Axe", value: "-20%" },
+      { key: "Unarmed", value: "-30%" },
+      { key: "Ranged", value: "-20%" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: ["Strafing", "Shield Bash"],
+    inventory: ["Steel Swords / Axes", "Arbalests", "Scutums"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Bugbears are tough Beastfolk that use heavy equipment in combat.
+              They are as large as a Troll, but also faster, smarter and more
+              perceptive.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Ruins</h3>
+            <p>
+              Bugbears only spawn in The Ruins level of the game towards the end
+              of Act 1. Here they appear in frequent numbers, often in groups or
+              pairs.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Bugbears use their weapons to attack the player. Arbalest wielding
+              Bugbears will keep their distance and shoot the player. Often they
+              also have Scutums equipped, a shield item unique to them. Scutum
+              Bugbears will occassionally pull their guard up and strafe the
+              player, at which point their defenses are nigh-impenetrable, even
+              with magical attacks. They will also bash the player with their
+              Scutum, dealing moderate damage and knocking back the player. It
+              is best to disengage and wait for the Bugbear to lower their guard
+              again. Bugbears are weak to Hunting Arrows. Bugbears start
+              backpedalling on low health.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Bugbears are the most consistent source of the Arbalest, a
+              powerful ranged weapon that eclipses all other options in damage,
+              but is slower at firing.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Bugbears are neutral with Gnomes and Gnome Thieves. Interestingly,
+              they will still trigger the traps laid by Gnome Thieves. They are
+              always hostile to the player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Kobold",
+    image: Kobold,
+    levelDescription: "Level 15 Beastfolk",
+    stats: [
+      { key: "HP", value: "100 - 120" },
+      { key: "ATK", value: "33 - 40" },
+      { key: "AC", value: "3 - 11" },
+      { key: "ATK", value: "33 - 41" },
+      { key: "SPD", value: "5 - 10" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "196 - 260" },
+      { key: "ATK", value: "52 - 70" },
+      { key: "AC", value: "4 - 13" },
+      { key: "ATK", value: "46 - 64" },
+      { key: "SPD", value: "6 - 13" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-10%" },
+      { key: "Polearm", value: "-10%" },
+      { key: "Mace", value: "+20%" },
+      { key: "Axe", value: "+20%" },
+      { key: "Unarmed", value: "-20%" },
+      { key: "Ranged", value: "+10%" },
+      { key: "Magic", value: "-80%" },
+    ],
+    abilities: ["Slow"],
+    inventory: [
+      "Iron Axes",
+      "Steel Swords",
+      "Steel Halberds",
+      "Shortbows / Crossbows",
+      "Iron / Steel Shields",
+      "Cloaks",
+      "Crystal Shards",
+      "Quivers of Fire / Springshot Arrows",
+      "Enchanted Feathers",
+      "Tin Openers",
+      "Towels",
+      "Lanterns",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Kobolds are Beastfolk that appear exclusively in Crystal Caves
+              level of the game. They are also the most common Denizen of the
+              caves.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Crystal Caves</h3>
+            <p>
+              Kobolds are very common in Crystal Caves. Sometimes they appear
+              alone, but often they are part of setpieces where multiple Kobolds
+              are grouped together.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Kobolds primarily use their equipment to attack the player.
+              Kobolds wielding Crossbows are more dangerous than those wielding
+              melee weapons, as they augment their shots with dangerous Quivers
+              of Fire and Springshot arrows. Sometimes they break their attack
+              cycles by casting a Slow spell. Kobolds are extremely resistant to
+              magic, so its usage is ill-advised, unless the player has some
+              means of bypassing resistances such as Arcane Mark or Breath Fire
+              spells. Kobolds are weak to Hunting Arrows. Occasionally, Kobolds
+              can be found Asleep on the floor. Kobolds start backpedalling on
+              low health.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Kobolds drop the equipment they wear. Most notably, this makes
+              them a good source of Quivers of Fire and Springshot Arrows. They
+              also uncommonly drop Enchanted Feathers.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Kobold Cultists</h3>
+            <p>
+              Kobold Cultists are a stronger variant of Kobolds that only appear
+              in the secret level Cockatrice Lair. Every Kobold Cultist spawn
+              location is fixed and consistent through all playthroughs. They
+              are visually distinct from regular Kobolds by the Hoods on their
+              heads or Magistaffs of Bloodletting in their hands. Along with
+              regular Kobold's abilities, they can also cast Fireball, Cold,
+              Stoneblood and Bloodletting spells. They drop their equipment,
+              including the Hoods and Magistaffs of Bloodletting.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Kobolds are neutral with Insectoids, Crystal Golems and Incubi.
+              They are always hostile to the player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Goatman",
+    image: Goatman,
+    levelDescription: "Level 25 Beastfolk",
+    stats: [
+      { key: "HP", value: "220 - 240" },
+      { key: "ATK", value: "29 - 40" },
+      { key: "AC", value: "9 - 18" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "8" },
+      { key: "PWR", value: "25" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "412 - 500" },
+      { key: "ATK", value: "48 - 65" },
+      { key: "AC", value: "10 - 20" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10 - 11" },
+      { key: "PWR", value: "25" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-10%" },
+      { key: "Polearm", value: "+10%" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "+10%" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "+10%" },
+      { key: "Magic", value: "+40%" },
+    ],
+    abilities: ["Forcebolt", "Fireball", "Cold", "Slow"],
+    inventory: [
+      "Leather / Steel Breastpieces",
+      "Wizard Doublets",
+      "Iron, Steel, Crystal Boots",
+      "Hoods",
+      "Wizard Hats",
+      "Cloaks",
+      "Mirror Shields",
+      "Steel / Crystal Axes",
+      "Steel / Crystal Maces",
+      "Steel Chakrams",
+      "Magistaffs of Slow",
+      "Magistaffs of Fire",
+      "Magistaffs of Cold",
+      "Lanterns",
+      "Crystal Shards",
+      "Potions of Healing",
+      "Bottles of Booze",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Goatmen are tough Beastfolk with a variety of combat tactics. They
+              are relegated for the later parts of the dungeon.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Hell</h3>
+            <p>
+              The first location the player may encounter Goatmen is in the
+              final level of the alternate path in Act 1, Hell. Here they spawn
+              in frequent numbers, sometimes in groups. They may also spawn from
+              hell circles on the ground. The Goatmen that spawn in this level
+              are the Lesser Goatman variant that are identical to the regular
+              variety in behaviour and equipment, but have less stats.
+            </p>
+
+            <h3>The Citadel</h3>
+            <p>
+              Goatmen also naturally spawn in the final level of the dungeon.
+              Here they are fairly common, spawning about as frequently as the
+              other monster types. Oftentimes they are also fixed spawns as
+              parts of certain setpieces.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Goatmen have more complex behaviour than most other Denizens. They
+              prefer using melee attacks to damage the player, but can also
+              either throw their Steel Chakrams, use the Magistaffs they are
+              holding or throw Bottles of Booze at the player. When throwing
+              Booze, the Goatman itself will also get Drunk, boosting its melee
+              damage output. Some Goatmen that prefer using Magic, recognisable
+              by their Wizard Hats, will repeatedly cast a spell, either
+              Forcebolt, Fireball, Cold or Slow. While they may exhibit more
+              complicated behaviour, Goatmen are still some of the least
+              dangerous enemies in the levels they appear in. They also have a
+              significant weakness to Magic. Goatmen start backpedalling on low
+              health. Goatmen are immune to the Greasy debuff.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Goatmen drop the equipment they wear. Their equipment is high
+              tier, but nothing notable. The strongest items they often drop are
+              the Potions of Healing which are always useful as a fast and
+              reliable source of healing on any player character.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Gharbad</h3>
+            <p>
+              Gharbad is an elite variant that has a 2% chance to replace any
+              regular Goatman spawn. He behaves similarly to the regular variant
+              but is stronger overall. Gharbad usually spawns with a group of
+              Goatmen that follow him as their leader.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Goatmen are neutral with all Demonics, Vampires, Shadows and
+              Cockatrices. The palyer may recruit Goatmen if they are playing as
+              a true Goatman.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Human",
+    image: Human,
+    levelDescription: "Level 3 Humanoid",
+    stats: [
+      { key: "HP", value: "30 - 50" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "30 - 50" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: [""],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: <></>,
+      },
+    ],
+  },
 ];
 
 /* 
