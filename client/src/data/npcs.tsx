@@ -5037,6 +5037,1138 @@ export const npcs: NPCData[] = [
       },
     ],
   },
+
+  {
+    id: "Potato_King",
+    image: PotatoKing,
+    levelDescription: "Level 6 Humanoid",
+    stats: [
+      { key: "HP", value: "120" },
+      { key: "ATK", value: "17" },
+      { key: "AC", value: "3 - 13" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "1" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "232 - 260" },
+      { key: "ATK", value: "29 - 32" },
+      { key: "AC", value: "4 - 14" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "2" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-10%" },
+      { key: "Polearm", value: "+10%" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "+10%" },
+      { key: "Unarmed", value: "-20%" },
+      { key: "Ranged", value: "+10%" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: ["-"],
+    inventory: [
+      "Sharur",
+      "Jester Hat",
+      "Cloak of Magic Reflection",
+      "Grass Springs",
+      "Leather, Bronze Armor",
+      "Cloaks",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>A stronger variant of the Goblin.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>The Potato King has a 2% chance to replace any goblin spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              The Potato King behaves the same as a normal goblin except for
+              having a handful of gobline followers.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              The Potato King will drop his equipment when he is killed. Notable
+              items are the Cloak of Magic Reflection, a +2 Jester Hat and a +1
+              Decrepit Sharur.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              The Potato King has the same affinity as a normal goblin however
+              requires a leadership score of 60 to be recruited.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Robin_Hood",
+    image: RobinHood,
+    levelDescription: "Level 5 Humanoid",
+    stats: [
+      { key: "HP", value: "70" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "70" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: ["-"],
+    inventory: [
+      "Shortbow (+1)",
+      "Bycocket (+1)",
+      "Cloak (+1)",
+      "Leather Gloves (+1)",
+      "Leather Boots (+1)",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Robin Hood is a rare Human NPC that has a 4% chance to replace any
+              spawned human. Like all rare NPCs, he will not drop his equipment
+              when the "drop all" command is used, although they can be swapped
+              with equipment on the ground.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Robin Hood has a 4% chance to replace any human spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Robin Hood behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Robin Hood will drop all carried equipment when killed. It will
+              always be excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Robin Hood has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Merlin",
+    image: Merlin,
+    levelDescription: "Level 10 Humanoid",
+    stats: [
+      { key: "HP", value: "60" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "60" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: [
+      "Staff of Lightning (+2)",
+      "Wizard Hat (+2)",
+      "Pipe (+1)",
+      "Cloak of Protection (+5)",
+      "Amulet of Magic Reflection (+2)",
+      "Leather Boots of Speed (+2)",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Merlin is a rare Human NPC that has a 4% chance to replace any
+              spawned human. Like all rare NPCs, he will not drop his equipment
+              when the "drop all" command is used, although they can be swapped
+              with equipment on the ground.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Merlin has a 4% chance to replace any human spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Merlin behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Merlin will drop all carried equipment when killed. It will always
+              be excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Merlin has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "King_Arthur",
+    image: KingArthur,
+    levelDescription: "Level 10 Humanoid",
+    stats: [
+      { key: "HP", value: "100" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "100" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: [
+      "Dyrnwyn (+1)",
+      "Crowned Helmet (+1)",
+      "Cloak of Magic Reflection (+2)",
+      "Steel Shield of Magic Reflection (+1)",
+      "Steel Breastpiece (+1)",
+      "Steel Gauntlets (+1)",
+      "Steel Boots (+1)",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              King Arthur is a rare Human NPC that has a 4% chance to replace
+              any spawned human. Like all rare NPCs, he will not drop his
+              equipment when the "drop all" command is used, although they can
+              be swapped with equipment on the ground.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>King Arthur has a 4% chance to replace any human spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>King Arthur behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              King Arthur will drop all carried equipment when killed. It will
+              always be excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>King Arthur has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Red_Riding_Hood",
+    image: RedRidingHood,
+    levelDescription: "Level 1 Humanoid",
+    stats: [
+      { key: "HP", value: "10" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "10" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: [
+      "Quaterstaff (+1)",
+      "Red Hood (+1)",
+      "Cloak (+1)",
+      "Wolf Hood (+1)",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Red Riding Hood is a rare Human NPC that has a 4% chance to
+              replace any spawned human. Like all rare NPCs, she will not drop
+              her equipment when the "drop all" command is used, although they
+              can be swapped with equipment on the ground.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Red Riding Hood has a 4% chance to replace any human spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Red Riding Hood behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Red Riding Hood will drop all carried equipment when killed. It
+              will always be excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Red Riding Hood has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Kali",
+    image: Kali,
+    levelDescription: "Level 20 Humanoid",
+    stats: [
+      { key: "HP", value: "200" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "200" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: [
+      "Circlet (+2)",
+      "Cloak of Magic Reflection (+1)",
+      "Leather Boots of Speed (+2)",
+      "Spellbook of Fireball (+1)",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Kali is a rare Human NPC that has a 4% chance to replace any
+              spawned human. Like all rare NPCs, he will not drop his equipment
+              when the "drop all" command is used, although they can be swapped
+              with equipment on the ground.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Kali has a 4% chance to replace any human spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Kali behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Kali will drop all carried equipment when killed. It will always
+              be excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Kali has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Anansi",
+    image: Anansi,
+    levelDescription: "Level 20 Humanoid",
+    stats: [
+      { key: "HP", value: "100" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "100" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: [
+      "Sharur (+1)",
+      "Circlet of Wisdom (-1)",
+      "Spellbook of Antrhopod Form",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Anansi is a rare Human NPC that has a 4% chance to replace any
+              spawned human. Like all rare NPCs, he will not drop his equipment
+              when the "drop all" command is used, although they can be swapped
+              with equipment on the ground.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>
+              Anansi has a 4% chance to replace any human spawn. He cannot
+              however spawn in Hamlet.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Anansi behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Anansi will drop all carried equipment when killed. It will always
+              be excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Anansi has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Vishpala",
+    image: Vishpala,
+    levelDescription: "Level 10 Humanoid",
+    stats: [
+      { key: "HP", value: "70" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "70" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: [
+      "Gungnir (+1)",
+      "Cloak",
+      "Bronze Shield (+1)",
+      "Iron Breastpiece",
+      "Iron Boots",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Vishpala is a rare Human NPC that has a 4% chance to replace any
+              spawned human. Like all rare NPCs, he will not drop his equipment
+              when the "drop all" command is used, although they can be swapped
+              with equipment on the ground.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Vishpala has a 4% chance to replace any human spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Vishpala behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Vishpala will drop all carried equipment when killed. It will
+              always be excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Vishpala has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Othello",
+    image: Othello,
+    levelDescription: "Level 10 Humanoid",
+    stats: [
+      { key: "HP", value: "50" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "50" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: [
+      "Steel Sword (+2)",
+      "Turban",
+      "Cloak",
+      "Iron Breastpiece",
+      "Iron Bracers",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Othello is a rare Human NPC that has a 4% chance to replace any
+              spawned human. Like all rare NPCs, he will not drop his equipment
+              when the "drop all" command is used, although they can be swapped
+              with equipment on the ground.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Othello has a 4% chance to replace any human spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Othello behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Othello will drop all carried equipment when killed. It will
+              always be excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Othello has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Oya",
+    image: Oya,
+    levelDescription: "Level 20 Humanoid",
+    stats: [
+      { key: "HP", value: "100" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "100" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: ["Hood (+3)", "Cloak of Protection (+4)"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Oya is a rare Human NPC that has a 4% chance to replace any
+              spawned human. Like all rare NPCs, he will not drop his equipment
+              when the "drop all" command is used, although they can be swapped
+              with equipment on the ground.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Oya has a 4% chance to replace any human spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Oya behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Oya will drop all carried equipment when killed. It will always be
+              excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Oya has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Conan_the_Barbarian",
+    image: ConanTheBarbarian,
+    levelDescription: "Level 10 Humanoid",
+    stats: [
+      { key: "HP", value: "100" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "100" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: ["Steel Axe (+2)", "Crown (+1)", "Wooden Shield (+2)"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Conan the Barbarian is a rare Human NPC that has a 4% chance to
+              replace any spawned human. Like all rare NPCs, he will not drop
+              his equipment when the "drop all" command is used, although they
+              can be swapped with equipment on the ground.{" "}
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>
+              Conan the Barbarian has a 4% chance to replace any human spawn.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Conan the Barbarian behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Conan the Barbarian will drop all carried equipment when killed.
+              It will always be excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Conan the Barbarian has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "ZAP_Brigade",
+    image: ZAPBrigade,
+    levelDescription: "Level ??? Humanoid",
+    stats: [
+      { key: "HP", value: "105" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "105" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: [
+      "Magicstaffs of Lightning",
+      "Hoods",
+      "Cloaks",
+      "Cloaks of Protection",
+      "Leather Breastpieces",
+      "Leather Gloves",
+      "Leather Boots",
+      "Amulets of Magic Reflection",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              The ZAP Brigade are a number of heavily armed humans who have a
+              chance to spawn on minotaur levels. (excluding the minotaur maze).
+              They can spawn in groups of two to nine. They have a pretty good
+              shot at killing the minotaur as long as they can get its
+              attention. Like all humans, they are hostile to monster races but
+              can be recruited to follow Human and Automaton players, leadership
+              permitting.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>
+              The ZAP Brigade have a 20% chance to spawn on a minotaur floor.
+              They may also be summoned via a +2 Scroll of Summon.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>The ZAP Brigade behaves the same as any other human.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              The ZAP Brigade will drop all carried equipment when killed. It
+              will always be excellent quality.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>The ZAP Brigade has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 /* 
@@ -5059,18 +6191,18 @@ export const npcs: NPCData[] = [
     levelDescription: "Level ",
     stats: [
       { key: "HP", value: "-" },
-      { key: "ATK", value: "-" },
-      { key: "AC", value: "-" },
-      { key: "ATK", value: "-" },
-      { key: "SPD", value: "-" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
       { key: "PWR", value: "-" },
     ],
     hardcoreStats: [
       { key: "HP", value: "-" },
-      { key: "ATK", value: "-" },
-      { key: "AC", value: "-" },
-      { key: "ATK", value: "-" },
-      { key: "SPD", value: "-" },
+      { key: "ATK", value: "7 - 14" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "9 - 16" },
+      { key: "SPD", value: "4 - 7" },
       { key: "PWR", value: "-" },
     ],
     damageTypeEffectiveness: [
@@ -5092,7 +6224,12 @@ export const npcs: NPCData[] = [
     sectionName: "Description",
         sectionContent: 
         <>
-        
+          <p>
+            Merlin is a rare Human NPC that has a 4% chance to
+              replace any spawned human. Like all rare NPCs, he will not drop
+              his equipment when the "drop all" command is used, although they
+              can be swapped with equipment on the ground.{" "}  
+          </p>
         </>
       },
 
@@ -5100,7 +6237,9 @@ export const npcs: NPCData[] = [
         sectionName: "Spawn Locations",
         sectionContent: 
         <>
-        
+          <p>
+            Merlin has a 4% chance to replace any human spawn.
+          </p>
         </>
       },
 
@@ -5108,7 +6247,9 @@ export const npcs: NPCData[] = [
         sectionName: "Behaviour",
         sectionContent: 
         <>
-        
+          <p>
+            Merlin behaves the same as any other human.
+          </p>
         </>
       },
 
@@ -5116,7 +6257,19 @@ export const npcs: NPCData[] = [
         sectionName: "Loot",
         sectionContent: 
         <>
-        
+          <p>
+            Merlin will drop all carried equipment when killed. It will always be excellent quality.
+          </p>
+        </>
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: 
+        <>
+          <p>
+            Merlin has the same affinity as a normal human.
+          </p>
         </>
       },
   ]
