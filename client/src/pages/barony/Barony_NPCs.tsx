@@ -22,7 +22,6 @@ import Skeleton_Icon from "../../../src/assets/Skeleton_Male_Icon.png";
 import Ghoul_Icon from "../../../src/assets/Ghoul_Icon.webp";
 import Vampire_Icon from "../../../src/assets/Vampire_Male_Icon.webp";
 import Shadow_Icon from "../../../src/assets/Shadow_Ally_Icon.webp";
-import Revenant_Skull_Icon from "../../../src/assets/Revenant_Skull_Ally_Icon.webp";
 import Succubus_Icon from "../../../src/assets/Succubus_Icon.webp";
 import Incubus_Icon from "../../../src/assets/Incubus_Icon.webp";
 import Imp_Icon from "../../../src/assets/Imp_Icon.webp";
@@ -34,8 +33,6 @@ import Spellbot_Icon from "../../../src/assets/Spellbot_Icon.webp";
 import Dummybot_Icon from "../../../src/assets/Dummy_Bot_Icon.webp";
 import Mimic_Icon from "../../../src/assets/24px-Mimic.webp";
 import Slime_Icon from "../../../src/assets/Slime_Green_Icon.webp";
-import Earth_Sprite_Icon from "../../../src/assets/Earth_Sprite_Ally_Icon.webp";
-import Fire_Sprite_Icon from "../../../src/assets/Fire_Sprite_Ally_Icon.webp";
 
 import Potato_King_Icon from "../../../src/assets/The_Potato_King_Icon.webp";
 import Robin_Hood_Icon from "../../../src/assets/Robin_Hood_Icon.webp";
@@ -144,11 +141,6 @@ function Barony_NPCs() {
         },
         { label: "Vampire", to: "/Barony/NPCs/Vampire", img: Vampire_Icon },
         { label: "Shadow", to: "/Barony/NPCs/Shadow", img: Shadow_Icon },
-        {
-          label: "Revenant Skull",
-          to: "/Barony/NPCs/Revenant_Skull",
-          img: Revenant_Skull_Icon,
-        },
       ],
     },
     {
@@ -190,19 +182,7 @@ function Barony_NPCs() {
     },
     {
       rowHeader: "Elementals",
-      rowData: [
-        { label: "Slime", to: "/Barony/NPCs/Slime", img: Slime_Icon },
-        {
-          label: "Earth Sprite",
-          to: "/Barony/NPCs/Earth_Sprite",
-          img: Earth_Sprite_Icon,
-        },
-        {
-          label: "Fire Sprite",
-          to: "/Barony/NPCs/Fire_Sprite",
-          img: Fire_Sprite_Icon,
-        },
-      ],
+      rowData: [{ label: "Slime", to: "/Barony/NPCs/Slime", img: Slime_Icon }],
     },
   ];
 

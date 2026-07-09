@@ -25,7 +25,6 @@ import Ghoul from "../assets/Ghoul.webp";
 import EnslavedGhoul from "../assets/Enslaved_Ghoul.webp";
 import Vampire from "../assets/Vampire.webp";
 import Shadow from "../assets/Shadow.webp";
-import RevenantSkull from "../assets/Revenant_Skull_Ally_Icon.webp";
 
 import Succubus from "../assets/Succubus.webp";
 import SuccubusConsort from "../assets/Succubus_Consort.webp";
@@ -41,8 +40,6 @@ import Dummybot from "../assets/Dummybot.webp";
 import Mimic from "../assets/Mimic.webp";
 
 import Slime from "../assets/Slime.webp";
-import EarthSprite from "../assets/Earth_Sprite.webp";
-import FireSprite from "../assets/Fire_Sprite_Ally_Icon.webp";
 
 import PotatoKing from "../assets/The_Potato_King.webp";
 import RobinHood from "../assets/Robin_Hood.webp";
