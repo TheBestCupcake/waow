@@ -3646,6 +3646,681 @@ export const npcs: NPCData[] = [
       },
     ],
   },
+
+  {
+    id: "Succubus",
+    image: Succubus,
+    levelDescription: "Level 10 Demonic",
+    stats: [
+      { key: "HP", value: "60" },
+      { key: "ATK", value: "15" },
+      { key: "AC", value: "3" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "3" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "124 - 140" },
+      { key: "ATK", value: "23 - 25" },
+      { key: "AC", value: "4" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "4" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+20%" },
+      { key: "Polearm", value: "-10%" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-20%" },
+    ],
+    abilities: ["Charm Monster", "Teleportation"],
+    inventory: ["Magicstaffs of Charm Monster", "Masquerade Masks"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Succubi are likely the first Demonic Denizen the player will
+              encounter in their descent into the dungeon. Their sudden
+              appearance may prove deadly for unprepared for adventurers.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Swamp</h3>
+            <p>
+              There is one particular setpiece that sometimes generates in this
+              level which spawns multiple Succubi once the player properly
+              enters it. The room is recognisable by a single Fountain in the
+              middle that also always spawns a Succubus when drank from.
+            </p>
+            <h3>Hell</h3>
+            <p>
+              Hell is the only level in the game where Succubi naturally spawn
+              at random on its floors.
+            </p>
+            <h3>Fountains</h3>
+            <p>
+              Fountains are the first possible way the player may encounter a
+              Succubus. Each Fountain has a 10% chance to spawn a Succubus upon
+              interaction. From floors 1-10, it will always be the Succubus that
+              spawns from the Fountain; starting floor 11 and until floor 20
+              (including Underworld), Succubus spawns only half the time, the
+              other possibility being a Lesser Incubus. Starting floor 21,
+              Succubi never spawn from Fountains.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Succubi primarily use melee attacks to harm the player. While
+              fighting, the Succubus may channel the Charm Monster spell, which
+              will Pacify the player, rendering them unable to do anything. As
+              with most other spells, they are telegraphed by the casting
+              animation and the Succubus backpedalling while using it, so the
+              player should use this tell to dodge the spell. The chance of a
+              Succubus casting Charm Monster rises the lower her health is, if
+              the target is Confused or Drunk and if the distance between her
+              and her target is small. Occasionally while attacking, the
+              Succubus will steal any 1 armour piece from the player and
+              Teleport away randomly. Because of its random nature, finding the
+              Succubus and retrieving the stolen item may be troublesome. Since
+              Succubi spawn from Fountains most of the time only as a result
+              from the player's direct interaction with them, they can prepare
+              accordingly for an encounter with the Succubus. The Fountain
+              itself can be used to kite the Succubus around, as it is an
+              unbreakable structure. Succubi are weak to Smite damage. Succubi
+              start backpedalling on low health.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Succubi have a 10% chance to drop Magistaffs of Charm Monster or
+              Masquerade Masks. Dropped Masquerade Masks will never be Blessed.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Lilith</h3>
+            <p>
+              Lilith is an elite variant of the Succubus that has a 2% chance to
+              replace any given Succubus spawn. She always comes accompanied by
+              2 regular Succubi that follower her as their leader. She otherwise
+              behaves identically to regular Succubi. Lilith wears a Rose that
+              she drops on death, as well as having a 75% chance to drop an
+              Excellent Magistaff of Charm Monster.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Succubi are neutral with all other Demonics and Undeads. The
+              player may recruit a Succubus if they are playing as the Succubus
+              or Incubus races, as well as if they are wearing the Rose as any
+              race.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Succubus_Consorts",
+    image: SuccubusConsort,
+    levelDescription: "Level 20 Demonic",
+    stats: [
+      { key: "HP", value: "130 - 170" },
+      { key: "ATK", value: "23" },
+      { key: "AC", value: "12" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "12" },
+      { key: "PWR", value: "30" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "242 - 350" },
+      { key: "ATK", value: "31 - 33" },
+      { key: "AC", value: "13" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "14 - 16" },
+      { key: "PWR", value: "30" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+20%" },
+      { key: "Polearm", value: "-10%" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-20%" },
+    ],
+    abilities: ["Charm Monster", "Teleportation"],
+    inventory: [
+      "Magicstaffs of Charm Monster",
+      "Masquerade Masks",
+      "Spellbooks of Bloodletting",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              The Succubus Consorts are a special variant of the Succubus,
+              boasting much better stats as well as a new spell to harm their
+              opposition.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Bram's Castle</h3>
+            <p>
+              Succubus Consorts only appear on the second floor of the secret
+              stage Bram's Castle. There are always 3 of them, and they have
+              unique names: Verona, Aleera and Marishka.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Succubus Consorts use their Bloodletting spell to damage the
+              player. Unlike regular Succubi, they will not cast Charm Monster
+              or Teleport. As such, their behaviour and by extent strategies
+              against them are simpler to account for.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Succubus Consorts may drop the Spellbook of Bloodletting that they
+              themselves use.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Succubus Consorts are neutral with all other Demonics and Undeads.
+              The player may recruit a Succubus Consort if they are playing as
+              the Succubus or Incubus races, as well as if they are wearing the
+              Rose as any race.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Incubus",
+    image: Incubus,
+    levelDescription: "Level 25 Demonic",
+    stats: [
+      { key: "HP", value: "280 - 305" },
+      { key: "ATK", value: "28 - 44" },
+      { key: "AC", value: "3 - 6" },
+      { key: "ATK", value: "33 - 41" },
+      { key: "SPD", value: "8" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "520 - 625" },
+      { key: "ATK", value: "47 - 74" },
+      { key: "AC", value: "4 - 8" },
+      { key: "ATK", value: "46 - 64" },
+      { key: "SPD", value: "10 - 11" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+20%" },
+      { key: "Polearm", value: "-30%" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "+30%" },
+      { key: "Magic", value: "-20%" },
+    ],
+    abilities: ["Teleportation", "Steal Weapon"],
+    inventory: [
+      "Magicstaffs of Cold",
+      "Crossbows",
+      "Steel / Crystal Polearms",
+      "Bottles of Booze",
+      "Potions of Confusion",
+      "Masquerade Mask",
+      "Mirror Shield",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              The male counterpart of the Succubus, they are found and replace
+              Succubi post hamlet.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Hell</h3>
+            <p>This is the earliest point the player can encounter Incubi.</p>
+
+            <h3>Crystal Caves</h3>
+            <p>
+              Incubi are a fairly rare spawn in the Crytal caves. They always
+              spawn alone.
+            </p>
+
+            <h3>The Citadel</h3>
+            <p>
+              Incubi are alot more common in the Citadel alongside Goatmen and
+              Vampires.
+            </p>
+
+            <h3>Fountains</h3>
+            <p>Incubi replace Succubi spawns in fountains post Hamlet.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Incubi will use their weapons / staffs to damage the player,
+              teleporting around to confuse the player. They will also throw
+              potions of confusion or bottles of booze at the player. Incubi
+              have a unique spell Steal Weapon which they will use to take the
+              players weapon and attack them with. The only way to obtain this
+              spell is to reflect it back at them when they cast it on the
+              player which will drop the spellbook.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Incubi will drop their used equipment as well as any equipment
+              stolen from the player. They will also drop bottles of booze and
+              potions of confusion.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Incubi can be recruited to follow Succubus and Incubus players or
+              be recruited by any race by using an equipped rose. They are
+              neutral to Automaton players.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Imp",
+    image: Imp,
+    levelDescription: "Level 14 Demonic",
+    stats: [
+      { key: "HP", value: "80" },
+      { key: "ATK", value: "29" },
+      { key: "AC", value: "9" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "7" },
+      { key: "PWR", value: "25" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "160 - 180" },
+      { key: "ATK", value: "48 - 54" },
+      { key: "AC", value: "10 - 11" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "8 - 9" },
+      { key: "PWR", value: "25" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+10%" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-20%" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "+20%" },
+    ],
+    abilities: ["Fireball", "Levitation"],
+    inventory: ["Spellbook of FIreball"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Imps are mischievous Demonic creatures usually found later in the
+              game towards the end of Act 1 and beginning of Act 2. They are
+              premiere underlings of Baron Herx and Baphomet.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Underworld</h3>
+            <p>
+              Underworld is the first location the player can reach where Imps
+              naturally spawn. There are usually a couple Imp spawns per given
+              Underworld floor and they are particularly troublesome in this
+              level due to its layout giving the Levitating Imp an advantage.
+            </p>
+            <h3>The Ruins</h3>
+            <p>
+              Imps rarely spawn in The Ruins as parts of a setpiece where Imps
+              are locked behind bars. The player has to willingly set them free
+              and engage them. Otherwise, they do not spawn naturally in the
+              level.
+            </p>
+            <h3>Hell</h3>
+            <p>
+              Along with other Demonics, Imps naturally spawn often in Hell
+              level. This is the level where they are the most numerous in.
+            </p>
+            <h3>Lich's Bastion</h3>
+            <p>
+              Baron Herx periodically summons underlings in his fight and he can
+              choose to spawn either Imps or Demons.
+            </p>
+
+            <h3>Molten Throne</h3>
+            <p>
+              Baphomet periodically summons underlings in his fight; he spawns
+              many Imps, as well as Demons and Shadows.
+            </p>
+
+            <h3>Crystal Caves</h3>
+            <p>
+              Imps are part of a setpiece where a couple of them float over a
+              pool of lava. Otherwise, they do not spawn naturally.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Imps exclusively cast the Fireball spell to damage the player. As
+              such, any forms of Magic Resistance or Magic Reflection greatly
+              improve the player's survivability against Imps. Sometimes, they
+              can be found Asleep, allowing for an advantageous start. Imps are
+              at their most difficult when the floor's layout makes reaching
+              them impossible, which then necessitates a ranged source of damage
+              or luring the Imp into closer range. Imps are weak to Hunting
+              Arrows and Smite damage. They are immune to the Burning effect.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Imps commonly drop various Spellbooks on death. Currently, this
+              only includes the Spells that were available before the 5.0
+              Update: Instruments of Destruction Part 1; newly added Spellbooks
+              cannot be dropped by Imps.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Imps are neutral with all other Demonic and Undead denizens. They
+              are always hostile to the player regardless of the race they play,
+              unless they use the spell Imp Form, at which point the player can
+              recruit other Imps.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Demon",
+    image: Demon,
+    levelDescription: "Level 20 Demonic",
+    stats: [
+      { key: "HP", value: "120" },
+      { key: "ATK", value: "38" },
+      { key: "AC", value: "10" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10" },
+      { key: "PWR", value: "25" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "232 - 260" },
+      { key: "ATK", value: "65 - 73" },
+      { key: "AC", value: "12 - 13" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "12 - 13" },
+      { key: "PWR", value: "25" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-10%" },
+      { key: "Polearm", value: "-20%" },
+      { key: "Mace", value: "-20%" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-20%" },
+      { key: "Ranged", value: "-10%" },
+      { key: "Magic", value: "+10%" },
+    ],
+    abilities: ["Fireball"],
+    inventory: ["-"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Demons are a quintessential Demonic denizen usually found later in
+              the game. They are premiere underlings of both Baron Herx and
+              Baphomet.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Ruins</h3>
+            <p>
+              The Ruins are the first location where Demons may spawn naturally
+              at random on the floor. They are quite rare and will usually be
+              seen fighting with other Denizens of the floor. Sometimes, they
+              are part of setpieces where they are jailed behind gates.
+            </p>
+
+            <h3>Underworld</h3>
+            <p>
+              Underworld has no naturally spawning Demons, but it may have
+              demonic circles on the floor that, when stepped over, may spawn
+              multiple Demons from it.
+            </p>
+
+            <h3>Hell</h3>
+            <p>
+              Along with other Demonics, Demons spawn very commonly in Hell.
+              similar to Underworld, there are also demonic circles on the floor
+              that may spawn multiple Demons when stepped on.
+            </p>
+
+            <h3>Lich's Bastion</h3>
+            <p>
+              Baron Herx periodically summons minions during his boss fight. He
+              may choose to summon either a group of Demons or a group of Imps.
+            </p>
+
+            <h3>Molten Throne</h3>
+            <p>
+              Similar to Baron Herx, Baphomet also periodically summons minions,
+              of which he may choose to summon Demons, Imps or Shadows. There
+              are also numerous Demons on the escape path that opens after
+              Baphomet's defeat.
+            </p>
+
+            <h3>-2 Scroll of Summon</h3>
+            <p>
+              A -2 Scroll of Summon has multiple potential spawns, of which it
+              may choose to spawn a singular Demon. All cursed scroll summons
+              are hostile to the player.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Demons will either only rush the player and hurt them with their
+              melee attacks, or only repeatedly cast Fireball at them. The split
+              between melee and Fireball Demons is an even 50/50, so the player
+              may reasonably expect to encounter both types. Demons may prove
+              especially tough for unprepared adventurers, as their stats are
+              high, particularly in ATK and SPD, and Fireball is a dangerous
+              spell. Demons take bonus damage from Hunting Arrows and are weak
+              to Smite damage. They are immune to the Burning effect.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Demons do not have any natural drops. They are however still
+              eligiuble to drop Vials of Blood when a Vampire or Accursed player
+              is in the party, or Meat when wearing a Chef's Toque.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Deu De'Breau</h3>
+            <p>
+              Deu De'Breau is an elite variant that has a 2% chance to replace
+              any regular Demon spawn. He always comes accompanied by 3 Demons
+              who follow him as their leader. Similarly to regular Demons, Deu
+              De'Breau has a 50/50 chance split between being a melee or a
+              Fireball variant. Aside from the visual difference and a higher
+              LVL, Deu De'Breau has the same stats and behaves in the same
+              manner as a regular Demon.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Demons are neutral with all other Demonic and Undead denizens.
+              They are always hostile to the player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 /* 
