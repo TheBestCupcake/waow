@@ -7308,6 +7308,636 @@ export const npcs: NPCData[] = [
       },
     ],
   },
+
+  {
+    id: "Baron_Herx",
+    image: BaronHerx,
+    levelDescription: "Level 25 Undead",
+    stats: [
+      { key: "HP", value: "1250" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "8" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "8" },
+      { key: "PWR", value: "25" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "2258 - 2510" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "9 - 10" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10 - 11" },
+      { key: "PWR", value: "25" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+150%" },
+      { key: "Polearm", value: "+150%" },
+      { key: "Mace", value: "+150%" },
+      { key: "Axe", value: "+150%" },
+      { key: "Unarmed", value: "+80%" },
+      { key: "Ranged", value: "+30%" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [
+      "Lightning Volley",
+      "Conjure Hellspawn",
+      "Command Darkness",
+      "Levitation",
+      "Indominable",
+      "Dash",
+    ],
+    inventory: ["Purple Mystic Orb", "Gold"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Baron Herx is the primary antagonist of Barony, starting the story
+              as a normal baron holding ownership over Hamlet, before evolving
+              into a lich and wreaking havoc onto Hamlet, eventually spreading
+              his demonic forces outwards and posing as a threat to the world
+              that the player must defeat.
+            </p>
+            <p>
+              In as early as the introduction, Baron Herx is shown to be a very
+              greedy, power-hungry character driven by gold and profiteering off
+              the lands of Hamlet. As a consequence of his obsession of mining,
+              he ends up treating the citizens of Hamlet very poorly. Some books
+              state that such poor treatment stemmed from the fact that Herx
+              enjoyed how poorly he could treat those beneath him.
+            </p>
+            <p>
+              After so much mistreatment, the townsfolk devise a plan to lock
+              Baron Herx into the Mines with the promise of gold and leave him
+              for dead, which ends up working. Through his sheer hatred to those
+              that trapped him, Herx makes a pact with the devil Baphomet and
+              becomes a powerful lich upon death. With his powers, he quickly
+              summons many monsters to assault Hamlet in revenge for his
+              imprisonment, eventually returning to the Ruins as a base of
+              operations.
+            </p>
+            <p>
+              When the player enters the story, Herx is able to enter their mind
+              and communicate freely with them. Often these are musings about
+              the progress of the player, either being mild surprise about
+              passing through the first floors of the Mines or being very
+              hostile when the player begins entering the Ruins.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Herx's Lair",
+        sectionContent: (
+          <>
+            <p>
+              Herx's Lair is the final level of the main dungeon in Barony,
+              found on the twentieth floor of the dungeon. It is here where the
+              player squares off against the main antagonist, Baron Herx, to
+              protect the realm at large. The game will end here if the player
+              checked the "Enable Classic Endings" game setting.
+            </p>
+            <p>
+              Baron Herx's Lair is simple and straight to the point, the player
+              enters from a vacant room and crosses over a long bridge over to a
+              sizable arena where progressing inside will shut off the opening
+              behind them and unleash Baron Herx, ready to blast the player with
+              his magical attacks.
+            </p>
+            <p>
+              Before entering the battle, the player has a second pathway open
+              to them. This other path leads to a series of small rooms
+              thematically resembling the Swamp, the Ruins, and the Sand
+              Labyrinth from left to right, entering from the center Ruin-themed
+              room. Each room has a pedestal for the player to place a Mystic
+              Orb upon.
+            </p>
+            <p>
+              Each orb fits onto a specific pedestal, corresponding to where the
+              orb was originally found. Inserting an orb removes it from the
+              player's inventory and they cannot retrieve it from that point
+              forward. Doing so also grants the player several stat buffs
+              related to the color of each orb. As these rooms are completely
+              optional, they can be skipped if the player does not have any of
+              the orbs, or would wish to use their orbs for trading with the
+              Mysterious Merchant inside Hamlet.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Battle",
+        sectionContent: (
+          <>
+            <p>
+              Baron Herx primary form of attack is a stream of lightning spell
+              blasts.
+            </p>
+            <p>Herx can summon demonic enemies such as Demons and Imps.</p>
+            <p>
+              Herx will slowly float towards the player for most of the fight,
+              as well as being able to quickly fly away to another part of the
+              arena when damaged.
+            </p>
+            <p>
+              At half health, Herx will change the arena by removing most of the
+              light, only leaving the center illuminated.
+            </p>
+            <p>
+              After defeating Baron Herx, he drops a Purple Mystic Orb, and a
+              pedestal rises out of the center of the arena. Inserting this orb
+              will summon a portal, leading the player out of the dungeon and
+              into a text scroll, leading into Hamlet and the story content
+              added in the Blessed Addition.
+            </p>
+            <p>
+              To prevent being softlocked the player may equip the Purple Mystic
+              Orb regardless of if they can normally remove their main hand item
+              e.g. Blessed Weapon as a Incubi/Sucubi or a Cursed Weapon as
+              anyone else.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Baphomet",
+    image: Baphomet,
+    levelDescription: "Level 30 Demonic",
+    stats: [
+      { key: "HP", value: "1500" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "10" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "-" },
+      { key: "PWR", value: "25" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "2716 - 3020" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "12 - 13" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "-" },
+      { key: "PWR", value: "25" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+100%" },
+      { key: "Polearm", value: "+100%" },
+      { key: "Mace", value: "+100%" },
+      { key: "Axe", value: "+100%" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [
+      "Fireball Spray",
+      "Conjure Hellspawn",
+      "Conjure SHadows",
+      "Hail of Boulders",
+      "Indominable",
+      "Telepathy",
+      "Laval Portal",
+    ],
+    inventory: ["-"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Baphomet is a secret boss in Barony, being fought after the player
+              travels to Hell and progresses through three floors of demonic
+              hellscape. It is located on the twenty-fourth floor of the
+              dungeon, waiting inside a large arena to do battle with the
+              player.
+            </p>
+            <p>
+              Baphomet is hidden behind a portal inside the Ruins at the
+              eighteenth floor, past the subsequent Underworld portion and past
+              three floors of Hell proper. Given how the Underworld is
+              generated, as well as the defensive design of the Ruins portal, a
+              player must be well suited with some form of levitation to make
+              their way to Hell.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Battle",
+        sectionContent: (
+          <>
+            <p>
+              Once entering the level, Baphomet will immediately begin the
+              battle in the center of the arena, screeching out before starting
+              the battle. While dueling with the player, Baphomet follows a
+              three-phase cycle of attacks, where after completing one attack
+              phase, Baphomet submerges into the lava and emerges in a new pool
+              to start the next attack. There are special properties to the
+              arena itself, such as preventing spells or pickaxes to break
+              blocks, and disabling teleportation.
+            </p>
+            <p>
+              <b>Fireball Spray</b> - The first attack after entering the fight,
+              Baphomet rises from one of four lava pockets near the corners of
+              the arena, followed by a dense spray of fireballs from its hands
+              in a fanning motion. While this attack is very deadly at close
+              range, the even spread of each fireball at longer ranges allows
+              players to dodge by strafing in between fireballs. This attack can
+              have several consecutive sprays of fireballs before Baphomet
+              proceeds to the next attack.
+            </p>
+            <p>
+              <b>Hail of Boulders</b> - Baphomet rises from one of four lava
+              pockets inside the indentations on the outer walls of the arena.
+              Here, it calls down three waves of boulders, one covering one half
+              of the arena, the second for the other half, and the final wave
+              spanning the whole arena. Some boulders are replaced by a
+              lava-charred version, which rolls down the arena faster than the
+              normal variant, exploding when destroyed similarly to a potion of
+              firestorm, as well as ignoring lava pools. Each boulder has a
+              one-tile spacing between each, allowing a player to sift past each
+              wave. The third wave alternates its orientation from the previous
+              waves, so that the tiles which were rolled down by the preceding
+              waves of boulders are now safe to stand on, and vice versa for
+              previous safe lanes. The lava pools also serve as minor protection
+              against the normal boulders, as they will fall into the lava
+              instead of rolling towards the player. Since this attack merely
+              covers the solid land of the arena, levitating on the outside pits
+              of the arena will keep the player safe. To prevent players from
+              flying over to Baphomet and wailing on it while the attack runs
+              for its full duration, Baphomet casts a protective barrier of
+              rotating bloodletting bolts which will rapidly damage anything
+              which comes into contact with it. Baphomet also casts out
+              fireballs during this attack to further protect itself, as well as
+              summoning Imps to the player's position if they are hovering
+              outside of the arena's ground.
+            </p>
+
+            <p>
+              <b>Conjure Hellspawn</b> - The final attack is when Baphomet rises
+              from the center of the arena, soon after summoning several demonic
+              enemies to the battlefield. A few enemies are immediately summoned
+              at the beginning of the fight as well. This list includes Demons,
+              Imps and Shadows, allowing the player to be attacked by more
+              sources of ranged and melee attacks. The enemies themselves are
+              much less dangerous than the devil itself, often only serving as
+              distractions to the battle. They can however be used to
+              accidentally absorb both of Baphomet's other attacks, so keeping
+              them on the field as impromptu meat shields can be a viable
+              option. After summoning enemies, Baphomet restarts its cycle,
+              proceeding to the next fireball spray. Note: Levitating outside
+              the area will cause Baphomet to summon a lot more.
+            </p>
+
+            <p>
+              <b>Indominable</b> - Baphomet is not affected by knockback, sleep
+              and paralysis.
+            </p>
+            <p>
+              <b>Lava Portal</b> - Rather than actually moving around the arena,
+              Baphomet will rise from one lava pool to another before activating
+              attacks.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Aftermath",
+        sectionContent: (
+          <>
+            <p>
+              Once Baphomet sinks to its demise, the left wall of the arena
+              breaks open and a bridge forms to reveal a path for the players to
+              escape by. Simultaneously, two Minotaurs are summoned at the two
+              corners opposite to the breach in the wall, now giving chase to
+              the player. They can still be killed, but doing so without being
+              properly equipped can end disastrously.
+            </p>
+            <p>
+              The pathway outside of the arena is filled with plenty of random
+              Hell enemies. While defeating them is not mandatory, their
+              presence can impede the player in their flee from the minotaurs.
+              At the end of the path, a portal allows the player to exit Hell,
+              teleporting them to Hamlet after showing a short text scroll. The
+              game will end here if the player checked the "Enable Classic
+              Endings" game setting
+            </p>
+            <p>
+              Those who have mapped the level through whichever means may notice
+              a chamber in the bottom right of the map. This cannot be accessed
+              via digging or teleportation. However, along the northern bridge,
+              there is a small passageway across a gap. This leads to a portal
+              that takes you to the aforementioned room, where there is an
+              easter egg.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Erudyce",
+    image: Erudyce,
+    levelDescription: "Level 50 Undead",
+    stats: [
+      { key: "HP", value: "2000" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "20" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "13" },
+      { key: "PWR", value: "25" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "3616 - 4020" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "23 - 25" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "15 - 17" },
+      { key: "PWR", value: "25" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+50%" },
+      { key: "Polearm", value: "+50%" },
+      { key: "Mace", value: "+50%" },
+      { key: "Axe", value: "+50%" },
+      { key: "Unarmed", value: "+20%" },
+      { key: "Ranged", value: "+50%" },
+      { key: "Magic", value: "-50%" },
+    ],
+    abilities: [
+      "Cold",
+      "Levitation",
+      "Telepathy",
+      "Indominable",
+      "Magic Missile Volley",
+      "Blood Field",
+      "Teleport",
+      "Command Automaton",
+    ],
+    inventory: ["Magicstaff of Cold", "Magus Headdress"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Erudyce is one of the 2 final bosses on floor 35. She, along with
+              her brother Orpheus, were the arch-wizards of the magician's
+              guild.
+            </p>
+            <p>
+              Orpheus and Erudyce are two central antagonists in Barony, serving
+              as the reigning Archmagisters of the Magician's Guild, as well as
+              being the two liches fought at the end of the game. Orpheus
+              specializes in melee combat and fire magic, while Erudyce
+              specializes in ranged combat and ice magic.
+            </p>
+            <p>
+              The Archmagisters are a duo of two siblings Orpheus and Erudyce,
+              both serving over the Magician's Guild from the beginning of the
+              story, interacting with Baron Herx before he was trapped. During
+              Herx's overthrow, the Archmagisters went into the Crystal Caves to
+              begin their own plotting to gain power and overtake the realm.
+            </p>
+            <p>
+              They are well revered by their guild-mates, due to their covert
+              nature of their plans and the general good faith they had
+              generated within the guild. During their time in the Caves, their
+              work towards attaining more power resulted in the creation of
+              increasingly powerful demonic creatures. The Magician's Guild had
+              to seal away the caves in the meantime to protect Hamlet, unaware
+              of what their leaders were doing.
+            </p>
+            <p>
+              Only when the player defeats Baron Herx or Baphomet are they able
+              to break that barrier and begin making their way towards Orpheus
+              and Erudyce, where the true colors of the siblings begin to show.
+            </p>
+
+            <h3>Orpheus</h3>
+            <p>
+              Being the more assertive of the archmagisters, Orpheus is the
+              "brawn" to his sister's "brains" in their operations, often
+              described in a similar manner by Magician Guild members.
+            </p>
+            <p>
+              Orpheus's chatter throughout the caves and the citadel are often
+              marred by a blunt and often rude tone, frequently degrading the
+              player to commoner, servant, or outright nothing when first
+              entering the caves. He also shares similar sentiments towards the
+              other guild members, since it was his idea to exclude other guild
+              members from their plans.
+            </p>
+
+            <h3>Erudyce</h3>
+            <p>
+              Where Orpheus is the more brash and more open of the two siblings,
+              Erudyce is very much a cunning and sly character in comparison.
+              Like her brother, she sees most other living beings in both the
+              guild and the player as beneath both her and her brother.
+            </p>
+            <p>
+              Erudyce demonstrates some basic compassion and patience in her
+              messages at times, giving the Kobolds some leeway when Orpheus
+              challenges their deals in the Caves, as well as suggesting to
+              introduce themselves to the player once the barrier is opened.
+              However, the likelihood of these messages being hollow and
+              centered only towards furthering her own causes are high given how
+              her character develops after proceeding to the end of the Citadel.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "The Sanctum",
+        sectionContent: (
+          <>
+            <p>
+              The Sanctum is the final level of the Citadel in Barony, found on
+              the thirty-fifth floor of the dungeon where the player confronts
+              both Orpheus and Erudyce to thwart their plans at conquering the
+              realms with their demonic strength.
+            </p>
+            <p>
+              It's a massive arena dotted with several pools of lava and water,
+              with several pillars inside the arena to use as cover. The arena
+              itself uses most of the Citadel theme, with a lot of emphasis on
+              teals, blues and brass colors across the whole of the arena,
+              topped with an open stormy sky above. The players begin the floor
+              outside the main arena, on a long and narrow bridge leading to the
+              battle proper.
+            </p>
+            <p>
+              There are also two small off-shoots on both sides of the arena
+              near where the battle commences, filled with bookcases and
+              pistons. These areas are largely unimportant and used mostly for
+              aesthetics. To prevent players from getting stuck once the walls
+              of the arena shut these areas off, a portal can be found in each
+              to teleport the player into the arena.
+            </p>
+            <p>
+              The room itself is protected from pickaxes and spells of digging,
+              as the walls are immaculate and perfectly resistant to breaking in
+              order to prevent cheating by expanding the arena unnaturally or to
+              accessing the end portal before the fight itself is over.
+              Similarly, Teleportation of any kind is restricted for the same
+              reasons.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Battle",
+        sectionContent: (
+          <>
+            <p>
+              Once the player enters far enough into the arena itself, the walls
+              behind the player close off and the archmagisters Orpheus and
+              Erudyce begin their attacks on the player.
+            </p>
+            <p>
+              Like Baron Herx during his battle, both Orpheus and Erudyce float
+              across the arena, ignoring the large pit in the center and the
+              pools of lava and water. They will dash across the field when the
+              player attempts to flee from them, often returning to a normal
+              pace once they enter a suitable distance from the player. They can
+              also use this dash to escape the player if they end up being
+              attacked too quickly. Both liches are permanently protected by
+              magic reflection of each other's attacks, with player-cast spells
+              registering as normal.
+            </p>
+            <p>
+              As their health depletes, both liches have the ability to teleport
+              away from the player and begin to unleash a barrage of magic
+              attacks from a set position in the arena. While attacking, the
+              casting lich will be protected by a ring of bloodletting spells,
+              dealing high amounts of damage if a player enters its
+              circumference. Orpheus teleports randomly to one of the three lava
+              pools on the outskirts of the arena, while Erudyce will always
+              teleport to the center of the arena.
+            </p>
+
+            <h3>Orpheus</h3>
+            <p>
+              Orpheus attacks the player with his crystal sword for heavy damage
+              with a chance to inflict bleed on the player, frequently swarming
+              their target in close quarters combat and preferring to stay very
+              close to the player when using dashes. When the player is close
+              but out of melee range, he can cast some spells when chasing the
+              player. Fireballs and bloodletting are the attacks of choice, also
+              able to cast Vampiric Aura once Erudyce has been killed.
+            </p>
+            <p>
+              He can charge up several attacks when close enough to the player,
+              either unleashing a small rain of eight fireballs in a circle
+              around his position, or a heavy cleave with his sword to deal high
+              damage to his target.
+            </p>
+            <p>
+              When in casting mode, Orpheus can fire off fireballs in several
+              distinct styles. He can fire off a single fireball, a volley of
+              two fireballs, three fireballs simultaneously with the additional
+              fireballs angled away from the direct shot, and a rain of
+              fireballs which land in a straight line towards the player. He can
+              also fire off a single bolt of bloodletting, as well as ending the
+              casting with a short ranged ring of falling fireballs. If Erudyce
+              is dead, this ending can instead be a casting of Vampiric Aura to
+              start melee combat with.
+            </p>
+
+            <h3>Erudyce</h3>
+            <p>
+              Erudyce attacks with her staff of cold, slowing down the player
+              and chipping away at their health from a safe distance, making
+              good use of her dashes to keep out of range of the player's melee
+              for most of the fight.
+            </p>
+            <p>
+              She also has an arsenal of spells that she can use to be a greater
+              source of damage, using a three-bolt cluster of Magic Missile
+              shots that she casts above her head. This attack is given a visual
+              cue of large pink particles around her, able to hit the player
+              with one or all of the bolts if they are close enough, but the
+              downward trajectory effectively limits the attack's range. She can
+              also cast Slow, and single bolts of Drain Soul to regain health.
+            </p>
+            <p>
+              Like Orpheus, she can charge up an attack when the player is in
+              close proximity, launching a ring of eight bolts of cold outwards.
+              When Orpheus is gone, this attack is upgraded to use bolts of
+              drain soul instead.
+            </p>
+            <p>
+              When in casting mode, Erudyce begins casting a barrage of magic
+              missiles towards the player. These attacks are best dodged at a
+              distance, or by standing behind a pillar as cover, as the missiles
+              are very accurate due to Erudyce's ability to mix bolts aimed
+              directly at the player with bolts that aim where she expects the
+              player to move.
+            </p>
+
+            <h3>After Defeating one Lich</h3>
+            <p>
+              Once the player defeats one of the two liches, the surviving lich
+              will become enraged, saying a line of dialogue and continuing to
+              battle the player. Some new spells open up to the surviving lich,
+              allowing them to heal off damage with Vampiric Aura or Drain Soul
+              for Orpheus and Erudyce respectively.
+            </p>
+            <p>
+              Every time a lich teleports to begin firing off their spells, they
+              can also summon several Corrupt Automatons to assist them in
+              battling the player. These Automatons are initially hostile to the
+              player, equipped with steel boots of levitation, a red cloak, and
+              a weapon with appropriate offhand items to create three possible
+              variants.
+            </p>
+            <ul>
+              <li>
+                A melee variant equipped with a crystal spear and a steel
+                shield.
+              </li>
+              <li>
+                A ranged variant equipped with a shortbow and piercing arrows.
+              </li>
+              <li>
+                A magic variant equipped with a staff of lightning and a crystal
+                shield.
+              </li>
+            </ul>
+            <p>
+              Each Automaton's weapons are prone to degrading, so an automaton
+              with a staff will eventually be wielding only its shield. The
+              items equipped by these Automatons will not drop upon their death.
+            </p>
+
+            <h3>Aftermath</h3>
+            <p>
+              Once both Orpheus and Erudyce are defeated, the back wall of the
+              arena will be destroyed, revealing a portal for the player to walk
+              through. Any remaining Corrupt Automatons will also be instantly
+              destroyed. Interacting with the portal will congratulate the
+              player with the ending of the game, saving their statistics and
+              deleting their file.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 /* 
@@ -7365,46 +7995,6 @@ export const npcs: NPCData[] = [
         <>
           <p>
             
-          </p>
-        </>
-      },
-
-      {
-        sectionName: "Spawn Locations",
-        sectionContent: 
-        <>
-          <p>
-            Merlin has a 2% chance to replace any human spawn.
-          </p>
-        </>
-      },
-
-      {
-        sectionName: "Behaviour",
-        sectionContent: 
-        <>
-          <p>
-            Merlin behaves the same as any other human.
-          </p>
-        </>
-      },
-
-      {
-        sectionName: "Loot",
-        sectionContent: 
-        <>
-          <p>
-            
-          </p>
-        </>
-      },
-
-      {
-        sectionName: "Affinity",
-        sectionContent: 
-        <>
-          <p>
-            Merlin has the same affinity as a normal human.
           </p>
         </>
       },
