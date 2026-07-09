@@ -7938,6 +7938,299 @@ export const npcs: NPCData[] = [
       },
     ],
   },
+
+  {
+    id: "Orpheus",
+    image: Orpheus,
+    levelDescription: "Level 50 Undead",
+    stats: [
+      { key: "HP", value: "2000" },
+      { key: "ATK", value: "64" },
+      { key: "AC", value: "30" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "13" },
+      { key: "PWR", value: "25" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "3616 - 4020" },
+      { key: "ATK", value: "106 - 119" },
+      { key: "AC", value: "34 - 37" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "15 - 17" },
+      { key: "PWR", value: "25" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+50%" },
+      { key: "Polearm", value: "+50%" },
+      { key: "Mace", value: "+50%" },
+      { key: "Axe", value: "+50%" },
+      { key: "Unarmed", value: "+20%" },
+      { key: "Ranged", value: "+50%" },
+      { key: "Magic", value: "-50%" },
+    ],
+    abilities: [
+      "Fireball",
+      "Levitation",
+      "Telepathy",
+      "Indominable",
+      "Call Firestorm",
+      "Blood Field",
+      "Teleport",
+    ],
+    inventory: ["Crystal Sword", "Golden Mask"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Orpheus is one of the 2 final bosses of the game found on floor
+              35. He, along with his sister Erudyce, are the arch-wizards of the
+              Magician's Guild.
+            </p>
+            <p>
+              Orpheus and Erudyce are two central antagonists in Barony, serving
+              as the reigning Archmagisters of the Magician's Guild, as well as
+              being the two liches fought at the end of the game. Orpheus
+              specializes in melee combat and fire magic, while Erudyce
+              specializes in ranged combat and ice magic.
+            </p>
+            <p>
+              The Archmagisters are a duo of two siblings Orpheus and Erudyce,
+              both serving over the Magician's Guild from the beginning of the
+              story, interacting with Baron Herx before he was trapped. During
+              Herx's overthrow, the Archmagisters went into the Crystal Caves to
+              begin their own plotting to gain power and overtake the realm.
+            </p>
+            <p>
+              They are well revered by their guild-mates, due to their covert
+              nature of their plans and the general good faith they had
+              generated within the guild. During their time in the Caves, their
+              work towards attaining more power resulted in the creation of
+              increasingly powerful demonic creatures. The Magician's Guild had
+              to seal away the caves in the meantime to protect Hamlet, unaware
+              of what their leaders were doing.
+            </p>
+            <p>
+              Only when the player defeats Baron Herx or Baphomet are they able
+              to break that barrier and begin making their way towards Orpheus
+              and Erudyce, where the true colors of the siblings begin to show.
+            </p>
+
+            <h3>Orpheus</h3>
+            <p>
+              Being the more assertive of the archmagisters, Orpheus is the
+              "brawn" to his sister's "brains" in their operations, often
+              described in a similar manner by Magician Guild members.
+            </p>
+            <p>
+              Orpheus's chatter throughout the caves and the citadel are often
+              marred by a blunt and often rude tone, frequently degrading the
+              player to commoner, servant, or outright nothing when first
+              entering the caves. He also shares similar sentiments towards the
+              other guild members, since it was his idea to exclude other guild
+              members from their plans.
+            </p>
+
+            <h3>Erudyce</h3>
+            <p>
+              Where Orpheus is the more brash and more open of the two siblings,
+              Erudyce is very much a cunning and sly character in comparison.
+              Like her brother, she sees most other living beings in both the
+              guild and the player as beneath both her and her brother.
+            </p>
+            <p>
+              Erudyce demonstrates some basic compassion and patience in her
+              messages at times, giving the Kobolds some leeway when Orpheus
+              challenges their deals in the Caves, as well as suggesting to
+              introduce themselves to the player once the barrier is opened.
+              However, the likelihood of these messages being hollow and
+              centered only towards furthering her own causes are high given how
+              her character develops after proceeding to the end of the Citadel.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "The Sanctum",
+        sectionContent: (
+          <>
+            <p>
+              The Sanctum is the final level of the Citadel in Barony, found on
+              the thirty-fifth floor of the dungeon where the player confronts
+              both Orpheus and Erudyce to thwart their plans at conquering the
+              realms with their demonic strength.
+            </p>
+            <p>
+              It's a massive arena dotted with several pools of lava and water,
+              with several pillars inside the arena to use as cover. The arena
+              itself uses most of the Citadel theme, with a lot of emphasis on
+              teals, blues and brass colors across the whole of the arena,
+              topped with an open stormy sky above. The players begin the floor
+              outside the main arena, on a long and narrow bridge leading to the
+              battle proper.
+            </p>
+            <p>
+              There are also two small off-shoots on both sides of the arena
+              near where the battle commences, filled with bookcases and
+              pistons. These areas are largely unimportant and used mostly for
+              aesthetics. To prevent players from getting stuck once the walls
+              of the arena shut these areas off, a portal can be found in each
+              to teleport the player into the arena.
+            </p>
+            <p>
+              The room itself is protected from pickaxes and spells of digging,
+              as the walls are immaculate and perfectly resistant to breaking in
+              order to prevent cheating by expanding the arena unnaturally or to
+              accessing the end portal before the fight itself is over.
+              Similarly, Teleportation of any kind is restricted for the same
+              reasons.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Battle",
+        sectionContent: (
+          <>
+            <p>
+              Once the player enters far enough into the arena itself, the walls
+              behind the player close off and the archmagisters Orpheus and
+              Erudyce begin their attacks on the player.
+            </p>
+            <p>
+              Like Baron Herx during his battle, both Orpheus and Erudyce float
+              across the arena, ignoring the large pit in the center and the
+              pools of lava and water. They will dash across the field when the
+              player attempts to flee from them, often returning to a normal
+              pace once they enter a suitable distance from the player. They can
+              also use this dash to escape the player if they end up being
+              attacked too quickly. Both liches are permanently protected by
+              magic reflection of each other's attacks, with player-cast spells
+              registering as normal.
+            </p>
+            <p>
+              As their health depletes, both liches have the ability to teleport
+              away from the player and begin to unleash a barrage of magic
+              attacks from a set position in the arena. While attacking, the
+              casting lich will be protected by a ring of bloodletting spells,
+              dealing high amounts of damage if a player enters its
+              circumference. Orpheus teleports randomly to one of the three lava
+              pools on the outskirts of the arena, while Erudyce will always
+              teleport to the center of the arena.
+            </p>
+
+            <h3>Orpheus</h3>
+            <p>
+              Orpheus attacks the player with his crystal sword for heavy damage
+              with a chance to inflict bleed on the player, frequently swarming
+              their target in close quarters combat and preferring to stay very
+              close to the player when using dashes. When the player is close
+              but out of melee range, he can cast some spells when chasing the
+              player. Fireballs and bloodletting are the attacks of choice, also
+              able to cast Vampiric Aura once Erudyce has been killed.
+            </p>
+            <p>
+              He can charge up several attacks when close enough to the player,
+              either unleashing a small rain of eight fireballs in a circle
+              around his position, or a heavy cleave with his sword to deal high
+              damage to his target.
+            </p>
+            <p>
+              When in casting mode, Orpheus can fire off fireballs in several
+              distinct styles. He can fire off a single fireball, a volley of
+              two fireballs, three fireballs simultaneously with the additional
+              fireballs angled away from the direct shot, and a rain of
+              fireballs which land in a straight line towards the player. He can
+              also fire off a single bolt of bloodletting, as well as ending the
+              casting with a short ranged ring of falling fireballs. If Erudyce
+              is dead, this ending can instead be a casting of Vampiric Aura to
+              start melee combat with.
+            </p>
+
+            <h3>Erudyce</h3>
+            <p>
+              Erudyce attacks with her staff of cold, slowing down the player
+              and chipping away at their health from a safe distance, making
+              good use of her dashes to keep out of range of the player's melee
+              for most of the fight.
+            </p>
+            <p>
+              She also has an arsenal of spells that she can use to be a greater
+              source of damage, using a three-bolt cluster of Magic Missile
+              shots that she casts above her head. This attack is given a visual
+              cue of large pink particles around her, able to hit the player
+              with one or all of the bolts if they are close enough, but the
+              downward trajectory effectively limits the attack's range. She can
+              also cast Slow, and single bolts of Drain Soul to regain health.
+            </p>
+            <p>
+              Like Orpheus, she can charge up an attack when the player is in
+              close proximity, launching a ring of eight bolts of cold outwards.
+              When Orpheus is gone, this attack is upgraded to use bolts of
+              drain soul instead.
+            </p>
+            <p>
+              When in casting mode, Erudyce begins casting a barrage of magic
+              missiles towards the player. These attacks are best dodged at a
+              distance, or by standing behind a pillar as cover, as the missiles
+              are very accurate due to Erudyce's ability to mix bolts aimed
+              directly at the player with bolts that aim where she expects the
+              player to move.
+            </p>
+
+            <h3>After Defeating one Lich</h3>
+            <p>
+              Once the player defeats one of the two liches, the surviving lich
+              will become enraged, saying a line of dialogue and continuing to
+              battle the player. Some new spells open up to the surviving lich,
+              allowing them to heal off damage with Vampiric Aura or Drain Soul
+              for Orpheus and Erudyce respectively.
+            </p>
+            <p>
+              Every time a lich teleports to begin firing off their spells, they
+              can also summon several Corrupt Automatons to assist them in
+              battling the player. These Automatons are initially hostile to the
+              player, equipped with steel boots of levitation, a red cloak, and
+              a weapon with appropriate offhand items to create three possible
+              variants.
+            </p>
+            <ul>
+              <li>
+                A melee variant equipped with a crystal spear and a steel
+                shield.
+              </li>
+              <li>
+                A ranged variant equipped with a shortbow and piercing arrows.
+              </li>
+              <li>
+                A magic variant equipped with a staff of lightning and a crystal
+                shield.
+              </li>
+            </ul>
+            <p>
+              Each Automaton's weapons are prone to degrading, so an automaton
+              with a staff will eventually be wielding only its shield. The
+              items equipped by these Automatons will not drop upon their death.
+            </p>
+
+            <h3>Aftermath</h3>
+            <p>
+              Once both Orpheus and Erudyce are defeated, the back wall of the
+              arena will be destroyed, revealing a portal for the player to walk
+              through. Any remaining Corrupt Automatons will also be instantly
+              destroyed. Interacting with the portal will congratulate the
+              player with the ending of the game, saving their statistics and
+              deleting their file.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 /* 
