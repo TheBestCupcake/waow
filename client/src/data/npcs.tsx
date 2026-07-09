@@ -6169,6 +6169,1145 @@ export const npcs: NPCData[] = [
       },
     ],
   },
+
+  {
+    id: "Algernon",
+    image: Algernon,
+    levelDescription: "Level 10 Beast",
+    stats: [
+      { key: "HP", value: "60" },
+      { key: "ATK", value: "7" },
+      { key: "AC", value: "2" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "20" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "124 - 140" },
+      { key: "ATK", value: "11 - 12" },
+      { key: "AC", value: "3" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "23 - 26" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+10%" },
+      { key: "Polearm", value: "-10%" },
+      { key: "Mace", value: "+10%" },
+      { key: "Axe", value: "-10%" },
+      { key: "Unarmed", value: "+30%" },
+      { key: "Ranged", value: "+20%" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: ["Emeralds", "Cheese", "Meat"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              White furred and possessing an Emerald for an eye, Algernon is a
+              Champion enemy with 2% chance to replace any Rat.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Algernon has a 2% chance to replace any rat spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Algernon behaves the same as any other rat. However he is faster
+              and is able to open doors.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>Algernon always drops an appraised Emerald and Fresh Meat.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Algernon has the same affinity as a normal human.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Shelob",
+    image: Shelob,
+    levelDescription: "Level 15 Beast",
+    stats: [
+      { key: "HP", value: "150" },
+      { key: "ATK", value: "18" },
+      { key: "AC", value: "8" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "278 - 310" },
+      { key: "ATK", value: "30 - 33" },
+      { key: "AC", value: "9" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "12 - 13" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "+20%" },
+      { key: "Mace", value: "+10%" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "+10%" },
+      { key: "Ranged", value: "+10%" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: ["Poisoned Attacks", "Spray Web"],
+    inventory: ["Dyrnwyn (+1)", "Ring of Invisibility (-5)"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              With distinctive red and black hues, Shelob is a Champion enemy
+              with a 2% chance to replace any spider on the level(with some
+              exceptions). She is followed by 3 spiders.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Shelob has a 2% chance to replace any spider spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Shelob behaves the same as any other Spider.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Always drops a Drynwyn (+1) and a -5 Ring of Invisibility. Drynwyn
+              durability depends on the floor the player encounters Shelob.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Shelob has the same affinity as a normal spider.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Thumpus_The_Troll",
+    image: ThumpusTheTroll,
+    levelDescription: "Level 22 Beast",
+    stats: [
+      { key: "HP", value: "200 - 240" },
+      { key: "ATK", value: "23" },
+      { key: "AC", value: "5" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "0" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "376 - 500" },
+      { key: "ATK", value: "38 - 43" },
+      { key: "AC", value: "6 - 7" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "1" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+10%" },
+      { key: "Polearm", value: "-20%" },
+      { key: "Mace", value: "-20%" },
+      { key: "Axe", value: "+10%" },
+      { key: "Unarmed", value: "-20%" },
+      { key: "Ranged", value: "-10%" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: [""],
+    inventory: ["Troll loot", "Roses"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              A named variant of a Troll. He is followed by a group of 3 gnomes.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Thumpus has a 2% chance to replace any human spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Thumpus behaves the same as any other Troll.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Thumpus drops the normal Troll loot pool but also drops a number
+              of roses guarenteed.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Thumpus has the same affinity as a normal Troll.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Skrabblag",
+    image: Skrabblag,
+    levelDescription: "Level 15 Beast",
+    stats: [
+      { key: "HP", value: "100" },
+      { key: "ATK", value: "23" },
+      { key: "AC", value: "6" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "5" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "196 - 220" },
+      { key: "ATK", value: "38 - 43" },
+      { key: "AC", value: "7" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "6 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-10%" },
+      { key: "Polearm", value: "+30%" },
+      { key: "Mace", value: "+10%" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "+20%" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-" },
+    ],
+    abilities: ["Paralyzing Attacks"],
+    inventory: ["Rubies"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              A named variant of Scorpions. He is followed by a large group of
+              scorpions
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Skrabblag has a 2% chance to replace any Scorpion spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Skrabblag behaves the same as any other Scorpion. Because he is
+              followed by a large number of scorpions be wary of being chain
+              paralyzed.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>Skrabblag drops rubies on death.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Skrabblag has the same affinity as a normal Scorpion.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Xyggi",
+    image: Xyggi,
+    levelDescription: "Level 10 Beast",
+    stats: [
+      { key: "HP", value: "70" },
+      { key: "ATK", value: "7" },
+      { key: "AC", value: "2" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "20" },
+      { key: "PWR", value: "20" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "134 - 150" },
+      { key: "ATK", value: "11 - 12" },
+      { key: "AC", value: "3" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "23 - 26" },
+      { key: "PWR", value: "20" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+50%" },
+      { key: "Polearm", value: "-30%" },
+      { key: "Mace", value: "+10%" },
+      { key: "Axe", value: "+40%" },
+      { key: "Unarmed", value: "+40%" },
+      { key: "Ranged", value: "+10%" },
+      { key: "Magic", value: "-80%" },
+    ],
+    abilities: ["Cold", "Magic Reflection"],
+    inventory: ["Enchanted Feathers", "Tomalleys", "Low Value Gemstones"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              A named variant of Scarabs. He is followed by a group of scarabs.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Xyggi has a 2% chance to replace any scarab spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Xyggi, contrary to other scarabs, casts the cold spell. He also
+              has innate magic reflection.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Xyggi drops low value gemstones as well as an Enchanted Feather on
+              death. Like other scarabs he also drops tomalleys.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Xyggi has the same affinity as a normal scarab.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Gharbad",
+    image: Gharbad,
+    levelDescription: "Level 25 Beastfolk",
+    stats: [
+      { key: "HP", value: "295 - 315" },
+      { key: "ATK", value: "39 - 50" },
+      { key: "AC", value: "9 - 18" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10" },
+      { key: "PWR", value: "25" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "535 - 635" },
+      { key: "ATK", value: "66 - 85" },
+      { key: "AC", value: "10 - 20" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "12 - 13" },
+      { key: "PWR", value: "25" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-10%" },
+      { key: "Polearm", value: "+10%" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "+10%" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "+10%" },
+      { key: "Magic", value: "+40%" },
+    ],
+    abilities: ["-"],
+    inventory: [
+      "Iron, Steel, Crystal armor",
+      "Steel, Crystal Axes / Maces",
+      "Crystal Shurikens",
+      "Steel Chakrams",
+      "Potions of Healing",
+      "Bottles of Booze",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              A named variant of Goatmen. He is always followed by a group of
+              Goatmen.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Gharbad has a 2% chance to replace any goatman spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Gharbad behaves the same as any other goatman.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>Gharbad drops any worn equipment when killed.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Gharbad has the same affinity as a normal goatman.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Funny_Bones",
+    image: FunnyBones,
+    levelDescription: "Level 2 Undead",
+    stats: [
+      { key: "HP", value: "100" },
+      { key: "ATK", value: "14 - 17" },
+      { key: "AC", value: "1 - 6" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "1" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "196 - 220" },
+      { key: "ATK", value: "22 - 27" },
+      { key: "AC", value: "2 - 7" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "2" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-50%" },
+      { key: "Polearm", value: "+30%" },
+      { key: "Mace", value: "+40%" },
+      { key: "Axe", value: "-20%" },
+      { key: "Unarmed", value: "+10%" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "-20%" },
+    ],
+    abilities: ["-"],
+    inventory: [
+      "Parashu (+1)",
+      "Cloak of Protection",
+      "Eyepatch",
+      "Leather, Wooden, Iron Shields / Helmets",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>A named variant of Skeletons.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Funny Bones has a 2% chance to replace any skeleton spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Funny Bones behaves the same as any other skeleton.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Funny Bones drops the legendary axe Parashu (+1) alongside a Cloak
+              of Protection and an Eyepatch.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Funny Bones has the same affinity as a normal Skeleton.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Coral_Grimes",
+    image: CoralGrimes,
+    levelDescription: "Level 15 Undead",
+    stats: [
+      { key: "HP", value: "270" },
+      { key: "ATK", value: "21" },
+      { key: "AC", value: "-1" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "2" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "494 - 550" },
+      { key: "ATK", value: "33 - 36" },
+      { key: "AC", value: "0" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "3" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "+10%" },
+      { key: "Mace", value: "+20%" },
+      { key: "Axe", value: "-20%" },
+      { key: "Unarmed", value: "+10%" },
+      { key: "Ranged", value: "-40%" },
+      { key: "Magic", value: "-20%" },
+    ],
+    abilities: ["-"],
+    inventory: ["Bounty Hunter Hat", "Ruby", "Meat"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Coral Grimes is a variant of Ghouls. He is followed by a group of
+              ghouls and enslaved ghouls.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>
+              Coral Grimes has a 2% chance to replace any Ghoul or Enslaved
+              Ghoul spawn.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Coral Grimes behaves the same as any other Ghoul.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Coral Grimes drops a Bounty Hunters Hat and a ruby alongside
+              normal ghoul drops.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Coral Grimes has the same affinity as a normal ghoul.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Bram_Kindly",
+    image: BramKindly,
+    levelDescription: "Level 35 Undead",
+    stats: [
+      { key: "HP", value: "650" },
+      { key: "ATK", value: "48 - 53" },
+      { key: "AC", value: "10" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10" },
+      { key: "PWR", value: "30" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "1178 - 1310" },
+      { key: "ATK", value: "82 - 103" },
+      { key: "AC", value: "11" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "12 - 13" },
+      { key: "PWR", value: "30" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-20%" },
+      { key: "Polearm", value: "+10%" },
+      { key: "Mace", value: "+20%" },
+      { key: "Axe", value: "-20%" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "-20%" },
+    ],
+    abilities: ["Drain Soul", "Vampiric Aura", "Indominable"],
+    inventory: [
+      "Wraith's Grown",
+      "Magicstaffs of Bloodletting",
+      "Vampire Doublet",
+    ],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              The Lord of Bram's Castle. He sits in this throne room at the top
+              of his castle with legions of undead and demons to fight through
+              to reach him.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>
+              Bram Kindly spawns at the top of Bram's Castle and it is required
+              to kill him in order to escape to the next floor.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Bram Kindly behaves the same as any other Vampire.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Bram Kindly drops the artifact cloak Wraith's Gown alongside a
+              Vampire Doublet and a Magicstaff of Bloodletting.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Bram Kindly is always hostile to the player and cannot be
+              dominated.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Artemisia",
+    image: Artemisia,
+    levelDescription: "Level 25 Undead",
+    stats: [
+      { key: "HP", value: "170" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "2 - 4" },
+      { key: "ATK", value: "37 - 48" },
+      { key: "SPD", value: "10 - 15" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "314 - 350" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "3 - 5" },
+      { key: "ATK", value: "57 - 82" },
+      { key: "SPD", value: "12 - 19" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-50%" },
+      { key: "Polearm", value: "-50%" },
+      { key: "Mace", value: "-50%" },
+      { key: "Axe", value: "-50%" },
+      { key: "Unarmed", value: "-50%" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "+100%" },
+    ],
+    abilities: ["Mimic Other", "Levitation", "Teleportation", "Indominable"],
+    inventory: ["Khryselakatos", "Quivers of Silver Ammo", "Spooky Masks"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>Legendary Variant of the Shadow.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>
+              Artemisia spawns in the first underworld accessable by breaking
+              the wall in the second chest room on level 5.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Artemisia will fly around shooting arrows at the player.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Artemisia will drop normal shadow loot as well as the legendary
+              bow Khryselakatos and Quivers of Silver Ammo.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Artemisia has the same affinity as a normal Shadow. Spooky Masks
+              however will not work on Artemisia.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Baratheon",
+    image: Baratheon,
+    levelDescription: "Level 50 Undead",
+    stats: [
+      { key: "HP", value: "170" },
+      { key: "ATK", value: "28 - 33" },
+      { key: "AC", value: "2 - 4" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10 - 15" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "314 - 350" },
+      { key: "ATK", value: "47 - 63" },
+      { key: "AC", value: "3 - 5" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "12 - 19" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-50%" },
+      { key: "Polearm", value: "-50%" },
+      { key: "Mace", value: "-50%" },
+      { key: "Axe", value: "-50%" },
+      { key: "Unarmed", value: "-50%" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "+100%" },
+    ],
+    abilities: ["Mimic Other", "Levitation", "Teleportation", "Indominable"],
+    inventory: ["Spooky Masks", "Phantom Masks"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              A variant of the Shadow. He is the highest level NPC in the
+              dungeon besides the Twins and gives the second highest XP after
+              them.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Baratheon has a 2% chance to replace any shadow spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Baratheon behaves the same as any other shadow.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>Baratheon drops normal shadow loot and phantom masks.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Baratheon has the same affinity as a normal shadow.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Lilith",
+    image: Lilith,
+    levelDescription: "Level 10 Demonic",
+    stats: [
+      { key: "HP", value: "60" },
+      { key: "ATK", value: "15" },
+      { key: "AC", value: "3" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "124 - 140" },
+      { key: "ATK", value: "23 - 25" },
+      { key: "AC", value: "4" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "12 - 13" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+20%" },
+      { key: "Polearm", value: "-10%" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-" },
+      { key: "Magic", value: "-20%" },
+    ],
+    abilities: ["Charm Monster", "Teleportaiton"],
+    inventory: ["Magicsstaffs of Charm Monster", "Roses"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>A variant of Succubi. She is followed by a group of succubi.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Lilith has a 2% chance to replace any succubi spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Lilith behaves the same as any other succubi.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Lilith drops magicstaffs of charm monster at a higher rate than
+              normal succubi and roses.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Lilith has the same affinity as a normal succubi.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Deu_De'Breau",
+    image: DeuDeBreau,
+    levelDescription: "Level 30 Demonic",
+    stats: [
+      { key: "HP", value: "120" },
+      { key: "ATK", value: "38" },
+      { key: "AC", value: "10" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "10" },
+      { key: "PWR", value: "25" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "232 - 260" },
+      { key: "ATK", value: "65 - 73" },
+      { key: "AC", value: "12 - 13" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "12 - 13" },
+      { key: "PWR", value: "25" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-10%" },
+      { key: "Polearm", value: "-20%" },
+      { key: "Mace", value: "-20%" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-20%" },
+      { key: "Ranged", value: "-10%" },
+      { key: "Magic", value: "+10%" },
+    ],
+    abilities: ["Fireball"],
+    inventory: ["-"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              A variant of Demons. He is followed by a group of other demons.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Deu De'Breau has a 2% chance to replace any demon spawn.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>Deu De'Breau behaves the same as any other demon.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Deu De'Breau drops nothing on death. He is still eligable for
+              vampire/accursed blood vial drops and fresh meat from the Chefs
+              Toque.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Deu De'Breau has the same affinity as a normal demon.</p>
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 /* 
@@ -6191,18 +7330,18 @@ export const npcs: NPCData[] = [
     levelDescription: "Level ",
     stats: [
       { key: "HP", value: "-" },
-      { key: "ATK", value: "7 - 14" },
-      { key: "AC", value: "0 - 9" },
-      { key: "ATK", value: "9 - 16" },
-      { key: "SPD", value: "4 - 7" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "-" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "-" },
       { key: "PWR", value: "-" },
     ],
     hardcoreStats: [
       { key: "HP", value: "-" },
-      { key: "ATK", value: "7 - 14" },
-      { key: "AC", value: "0 - 9" },
-      { key: "ATK", value: "9 - 16" },
-      { key: "SPD", value: "4 - 7" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "-" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "-" },
       { key: "PWR", value: "-" },
     ],
     damageTypeEffectiveness: [
@@ -6225,10 +7364,7 @@ export const npcs: NPCData[] = [
         sectionContent: 
         <>
           <p>
-            Merlin is a rare Human NPC that has a 4% chance to
-              replace any spawned human. Like all rare NPCs, he will not drop
-              his equipment when the "drop all" command is used, although they
-              can be swapped with equipment on the ground.{" "}  
+            
           </p>
         </>
       },
@@ -6238,7 +7374,7 @@ export const npcs: NPCData[] = [
         sectionContent: 
         <>
           <p>
-            Merlin has a 4% chance to replace any human spawn.
+            Merlin has a 2% chance to replace any human spawn.
           </p>
         </>
       },
@@ -6258,7 +7394,7 @@ export const npcs: NPCData[] = [
         sectionContent: 
         <>
           <p>
-            Merlin will drop all carried equipment when killed. It will always be excellent quality.
+            
           </p>
         </>
       },
