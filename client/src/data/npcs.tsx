@@ -4321,6 +4321,569 @@ export const npcs: NPCData[] = [
       },
     ],
   },
+
+  {
+    id: "Automaton",
+    image: Automaton,
+    levelDescription: "Level 20 Construct",
+    stats: [
+      { key: "HP", value: "115 - 135" },
+      { key: "ATK", value: "28" },
+      { key: "AC", value: "8" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "5" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "211 - 275" },
+      { key: "ATK", value: "47 - 53" },
+      { key: "AC", value: "9 - 10" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "6 - 7" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "+40%" },
+      { key: "Axe", value: "+30%" },
+      { key: "Unarmed", value: "-20%" },
+      { key: "Ranged", value: "-20%" },
+      { key: "Magic", value: "+20%" },
+    ],
+    abilities: ["Salvage", "Self Destruct"],
+    inventory: ["-"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Automatons are friendly to all player races and are significantly
+              higher tier followers due to their higher health and base armor
+              class. They can explode or break upon death. They are one of the
+              most complex NPC's in the game.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Ruins</h3>
+            <p>
+              Automatons sparsely appear here, often picking up the numerous
+              pieces of equipment dropped by gnome thieves. As such, they
+              commonly may be found wielding weapons such as steel swords, maces
+              and short bows. They will attempt to fight demons that uncommonly
+              spawn here, and will usually die. They have limited interactions
+              with most other NPCs.
+            </p>
+
+            <h3>The Caves</h3>
+            <p>
+              Automatons sparsely appear here, they have limited interactions
+              with almost everybody here. They might pick up kobold drops, or
+              items from your dead Hamlet followers.
+            </p>
+
+            <h3>The Citadel</h3>
+            <p>
+              Automatons sparsely appear here, they are neutral to any types of
+              enemies that appear on these floors.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Automatons will attack using any equipment they have picked up off
+              of the ground. When Automatons die they will explode after a short
+              animation plays damaging anything close to them.
+            </p>
+            <p>
+              A player can lockpick the back of an Automaton causing it to
+              explode on a successful attempt. This gives tinkering XP.
+            </p>
+            <p>
+              Automatons may "Recycle" any gear that they pick up but don't
+              equip.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>Automatons drop anything they have picked up.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Corrupted Automaton</h3>
+            <p>
+              During the final boss fight, once one of the twins is defeated,
+              the other has the ability to summon multiple corrupted automatons.
+              These behave like normal, except they are always hostile to
+              players. They do not drop anything when they are defeated. They
+              have three variants:
+            </p>
+            <p>
+              Archers - Spawn with steel boots of levitation, a short bow and a
+              quiver of piercing ammo.
+            </p>
+            <p>
+              Mages - Spawn with steel boots of levitation, a magicstaff of
+              lightning and steel or crystal shield.
+            </p>
+            <p>
+              Warriors - Spawn with steel boots of levitation, a crystal spear
+              and steel or crystal shield.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Automatons are neutral with all denizens excluding Demons. They
+              are able to be recruited by any race of player.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Crystal_Golem",
+    image: CrystalGolem,
+    levelDescription: "Level 30 Construct",
+    stats: [
+      { key: "HP", value: "200 - 250" },
+      { key: "ATK", value: "58 - 63" },
+      { key: "AC", value: "25" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "2 - 4" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "376 - 510" },
+      { key: "ATK", value: "100 - 123" },
+      { key: "AC", value: "28 - 31" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "3 - 6" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-20%" },
+      { key: "Mace", value: "+50%" },
+      { key: "Axe", value: "+30%" },
+      { key: "Unarmed", value: "-40%" },
+      { key: "Ranged", value: "-40%" },
+      { key: "Magic", value: "-40%" },
+    ],
+    abilities: ["Power Strike"],
+    inventory: ["Crystal Equipment", "Gemstones"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              The Crystal Golem can be found wandering aimlessly around the
+              Crystal Caves or The Citadel. Its fighting style consists or
+              regular attacks mixed in with a power strike, which can deal
+              devastating damage if the target doesn't get out of its way.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>Crystal Caves</h3>
+            <p>
+              Crystal Golems are among the toughest foes in the Crystal Caves
+              alongside the Cockatrice. They spawn fairly regularly.
+            </p>
+
+            <h3>The Citadel</h3>
+            <p>
+              Crystal Golems are among the toughest foes in The Citadel
+              alongside the Cockatrice. They spawn fairly regularly.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Crystal Golems can only attack the player with melee attacks. They
+              will also use the spell Power Strike which will cause the Crystal
+              Golem to raise its arms for a short period before delivering an
+              enhanced melee attack which does a large amount of damage. The
+              Crystal Golem is immobile during Power Strikes cast time so a
+              player should try and move away if possible.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Crystal Golems will always drop a piece of Crystal equipment and
+              have a chance to drop Gemstones.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>Crystal Golems are always hostile to the player.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Sentrybot",
+    image: Sentrybot,
+    levelDescription: "Level 3 - 15 Construct",
+    stats: [
+      { key: "HP", value: "50 - 150" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "16 - 28" },
+      { key: "SPD", value: "-" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "50 - 150" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "16 - 28" },
+      { key: "SPD", value: "-" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "-50%" },
+    ],
+    abilities: ["-"],
+    inventory: ["-"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Sentrybots are unable to be found naturally unlike their magical
+              counterpart the Spellbot.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              The Sentrybot will drop a destroyed version of itself when
+              destroyed.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Spellbot",
+    image: Spellbot,
+    levelDescription: "Level 3 - 15 Construct",
+    stats: [
+      { key: "HP", value: "50 - 150" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "-" },
+      { key: "PWR", value: "25" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "50 - 150" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "0 - 9" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "-" },
+      { key: "PWR", value: "25" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "-50%" },
+    ],
+    abilities: ["Forcebolt", "Magic Missile"],
+    inventory: [""],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              The magical counterpart of the Sentrybot. They are usually only
+              seen when crafted via a Tinkering box.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Ruins</h3>
+            <p>
+              There is a single setpiece which spawns a Spellbot surrounded by a
+              pit and two gates. Otherwise it does not spawn naturally.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>The Sentrybot will turn towards enemies and attack them.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            The Spellbot will drop a destroyed version of itself when destroyed.
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>The naturally spawned Spellbot is hostile to everyone.</p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Dummybot",
+    image: Dummybot,
+    levelDescription: "Level 3 - 15 Construct",
+    stats: [
+      { key: "HP", value: "50 - 200" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "5 - 15" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "-" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "50 - 200" },
+      { key: "ATK", value: "-" },
+      { key: "AC", value: "5 - 15" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "-" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-" },
+      { key: "Polearm", value: "-" },
+      { key: "Mace", value: "-" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-50%" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "+20%" },
+    ],
+    abilities: ["Taunt"],
+    inventory: [""],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Beefy constructs usually constructed by tinkerers to protect their
+              weaker Spellbot and Sentrybot allies.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <h3>The Haunted Castle</h3>
+            <p>
+              Hidden behind a wall in the spawn room of the Haunted Castle six
+              dummybots will spawn. This can be accessed with either a pickaxe
+              or by activating a lever in the top left tower.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Dummybots will drop a destroyed version of itself when destroyed.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Mimic",
+    image: Mimic,
+    levelDescription: "Level 10 - 40 Construct",
+    stats: [
+      { key: "HP", value: "90 - 410" },
+      { key: "ATK", value: "23 - 41" },
+      { key: "AC", value: "3 - 24" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "0 - 6" },
+      { key: "PWR", value: "-" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "170 - 830" },
+      { key: "ATK", value: "38 - 76" },
+      { key: "AC", value: "4 - 25" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "1 - 8" },
+      { key: "PWR", value: "-" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "-50%" },
+      { key: "Polearm", value: "-50%" },
+      { key: "Mace", value: "-50%" },
+      { key: "Axe", value: "-" },
+      { key: "Unarmed", value: "-50%" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "+30%" },
+    ],
+    abilities: ["Devour Equipment", "Indominable"],
+    inventory: ["Chest Contents", "Gold"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: <></>,
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>Any chest has a 5% chance to be a mimic.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Mimics will act like normal chests until a player tries to open
+              the chest or attacks it with a container damaging spell such as
+              fireball. The mimic may also be locked. If a mimic gets close
+              enough to attack they have a chance to devour a players equipped
+              items.
+            </p>
+            <p>
+              The player may use the Locking spell on a mimic which will cause
+              it to suffocate and die.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>
+              Mimics will drop gold and any items devoured as well as normal
+              chest loot.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Mimics are always hostile to players. They cannot be dominated.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 /* 
