@@ -4884,6 +4884,162 @@ export const npcs: NPCData[] = [
       },
     ],
   },
+
+  {
+    id: "Slime",
+    image: Slime,
+    levelDescription: "Level 4 - 22 Elemental",
+    stats: [
+      { key: "HP", value: "60 - 240" },
+      { key: "ATK", value: "11 - 29" },
+      { key: "AC", value: "3 - 21" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "0 - 4" },
+      { key: "PWR", value: "6 - 12" },
+    ],
+    hardcoreStats: [
+      { key: "HP", value: "124 - 500" },
+      { key: "ATK", value: "15 - 54" },
+      { key: "AC", value: "4 - 22" },
+      { key: "ATK", value: "-" },
+      { key: "SPD", value: "1 - 6" },
+      { key: "PWR", value: "6 - 12" },
+    ],
+    damageTypeEffectiveness: [
+      { key: "Sword", value: "+40%" },
+      { key: "Polearm", value: "-30%" },
+      { key: "Mace", value: "-50%" },
+      { key: "Axe", value: "+30%" },
+      { key: "Unarmed", value: "-50%" },
+      { key: "Ranged", value: "-50%" },
+      { key: "Magic", value: "+30%" },
+    ],
+    abilities: [
+      "Waterwalking (Blue/Purple)",
+      "Lavawalking (Orange)",
+      "Spray Acid (Green)",
+      "Spray Water (Blue)",
+      "Spray Flames (Orange)",
+      "Spray Tar (Purple)",
+      "Spray Sludge (Silver)",
+    ],
+    inventory: ["-"],
+
+    descriptionSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Found in a variety of colors, Slimes are mindless entities seeking
+              endless consumption. They often find themselves sliding through
+              pipes or waterways in search of organic matter to liquefy.
+            </p>
+            <p>
+              Slimes can spawn when drinking/punching a faucet. They hit hard
+              but move very slowly. Slimes are weak to magic and slashing
+              weapons. They are also commonly found wandering around in the open
+              in the Swamp, and can appear when walking near (or on) lava or
+              water. They scale with the dungeon level, making them a threat at
+              any point in the game. They also spawn in different colors, each
+              with its own ability.
+            </p>
+            <p>
+              A wandering slime will consume anything lying on the ground and
+              will be lost forever. You can order an allied slime to eat an item
+              lying on the floor, though it does nothing other than destroying
+              the items and Foods.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spawn Locations",
+        sectionContent: (
+          <>
+            <p>
+              Slimes can spawn at any body of liquid. They can also spawn when
+              interacting with a faucet.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Behaviour",
+        sectionContent: (
+          <>
+            <p>
+              Slimes will walk towards the player and attempt to melee attack
+              them. They will also stop and attempt to spray the player with
+              liquid. The type of liquid sprayed is different for each color
+              type.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Loot",
+        sectionContent: (
+          <>
+            <p>Slimes have no drops.</p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Variants",
+        sectionContent: (
+          <>
+            <h3>Green</h3>
+            <p>
+              The standard slime, spawns when interacting with faucets. It's
+              spray type is Acid. It can also poison the player.
+            </p>
+
+            <h3>Blue</h3>
+            <p>
+              Spawns when the player swims in water. It's spray type is Water.
+              This knocks back the player a great distance, puts out a player if
+              they are on fire and also damages Vampires.
+            </p>
+
+            <h3>Orange</h3>
+            <p>
+              Spawns when the player walks near lava. It's spray type is Fire.
+              This can quickly degrade cloaks and other accessories.
+            </p>
+
+            <h3>Purple</h3>
+            <p>
+              Spawns when the player swims in water or interacts with a faucet.
+              It's spray type is Messy. This blinds the player.
+            </p>
+
+            <h3>Silver</h3>
+            <p>
+              Spawns when the player swims in water or interacts with a faucet.
+              It's spray type is Grease. This degrades armor and causes enemies
+              to drop their weapons when they attempt to use them.
+            </p>
+          </>
+        ),
+      },
+      {
+        sectionName: "Affinity",
+        sectionContent: (
+          <>
+            <p>
+              Slimes are always hostile to the player. They can be recuited with
+              dominate or with a scroll or summoning.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 /* 
