@@ -4555,4 +4555,114 @@ export const items: Item[] = [
       },
     ],
   },
+
+  {
+    id: "Books",
+    itemSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Books are a large group of items in Barony, which allows the
+              player to read a variety of texts which can provide tips, in-game
+              lore about important characters, or just provide a short and fun
+              distraction alongside the dungeon travelling. Cursed books (not to
+              be confused with cursed spellbooks) have no negative effects.
+            </p>
+            <p>
+              Throughout the dungeon, Books are found in a large slew of colors,
+              with nine different possible models that are randomly assigned to
+              each book upon spawning. There are currently 35 different books in
+              the game. Every floor can spawn with books, and enemies such as
+              Trolls can drop them on rare occasion when killed.
+            </p>
+            <p>
+              In one sense, books are placed in the dungeon as a way to confuse
+              players between normal books and the more lucrative Spellbooks
+              which are found alongside normal books with no visible distinction
+              until picked up. There are however several uses for normal books
+              during a trip in the dungeon.
+            </p>
+            <p>
+              Most books are written in a way to teach players about aspects of
+              the game, often in a vague manner so that it doesn’t outright
+              state information, but provides enough for players to attempt
+              something themselves and learn first-hand. Others help to provide
+              a better understanding of key characters in the story of Barony,
+              such as the origins of Baron Herx’s powers and his relationship
+              with Baphomet. If a book is neither for lore or information, it is
+              often a side distraction that the player can read. There is also
+              an achievement known as Well Read, which is gained by reading all
+              the books in the game.
+            </p>
+            <p>
+              For those well acquainted with the game, the information in these
+              books are often redundant and often not worth the time spent
+              opening the book itself up. However, picking up the book is often
+              advisable, as it serves as a good object to gain Lore skill with.
+              Due to the low gold value of normal books, it serves as a good
+              intermediate option to identify if the player has only a few cheap
+              food items to gain those first few lore points.
+            </p>
+            <h3>Automatons</h3>
+            <p>
+              Automaton players serve under a different set of rules regarding
+              what they can use for food compared to other monster and human
+              races. Non-magic Books are one of their primary sources of food,
+              being able to consume a single book in order to fully restore
+              their boiler meter. This makes books a far more valuable asset for
+              Automatons, as it serves as one of the most effective food
+              resources to come across.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "List of Books",
+        sectionContent: (
+          <>
+            <ul>
+              <li>A Brief Survey of Goblins</li>
+              <li>Assessing the ZAP Brigade</li>
+              <li>Bottle Book</li>
+              <li>Cave Beasts</li>
+              <li>Character Attributes</li>
+              <li>Citadel Servant FAQ</li>
+              <li>Concerning the Undead</li>
+              <li>Controlling Goblins</li>
+              <li>Dethroning Herx</li>
+              <li>How to be Strong</li>
+              <li>Lost Journal</li>
+              <li>Miner's Christmas</li>
+              <li>Mining My Soul</li>
+              <li>My Journal</li>
+              <li>Newspaper Clipping</li>
+              <li>On Giantism, Vol 1</li>
+              <li>On Giantism, Vol 2</li>
+              <li>Poem of the Mines</li>
+              <li>Saviour Knight of the North</li>
+              <li>Sightings of the Lich</li>
+              <li>Surviving the Mines</li>
+              <li>The Adventurer Who Went To Hell</li>
+              <li>The Art of Mine Warfare</li>
+              <li>The Campaign</li>
+              <li>The Flying Minecart</li>
+              <li>The History of Baron Herx</li>
+              <li>The Lusty Goblin Maid</li>
+              <li>The Meaning of the Labyrinth</li>
+              <li>The Pirate King</li>
+              <li>To Emily</li>
+              <li>Winny's Report</li>
+              <li>Worker's Journal, Entry 1</li>
+              <li>Worker's Journal, Entry 2</li>
+              <li>Worker's Journal, Entry 3</li>
+              <li>Worker's Journal, Entry 4</li>
+            </ul>
+          </>
+        ),
+      },
+    ],
+  },
 ];
