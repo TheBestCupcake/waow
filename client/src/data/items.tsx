@@ -764,11 +764,7 @@ export const items: Item[] = [
               </thead>
               <tbody>
                 <tr>
-                  <td>
-                    <a href="/wiki/Gems" title="Gems">
-                      Gems
-                    </a>
-                  </td>
+                  <td>Gems</td>
                   <td>var.</td>
                   <td>var.</td>
                   <td>+4</td>
@@ -1297,6 +1293,1849 @@ export const items: Item[] = [
                     <p>
                       0-50% chance (based on Ranged skill) to apply random
                       quiver effect and conserve equipped quiver ammo.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Armor",
+    itemSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Armor can be found all throughout the game. Enemies might be seen
+              wearing armor, and will drop the armor upon death. Armor can also
+              be found inside of treasure chests, Shops, and laying around out
+              in the open. Armor values are measured in Armor Class (AC).
+            </p>
+            <p>
+              It is important to lore armors before using them, if the player
+              equips a cursed piece of armor they will be unable to unequip the
+              armor until it breaks, or is somehow uncursed. Blessed pieces of
+              equipment with bonus properties, such as +1 speed, may also
+              increase their bonus effect along with the AC. Furthermore, cursed
+              objects with will work in reverse by affecting their AC and stats
+              by the negative amount.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Mechanics",
+        sectionContent: (
+          <>
+            <p>
+              Armor class in Barony directly prevents damage from physical
+              attacks. Every creature's base armor class is equal to its
+              Constitution score. The base calculation for damage taken after AC
+              is relatively simple:
+            </p>
+            <p>DamageTaken=MAX(0.75×Damage−AC,0)+0.25×Damage</p>
+            <p>
+              Where Damage is the raw attack power of the weapon. In the formula
+              above, the numbers 0.75 and 0.25 represent the complimentary sides
+              of Armor Effectiveness. The default Armor Effectiveness is 0.75,
+              meaning that 75% of your damage will be reduced by the targets AC
+              while 25% of it will not. Here is the same formula with 90% armor
+              effectiveness:
+            </p>
+            <p>DamageTaken=MAX(0.9×Damage−AC,0)+0.1×Damage</p>
+
+            <table>
+              <caption>Examples of AC damage reduction</caption>
+              <tbody>
+                <tr>
+                  <th>Armor Effectiveness</th>
+                  <th>Damage</th>
+                  <th>AC</th>
+                  <th>Damage Taken</th>
+                </tr>
+                <tr>
+                  <td>75%</td>
+                  <td>5</td>
+                  <td>10</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>75%</td>
+                  <td>20</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>100%</td>
+                  <td>20</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>100%</td>
+                  <td>20</td>
+                  <td>20</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              AC and armor effectiveness can be modified in a number of ways as
+              outlined in the table below:
+            </p>
+            <table>
+              <caption>
+                Various Effects on Armor Class and Armor Effectiveness
+              </caption>
+              <tbody>
+                <tr>
+                  <th>
+                    <b>Factor</b>
+                  </th>
+                  <th>
+                    <b>Influence</b>
+                  </th>
+                </tr>
+                <tr>
+                  <td>Blocking</td>
+                  <td>Increases AC effectiveness to exactly 100%</td>
+                </tr>
+                <tr>
+                  <td>Wearing Blessed equipment</td>
+                  <td>Increases AC effectiveness by 2.5% per blessing</td>
+                </tr>
+                <tr>
+                  <td>Piercing shots / ammo</td>
+                  <td>Reduces AC by 50%</td>
+                </tr>
+                <tr>
+                  <td>Only charging a thrown weapon to 1/15 power</td>
+                  <td>Reduced damage by 1/2 of target AC</td>
+                </tr>
+                <tr>
+                  <td>Charging a thrown weapon a lot</td>
+                  <td>Reduces base AC by 0 - 75% based on charge level</td>
+                </tr>
+                <tr>
+                  <td>Attacking with Gungnir</td>
+                  <td>Up to 50% AC reduction depending on Polearm skill</td>
+                </tr>
+                <tr>
+                  <td>Armor quality</td>
+                  <td>
+                    Excellent Armor provides the greatest AC, Decrepit armor
+                    provides the least.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              In this way blocking can totally mitigate physical damage if a
+              character's AC is high enough, and if the player is wearing enough
+              blessed armor (+10 total) they can totally mitigate all damage
+              that is lower than their armor class. Note that for races like the
+              Succubus blessings and curses both count positively.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Shield",
+        sectionContent: (
+          <>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Effect</b>
+                    </i>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Wooden Shield</i>
+                  </td>
+                  <td>30</td>
+                  <td>18g</td>
+                  <td>+1 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Bronze Shield</i>
+                  </td>
+                  <td>40</td>
+                  <td>30g</td>
+                  <td>+2 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Iron Shield</i>
+                  </td>
+                  <td>40</td>
+                  <td>45g</td>
+                  <td>+3 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Steel Shield</i>
+                  </td>
+                  <td>50</td>
+                  <td>150g</td>
+                  <td>+4 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Steel Shield of Magic Resistance</i>
+                  </td>
+                  <td>50</td>
+                  <td>750g</td>
+                  <td>
+                    +4 Armor Class
+                    <p>+30% Magical Resistance</p>
+                    <p>
+                      <i>Gain additional magical resistance while blocking</i>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Crystal Shield</i>
+                  </td>
+                  <td>50</td>
+                  <td>1000g</td>
+                  <td>
+                    +5 Armor Class
+                    <p>Fragile: -25 Durability</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Mirror Shield</i>
+                  </td>
+                  <td>40</td>
+                  <td>750g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>
+                      Fragile: Has a 100% chance to degrade when blocking any
+                      non-magical attack
+                    </p>
+                    <p>
+                      <i>Reflects all magical attacks while blocking</i>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Hand-Gear",
+        sectionContent: (
+          <>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Effect</b>
+                    </i>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Suede Gloves</i>
+                  </td>
+                  <td>1</td>
+                  <td>90g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Leather Gloves</i>
+                  </td>
+                  <td>15</td>
+                  <td>15g</td>
+                  <td>+1 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Leather Gloves of Dexterity</i>
+                  </td>
+                  <td>15</td>
+                  <td>150g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>+1 Dexterity</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Brass Knuckles</i>
+                  </td>
+                  <td>30</td>
+                  <td>35g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>+1 Unarmed Attack</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Iron Bracers</i>
+                  </td>
+                  <td>20</td>
+                  <td>30g</td>
+                  <td>+2 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Bracers of Constitution</i>
+                  </td>
+                  <td>20</td>
+                  <td>300g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>+1 Constitution</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Iron Knuckles</i>
+                  </td>
+                  <td>40</td>
+                  <td>100g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>+2 Unarmed Attack</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Steel Gauntlets</i>
+                  </td>
+                  <td>30</td>
+                  <td>100g</td>
+                  <td>+3 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Steel Gauntlets of Strength</i>
+                  </td>
+                  <td>30</td>
+                  <td>500g</td>
+                  <td>
+                    +3 Armor Class
+                    <p>+1 Strength</p>
+                    <p>Grants push, allowing the player to push boulders</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Spiked Gauntlets</i>
+                  </td>
+                  <td>60</td>
+                  <td>250g</td>
+                  <td>
+                    +3 Armor Class
+                    <p>+3 Unarmed Attack</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Crystal Gauntlets</i>
+                  </td>
+                  <td>40</td>
+                  <td>800g</td>
+                  <td>
+                    +4 Armor Class
+                    <p>Fragile: -25 Durability</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Foot-Gear",
+        sectionContent: (
+          <>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Effect</b>
+                    </i>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Loafers</i>
+                  </td>
+                  <td>1</td>
+                  <td>45g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Suede Boots</i>
+                  </td>
+                  <td>1</td>
+                  <td>90g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Leather Boots</i>
+                  </td>
+                  <td>30</td>
+                  <td>15g</td>
+                  <td>+1 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Leather Boots of Speed</i>
+                  </td>
+                  <td>30</td>
+                  <td>250g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>+1 Dexterity</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Quilted Boots</i>
+                  </td>
+                  <td>30</td>
+                  <td>15g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>
+                      +10% Resistance to Polearm and Ranged Damage (25% max)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Cleats</i>
+                  </td>
+                  <td>30</td>
+                  <td>15g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>
+                      Grants stability, reducing the effects of knockback and
+                      slippery terrain
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Iron Boots</i>
+                  </td>
+                  <td>40</td>
+                  <td>35g</td>
+                  <td>+2 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Iron Boots of Water Walking</i>
+                  </td>
+                  <td>40</td>
+                  <td>500g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>
+                      Grants waterwalking, allowing the wearer to safely walk
+                      over pools of water and lava
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Steel Boots</i>
+                  </td>
+                  <td>40</td>
+                  <td>120g</td>
+                  <td>+3 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Steel Boots of Feather</i>
+                  </td>
+                  <td>-40</td>
+                  <td>200g</td>
+                  <td>
+                    +3 Armor Class
+                    <p>Lightweight, reduces player item weight</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Steel Boots of Levitation</i>
+                  </td>
+                  <td>40</td>
+                  <td>900g</td>
+                  <td>
+                    +3 Armor Class
+                    <p>
+                      Grants levitation, allowing the wearer to walk over water,
+                      lava and pits
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Crystal Boots</i>
+                  </td>
+                  <td>50</td>
+                  <td>800g</td>
+                  <td>
+                    +4 Armor Class
+                    <p>Fragile: -25 Durability</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Head-Gear",
+        sectionContent: (
+          <>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Effect</b>
+                    </i>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Felt Hat</i>
+                  </td>
+                  <td>1</td>
+                  <td>15g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Fez</i>
+                  </td>
+                  <td>1</td>
+                  <td>90g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Phrygian Hat</i>
+                  </td>
+                  <td>5</td>
+                  <td>10g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Bandana</i>
+                  </td>
+                  <td>5</td>
+                  <td>40g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>
+                      +12.5% Strafe/backstep movement speed, +12.5% per blessing
+                      (50% max)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Circlet of sorcery</i>
+                  </td>
+                  <td>5</td>
+                  <td>160g</td>
+                  <td>
+                    +5% Spell power, +5% per blessing
+                    <p>+5 Sorcery skill bonus, +5 per blessing (25 max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Circlet of mysticism</i>
+                  </td>
+                  <td>5</td>
+                  <td>160g</td>
+                  <td>
+                    +5% Spell power, +5% per blessing
+                    <p>+5 Mysticism skill bonus, +5 per blessing (25 max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Circlet of thaumaturgy</i>
+                  </td>
+                  <td>5</td>
+                  <td>160g</td>
+                  <td>
+                    +5% Spell power, +5% per blessing
+                    <p>+5 Thaumaturgy skill bonus, +5 per blessing (25 max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Circlet of wisdom</i>
+                  </td>
+                  <td>5</td>
+                  <td>450g</td>
+                  <td>
+                    +5% Spell power, +5% per blessing
+                    <p>
+                      Guarantees intelligence from leveling up, unaffected by
+                      blessings
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Silken bow</i>
+                  </td>
+                  <td>5</td>
+                  <td>140g</td>
+                  <td>
+                    +1 Charisma
+                    <p>Grants chance to pacify and evade melee attacks</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Laurels</i>
+                  </td>
+                  <td>5</td>
+                  <td>250g</td>
+                  <td>
+                    +25% XP gain to lower LVL allies +25% per blessing (300%
+                    max)
+                    <p>
+                      Followers: +2 Hit point regeneration while regenerating,
+                      +2 per blessing (no upper limit)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Hood</i>
+                  </td>
+                  <td>10</td>
+                  <td>10g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Executioner Hood</i>
+                  </td>
+                  <td>10</td>
+                  <td>50g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>
+                      Grants five seconds of MP regeneration while inflicting
+                      bleed on foes
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Chef's toque</i>
+                  </td>
+                  <td>10</td>
+                  <td>60g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+20% food satiation, +10% per blessing (70% max)</p>
+                    <p>
+                      +5% Chance to receive meat from defeated enemies, (only
+                      applies to red-blooded creatures) +2.5% per blessing (10%
+                      max)
+                    </p>
+                    <p>
+                      <i>Guarantee Fresh-quality Rations while cooking.</i>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Jester Hat</i>
+                  </td>
+                  <td>10</td>
+                  <td>60g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+1 Charisma</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Wizard Hat</i>
+                  </td>
+                  <td>10</td>
+                  <td>75g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+1 Intelligence</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Bycocket</i>
+                  </td>
+                  <td>10</td>
+                  <td>140g</td>
+                  <td>
+                    +0 Dexterity
+                    <p>+1 Ranged distance, +1 per blessing (3 max)</p>
+                    <p>+10% Ranged draw speed, +10% per blessing (30% max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Plumed cap</i>
+                  </td>
+                  <td>10</td>
+                  <td>140g</td>
+                  <td>
+                    +1 Charisma
+                    <p>+10 leadership skill bonus, +10 per blessing (25 max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Apprentice's hood</i>
+                  </td>
+                  <td>10</td>
+                  <td>180g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>
+                      +30% Chance: +1 MP while regenerating, +10% chance per
+                      blessing (50% max)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Assassin's hood</i>
+                  </td>
+                  <td>10</td>
+                  <td>180g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+4 Backstab damage, +2 per blessing (8 max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Hood of whispers</i>
+                  </td>
+                  <td>10</td>
+                  <td>180g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+10 Stealth skill bonus, +10 per blessing (25 max)</p>
+                    <p>+2 Ranged backstab damage (4 max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Crown</i>
+                  </td>
+                  <td>10</td>
+                  <td>250g</td>
+                  <td>
+                    +25% XP gain to lower LVL allies +25% per blessing (300%
+                    max)
+                    <p>
+                      +20% Restore max hit point on LVL increase, for self and
+                      followers, +10% per blessing (50% max)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Top Hat</i>
+                  </td>
+                  <td>15</td>
+                  <td>180g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+100% Boulder resistance</p>
+                    <p>
+                      <i>Breaks immediately from one boulder</i>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Warm hat</i>
+                  </td>
+                  <td>25</td>
+                  <td>100g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+50% Cold resistance, +25% per blessing (100% max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Turban</i>
+                  </td>
+                  <td>25</td>
+                  <td>250g</td>
+                  <td>
+                    +25% XP gain to lower LVL allies +25% per blessing (300%
+                    max)
+                    <p>
+                      Followers: +50% Trap Resistance, +25% per blessing (100%
+                      max)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magus' headdress</i>
+                  </td>
+                  <td>25</td>
+                  <td>250g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+10% Spell power, +5% per blessing</p>
+                    <p>
+                      +10% Additional spell power when casting Sorcery spells,
+                      +5% per blessing
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Priestly miter</i>
+                  </td>
+                  <td>25</td>
+                  <td>250g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+10% Spell power, +5% per blessing</p>
+                    <p>
+                      +10% Additional spell power when casting Thaumaturgy
+                      spells, +5% per blessing
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Crowned helmet</i>
+                  </td>
+                  <td>40</td>
+                  <td>350g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>
+                      Followers: +20% damage resistance, +10% per blessing (50%
+                      max)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Bounty hunter's hat</i>
+                  </td>
+                  <td>15</td>
+                  <td>160g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>+10 Ranged skill bonus, +10 per blessing (25 max)</p>
+                    <p>
+                      Marks +1 Bounty monster on entering dungeon floor, which
+                      rewards bonus gold for killing the marked monster
+                    </p>
+                    <p>(Max is 2 bounty monsters per dungeon floor)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Leather Helm</i>
+                  </td>
+                  <td>25</td>
+                  <td>15g</td>
+                  <td>+1 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Mining Helmet</i>
+                  </td>
+                  <td>40</td>
+                  <td>80g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>
+                      {" "}
+                      +50% Boulder resistance, +25% per blessing (100% max)
+                    </p>
+                    <p>
+                      <i>Each boulder degrades quality</i>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Chain Coif</i>
+                  </td>
+                  <td>40</td>
+                  <td>120g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>+10% Resistance to Sword and Axe Damage (25% max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Iron Helm</i>
+                  </td>
+                  <td>40</td>
+                  <td>30g</td>
+                  <td>+2 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Bunny hood</i>
+                  </td>
+                  <td>40</td>
+                  <td>160g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>+0 Dexterity</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Bear hood</i>
+                  </td>
+                  <td>40</td>
+                  <td>160g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>+0 Constitution</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Stag hood</i>
+                  </td>
+                  <td>40</td>
+                  <td>160g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>+0 Perception</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Wolf hood</i>
+                  </td>
+                  <td>40</td>
+                  <td>160g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>+0 Strength</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Steel Helm</i>
+                  </td>
+                  <td>40</td>
+                  <td>120g</td>
+                  <td>+3 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Crystal Helm</i>
+                  </td>
+                  <td>50</td>
+                  <td>800g</td>
+                  <td>
+                    +4 Armor Class
+                    <p>Fragile: -25% durability</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Body Armor",
+        sectionContent: (
+          <>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Effect</b>
+                    </i>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Tunic</i>
+                  </td>
+                  <td>1</td>
+                  <td>15g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Blouse</i>
+                  </td>
+                  <td>1</td>
+                  <td>35g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Healer Doublet</i>
+                  </td>
+                  <td>1</td>
+                  <td>100g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+1 Intelligence</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Wizard Doublet</i>
+                  </td>
+                  <td>1</td>
+                  <td>100g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>+1 Intelligence</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Silver Doublet</i>
+                  </td>
+                  <td>1</td>
+                  <td>150g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Leather Apron</i>
+                  </td>
+                  <td>1</td>
+                  <td>50g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>+2 Perception</p>
+                    <p>Grants immunity to fire</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Vampire Doublet</i>
+                  </td>
+                  <td>40</td>
+                  <td>1600g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>+1 MP Regeneration</p>
+                    <p>Disables Hit Point Regeneration</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Shawl</i>
+                  </td>
+                  <td>50</td>
+                  <td>85g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>+35% Touch Distance casting Touch spells (100% max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Wizard Robe</i>
+                  </td>
+                  <td>50</td>
+                  <td>120g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>
+                      +20% Touch Distance/Cast Speed casting Sorcery spells (50%
+                      max)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Cultist Robe</i>
+                  </td>
+                  <td>50</td>
+                  <td>120g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>
+                      +20% Touch Distance/Cast Speed casting Mysticism spells
+                      (50% max)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Healer Robe</i>
+                  </td>
+                  <td>50</td>
+                  <td>120g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>
+                      +20% Touch Distance/Cast Speed casting Thaumaturgy spells
+                      (50% max)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Monk Robe</i>
+                  </td>
+                  <td>50</td>
+                  <td>120g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>
+                      +20% Touch Distance/Cast Speed casting Thaumaturgy spells
+                      (50% max)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Leather Breastpiece</i>
+                  </td>
+                  <td>100</td>
+                  <td>35g</td>
+                  <td>+2 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Bandit Leather</i>
+                  </td>
+                  <td>125</td>
+                  <td>75g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>+15% Magic Resistance, +5% Per Blessing (30% max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Iron Pauldrons</i>
+                  </td>
+                  <td>50</td>
+                  <td>175g</td>
+                  <td>+2 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Chain Hauberk</i>
+                  </td>
+                  <td>150</td>
+                  <td>125g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>+20% Resistance to Sword and Axe Damage (35% max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Iron Breastpiece</i>
+                  </td>
+                  <td>250</td>
+                  <td>70g</td>
+                  <td>+3 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Steel Breastpiece</i>
+                  </td>
+                  <td>300</td>
+                  <td>250g</td>
+                  <td>+4 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Crystal Breastpiece</i>
+                  </td>
+                  <td>225</td>
+                  <td>1200g</td>
+                  <td>
+                    +5 Armor Class
+                    <p>Fragile: -25% durability</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Cloaks",
+        sectionContent: (
+          <>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Bonus Effect</b>
+                    </i>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Silver Cloak</i>
+                  </td>
+                  <td>1</td>
+                  <td>100g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Cloak</i>
+                  </td>
+                  <td>10</td>
+                  <td>15g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Black Cloak</i>
+                  </td>
+                  <td>10</td>
+                  <td>20g</td>
+                  <td>+0 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    any Cloak
+                    <p></p>
+                  </td>
+                  <td>
+                    <i>Cloak of Magic Reflection</i>
+                  </td>
+                  <td>10</td>
+                  <td>350g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>
+                      Grants Magic Reflection, bouncing magical attacks of the
+                      wearer
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    any Cloak
+                    <p></p>
+                  </td>
+                  <td>
+                    <i>Cloak of Invisibility</i>
+                  </td>
+                  <td>10</td>
+                  <td>800g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>Grants the wearer invisibility</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    any Cloak
+                    <p></p>
+                  </td>
+                  <td>
+                    <i>Cloak of Protection</i>
+                  </td>
+                  <td>20</td>
+                  <td>90g</td>
+                  <td>+1 Armor Class</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Backpack</i>
+                  </td>
+                  <td>20</td>
+                  <td>450g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>Increases your inventory size by ten</p>
+                    <p>
+                      Removing the backpack will drop all items placed in the
+                      bonus inventory slots
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Face-Gear",
+        sectionContent: (
+          <>
+            <table>
+              <caption></caption>
+              <tbody>
+                <tr>
+                  <th>
+                    <b>Image</b>
+                  </th>
+                  <th>
+                    <b>Name</b>
+                  </th>
+                  <th>
+                    <b>Weight</b>
+                  </th>
+                  <th>
+                    <b>Gold</b>
+                  </th>
+                  <th>
+                    <b>Effect</b>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Blindfold</i>
+                  </td>
+                  <td>5</td>
+                  <td>5g</td>
+                  <td>
+                    -10 Perception, +1 per blessing
+                    <p>Applies blindness while worn</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Blindfold of Free Action</i>
+                  </td>
+                  <td>5</td>
+                  <td>150g</td>
+                  <td>
+                    +0 Perception
+                    <p>Applies blindness while worn</p>
+                    <p>Grants free action status effect while worn</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Blindfold of Telepathy</i>
+                  </td>
+                  <td>5</td>
+                  <td>250g</td>
+                  <td>
+                    +0 Perception
+                    <p>Applies blindness while worn</p>
+                    <p>Grants telepathy, showing enemies through walls</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Sweetgrass Sprig</i>
+                  </td>
+                  <td>5</td>
+                  <td>10g</td>
+                  <td>
+                    0.80x Hunger speed, +0.1 per blessing (0.50x max)
+                    <p>
+                      <i>Stacks with the Ring of Slow Digestion</i>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Shaman Mask</i>
+                  </td>
+                  <td>5</td>
+                  <td>20g</td>
+                  <td>+1 MP regeneration while Shapeshifted</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Eye Patch</i>
+                  </td>
+                  <td>5</td>
+                  <td>30g</td>
+                  <td>+2 Sneak Vision, +1 per blessing (4 max)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Bandit Mask</i>
+                  </td>
+                  <td>5</td>
+                  <td>40g</td>
+                  <td>
+                    Grants the WANTED! status effect when VISIBLY worn (e.g.
+                    while not invisible)
+                    <p>
+                      <i>
+                        Allows for killing shops and not suffering consequences
+                        after taking off the mask
+                      </i>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Rose</i>
+                  </td>
+                  <td>5</td>
+                  <td>40g</td>
+                  <td>
+                    +1 Charisma
+                    <p>Makes you Neutral to Incubi and Succubae</p>
+                    <p>
+                      <i>
+                        While equipped: can be given to a succubus or incubus to
+                        recruit
+                      </i>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Marigold</i>
+                  </td>
+                  <td>5</td>
+                  <td>40g</td>
+                  <td>
+                    +5 HP Restore over 30s when eating food (+11 HP Restore max)
+                    <p>
+                      <i>No effect on sickness inducing food</i>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Hazard Goggles</i>
+                  </td>
+                  <td>5</td>
+                  <td>60g</td>
+                  <td>
+                    +0 Perception
+                    <p>
+                      Grants splash immunity to thrown potions and alchemical
+                      explosions
+                    </p>
+                    <p>+10 alchemy skill bonus, +10 per blessing (25 max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Pipe</i>
+                  </td>
+                  <td>5</td>
+                  <td>60g</td>
+                  <td>
+                    <p>
+                      While regenerating MP 25% chance to grant an extra MP
+                      (+10% per blessing, up to 50%)
+                    </p>
+                    <p>
+                      While regenerating HP 25% chance to NOT regenerate the HP
+                      (+10% per blessing, up to 50%)
+                    </p>
+                    <p>
+                      <i>
+                        Deals damage to insectoids and players with 0% health
+                        regeneration.
+                      </i>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Glasses</i>
+                  </td>
+                  <td>5</td>
+                  <td>70g</td>
+                  <td>+1 Perception</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Mouth Knife</i>
+                  </td>
+                  <td>5</td>
+                  <td>70g</td>
+                  <td>+2 Retaliation damage, +2 per blessing (12 max)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Masquerade Mask</i>
+                  </td>
+                  <td>5</td>
+                  <td>80g</td>
+                  <td>
+                    +1 Charisma
+                    <p>Makes you neutral to incubi and succubi</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Tech Goggles</i>
+                  </td>
+                  <td>5</td>
+                  <td>100g</td>
+                  <td>
+                    +0 Perception
+                    <p>
+                      +50% Tinkering deploy speed, +50% per blessing (200% max)
+                    </p>
+                    <p>Grants immunity to Sentry Friendly Fire</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Monocle</i>
+                  </td>
+                  <td>5</td>
+                  <td>150g</td>
+                  <td>
+                    +1 Perception
+                    <p>
+                      Grants +200% Gem Appraisal speed +200% per blessing (400%
+                      max)
+                    </p>
+                    <p>
+                      Marks you as an ally to shopkeepers when VISIBLY worn
+                      (e.g. while not invisible)
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Plague Mask</i>
+                  </td>
+                  <td>5</td>
+                  <td>200g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>
+                      Grants nausea resistance, immunity to vomit inducing
+                      effects (indigestion, hunting arrows, drunkenness)
+                    </p>
+                    <p>
+                      <i>Makes you vomit once when unequipped</i>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Phantom Mask</i>
+                  </td>
+                  <td>5</td>
+                  <td>900g</td>
+                  <td>
+                    Afflicts Disoriented (will not notice you as quickly, or
+                    turn around after the strike) after the first successful
+                    Backstab on the enemy
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Spooky Mask</i>
+                  </td>
+                  <td>25</td>
+                  <td>30g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>Makes you neutral to shadows and ghouls</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Golden Mask</i>
+                  </td>
+                  <td>25</td>
+                  <td>900g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>
+                      +50% Gold weight reduction, +50% per blessing (150% max)
+                    </p>
+                    <p>+10 Trading skill bonus, +10 per blessing (25 max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Steel Visor</i>
+                  </td>
+                  <td>5</td>
+                  <td>80g</td>
+                  <td>
+                    +1 Armor Class
+                    <p>+5 Melee Weapon Skill Bonus, +5 per blessing (25 max)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Crystal Visor</i>
+                  </td>
+                  <td>5</td>
+                  <td>200g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>+5 Melee Weapon Skill Bonus, +5 per blessing (25 max)</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Artifact Armor",
+        sectionContent: (
+          <>
+            <p>
+              Below is a list of the rare Artifact Armor of legend! Lost to the
+              ages, each one possesses special magical properties. Artifacts are
+              unbreakable and gain additional AC when repaired to Excellent
+              quality.
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Slot</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Bonus Effect</b>
+                    </i>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Djinni's Brace</i>
+                  </td>
+                  <td>Hand</td>
+                  <td>80</td>
+                  <td>3000g</td>
+                  <td>
+                    +4 Armor Class
+                    <p>+30% Magical Resistance</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Oracle's Treads</i>
+                  </td>
+                  <td>Foot</td>
+                  <td>100</td>
+                  <td>3000g</td>
+                  <td>
+                    +4 Armor Class
+                    <p>
+                      Grants Lesser Warning, displaying moving enemies as purple
+                      dots on the map
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Sphinx's Casque</i>
+                  </td>
+                  <td>Head</td>
+                  <td>100</td>
+                  <td>3000g</td>
+                  <td>
+                    +4 Armor Class
+                    <p>+8 Intelligence</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Dragon's Mail</i>
+                  </td>
+                  <td>Body</td>
+                  <td>450</td>
+                  <td>5000g</td>
+                  <td>
+                    +6 Armor Class
+                    <p>+1 HP regeneration</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Wraith's Gown</i>
+                  </td>
+                  <td>Back</td>
+                  <td>60</td>
+                  <td>3000g</td>
+                  <td>
+                    +0 Armor Class
+                    <p>Grants Levitation</p>
+                    <p>+1 MP regeneration</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Valkyrie's Veil</i>
+                  </td>
+                  <td>Face</td>
+                  <td>5</td>
+                  <td>3000g</td>
+                  <td>
+                    +2 Armor Class
+                    <p>
+                      Grants +10 Melee Weapon skill bonus, +10 per blessing (25
+                      max)
                     </p>
                   </td>
                 </tr>
