@@ -6020,10 +6020,10 @@ export const items: Item[] = [
                     <img src={SpellbookThaumaturgy1} />
                   </td>
                   <td>
-                    <img src={SpellbookThaumaturgy1} />
+                    <img src={SpellbookThaumaturgy2} />
                   </td>
                   <td>
-                    <img src={SpellbookThaumaturgy1} />
+                    <img src={SpellbookThaumaturgy3} />
                   </td>
                 </tr>
               </tbody>
