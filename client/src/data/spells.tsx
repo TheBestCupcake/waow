@@ -43,6 +43,47 @@ import elementalfocus from "../assets/elemental_focus.webp";
 import levitation from "../assets/levitation.webp";
 import stealweapon from "../assets/steal_weapon.webp";
 
+import light from "../assets/light.png";
+import minorheal from "../assets/minorheal.png";
+import minorhealother from "../assets/minorhealother.png";
+import bloodward from "../assets/bloodward.png";
+import germinate from "../assets/dryadgerminate.png";
+import dash from "../assets/dash.png";
+import cureailment from "../assets/cureailment.png";
+import guardbody from "../assets/guardbody.png";
+import guardspirit from "../assets/guardspirit.png";
+import detectenemy from "../assets/detectenemy.png";
+import scryallies from "../assets/scryallies.png";
+import donation from "../assets/donation.png";
+import exorcise from "../assets/exorcise.png";
+import holysigil from "../assets/holysigil.png";
+import cleansefood from "../assets/cleansefood.png";
+import breathefire from "../assets/breathefire.png";
+import thorns from "../assets/thorns.png";
+import healing from "../assets/healing.png";
+import blessedmeals from "../assets/blessedmeals.png";
+import nimbleness from "../assets/nimbleness.png";
+import counsel from "../assets/counsel.png";
+import divinezeal from "../assets/divinezeal.png";
+import trollsblood from "../assets/trollsblood.png";
+import speed from "../assets/speed.png";
+import detectfood from "../assets/detectfood.png";
+import identify from "../assets/identify.png";
+import divineguard from "../assets/divineguard.png";
+import pinpoint from "../assets/pinpoint.png";
+import scrytraps from "../assets/scrytraps.png";
+import greatermight from "../assets/greatermight.png";
+import sturdiness from "../assets/sturdiness.png";
+import flutter from "../assets/flutter.png";
+import removecurse from "../assets/removecurse.png";
+import magicmapping from "../assets/magicmapping.png";
+import extrahealing from "../assets/extrahealing.png";
+import scrytreasures from "../assets/scrytreasures.png";
+import divinefortress from "../assets/divinefortress.png";
+import holybeam from "../assets/holybeam.png";
+import reflectmagic from "../assets/reflectmagic.png";
+import powerstrike from "../assets/powerstrike.png";
+
 export type SpellsSection = {
   sectionName: string;
   sectionContent: ReactNode;
@@ -1247,6 +1288,920 @@ export const spells: Spells = {
                   <b>Sorcery</b>
                   <br />
                   <b>VI</b> <i>(Legend)</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </>
+      ),
+    },
+
+    {
+      sectionName: "Thaumaturgy Spells",
+      sectionContent: (
+        <>
+          <table>
+            <tbody>
+              <tr>
+                <th>
+                  <i>
+                    <b>Spell</b>
+                  </i>
+                </th>
+                <th>
+                  <i>
+                    <b>Spell Type</b>
+                  </i>
+                </th>
+                <th>
+                  <i>
+                    <b>Description</b>
+                  </i>
+                </th>
+                <th>
+                  <i>
+                    <b>Notes</b>
+                  </i>
+                </th>
+                <th>
+                  <i>
+                    <b>Cost</b>
+                  </i>
+                </th>
+                <th>
+                  <i>
+                    <b>School and Skill Tier</b>
+                  </i>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <img src={light} />
+                  <p>
+                    <i>Light</i>
+                  </p>
+                </td>
+                <td>Sustained</td>
+                <td>Summons a light to follow in front of the caster</td>
+                <td>Monk and wizard have this spell book by default.</td>
+                <td>
+                  <b>-1 MP</b> to cast, <b>-1 MP</b> every 15.0 seconds to
+                  sustain
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={minorheal} />
+                  <i>Minor Heal</i>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  +1 HP restore over time
+                  <p>Effect ends if caster receives damage</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-8 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={minorhealother} />
+                  <i>Minor Heal Other</i>
+                </td>
+                <td>Touch Target</td>
+                <td>
+                  +1 HP restore over time
+                  <p>Effect ends if caster receives damage</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-8 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={bloodward} />
+                  <i>Blood Ward</i>
+                </td>
+                <td>Sustained</td>
+                <td>
+                  Grants immunity to bleed and poison while sustained +35%
+                  resistance against poisonous creatures
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-5 MP</b> to cast, <b>-1 MP</b> every 5 seconds to sustain
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={germinate} />
+                  <i>Dryad's Germinate</i>
+                </td>
+                <td>Ground Target</td>
+                <td>
+                  Plants a Shrub:
+                  <p>+5 HP restore per pulse</p>
+                  <p>Retaliates with thorns</p>
+                  Drops forageables on expiry
+                  <p>Consumes foliage to summon</p>
+                </td>
+                <td>Exclusive to dryad players</td>
+                <td>
+                  <b>-16 MP</b>
+                  <p>1 tier of growth</p>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={dash} />
+                  <p>
+                    <i>Dash</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Propels caster in current moving direction Breaks doors on
+                  impact
+                  <p>Casting while stationary performs a backwards leap</p>
+                </td>
+                <td>Insectoid players innately begin with this spell</td>
+                <td>
+                  <b>-5 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={cureailment} />
+                  <p>
+                    <i>Cure Ailment</i>
+                  </p>
+                </td>
+                <td>Area</td>
+                <td>
+                  Cures negative status effects of caster and nearby allies
+                </td>
+                <td>A healer spell by default</td>
+                <td>
+                  <b>-10 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={guardbody} />
+                  <i>Guard Body</i>
+                </td>
+                <td>Sustained</td>
+                <td>
+                  Increases AC for each Charge point +1 Charge restored each
+                  sustain interval +5 maximum Charge
+                  <p>Consumes Charges on being hit by physical attacks</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-5 MP</b> to cast, <b>-1 MP</b> every 10 seconds to sustain
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={guardspirit} />
+                  <i>Guard Spirit</i>
+                </td>
+                <td>Sustained</td>
+                <td>
+                  Increases RES for each Charge point +1 Charge restored each
+                  sustain interval +3 maximum Charge
+                  <p>Consumes Charges on being hit by magical attacks</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-10 MP</b> to cast, <b>-1 MP</b> every 5 seconds to sustain
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={detectenemy} />
+                  <i>Detect Enemy</i>
+                </td>
+                <td>Divine Target</td>
+                <td>Divines the location of nearby enemy</td>
+                <td>-</td>
+                <td>
+                  <b>-6 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={scryallies} />
+                  <i>Scry Allies</i>
+                </td>
+                <td>Divine Target</td>
+                <td>Reveals friendlies on the current dungeon floor</td>
+                <td>-</td>
+                <td>
+                  <b>-8 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={donation} />
+                  <i>Donation</i>
+                </td>
+                <td>Divine Target</td>
+                <td>
+                  Reveals a breakable on the current dungeon floor yielding
+                  divine rewards
+                  <p>Rewards increase with caster's spell power</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-20 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={exorcise} />
+                  <i>Exorcise</i>
+                </td>
+                <td>Ground Target</td>
+                <td>
+                  Inflicts Turning to unholy enemies Effect power:
+                  <p>At any PWR below 150%: Inflicts Fear</p>
+                  <p>At 150% PWR:+ 30 Smite damage as well</p>
+                  <p>At 200% PWR::Holy Fire as well</p>
+                  <p>Effects of Turning vary based on power and enemy type</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-12 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={holysigil} />
+                  <i>Holy Sigil</i>
+                </td>
+                <td>Ground Target</td>
+                <td>
+                  Applies to allies in an area:
+                  <p>
+                    +20% healing effects bonus; +10% more per tier; maxes out at
+                    +50%
+                  </p>
+                  <p>
+                    +20% damage dealt to enemies; +10% more per tier; maxes out
+                    at +50%
+                  </p>
+                  tarts at Tier I, gets a new tier for each 50% PWR over 100%
+                  PWR, maxes out at tier IV at 250% PWR
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-14 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={cleansefood} />
+                  <i>Cleanse Food</i>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Restores food to fresh quality and removes curses from it
+                  <p>Requires multiple casts to fully cleanse</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-12 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={breathefire} />
+                  <i>Breathe Fire</i>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Releases +5 projectiles:
+                  <p>+3 magic damage</p>
+                  <p>Inflicts burning</p>
+                  <p>Gains mana by hitting enemy</p>
+                  Decreases target resistances up to +2 instances from CHR at
+                  base,adds +1 instance per 5 CHR;+3 instances if Salamander is
+                  in radiant form; maxes out at +10 instances
+                  <p>
+                    Each stack makes target more vulnerable to damage;+ 10% per
+                    stack vulnerability to damage if target has resistance to
+                    given damage type;
+                  </p>
+                  <p>+2.5% per stack vulnerability to damage if not.</p>
+                  <p>
+                    Example: a monster is 10% resistant to unnarmed, 1st stack
+                    will make it have neutral vulnerability and 2nd stack will
+                    add only 2,5% more vulnerability due to its current
+                    vulnerability being 0%
+                  </p>
+                  <p>Phases trough creatures</p>
+                  <p>Short range spell</p>
+                </td>
+                <td>
+                  Exclusive to salamander players
+                  <p>
+                    Cannot be obtained any other way Deals no friendly fire
+                    damage
+                  </p>
+                </td>
+                <td>
+                  Starts at <b>-7 MP,</b>increases cost by <b>1</b> for each 50
+                  max mana.
+                  <p>Doubled cost when below 40% MP</p>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={thorns} />
+                  <i>Thorns</i>
+                </td>
+                <td>Sustained</td>
+                <td>
+                  Grants Retaliation
+                  <p>+4 magic damage to melee attackers</p>
+                  HP lost by attacks increases Retaliation up to +10 damage
+                  <p>Expends MP when retaliating</p>
+                </td>
+                <td>Dryad players innately begin with this spell</td>
+                <td>
+                  <b>-5 MP</b> to cast, <b>-1 MP</b> every 6 seconds to sustain
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={healing} />
+                  <p>
+                    <i>Healing</i>
+                  </p>
+                </td>
+                <td>Area</td>
+                <td>
+                  +10 HP restore
+                  <p>Heals caster and nearby allies</p>
+                </td>
+                <td>A healer spell by default</td>
+                <td>
+                  <b>-10 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={blessedmeals} />
+                  <i>Blessed Meals</i>
+                </td>
+                <td>Area</td>
+                <td>
+                  Grants Blessed meals to caster and nearby allies Food eaten
+                  grants Nourished restoring HP and MP for a duration
+                  <p>Effect increases per piece of food consumed</p>
+                </td>
+                <td>A scion spell by default</td>
+                <td>
+                  <b>-10 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={nimbleness} />
+                  <i>Nimbleness</i>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Grants + DEX and 10 skill to Tinkering, Ranged, Swords and
+                  Stealth; + DEX and 5 skill per new tier; Starts at Tier I,
+                  gets a new tier for each 50% PWR over 100% PWR, maxes out at
+                  tier IV at 250% PWR
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-18 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={counsel} />
+                  <i>Counsel</i>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Grants + PWR and 10 skill to Sorcery and Mysticism;+ PWR and 5
+                  skill per new tier; Starts at Tier I, gets a new tier for each
+                  50% PWR over 100% PWR, maxes out at tier IV at 250% PWR
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-18 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={divinezeal} />
+                  <i>Divine Zeal</i>
+                </td>
+                <td>Sustained</td>
+                <td>+25% Melee damage to Smite weak enemies</td>
+                <td>A paladin spell by default</td>
+                <td>
+                  <b>-8 MP</b> to cast, <b>-1 MP</b> every 5 seconds to sustain
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={trollsblood} />
+                  <p>
+                    <i>Troll's Blood</i>
+                  </p>
+                </td>
+                <td>Area</td>
+                <td>
+                  Grants boosted HP regeneration to caster and nearby allies
+                </td>
+                <td>A cleric spell by default</td>
+                <td>
+                  <b>-25 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={speed} />
+                  <p>
+                    <i>Speed</i>
+                  </p>
+                </td>
+                <td>Area</td>
+                <td>Grants speed to caster and nearby allies</td>
+                <td>A spell granted by rat form</td>
+                <td>
+                  <b>-11 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={detectfood} />
+                  <p>
+                    <i>Detect Food</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>Reveals food sources on the current dungeon floor</td>
+                <td>
+                  A wanderer spell by default
+                  <p>A spell granted by rat form</p>
+                </td>
+                <td>
+                  <b>-14 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={identify} />
+                  <p>
+                    <i>Identify</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>Identifies an item in the caster's inventory</td>
+                <td>-</td>
+                <td>
+                  <b>-10 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={divineguard} />
+                  <i>Divine Guard</i>
+                </td>
+                <td>Sustained</td>
+                <td>
+                  Increases AC and RES for each Charge point +1 Charge restored
+                  each sustain interval +5 maximum Charge
+                  <p>Consumes Charges on being hit by any attack</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-20 MP</b> to cast, <b>-1 MP</b> every 10 seconds to
+                  sustain
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={pinpoint} />
+                  <i>Pinpoint</i>
+                </td>
+                <td>Divine Target</td>
+                <td>
+                  Marks an enemy for Wrath on the current dungeon floor +20
+                  Smite damage to target when next hit +50% Smite damage of
+                  target's HP lost while triggering
+                  <p>Smite damage increases based on damage dealt to trigger</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-10 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={scrytraps} />
+                  <i>Scry Traps</i>
+                </td>
+                <td>Divine Target</td>
+                <td>Reveals nearby traps on the current dungeon floor</td>
+                <td>-</td>
+                <td>
+                  <b>-12 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={greatermight} />
+                  <i>Greater Might</i>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Grants + STR, Push effect and 10 skill to Maces,Axes,Polearm;+
+                  STR and 5 skill per new tier; Starts at Tier I, gets a new
+                  tier for each 50% PWR over 100% PWR,maxes out at tier IV at
+                  250% PWR
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-30 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={sturdiness} />
+                  <i>Sturdiness</i>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Grants + CON, MAX HP, and 10 skill to Blocking;+ CON and 5
+                  skill per new tier; Starts at Tier I, gets a new tier for each
+                  50% PWR over 100% PWR,maxes out at tier IV at 250% PWR
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-24 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={flutter} />
+                  <p>
+                    <i>Flutter</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>Grants levitation for six seconds</td>
+                <td>Insectoid players innately begin with this spell</td>
+                <td>
+                  <b>-10 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={removecurse} />
+                  <p>
+                    <i>Remove Curse</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Removes a curse from a single item in the caster's inventory
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-20 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={magicmapping} />
+                  <p>
+                    <i>Magic Mapping</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>Reveals 8 tiles around the player. Scales with PWR</td>
+                <td>-</td>
+                <td>
+                  <b>-40 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={extrahealing} />
+                  <p>
+                    <i>Extra Healing</i>
+                  </p>
+                </td>
+                <td>Area</td>
+                <td>+40 HP restore to caster and nearby allies</td>
+                <td>-</td>
+                <td>
+                  <b>-40 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={scrytreasures} />
+                  <i>Scry Treasures</i>
+                </td>
+                <td>Divine Target</td>
+                <td>
+                  Grants Treasure Sight
+                  <p>
+                    Reveals nearby gold,keys and treasures on the current
+                    dungeon floor
+                  </p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-16 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={divinefortress} />
+                  <i>Divine Fortress</i>
+                </td>
+                <td>Ground Target</td>
+                <td>
+                  Applies to allies in an area:
+                  <p>
+                    +25% Damage Resistance;+15% more per tier;maxes out at +70%
+                    Damage Resistance
+                  </p>
+                  Starts at Tier I, gets a new tier for each 50% PWR over 100%
+                  PWR,maxes out at tier IV at 250% PWR
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-25 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={holybeam} />
+                  <i>Holy Beam</i>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  +25 Magic Damage
+                  <p>+100% damage to Unholy enemies</p>
+                  +20 health restored on allies
+                  <p>Phases trough creatures</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-18 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={reflectmagic} />
+                  <p>
+                    <i>Reflect Magic</i>
+                  </p>
+                </td>
+                <td>Sustained</td>
+                <td>
+                  Grants magic reflection while sustained Reflecting spells
+                  consumes additional mana
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-10 MP</b> to cast, <b>-1 MP</b> every 6 seconds
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={powerstrike} />
+                  <p>
+                    <i>Power Strike</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Charges a powerful melee strike that deals +400% attack Breaks
+                  walls, boulders and doors on impact
+                  <p>Slow casting time</p>
+                </td>
+                <td>
+                  Used innately by crystal golems
+                  <p>A spell granted by troll form</p>
+                </td>
+                <td>
+                  <b>-23 MP</b>
+                </td>
+                <td>
+                  <b>Thaumaturgy</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
                 </td>
               </tr>
             </tbody>
