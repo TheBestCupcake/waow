@@ -3813,6 +3813,272 @@ export const items: Item[] = [
           </>
         ),
       },
+
+      {
+        sectionName: "Mail Messages",
+        sectionContent: (
+          <>
+            <p>
+              Each piece of mail selects one message for it to contain when
+              read. Regardless of curse, blessing or the actual type of message,
+              there is no effect on the player for doing so. Often these
+              messages serve as Easter Eggs for the player to find, though a few
+              are generic messages.
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Message</th>
+                  <th>Notes</th>
+                </tr>
+                <tr>
+                  <td>This is a letter:</td>
+                  <td>
+                    <i>The opening message after reading the messages below.</i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    "This is Moe. I like you Maggie...
+                    <p>so much that... I want to...</p>
+                    <p>eat you... for dinner."</p>
+                  </td>
+                  <td>
+                    Reference to a letter from the game "
+                    <i>The Legend of Zelda: The Wind Waker</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    "Help me.
+                    <p>I am waiting for you inside Lord Jabu Jabu's belly.</p>
+                    <p>--Ruto.</p>
+                    <p>PS: Don't tell my father!"</p>
+                  </td>
+                  <td>
+                    Reference to a letter from the game "
+                    <i>The Legend of Zelda: Ocarina of Time</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    "Double the amount of copper excavated from the mines.
+                    <p>
+                      The gnomes will pay extra for anything above above the
+                      standard amount."
+                    </p>
+                  </td>
+                  <td>
+                    May be a message from Baron Herx. Has a typo of using
+                    "above" twice.
+                    <p>
+                      Potential reference to a "Private letter" from the game
+                      "Skyrim"
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    "Double, double toil and trouble;
+                    <p>Fire burn, and cauldron bubble."</p>
+                  </td>
+                  <td>
+                    Reference to William Shakespeare play "<i>Macbeth</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    "Our exploration of the Devil's Bastion has
+                    <p>
+                      failed after an extended encounter with the dungeon's
+                      inhabitants."
+                    </p>
+                  </td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>"A horse, a horse! My kingdom for a horse!"</td>
+                  <td>Reference to William Shakespeare play "Richard III"</td>
+                </tr>
+                <tr>
+                  <td>
+                    "It is tradition to speak with the royal 'we',
+                    <p>
+                      and to use THIS MUCH VOLUME WHEN ADDRESSING OUR
+                      SUBJECTS!!!"
+                    </p>
+                  </td>
+                  <td>
+                    Reference to a quote from show "
+                    <i>My Little Pony: Friendship is Magic</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>"swim swim hungry"</td>
+                  <td>
+                    Reference to video game "
+                    <i>Commander Keen: Secret of the Oracle</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    "Of all the words of mice and men,
+                    <p>The saddest are,</p>
+                    <p>'It might have been.'"</p>
+                  </td>
+                  <td>
+                    Reference to Kurt Vonnegut novel "Cat's Cradle". Original
+                    quote from a poem by John Greenleaf Whittier "
+                    <i>Maud Muller</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>"Please disregard the previous letter."</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>This is an old scrawled note:</td>
+                  <td>The opening message after reading the messages below.</td>
+                </tr>
+                <tr>
+                  <td>
+                    "I lie here in the dark now,
+                    <p>waiting for death."</p>
+                  </td>
+                  <td>
+                    Possible reference to Joseph Conrad novella "
+                    <i>Heart of Darkness</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>"The Dopefish lives!"</td>
+                  <td>
+                    Reference to video game "
+                    <i>Commander Keen: Secret of the Oracle</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    "Mee wurst troll evurr
+                    <p>nobuddy pay brijj tole</p>
+                    <p>me nott sceary enuf</p>
+                    <p>mee gett drunc an kil sellf</p>
+                    <p>troll droun"</p>
+                  </td>
+                  <td>
+                    Reference to a letter from the game "
+                    <i>The Elder Scrolls IV: Oblivion</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>This is a scrawled note:</td>
+                  <td>
+                    <i>The opening message after reading the messages below.</i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    "These donuts are great! Jelly-filled are my favorite!
+                    Nothing beats a jelly-filled donut."
+                  </td>
+                  <td>
+                    Reference to the <i>Pokémon</i> anime.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    "Hey, I know! I'll use my trusty frying
+                    <p>pan... as a drying pan!"</p>
+                  </td>
+                  <td>
+                    Reference to the <i>Pokémon</i> anime.
+                  </td>
+                </tr>
+                <tr>
+                  <td>This is a hand-written note:</td>
+                  <td>The opening message after reading the messages below.</td>
+                </tr>
+                <tr>
+                  <td>
+                    "Ten paces northeast from the mizzenmast;
+                    <p>27 steps down to the hold;</p>
+                    <p>And five paces to the right;</p>
+                    <p>And dig at spot marked 'X'"</p>
+                  </td>
+                  <td>
+                    Reference to "<i>Mutiny on The Bunny</i>", a 1950 Looney
+                    Tunes cartoon
+                  </td>
+                </tr>
+                <tr>
+                  <td>"Alright everybody, let's mosey!"</td>
+                  <td>
+                    Reference to video game "<i>Final Fantasy 7</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>"There's daggers in men's smiles."</td>
+                  <td>
+                    Reference to William Shakespeare play "<i>Macbeth</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>"It's a secret to everybody."</td>
+                  <td>
+                    Reference to "<i>The Legend of Zelda</i>".
+                  </td>
+                </tr>
+                <tr>
+                  <td>"BEHIND YOU!"</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>"They say life is wasted on the living."</td>
+                  <td>Reference to "Hitch Hiker's Guide to the Galaxy"</td>
+                </tr>
+                <tr>
+                  <td>This is just an advertisement:</td>
+                  <td>The opening message after reading the message below.</td>
+                </tr>
+                <tr>
+                  <td>
+                    "%s's %s has
+                    <p>the finest items in all the realm!"</p>
+                  </td>
+                  <td>
+                    "%s" are placeholders, replaced in-game with a random
+                    Shopkeeper name and vending option.
+                  </td>
+                </tr>
+                <tr>
+                  <td>This is a blood-stained note:</td>
+                  <td>The opening message after reading the message below.</td>
+                </tr>
+                <tr>
+                  <td>"Yes, Avatar, seek a way home!"</td>
+                  <td>Reference to a quote from video game Ultima VIII</td>
+                </tr>
+                <tr>
+                  <td>This letter is covered in crumbs:</td>
+                  <td>The opening message after reading the message below.</td>
+                </tr>
+                <tr>
+                  <td>"Boil 'em, mash 'em, stick 'em in a stew!"</td>
+                  <td>
+                    Reference to a quote from Samewise, a character from "
+                    <i>Lord of the Rings</i>".
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
     ],
+  },
+
+  {
+    id: "",
+    itemSections: [],
   },
 ];
