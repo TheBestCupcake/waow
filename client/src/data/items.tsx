@@ -4665,4 +4665,394 @@ export const items: Item[] = [
       },
     ],
   },
+  {
+    id: "Food",
+    itemSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Food are a large group of consumable items found throughout
+              Barony, serving to combat the player's insatiable hunger and
+              provides a ticking clock for players who spend too much time
+              examining the floors of the dungeon.
+            </p>
+            <p>
+              Food can be found scattered across the dungeon or as loot from
+              defeated enemies.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Mechanics",
+        sectionContent: (
+          <>
+            <h3>Consuming Food</h3>
+            <p>
+              Like most items, right-clicking on food inside the inventory will
+              show the option to eat that item. When in the hotbar, the item
+              will be automatically selected and eaten by the player.
+            </p>
+            <p>
+              The Tin Can is the exception to all of this, requiring a Tin
+              Opener in order to access its contents, and a possible penalty for
+              players in the form of grease that will cause them to fumble their
+              weapons. Tins also have a random chance to provide supplemental
+              health and mana regeneration. If the player has the tin opener,
+              and maybe a Towel to wipe themselves with after, then they can
+              consume the tin can safely. Alternatively, the Goatman allows
+              players to eat the tin outright, with an immunity to grease.
+            </p>
+            <p>
+              It should be noted that consuming too much food will force the
+              player to vomit and reset their hunger to a normal value,
+              effectively wasting food items in the process. Drinking cursed
+              Bottles of Booze, or an excess of booze at one time will also
+              result in vomiting, causing hunger to decrease and the player to
+              become hungry.
+            </p>
+
+            <h3>Food Qualities</h3>
+            <p>
+              Like most other items in Barony, each food item will have an item
+              quality associated with it when it is picked up, changing how the
+              item acts in regards to edibility and how "safe" it is to be
+              consumed. Stats such as constitution also play a role in how the
+              player tolerates food quality.
+            </p>
+            <p>
+              Cursed food appears to always result in puking, whereas blessed
+              food provides the "Nourishment" buff for several seconds,
+              increasing MP and HP regen. Nourishment is instantly removed if
+              the player pukes for any reason.
+            </p>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Quality Title</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Chance to Puke</b>
+                    </i>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Fresh</i>
+                  </td>
+                  <td>0%</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Slightly Aged</i>
+                  </td>
+                  <td>4%</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Aged</i>
+                  </td>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Mouldy</i>
+                  </td>
+                  <td>25%</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Rotten</i>
+                  </td>
+                  <td>100%</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Disabling Hunger</h3>
+            <p>
+              Within the Options menu, the player can opt out of Hunger in favor
+              of disabling natural health regeneration. Doing so, food sources
+              will begin to heal for five health each, making them smaller scale
+              Potions of Healing to an extent. Players can still vomit if hunger
+              is off.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Types of Food",
+        sectionContent: (
+          <>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Food</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Hunger Value</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold Value</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Vegetarian Conduct?</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Notes</b>
+                    </i>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cheese</td>
+                  <td>
+                    <b>100</b>
+                  </td>
+                  <td>
+                    <b>5</b>
+                  </td>
+                  <td>
+                    <b>5g</b>
+                  </td>
+                  <td>
+                    <b>Yes</b>
+                  </td>
+                  <td>
+                    <b>-</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Ration</td>
+                  <td>
+                    <b>200</b>
+                  </td>
+                  <td>
+                    <b>2</b>
+                  </td>
+                  <td>
+                    <b>4g</b>
+                  </td>
+                  <td>
+                    <b>Yes</b>
+                  </td>
+                  <td>Gained by cooking. Flavors can be added to it.</td>
+                </tr>
+                <tr>
+                  <td>Apple</td>
+                  <td>
+                    <b>200</b>
+                  </td>
+                  <td>
+                    <b>5</b>
+                  </td>
+                  <td>
+                    <b>5g</b>
+                  </td>
+                  <td>
+                    <b>Yes</b>
+                  </td>
+                  <td>
+                    <b>-</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Creampie</td>
+                  <td>
+                    <b>200</b>
+                  </td>
+                  <td>
+                    <b>10</b>
+                  </td>
+                  <td>
+                    <b>10g</b>
+                  </td>
+                  <td>
+                    <b>Yes</b>
+                  </td>
+                  <td>
+                    Can also be wielded. Attacking with a pie in your main hand
+                    causes you to throw it.Entities are inflicted with the messy
+                    effect for a short period of time.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nut</td>
+                  <td>
+                    <b>200</b>
+                  </td>
+                  <td>
+                    <b>2</b>
+                  </td>
+                  <td>
+                    <b>0g</b>
+                  </td>
+                  <td>
+                    <b>Yes</b>
+                  </td>
+                  <td>Gained from dryad's spell of Germinate</td>
+                </tr>
+                <tr>
+                  <td>Mushroom Slice</td>
+                  <td>
+                    <b>200</b>
+                  </td>
+                  <td>
+                    <b>2</b>
+                  </td>
+                  <td>
+                    <b>0g</b>
+                  </td>
+                  <td>
+                    <b>Yes</b>
+                  </td>
+                  <td>Gained from myconid's spell of Germinate</td>
+                </tr>
+                <tr>
+                  <td>Tomalley</td>
+                  <td>
+                    <b>400</b>
+                  </td>
+                  <td>
+                    <b>5</b>
+                  </td>
+                  <td>
+                    <b>10g</b>
+                  </td>
+                  <td>
+                    <b>Yes</b>
+                  </td>
+                  <td>
+                    <b>-</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Bread</td>
+                  <td>
+                    <b>400</b>
+                  </td>
+                  <td>
+                    <b>10</b>
+                  </td>
+                  <td>
+                    <b>30g</b>
+                  </td>
+                  <td>
+                    <b>Yes</b>
+                  </td>
+                  <td>
+                    <b>-</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Blood Vial</i>
+                  </td>
+                  <td>
+                    <b>10</b>
+                    <br />—<br />
+                    Vampire/Accursed:
+                    <br />
+                    <b>250</b>
+                  </td>
+                  <td>
+                    <b>10</b>
+                  </td>
+                  <td>
+                    <b>20g</b>
+                  </td>
+                  <td>
+                    <b>No</b>
+                  </td>
+                  <td>
+                    Unless you are playing as a Vampire or an Accursed, it will
+                    instantly cause you to vomit.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Fish</td>
+                  <td>
+                    <b>500</b>
+                  </td>
+                  <td>
+                    <b>15</b>
+                  </td>
+                  <td>
+                    <b>30g</b>
+                  </td>
+                  <td>
+                    <b>No</b>
+                  </td>
+                  <td>Fish is the only item that spiders can interact with.</td>
+                </tr>
+                <tr>
+                  <td>Meat</td>
+                  <td>
+                    <b>600</b>
+                  </td>
+                  <td>
+                    <b>10</b>
+                  </td>
+                  <td>
+                    <b>30g</b>
+                  </td>
+                  <td>
+                    <b>No</b>
+                  </td>
+                  <td>
+                    <b>-</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tin</td>
+                  <td>
+                    <b>600</b>
+                  </td>
+                  <td>
+                    <b>20</b>
+                  </td>
+                  <td>
+                    <b>40g</b>
+                  </td>
+                  <td>
+                    <b>No</b>
+                  </td>
+                  <td>
+                    Cannot be consumed without a tin opener. When consumed, it
+                    may inflicts the greasy status effect.Can grant +2 HP and MP
+                    Regen.
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot></tfoot>
+            </table>
+          </>
+        ),
+      },
+    ],
+  },
 ];
