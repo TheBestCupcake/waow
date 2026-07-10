@@ -5055,4 +5055,547 @@ export const items: Item[] = [
       },
     ],
   },
+
+  {
+    id: "Equipment",
+    itemSections: [
+      {
+        sectionName: "List of Equipment",
+        sectionContent: (
+          <>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Icon</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Description</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Equip Region</b>
+                    </i>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Pickaxe</i>
+                  </td>
+                  <td>
+                    <b>30</b>
+                  </td>
+                  <td>
+                    <b>120g</b>
+                  </td>
+                  <td>
+                    +0 attack, +1 per blessing. Inflicts typeless damage.
+                    <p>Destroys walls.</p>
+                  </td>
+                  <td>
+                    <b>Main hand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Tin Opener</i>
+                  </td>
+                  <td>
+                    <b>5</b>
+                  </td>
+                  <td>
+                    <b>20g</b>
+                  </td>
+                  <td>Allows the player to consume tins of food.</td>
+                  <td>
+                    <b>None</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Towel</i>
+                  </td>
+                  <td>
+                    <b>5</b>
+                  </td>
+                  <td>
+                    <b>10g</b>
+                  </td>
+                  <td>
+                    Cures greasy, messy and bleed. Interacting with the item
+                    will activate these effects.
+                  </td>
+                  <td>
+                    <b>None</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Mirror</i>
+                  </td>
+                  <td>
+                    <b>10</b>
+                  </td>
+                  <td>
+                    <b>15g</b>
+                  </td>
+                  <td>
+                    Describes the player in the text log. Returns different
+                    messages based on charisma, hunger, and status effects.
+                    <p>
+                      Blessed mirrors teleport the player to a random location
+                      on the stage. Cursed mirrors shatter and inflict bleed on
+                      the player.
+                    </p>
+                    <p>
+                      <a href="/wiki/Vampire_(Race)" title="Vampire (Race)">
+                        Vampire
+                      </a>{" "}
+                      players will see nothing when looking into a mirror.
+                    </p>
+                  </td>
+                  <td>
+                    <b>None</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Lock Pick</i>
+                  </td>
+                  <td>
+                    <b>5</b>
+                  </td>
+                  <td>
+                    <b>5g</b>
+                  </td>
+                  <td>
+                    Used to pick locks on doors,treasure chests and walls. Can
+                    also be used to disarm{" "}
+                    <a href="/wiki/Automaton" title="Automaton">
+                      Automatons
+                    </a>{" "}
+                    and arrow traps on walls.
+                    <p>
+                      Allows the player to tune tinkered traps. See{" "}
+                      <a href="/wiki/Tinkering" title="Tinkering">
+                        Tinkering
+                      </a>{" "}
+                      for more details.
+                    </p>
+                  </td>
+                  <td>
+                    <b>Main hand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Skeleton Key</i>
+                  </td>
+                  <td>
+                    <b>5</b>
+                  </td>
+                  <td>
+                    <b>300g</b>
+                  </td>
+                  <td>
+                    Used to lock or unlock any door or treasure chest, including
+                    mimics. Can unlock some wall locks.
+                    <p>
+                      Can also be used to disarm arrow traps. Degrades on
+                      unlocking chests and wall locks for the first time
+                    </p>
+                  </td>
+                  <td>
+                    <b>Main hand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Torch</i>
+                  </td>
+                  <td>
+                    <b>10</b>
+                  </td>
+                  <td>
+                    <b>5g</b>
+                  </td>
+                  <td>
+                    Emits light.
+                    <p>+0 AC, +1 per blessing</p>
+                    <p>
+                      Can be used to block. Only trains blocking skill up to 40.
+                      Provides brighter light while defending.
+                    </p>
+                    <p>Burns out after 2.5 minutes.</p>
+                  </td>
+                  <td>
+                    <b>Offhand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Lantern</i>
+                  </td>
+                  <td>
+                    <b>20</b>
+                  </td>
+                  <td>
+                    <b>35g</b>
+                  </td>
+                  <td>
+                    Emits bright light.
+                    <p>+0 AC, +1 per blessing</p>
+                    <p>
+                      Can be used to block. Only trains blocking skill up to 40.
+                      Provides brighter light while defending.
+                    </p>
+                    <p>Loses condition every 3.5 minutes.</p>
+                  </td>
+                  <td>
+                    <b>Offhand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Crystal Shard</i>
+                  </td>
+                  <td>
+                    <b>10</b>
+                  </td>
+                  <td>
+                    <b>15g</b>
+                  </td>
+                  <td>
+                    <b></b> Emits dim light.
+                    <p>+0 AC, +1 per blessing</p>
+                    <p>
+                      Fragile: has a 100% chance to degrade when blocking hits,
+                      even with 100 blocking skill.
+                    </p>
+                    <p>
+                      Can be used to block. Only trains blocking skill up to 40.
+                      Provides brighter light while defending.
+                    </p>
+                    <p>Never burns out.</p>
+                  </td>
+                  <td>
+                    <b>Offhand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Beartrap</i>
+                  </td>
+                  <td>
+                    <b>30</b>
+                  </td>
+                  <td>
+                    <b>50g</b>
+                  </td>
+                  <td>
+                    A trap. Can be armed on the ground.
+                    <p>
+                      Inflicts damage based on condition and beatitude. +22
+                      Damages on Excellent quality.
+                      <br />
+                      Inflicts bleed and paralysis.
+                    </p>
+                    <p>
+                      Bear traps set by players cannot be activated by players
+                      or allied NPCs. Anybody can fall into gnome thief traps
+                      and other set bear traps found in the Ruins.
+                    </p>
+                    <p>
+                      Has a chance to break when arming, based on condition.
+                    </p>
+                  </td>
+                  <td>
+                    <b>Main hand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Alembic</i>
+                  </td>
+                  <td>
+                    <b>20</b>
+                  </td>
+                  <td>
+                    <b>300g</b>
+                  </td>
+                  <td>
+                    Allows the player to mix & brew potions. See Alchemy for
+                    more information.
+                  </td>
+                  <td>
+                    <b>None</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Tinkering Kit</i>
+                  </td>
+                  <td>
+                    <b>20</b>
+                  </td>
+                  <td>
+                    <b>250g</b>
+                  </td>
+                  <td>
+                    Can be used to salvage unused items for scrap, repair
+                    equipment, and to create tinkered equipment. See Tinkering
+                    Kit for more information.
+                    <p>
+                      Can be used to block. Only trains blocking skill up to 40.
+                      Items picked up while blocking are salvaged automatically.
+                    </p>
+                  </td>
+                  <td>
+                    <b>Offhand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Frypan</i>
+                  </td>
+                  <td>
+                    <b>50</b>
+                  </td>
+                  <td>
+                    <b>250g</b>
+                  </td>
+                  <td>
+                    Unbreakable
+                    <p>
+                      Can be used to cook. See Cooking for more information. Can
+                      also be used to block.
+                    </p>
+                  </td>
+                  <td>
+                    <b>Offhand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Enchanted Feather</i>
+                  </td>
+                  <td>
+                    <b>1</b>
+                  </td>
+                  <td>
+                    <b>400g</b>
+                  </td>
+                  <td>
+                    Used to inscribe labels onto blank scrolls. Can also repair
+                    spellbooks.
+                    <p>
+                      These actions consume charge. Charge can be restored with
+                      scrolls of charging. See Enchanted Feather for more
+                      information.
+                    </p>
+                  </td>
+                  <td>
+                    <b>None</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Flame Trap</i>
+                  </td>
+                  <td>
+                    <b>2</b>
+                  </td>
+                  <td>
+                    <b>30g</b>
+                  </td>
+                  <td>
+                    A trap. Can be armed on walls, the ground, doors, and
+                    chests.
+                    <p>+30 magic damage, inflicts burning.</p>
+                    <p>Add damage equal to 50% of your perception.</p>
+                    <p>
+                      Toggle trigger behavior (who it can hit) with a lockpick.
+                    </p>
+                  </td>
+                  <td>
+                    <b>Main hand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Freeze Trap</i>
+                  </td>
+                  <td>
+                    <b>2</b>
+                  </td>
+                  <td>
+                    <b>30g</b>
+                  </td>
+                  <td>
+                    A trap. Can be armed on walls, the ground, doors, and
+                    chests.
+                    <p>+25 magic damage, inflicts slow.</p>
+                    <p>Add damage equal to 25% of your perception.</p>
+                    <p>
+                      Toggle trigger behavior (who it can hit) with a lockpick.
+                    </p>
+                  </td>
+                  <td>
+                    <b>Main hand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Teleportation Trap</i>
+                  </td>
+                  <td>
+                    <b>2</b>
+                  </td>
+                  <td>
+                    <b>30g</b>
+                  </td>
+                  <td>
+                    A trap. Can be armed on walls, the ground, doors, and
+                    chests.
+                    <p>Teleports a target to a random location on the stage.</p>
+                    <p>
+                      Toggle trigger behavior (who it can hit) with a lockpick.
+                      If a specific option is chosen, creatures hit with
+                      teleport traps will be teleported to this trap.
+                    </p>
+                  </td>
+                  <td>
+                    <b>Main hand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Sleep Trap</i>
+                  </td>
+                  <td>
+                    <b>2</b>
+                  </td>
+                  <td>
+                    <b>30g</b>
+                  </td>
+                  <td>
+                    A trap. Can be armed on walls, the ground, doors, and
+                    chests.
+                    <p>Inflicts sleep on targets.</p>
+                    <p>
+                      Toggle trigger behavior (who it can hit) with a lockpick.
+                    </p>
+                  </td>
+                  <td>
+                    <b>Main hand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Broken Detonator</i>
+                  </td>
+                  <td>
+                    <b>2</b>
+                  </td>
+                  <td>
+                    <b>1g</b>
+                  </td>
+                  <td>
+                    Useless. Drops after one of the four above traps is used.
+                    Can be salvaged for a few scrap.
+                  </td>
+                  <td>
+                    <b>None</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Death Box</i>
+                  </td>
+                  <td>
+                    <b>100</b>
+                  </td>
+                  <td>
+                    <b>1g</b>
+                  </td>
+                  <td>
+                    Dropped by players when they die, if the keep inventory rule
+                    is not enabled.
+                    <p>
+                      Can be opened, and will deposit its contents into your
+                      inventory.
+                    </p>
+                    <p>The white locker is used if colorblind mode is on.</p>
+                  </td>
+                  <td>
+                    <b>None</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Duck</i>
+                  </td>
+                  <td>
+                    <b>5</b>
+                  </td>
+                  <td>
+                    <b>0g</b>
+                  </td>
+                  <td>
+                    Inflicts Distract briefly
+                    <p>Prevents targets from being alerted on next hit.</p>
+                    <p>Follows player and attracts enemies to its positon.</p>
+                    <p>Can dive into water to collect fish.</p>
+                  </td>
+                  <td>
+                    <b>Offhand</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Key</i>
+                  </td>
+                  <td>
+                    <b>5</b>
+                  </td>
+                  <td>
+                    <b>0g</b>
+                  </td>
+                  <td>
+                    Unlocks matching type wall locks.
+                    <p>
+                      Automatically consumed by interacting with the
+                      corresponding wall lock type.
+                    </p>
+                  </td>
+                  <td>
+                    <b>None</b>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+    ],
+  },
 ];
