@@ -5598,4 +5598,221 @@ export const items: Item[] = [
       },
     ],
   },
+
+  {
+    id: "Gems",
+    itemSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Gems are a group of items found within Barony, providing a
+              potentially substantial quantity of Gold, though requiring a high
+              level of appraisal skill and Perception to siphon through real
+              gemstones and fakes.
+            </p>
+            <p>
+              Gems are unlike most other objects found in the dungeon, in that
+              they have little to no utility, combat or aiding benefits when
+              using them, serving primarily as a resource that can be sold to
+              Shopkeepers for a large sum of Gold when identified.
+            </p>
+            <p>
+              Their role had been greatly expanded in the Legends and Pariahs
+              DLC and Deserters and Disciples DLC serving as a food source for
+              the Automaton monster race and needing to be used to make Jewels
+              for the Gnome monster race, as well as expanding its usage as a
+              ranged item alongside other thrown items.
+            </p>
+            <h3>Lore</h3>
+            <p>
+              Like most other items found inside the dungeon, Gems will begin
+              unidentified, making their gem type and value unknown until they
+              are properly appraised. To further complicate the process of
+              gemstones, there are also worthless pieces of glass that can be
+              found instead of an actual gemstone, making holding onto a single
+              gem possibly worthless when properly appraised.
+            </p>
+            <p>
+              Due to their large Gold values, appraisal is often slow and
+              restricted by the gold limit that a player can appraise to.
+              Furthermore, Lore skill has the restriction of characters being
+              unable to appraise an average gemstone apart from a worthless
+              piece of glass, requiring an Expert rank or higher in that skill
+              to process gems effectively. Certain gemstones, especially those
+              that are naturally lower in value, can be appraised earlier than
+              most other gemstones, even being appraised before the player would
+              officially be able to distinguish the average gemstone from
+              worthless glass.
+            </p>
+            <p>
+              Certain Shops purchase identified gemstones, such as jewelers and
+              general shops.
+            </p>
+            <h3>Special Monsters</h3>
+            <p>
+              Certain instances will yield gemstones which are already
+              identified however. Most Special Monsters which don’t drop an
+              artifact will often drop a gemstone already appraised and ready
+              for sale. The Minotaur also drops a gem in this case, an
+              identified flawless diamond or ruby if it is defeated.
+            </p>
+            <h3>Combat</h3>
+            <p>
+              While limited, gemstones parallel most early-game throwable items
+              when wielded by the player, able to be thrown over a short
+              distance to damage enemies as an impromptu ranged weapon.
+              Furthermore, the Legends and Pariahs DLC update expanded on this
+              concept of throwable items, allowing the player to charge up the
+              shot in order to inflict greater damage and a longer throw
+              distance.
+            </p>
+            <h3>Luckstone</h3>
+            <p>
+              Luckstone is the gemstone equivalent to normal rocks, serving as a
+              utility by decreasing the overall weight of the player’s inventory
+              by twenty points. It has similar functionality to other gemstones
+              in terms of throwing and combat, but also lacks the selling price,
+              making it much more suited for non-shop activities. They can be
+              found whenever Sokoban destroys a boulder for the player, and as
+              loot on the ground.
+            </p>
+            <h3>Jewel</h3>
+            <p>
+              As a gnome, you can use the Forge Jewel spell to turn a gemstone
+              into a jewel that can be sold for a high price or used to recruit
+              allies within the dungeon. To recruit allies you can equip a jewel
+              and throw it at desired NPC. The jewel's quality level is
+              associated to what depth allies can be recruited on, which in
+              ascending order is; Mines, Swamp, Sand Labyrinth, and lastly all
+              floors.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "List of Gemstones",
+        sectionContent: (
+          <>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold Value</b>
+                    </i>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rock</td>
+                  <td>20</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Luckstone</td>
+                  <td>-20</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Garnet</td>
+                  <td>2</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Ruby</td>
+                  <td>2</td>
+                  <td>2750</td>
+                </tr>
+                <tr>
+                  <td>Jacinth</td>
+                  <td>2</td>
+                  <td>1750</td>
+                </tr>
+                <tr>
+                  <td>Amber</td>
+                  <td>2</td>
+                  <td>1000</td>
+                </tr>
+                <tr>
+                  <td>Citrine</td>
+                  <td>2</td>
+                  <td>750</td>
+                </tr>
+                <tr>
+                  <td>Jade</td>
+                  <td>2</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                  <td>Emerald</td>
+                  <td>2</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <td>Sapphire</td>
+                  <td>2</td>
+                  <td>2500</td>
+                </tr>
+                <tr>
+                  <td>Aquamarine</td>
+                  <td>2</td>
+                  <td>1250</td>
+                </tr>
+                <tr>
+                  <td>Amethyst</td>
+                  <td>2</td>
+                  <td>600</td>
+                </tr>
+                <tr>
+                  <td>Fluorite</td>
+                  <td>2</td>
+                  <td>400</td>
+                </tr>
+                <tr>
+                  <td>Opal</td>
+                  <td>2</td>
+                  <td>800</td>
+                </tr>
+                <tr>
+                  <td>Diamond</td>
+                  <td>2</td>
+                  <td>3000</td>
+                </tr>
+                <tr>
+                  <td>Jetstone</td>
+                  <td>2</td>
+                  <td>850</td>
+                </tr>
+                <tr>
+                  <td>Obsidian</td>
+                  <td>2</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <td>Piece of Worthless Glass</td>
+                  <td>2</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+              <tfoot></tfoot>
+            </table>
+          </>
+        ),
+      },
+    ],
+  },
 ];
