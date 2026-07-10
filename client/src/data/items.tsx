@@ -1,5 +1,15 @@
 import type { ReactNode } from "react";
 
+import SpellbookSorcery1 from "../assets/Spellbook_Sorcery_Tier_I-II.webp";
+import SpellbookSorcery2 from "../assets/Spellbook_Sorcery_Tier_III-IV.webp";
+import SpellbookSorcery3 from "../assets/Spellbook_Sorcery_Tier_V-VI.webp";
+import SpellbookMysticism1 from "../assets/Spellbook_Mysticism_Tier_I-II.webp";
+import SpellbookMysticism2 from "../assets/Spellbook_Mysticism_Tier_III-IV.webp";
+import SpellbookMysticism3 from "../assets/Spellbook_Mysticism_Tier_V-VI.webp";
+import SpellbookThaumaturgy1 from "../assets/Spellbook_Thaumaturgy_Tier_I-II.webp";
+import SpellbookThaumaturgy2 from "../assets/Spellbook_Thaumaturgy_Tier_III-IV.webp";
+import SpellbookThaumaturgy3 from "../assets/Spellbook_Thaumaturgy_Tier_V-VI.webp";
+
 export type ItemSections = {
   sectionName: string;
   sectionContent: ReactNode;
@@ -5806,6 +5816,295 @@ export const items: Item[] = [
                   <td>Piece of Worthless Glass</td>
                   <td>2</td>
                   <td>1</td>
+                </tr>
+              </tbody>
+              <tfoot></tfoot>
+            </table>
+          </>
+        ),
+      },
+    ],
+  },
+
+  {
+    id: "Spellbooks",
+    itemSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Spellbooks are a subset of items found throughout the dungeon of
+              Barony, where players can utilize them to learn spells given
+              enough INT and magic school skill.
+            </p>
+            <p>
+              Like all other books, spellbooks are often found scattered through
+              the dungeon unidentified. Their covers can vary, but their effect
+              is independent on the color of these covers, making picking up a
+              book from the dungeon equally likely to yield a normal book
+              instead of a spellbook.
+            </p>
+            <h3>Memorizing Spells</h3>
+            <p>
+              The primary use of spellbooks is to read their contents and to
+              memorize the spells inside, accomplished by using the book from
+              the inventory and selecting the "Read" option. Blessed spellbooks
+              are similar to non-cursed ones, being easier to read and learn
+              higher tiered spells outside of the player's current proficiency.
+            </p>
+            <p>
+              Cursed spellbooks will cause the player to forget a spell if read,
+              permanantly removing one of their previously learned spells from
+              their memory, and instantly destroying the spellbook itself. This
+              includes spells learned by reading, class innate spells, and race
+              innate spells. If the player does not have any spells to forget,
+              the spellbook is still destroyed and the chat states the player
+              feeling scatterbrained for a moment.
+            </p>
+            <p>
+              Due to their nature, Succubi and Incubi can learn spells from any
+              kind of spellbook without fear of curse penalties. Automatons do
+              become scatterbrained when reading a cursed spellbook, but they
+              cannot forget previously learned or innate spells.
+            </p>
+            <p>
+              Once read, Spellbooks will degrade by one quality level,
+              decreasing their value in gold and often dissipating into ash if
+              its quality is low enough before being read.
+            </p>
+
+            <h3>Off-hand Casting</h3>
+            <p>
+              Spellbooks can be equipped in the shield slot of the character,
+              wielding it offhand. With a spellbook equipped, the player will
+              begin to cast the spell once they press the block/sneak key.
+              Casting in this way will cost the user mana, as well as having a
+              chance to degrade the spellbook. Blessing and curses work like
+              normal equipment, being more durable or unable to remove. Blessed
+              books at torn durability will degrade the blessing by 1 instead of
+              being destroyed when using it to cast off-hand.
+            </p>
+            <p>
+              There are several niche benefits to casting in this manner, most
+              notably for Goblin players. Since they cannot memorize spells,
+              equipping the spellbook with their innate ability to grant their
+              armor and tools with extra durability means one spellbook can last
+              much longer.
+            </p>
+            <p>
+              Having a spellbook while having a memorized spell also allows
+              players to "dual wield" spell types, so the memorized and off-hand
+              spellbooks can dish out several effects at a time without
+              constantly preparing different spells from memory alone.
+            </p>
+            <p>
+              Finally, the strongest asset of casting in this way is being able
+              to cast spells that are outside the player's normal proficiency. A
+              difficult spell like Magic Mapping can demand quite a lot out of a
+              player's Magic School and Intelligence stats, but equipping the
+              spellbook at any level and affording the mana cost is enough to
+              start working.
+            </p>
+            <p>
+              This is especially helpful for non-magician classes finding
+              helpful but demanding spells later on in their games, so they too
+              can benefit from those spells without having to invest mana into
+              practicing lesser spells and leveling up a Magic School.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Obtaining Spellbooks",
+        sectionContent: (
+          <>
+            <p>
+              Besides finding the odd spellbook in the dungeon, there are two
+              notable sources of these books: shops and the Mystic Library.
+              Shops can come in several varietied, one of which is the
+              bookstore, which often sell books and spellbooks. General stores
+              can also be found selling spellbooks, but much less likely due to
+              their larger pool of items that are not spellbooks.
+            </p>
+            <p>
+              The Mystic Library can be found late into the game at the first
+              floor of the Ruins, requiring caution around traps and levitation
+              to access. Once inside, the many chests there can provide a vast
+              increase in spellbooks, as well as Magic Staffs.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Magic School and Tiers",
+        sectionContent: (
+          <>
+            <p>
+              Spells are segmented into different schools and escalating tiers,
+              where lower tier spells are easier to learn, requiring lower
+              levels of the associated school. Spellbooks are split into three
+              schools: Thaumaturgy, Mysticism and Sorcery. Each school has
+              unique spells and require different levels or combination of stats
+              and skills to learn them.
+            </p>
+            <h3>Learning Spells</h3>
+            <p>
+              To learn a spell from a spellbook, a character needs to have a
+              high enough Thaumaturgy, Sorcery or Mysticism combined with INT
+              stat.
+            </p>
+            <p>If a spell requires a Thauma/INT stat of 20:</p>
+            <p>The player has an INT of 4</p>
+            <p>A Thaumaturgy skill of 16</p>
+            <p>Total stat of 20 so the player can learn the spell.</p>
+
+            <h3>Spellbook icons per Schools and Tiers</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <th>
+                    <i>Magic School</i>
+                  </th>
+                  <th>
+                    <i>Tier I-II</i>
+                  </th>
+                  <th>
+                    <i>Tier III-IV</i>
+                  </th>
+                  <th>
+                    <i>Tier V-VI</i>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Sorcery</b>
+                    </i>
+                  </td>
+                  <td>
+                    <img src={SpellbookSorcery1} />
+                  </td>
+                  <td>
+                    <img src={SpellbookSorcery2} />
+                  </td>
+                  <td>
+                    <img src={SpellbookSorcery3} />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Mysticism</b>
+                    </i>
+                  </td>
+                  <td>
+                    <img src={SpellbookMysticism1} />
+                  </td>
+                  <td>
+                    <img src={SpellbookMysticism2} />
+                  </td>
+                  <td>
+                    <img src={SpellbookMysticism3} />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Thaumaturgy</b>
+                    </i>
+                  </td>
+                  <td>
+                    <img src={SpellbookThaumaturgy1} />
+                  </td>
+                  <td>
+                    <img src={SpellbookThaumaturgy1} />
+                  </td>
+                  <td>
+                    <img src={SpellbookThaumaturgy1} />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Spellbooks by Price",
+        sectionContent: (
+          <>
+            <p>
+              Most spellbooks have price depending on the tier of the spell the
+              spellbook holds. The higher the tier of the spell, the more money
+              the spellbook will cost. Below is a table of gold value
+              corresponding to tier.
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>Spellbook tier</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>150</td>
+                  <td>Tier 1</td>
+                </tr>
+                <tr>
+                  <td>300</td>
+                  <td>Tier 2</td>
+                </tr>
+                <tr>
+                  <td>450</td>
+                  <td>Tier 3</td>
+                </tr>
+                <tr>
+                  <td>750</td>
+                  <td>Tier 4</td>
+                </tr>
+                <tr>
+                  <td>1200</td>
+                  <td>Tier 5</td>
+                </tr>
+                <tr>
+                  <td>3000</td>
+                  <td>Tier 6</td>
+                </tr>
+              </tbody>
+              <tfoot></tfoot>
+            </table>
+
+            <p>
+              Some spellbooks have specific pricing, most likely a reference to
+              something:
+            </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>Spellbook of</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>411</td>
+                  <td>Identify</td>
+                </tr>
+                <tr>
+                  <td>777</td>
+                  <td>Remove Curse</td>
                 </tr>
               </tbody>
               <tfoot></tfoot>
