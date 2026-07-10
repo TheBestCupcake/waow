@@ -3509,4 +3509,310 @@ export const items: Item[] = [
       },
     ],
   },
+
+  {
+    id: "Scrolls",
+    itemSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Scrolls are valuable items in Barony, found throughout the entire
+              dungeon and having a very wide range of effects depending on their
+              contents.
+            </p>
+            <p>
+              Scrolls are lightweight and easy to appraise, being found as early
+              as the Mines and up until the end of the game inside the Citadel.
+              There are several notable locations for scrolls, such as in chests
+              where multiple scrolls can be stored at a time, shopkeepers
+              vending as a bookstore often sell several scrolls, and The Mystic
+              Library is one of the largest and most consistent source of
+              scrolls in the game.
+            </p>
+            <p>
+              Each scroll has a corresponding type, functioning differently from
+              other types in order to perform differing actions. Some scrolls
+              are exceptionally powerful, being able to bolster artifact weapons
+              and armor past their base stats, while other scrolls can be
+              dangerous to read, or completely useless outside of reading off a
+              mailed message. Blessed versions of scrolls will have extra
+              benefits, while cursed scrolls may reverse the intended effects.
+            </p>
+            <h3>Naming System</h3>
+            <p>
+              At the beginning of each game, Scrolls are labeled in some unknown
+              language, requiring the player to first identify the scroll to see
+              its intended effects. This naming system is consistent within the
+              player’s designated game seed, meaning one scroll of a certain
+              name will always correspond to that scroll type. Once the player
+              begins a new seed however, these names are once again randomized.
+            </p>
+            <p>
+              This is especially helpful for use of the Enchanted Feather item,
+              where the player inscribes this unknown language onto blank
+              scrolls for that name’s intended effect.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "List of Scrolls",
+        sectionContent: (
+          <>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Effect</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Effect if Blessed</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Effect if Cursed</b>
+                    </i>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Scroll of Food</td>
+                  <td>2</td>
+                  <td>100g</td>
+                  <td>
+                    Spawns five pieces of food at fresh quality. Includes Meat,
+                    Cheese, Apple, Fish, and Bread.
+                  </td>
+                  <td>
+                    All food spawned is blessed to the same level as the scroll.
+                  </td>
+                  <td>
+                    All food spawned is cursed to the same level as the scroll.
+                    -2 removes food.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scroll of Identity</td>
+                  <td>2</td>
+                  <td>35g</td>
+                  <td>Identifies a chosen item in the reader's inventory.</td>
+                  <td>Same effect.</td>
+                  <td>Does not identify anything.</td>
+                </tr>
+                <tr>
+                  <td>Scroll of Light</td>
+                  <td>2</td>
+                  <td>15g</td>
+                  <td>Temporally casts a light around the reader.</td>
+                  <td>Stronger, brighter, lasts longer.</td>
+                  <td>
+                    Emits ligt in the area which it was read in. Lightsource
+                    will not change it's place.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scroll of Teleportation</td>
+                  <td>2</td>
+                  <td>30g</td>
+                  <td>
+                    Teleports the reader to a random location in the dungeon.
+                  </td>
+                  <td>Same effect.</td>
+                  <td>
+                    Has a small chance to disorient the reader, otherwise works
+                    the same.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scroll of Fire</td>
+                  <td>2</td>
+                  <td>35g</td>
+                  <td>Sets the area and the reader on fire.</td>
+                  <td>Grants Flame Cloak to the reader for 30 seconds</td>
+                  <td>Smokes and crumbles to ash.</td>
+                </tr>
+                <tr>
+                  <td>Scroll of Enchant Armor</td>
+                  <td>2</td>
+                  <td>300g</td>
+                  <td>
+                    Blesses a selected piece of armor or spellbook in the
+                    reader's inventory in exchange for gold.
+                  </td>
+                  <td>The blessing is twice as strong.</td>
+                  <td>
+                    Curses armor instead. If the armor is blessed, it will
+                    invert the blessing.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scroll of Enchant Weapon</td>
+                  <td>2</td>
+                  <td>300g</td>
+                  <td>
+                    Blesses a selected weapon in the reader's inventory in
+                    exchange for gold. Magicstaffs and pickaxes do count as
+                    weapons.
+                  </td>
+                  <td>The blessing is twice as strong.</td>
+                  <td>
+                    Curses weapon instead. If the weapon is blessed, it will
+                    invert the blessing.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scroll of Remove Curse</td>
+                  <td>2</td>
+                  <td>90g</td>
+                  <td>Removes a curse from a single chosen item.</td>
+                  <td>Same effect.</td>
+                  <td>
+                    Randomly curses an uncursed object in the reader's
+                    inventory.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scroll of Repair</td>
+                  <td>2</td>
+                  <td>180g</td>
+                  <td>
+                    Repairs a piece of selected armor, equipment, or weapon up
+                    to two levels of quality.
+                  </td>
+                  <td>Fully repairs applicable items.</td>
+                  <td>
+                    Randomly damages one of the player's equipped items. If none
+                    are equipped, no effect.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scroll of Destroy Armor</td>
+                  <td>2</td>
+                  <td>50g</td>
+                  <td>
+                    Destroys a random piece of the reader's equipped armor,
+                    useful for cursed armor.
+                  </td>
+                  <td>Same effect.</td>
+                  <td>
+                    Causes a random piece of armor to vibrate, with no effect.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scroll of Magic Mapping</td>
+                  <td>2</td>
+                  <td>60g</td>
+                  <td>
+                    Reveals some of the dungeon's map to the reader instantly.
+                  </td>
+                  <td>Same effect.</td>
+                  <td>Erases the reader's current dungeon map progress.</td>
+                </tr>
+                <tr>
+                  <td>Scroll of Summon</td>
+                  <td>2</td>
+                  <td>70g</td>
+                  <td>Summons a random set of friendly critters.</td>
+                  <td>
+                    Summons higher level, stronger creatures. +1 Summons a group
+                    of two to four humans and +2 summons 4 friendly demons or a
+                    Zap Brigade.
+                  </td>
+                  <td>
+                    Summons some evil, non-friendly, critters who will attack
+                    the player. -2 has a chance to summon a demon, Minotaur,
+                    troll or imp.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scroll of Conjure Arrow</td>
+                  <td>5</td>
+                  <td>90g</td>
+                  <td>
+                    Spawns a quiver +0 of random arrows, the quantity is also
+                    random.
+                  </td>
+                  <td>
+                    The spawned quiver will be higher quality, blessed and
+                    contain more.
+                  </td>
+                  <td>
+                    The spawned quiver will of lower quality, cursed and contain
+                    less.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scroll of Charging</td>
+                  <td>2</td>
+                  <td>100g</td>
+                  <td>
+                    Recharges a magic staff, or an Enchanted Feather, increasing
+                    their quality substantially or recharging the feather by
+                    50%.
+                  </td>
+                  <td>Completely refills staffs or Feathers</td>
+                  <td>
+                    Destroys a random piece of equipment, similar to a scroll of
+                    destroy armor.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Blank Scroll</td>
+                  <td>2</td>
+                  <td>50g</td>
+                  <td>
+                    Piece of paper which is used with Enchanted Feather to
+                    create other types of scrolls.
+                  </td>
+                  <td>
+                    Will produce a blessed scroll when used with the enchanting
+                    feature.
+                  </td>
+                  <td>
+                    Will produce a cursed scroll when used with the enchanting
+                    feature.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Piece of Mail</td>
+                  <td>1</td>
+                  <td>10g</td>
+                  <td>
+                    Can be read to display a short text on the event log. Every
+                    piece of mail has a single message which is randomly chosen.
+                  </td>
+                  <td>Same effect.</td>
+                  <td>Same effect.</td>
+                </tr>
+              </tbody>
+              <tfoot></tfoot>
+            </table>
+          </>
+        ),
+      },
+    ],
+  },
 ];
