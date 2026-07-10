@@ -4078,7 +4078,481 @@ export const items: Item[] = [
   },
 
   {
-    id: "",
-    itemSections: [],
+    id: "Potions",
+    itemSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Potions are a large group of consumable items found in Barony,
+              each with a unique effect when consumed by the player or when
+              thrown at an enemy or ally. They are also used as a primary
+              component alongside an Alembic to perform alchemy.
+            </p>
+            <p>
+              Potions begin as unidentified, often discernible from one another
+              by both the color of the liquid held inside, as well as the shape
+              of the potion bottle. There are eight different sprites used for
+              potions, each with a unique color and bottle shape. A descriptor
+              is also provided to each potion, though there is no effect to
+              these descriptors other than aesthetics and their ability to stack
+              with potions of differing shape/description.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "Usage",
+        sectionContent: (
+          <>
+            <p>
+              As would be expected from consumables such as potions, the primary
+              function of potions is to be used in order to benefit the player,
+              either by healing damage that has been sustained, or adding a
+              beneficial status effect for a limited time.
+            </p>
+            <p>
+              To counteract blind drinking of potions to gain instant bonuses,
+              several mundane and even hazardous potions are present which
+              hamper the player if consumed directly. Coincidentally, the second
+              major usage of potions is as a form of consumable, ranged damage,
+              where hit enemies will suffer from similar effects of the potion
+              as if they had drank from the potion themselves. This mechanic
+              also extends to beneficial potions, which in turn allows for a
+              ranged support item for allies.
+            </p>
+            <p>
+              When thrown, ALL of the potion's effects are activated, positive
+              and negative. All potions inflict six damage when thrown, one
+              additional damage is added per blessing, one subtracted per curse.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "List of Potions",
+        sectionContent: (
+          <>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Effect</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>If Cursed</b>
+                    </i>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Bottle of Water</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>7g</i>
+                  </td>
+                  <td>
+                    +1 Hp, +4 per the first blessing, +5 per each additional
+                    blessing
+                    <p>
+                      +0 additional damage against undead enemies, +20 per
+                      blessing
+                    </p>
+                  </td>
+                  <td>
+                    On consumption, curses a random uncursed item in the
+                    inventory, prioritizing equipped items
+                    <p>
+                      Ring and Amulet equipment slots may never get chosen, but
+                      Rings and Amulets in the inventory can be cursed
+                    </p>
+                    <p>
+                      Reverses the amount of blessings on an item (Ex. a +5
+                      weapon will become -5 after drinking Cursed Water)
+                    </p>
+                    <p>Cursed Water has no effect on already cursed items</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Bottle of Booze</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>12g</i>
+                  </td>
+                  <td>
+                    +5 Hp, +5 per blessing
+                    <p>Inflicts drunk for 40-60 seconds</p>
+                    <p>Restores a small amount of hunger</p>
+                    <p>Cures hangovers</p>
+                  </td>
+                  <td>-5 Hp per curse</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Bottle of Fruit Juice</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>18g</i>
+                  </td>
+                  <td>
+                    +5 Hp, +5 per blessing
+                    <p>Restores a small amount of hunger</p>
+                  </td>
+                  <td>Inflicts drunk</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Invisibility</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>70g</i>
+                  </td>
+                  <td>Grants invisibility for 30-60 seconds</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Acid</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>30g</i>
+                  </td>
+                  <td>+10 Potion damage, +5 per blessing</td>
+                  <td>+5 Thrown damage per curse.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Sickness</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>6g</i>
+                  </td>
+                  <td>
+                    +5 Potion damage, +5 per blessing
+                    <p>Inflicts poinsoned</p>
+                  </td>
+                  <td>+5 Thrown damage per curse.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Confusion</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>50g</i>
+                  </td>
+                  <td>Inflicts confused</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Healing</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>45g</i>
+                  </td>
+                  <td>
+                    +11 Hp, +2 per blessing
+                    <p>Gain additional Hp equal to your constitution 2x</p>
+                  </td>
+                  <td>Inflicts poisoned</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Extra Healing</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>180g</i>
+                  </td>
+                  <td>
+                    +95 Hp, +23 per blessing
+                    <p>Gain additional Hp equal to your constitution 4x</p>
+                  </td>
+                  <td>Inflicts poisoned</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Cure Ailment</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>40g</i>
+                  </td>
+                  <td>
+                    Cures all negative status effects on the target
+                    <p>
+                      +0 Seconds of Hp/Mp regeneration, +4 seconds per blessing
+                    </p>
+                  </td>
+                  <td>Inflicts poisoned</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Blindness</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>25g</i>
+                  </td>
+                  <td>Inflicts blindness for 10-15 seconds</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Restore Magic</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>42g</i>
+                  </td>
+                  <td>
+                    +55 Mp
+                    <p>Gain additional Mp equal to your int 2x</p>
+                  </td>
+                  <td>Inflicts slow</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Levitation</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>120g</i>
+                  </td>
+                  <td>
+                    Grants levitation for 30-60 seconds, +30 maximum/minimum per
+                    blessing
+                  </td>
+                  <td>Inflicts slow</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Speed</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>80g</i>
+                  </td>
+                  <td>Grants speed for 60 seconds, +60 per blessing</td>
+                  <td>Inflicts slow</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Paralysis</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>75g</i>
+                  </td>
+                  <td>Inflicts paralysis for 7-10 seconds</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Polymorph</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>250g</i>
+                  </td>
+                  <td>
+                    Grants polymorph
+                    <p>
+                      Duration: 4-6 minutes Polymorph effects dissipate if
+                      either water is entered or drunk. Permanently effects NPCs
+                    </p>
+                  </td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Firestorm</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>100g</i>
+                  </td>
+                  <td>
+                    +10 Potion damage, +5 per blessing
+                    <p>
+                      Explodes into 3x Elemental Focus-enhanced fireball{" "}
+                      <a href="/wiki/Spells" title="Spells">
+                        spells
+                      </a>
+                    </p>
+                    <p>Destroys hit walls</p>
+                    <p>
+                      Completely refills HT and Boiler for{" "}
+                      <a href="/wiki/Automaton_(Race)" title="Automaton (Race)">
+                        Automatons
+                      </a>{" "}
+                      when consumed
+                    </p>
+                  </td>
+                  <td>+5 Damage per curse</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Icestorm</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>100g</i>
+                  </td>
+                  <td>
+                    +10 Potion damage, +5 per blessing
+                    <p>Explodes into 3x Elemental Focus-enhanced cold spells</p>
+                  </td>
+                  <td>+5 Damager per curse</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Thunderstorm</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>100g</i>
+                  </td>
+                  <td>
+                    +10 Potion damage, +5 per blessing
+                    <p>
+                      Explodes into 3x Elemental Focus-enhanced lightning spells
+                    </p>
+                  </td>
+                  <td>+5 Damage per curse</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>
+                      <b>Potion of Strength</b>
+                    </i>
+                  </td>
+                  <td>
+                    <i>5</i>
+                  </td>
+                  <td>
+                    <i>50g</i>
+                  </td>
+                  <td>
+                    Applies strength (+9 strength, -5 perception) and push for
+                    60 seconds, +60 seconds per blessing
+                  </td>
+                  <td>Inflicts blindness</td>
+                </tr>
+              </tbody>
+              <tfoot></tfoot>
+            </table>
+          </>
+        ),
+      },
+    ],
   },
 ];
