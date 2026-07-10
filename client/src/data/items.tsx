@@ -3314,4 +3314,199 @@ export const items: Item[] = [
       },
     ],
   },
+
+  {
+    id: "Magic_Staffs",
+    itemSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Magic Staffs are a set of magical tools that can be found through
+              the dungeon of Barony, allowing its user to cast spells of varying
+              types depending on the staff itself without any mana cost or prior
+              magic skills.
+            </p>
+            <p>
+              A staff functions similarly to any normal weapon or held item,
+              able to be wielded by the player and placed in the hotbar for
+              quick access. When held, the staff will fire its magic when
+              pressing the attack button (Default Mouse 0). Attacking does not
+              consume mana, as well as bypassing any low magical skill penalties
+              prior to use, allowing a staff to rapidly fire high-damage spells
+              that would otherwise be impossible without good magical skills.
+            </p>
+            <p>
+              Spells casted from staffs can level up the respective magical
+              school the spell belongs to, albeit at a slower rate than just
+              casting the spell using mana(Light staff can only level up
+              Thaumaturgy by 1 per cast, requiring recasting to spawn a new
+              light ball after the previous one has leveled up Thaumaturgy, for
+              example). Nevertheless, they can serve as good kickstarter to
+              leveling a school of magic if no other spells are available for
+              that . However, staffs have one critical weakness compared to
+              direct magic: repeated use will degrade the staff until it can no
+              longer be used.
+            </p>
+
+            <h3>Usage</h3>
+            <p>
+              When deciding what items to take and which to leave behind for new
+              items, the proper staff can serve any player well in a pinch,
+              allowing for superior magical output when combating high-threat
+              enemies, or serving as a utility such as unlocking doors or
+              digging through walls. Even when a user has already mastered magic
+              and casting, having a damaging staff can help to conserve mana,
+              rather than casting those same bolts directly.
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "List of Magic Staffs",
+        sectionContent: (
+          <>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Image</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Name</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Weight</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Effect</b>
+                    </i>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Light</i>
+                  </td>
+                  <td rowSpan={14}>30</td>
+                  <td>70g</td>
+                  <td>Summons Light to Follow the Caster</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Digging</i>
+                  </td>
+                  <td>300g</td>
+                  <td>Destroys Boulders and Walls</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Opening</i>
+                  </td>
+                  <td>250g</td>
+                  <td>Opens Doors, Gates and Locked Containers</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Locking</i>
+                  </td>
+                  <td>60g</td>
+                  <td>Locks Doors and Chests</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Poison</i>
+                  </td>
+                  <td>150g</td>
+                  <td>+10 Magic Damage, Inflicts Poison</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Magic Missile</i>
+                  </td>
+                  <td>450g</td>
+                  <td>+30 Magic Damage</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Fireball</i>
+                  </td>
+                  <td>350g</td>
+                  <td>+25 Magic Damage, Inflicts Burning</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Cold</i>
+                  </td>
+                  <td>200g</td>
+                  <td>+20 Magic Damage, Inflicts Slow</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Lightning</i>
+                  </td>
+                  <td>300g</td>
+                  <td>
+                    +15 Magic Damage
+                    <p>Inflicts +1 Static</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Slow</i>
+                  </td>
+                  <td>70g</td>
+                  <td>Inflicts Slow</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Sleep</i>
+                  </td>
+                  <td>125g</td>
+                  <td>Inflicts Sleep</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Stoneblood</i>
+                  </td>
+                  <td>600g</td>
+                  <td>Inflicts Paralysis</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Bloodletting</i>
+                  </td>
+                  <td>750g</td>
+                  <td>+18 Magic Damage, Inflict Bleed and Slow</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magicstaff of Charm Monster</i>
+                  </td>
+                  <td>750g</td>
+                  <td>Attempts to charm a monster into an ally</td>
+                </tr>
+              </tbody>
+              <tfoot></tfoot>
+            </table>
+          </>
+        ),
+      },
+    ],
+  },
 ];
