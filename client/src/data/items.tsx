@@ -3146,4 +3146,172 @@ export const items: Item[] = [
       },
     ],
   },
+
+  {
+    id: "Amulets",
+    itemSections: [
+      {
+        sectionName: "Description",
+        sectionContent: (
+          <>
+            <p>
+              Amulets are wearable items that can give useful status effects to
+              the player. Curse has unique interactions with some amulets (see
+              table below).
+            </p>
+          </>
+        ),
+      },
+
+      {
+        sectionName: "List of Amulets",
+        sectionContent: (
+          <>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <i>
+                      <b>Amulet of</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Description</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Gold</b>
+                    </i>
+                  </th>
+                  <th>
+                    <i>
+                      <b>Message on Equip</b>
+                    </i>
+                  </th>
+                  <th>If Cursed</th>
+                  <th>If Blessed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <i>Burning Resistance</i>
+                  </td>
+                  <td>
+                    Prevents the player from being burned, will also cure player
+                    of burn if equipped while burned.
+                    <p>
+                      <i>Has 12.5% chance to degrade on proc</i>
+                    </p>
+                  </td>
+                  <td>150</td>
+                  <td>The amulet feels warm against your neck.</td>
+                  <td>Same effect</td>
+                  <td>Same effect</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Life Saving</i>
+                  </td>
+                  <td>
+                    Upon receiving mortal damage it will be destroyed, and
+                    revive the player at 50 health.
+                  </td>
+                  <td>5000</td>
+                  <td>
+                    You feel a sense of great purpose when wearing the amulet.
+                  </td>
+                  <td>It does nothing</td>
+                  <td>+50 additional health on revive per level of blessing</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Magic Reflection</i>
+                  </td>
+                  <td>Reflects all spells shot at you away.</td>
+                  <td>350</td>
+                  <td>The amulet makes your whole body tingle slightly.</td>
+                  <td>Same effect</td>
+                  <td>Same effect</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Olympic Swimming</i>
+                  </td>
+                  <td>Swim a lot faster.</td>
+                  <td>100</td>
+                  <td>
+                    The air beyond the cord of the amulet smells crisp and
+                    sweet.
+                  </td>
+                  <td>Same effect</td>
+                  <td>Same effect</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Poison Resistance</i>
+                  </td>
+                  <td>
+                    Prevents the player from being poisoned, will also cure
+                    player of poison if equipped while poisoned.
+                    <p>
+                      <i>Has 12.5% chance to degrade on proc</i>
+                    </p>
+                  </td>
+                  <td>75</td>
+                  <td>
+                    The amulet feels cool and plesant against the veins of your
+                    neck.
+                  </td>
+                  <td>Same effect</td>
+                  <td>Same effect</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Sex Change</i>
+                  </td>
+                  <td>
+                    Changes the players sex from male to female or vice versa,
+                    then destroys itself.
+                    <p>
+                      If the player were to have the 'Wanted!' Status effect,
+                      using this amulet will remove the status.
+                    </p>
+                  </td>
+                  <td>400</td>
+                  <td>You feel rather masculine / feminine!</td>
+                  <td>Nothing</td>
+                  <td>Same effect</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i>Strangulation</i>
+                  </td>
+                  <td>
+                    Curses itself and strangles you to death. Restores mana at
+                    the cost of health for{" "}
+                    <a href="/wiki/Incubus_(Race)" title="Incubus (Race)">
+                      Incubi
+                    </a>{" "}
+                    and{" "}
+                    <a href="/wiki/Succubus_(Race)" title="Succubus (Race)">
+                      Succubi
+                    </a>
+                    .
+                  </td>
+                  <td>75</td>
+                  <td>The amulet suddenly constricts!</td>
+                  <td>Same effect</td>
+                  <td>Same effect</td>
+                </tr>
+              </tbody>
+              <tfoot></tfoot>
+            </table>
+          </>
+        ),
+      },
+    ],
+  },
 ];
