@@ -84,6 +84,56 @@ import holybeam from "../assets/holybeam.png";
 import reflectmagic from "../assets/reflectmagic.png";
 import powerstrike from "../assets/powerstrike.png";
 
+import confuse from "../assets/confuse.webp";
+import maximise from "../assets/maximise.webp";
+import projectspirit from "../assets/projectspirit.webp";
+import spiritweapon from "../assets/spiritweapon.webp";
+import ratform from "../assets/ratform.webp";
+import slow from "../assets/slow.webp";
+import poison from "../assets/poison.webp";
+import revertform from "../assets/revertform.webp";
+import sleep from "../assets/sleep.webp";
+import minimise from "../assets/minimise.webp";
+import defyflesh from "../assets/defyflesh.webp";
+import envenomweapon from "../assets/envenomweapon.webp";
+import spores from "../assets/spores.webp";
+import seekally from "../assets/seekally.webp";
+import cowardice from "../assets/cowardice.webp";
+import reshapeweapon from "../assets/reshapeweapon.webp";
+import alterinstrument from "../assets/alterinstrument.webp";
+import alterarrow from "../assets/alterarrow.webp";
+import leadbolt from "../assets/leadbolt.webp";
+import arcanemark from "../assets/arcanemark.webp";
+import locking from "../assets/locking.webp";
+import opening from "../assets/opening.webp";
+import greasespray from "../assets/greasespray.webp";
+import weakness from "../assets/weakness.webp";
+import incoherence from "../assets/incoherence.webp";
+import deepshade from "../assets/deeshade.webp";
+import overcharge from "../assets/overcharge.webp";
+import forgekey from "../assets/forgekey.webp";
+import forgejewel from "../assets/forgejewel.webp";
+import bloodletting from "../assets/bloodletting.webp";
+import arthropodform from "../assets/arthropodform.webp";
+import conjureskeleton from "../assets/conjureskeleton.webp";
+import summonearthsprite from "../assets/summonearthsprite.webp";
+import fear from "../assets/fear.webp";
+import numbingbolt from "../assets/numbingbolt.webp";
+import compel from "../assets/compel.webp";
+import psychicspear from "../assets/psychicspear.webp";
+import curseflesh from "../assets/curseflesh.webp";
+import metallugry from "../assets/metallurgy.webp";
+import voidchest from "../assets/voidchest.webp";
+import polymorph from "../assets/polymorph.webp";
+import vampiricaura from "../assets/vampiricaura.webp";
+import trollform from "../assets/trollform.webp";
+import stoneblood from "../assets/stoneblood.webp";
+import bloodwaves from "../assets/bloodwaves.webp";
+import charmmonster from "../assets/charmmonsters.webp";
+import innerdemon from "../assets/innerdemon.webp";
+import impform from "../assets/impform.webp";
+import dominate from "../assets/dominate.webp";
+
 export type SpellsSection = {
   sectionName: string;
   sectionContent: ReactNode;
@@ -344,7 +394,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={firesprite} />
-                  Summon Fire Sprite
+                  <p>
+                    <i>Summon Fire Sprite</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -369,7 +421,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={ignite} />
-                  Ignite
+                  <p>
+                    <i>Ignite</i>
+                  </p>
                 </td>
                 <td>Area</td>
                 <td>Inflicts burning to nearby creatures and objects</td>
@@ -389,7 +443,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={shatterobjects} />
-                  Shatter Objects
+                  <p>
+                    <i>Shatter Objects</i>
+                  </p>
                 </td>
                 <td>Area</td>
                 <td>+20 Magic damage to nearby objects</td>
@@ -458,7 +514,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={flamecloak} />
-                  <i>Flame Cloak</i>
+                  <p>
+                    <i>Flame Cloak</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>
@@ -481,7 +539,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={attractitems} />
-                  <i>Attract Items</i>
+                  <p>
+                    <i>Attract Items</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>Attracts nearby items</td>
@@ -498,7 +558,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={spin} />
-                  <i>Spin</i>
+                  <p>
+                    <i>Spin</i>
+                  </p>
                 </td>
                 <td>Projectile</td>
                 <td>Spins the target to disorient briefly</td>
@@ -515,7 +577,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={windgate} />
-                  <i>Windgate</i>
+                  <p>
+                    <i>Windgate</i>
+                  </p>
                 </td>
                 <td>Wall Target</td>
                 <td>
@@ -536,7 +600,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={disruptearth} />
-                  <i>Disrupt Earth</i>
+                  <p>
+                    <i>Disrupt Earth</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -643,7 +709,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={firewall} />
-                  <i>Fire wall</i>
+                  <p>
+                    <i>Fire wall</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -663,7 +731,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={magiciansbubble} />
-                  <i>Magicians' Bubble</i>
+                  <p>
+                    <i>Magicians' Bubble</i>
+                  </p>
                 </td>
                 <td>Self-Effect</td>
                 <td>
@@ -688,7 +758,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={abundance} />
-                  <i>Abundance</i>
+                  <p>
+                    <i>Abundance</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>
@@ -718,7 +790,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={kineticdefence} />
-                  <i>Kinetic defense</i>
+                  <p>
+                    <i>Kinetic defense</i>
+                  </p>
                 </td>
                 <td>Self-Effect</td>
                 <td>Grants +5 AC to held Off-hand items</td>
@@ -735,7 +809,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={telekinesis} />
-                  <i>Telekinesis</i>
+                  <p>
+                    <i>Telekinesis</i>
+                  </p>
                 </td>
                 <td>Touch Target</td>
                 <td>
@@ -755,7 +831,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={disarm} />
-                  <i>Disarm</i>
+                  <p>
+                    <i>Disarm</i>
+                  </p>
                 </td>
                 <td>Touch Target</td>
                 <td>
@@ -774,7 +852,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={deface} />
-                  <i>Deface</i>
+                  <p>
+                    <i>Deface</i>
+                  </p>
                 </td>
                 <td>Touch Target</td>
                 <td>
@@ -793,7 +873,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={boobytrap} />
-                  <i>Booby Trap</i>
+                  <p>
+                    <i>Booby Trap</i>
+                  </p>
                 </td>
                 <td>Touch Target</td>
                 <td>
@@ -819,7 +901,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={splinterarmor} />
-                  <i>Splinter Armor</i>
+                  <p>
+                    <i>Splinter Armor</i>
+                  </p>
                 </td>
                 <td>Touch Target</td>
                 <td>
@@ -901,7 +985,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={preserve} />
-                  <i>Preserve</i>
+                  <p>
+                    <i>Preserve</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>
@@ -922,7 +1008,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={nullarea} />
-                  <i>Null Area</i>
+                  <p>
+                    <i>Null Area</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -943,7 +1031,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={lift} />
-                  <i>Lift</i>
+                  <p>
+                    <i>Lift</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -965,7 +1055,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={kineticfield} />
-                  <i>Kinetic Field</i>
+                  <p>
+                    <i>Kinetic Field</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -988,7 +1080,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={sabotage} />
-                  <i>Sabotage</i>
+                  <p>
+                    <i>Sabotage</i>
+                  </p>
                 </td>
                 <td>Touch Target</td>
                 <td>
@@ -1079,7 +1173,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={icewave} />
-                  <i>Ice Wave</i>
+                  <p>
+                    <i>Ice Wave</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -1102,7 +1198,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={lightningbolt} />
-                  <i>Lightning bolt</i>
+                  <p>
+                    <i>Lightning bolt</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -1128,7 +1226,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={meteor} />
-                  <i>Meteor</i>
+                  <p>
+                    <i>Meteor</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -1150,7 +1250,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={mistform} />
-                  <i>Mist form</i>
+                  <p>
+                    <i>Mist form</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>
@@ -1171,7 +1273,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={absorbmagic} />
-                  <i>Absorb Magic</i>
+                  <p>
+                    <i>Absorb Magic</i>
+                  </p>
                 </td>
                 <td>Self-Effect</td>
                 <td>
@@ -1193,7 +1297,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={portal} />
-                  <i>Portal</i>
+                  <p>
+                    <i>Portal</i>
+                  </p>
                 </td>
                 <td>Wall Target</td>
                 <td>
@@ -1357,7 +1463,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={minorheal} />
-                  <i>Minor Heal</i>
+                  <p>
+                    <i>Minor Heal</i>
+                  </p>
                 </td>
                 <td>Self-Effect</td>
                 <td>
@@ -1377,7 +1485,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={minorhealother} />
-                  <i>Minor Heal Other</i>
+                  <p>
+                    <i>Minor Heal Other</i>
+                  </p>
                 </td>
                 <td>Touch Target</td>
                 <td>
@@ -1397,7 +1507,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={bloodward} />
-                  <i>Blood Ward</i>
+                  <p>
+                    <i>Blood Ward</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>
@@ -1417,7 +1529,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={germinate} />
-                  <i>Dryad's Germinate</i>
+                  <p>
+                    <i>Dryad's Germinate</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -1485,7 +1599,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={guardbody} />
-                  <i>Guard Body</i>
+                  <p>
+                    <i>Guard Body</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>
@@ -1506,7 +1622,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={guardspirit} />
-                  <i>Guard Spirit</i>
+                  <p>
+                    <i>Guard Spirit</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>
@@ -1527,7 +1645,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={detectenemy} />
-                  <i>Detect Enemy</i>
+                  <p>
+                    <i>Detect Enemy</i>
+                  </p>
                 </td>
                 <td>Divine Target</td>
                 <td>Divines the location of nearby enemy</td>
@@ -1544,7 +1664,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={scryallies} />
-                  <i>Scry Allies</i>
+                  <p>
+                    <i>Scry Allies</i>
+                  </p>
                 </td>
                 <td>Divine Target</td>
                 <td>Reveals friendlies on the current dungeon floor</td>
@@ -1561,7 +1683,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={donation} />
-                  <i>Donation</i>
+                  <p>
+                    <i>Donation</i>
+                  </p>
                 </td>
                 <td>Divine Target</td>
                 <td>
@@ -1582,7 +1706,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={exorcise} />
-                  <i>Exorcise</i>
+                  <p>
+                    <i>Exorcise</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -1605,7 +1731,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={holysigil} />
-                  <i>Holy Sigil</i>
+                  <p>
+                    <i>Holy Sigil</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -1634,7 +1762,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={cleansefood} />
-                  <i>Cleanse Food</i>
+                  <p>
+                    <i>Cleanse Food</i>
+                  </p>
                 </td>
                 <td>Self-Effect</td>
                 <td>
@@ -1654,7 +1784,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={breathefire} />
-                  <i>Breathe Fire</i>
+                  <p>
+                    <i>Breathe Fire</i>
+                  </p>
                 </td>
                 <td>Projectile</td>
                 <td>
@@ -1701,7 +1833,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={thorns} />
-                  <i>Thorns</i>
+                  <p>
+                    <i>Thorns</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>
@@ -1745,7 +1879,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={blessedmeals} />
-                  <i>Blessed Meals</i>
+                  <p>
+                    <i>Blessed Meals</i>
+                  </p>
                 </td>
                 <td>Area</td>
                 <td>
@@ -1766,7 +1902,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={nimbleness} />
-                  <i>Nimbleness</i>
+                  <p>
+                    <i>Nimbleness</i>
+                  </p>
                 </td>
                 <td>Self-Effect</td>
                 <td>
@@ -1788,7 +1926,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={counsel} />
-                  <i>Counsel</i>
+                  <p>
+                    <i>Counsel</i>
+                  </p>
                 </td>
                 <td>Self-Effect</td>
                 <td>
@@ -1809,7 +1949,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={divinezeal} />
-                  <i>Divine Zeal</i>
+                  <p>
+                    <i>Divine Zeal</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>+25% Melee damage to Smite weak enemies</td>
@@ -1907,7 +2049,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={divineguard} />
-                  <i>Divine Guard</i>
+                  <p>
+                    <i>Divine Guard</i>
+                  </p>
                 </td>
                 <td>Sustained</td>
                 <td>
@@ -1929,7 +2073,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={pinpoint} />
-                  <i>Pinpoint</i>
+                  <p>
+                    <i>Pinpoint</i>
+                  </p>
                 </td>
                 <td>Divine Target</td>
                 <td>
@@ -1951,7 +2097,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={scrytraps} />
-                  <i>Scry Traps</i>
+                  <p>
+                    <i>Scry Traps</i>
+                  </p>
                 </td>
                 <td>Divine Target</td>
                 <td>Reveals nearby traps on the current dungeon floor</td>
@@ -1968,7 +2116,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={greatermight} />
-                  <i>Greater Might</i>
+                  <p>
+                    <i>Greater Might</i>
+                  </p>
                 </td>
                 <td>Self-Effect</td>
                 <td>
@@ -1990,7 +2140,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={sturdiness} />
-                  <i>Sturdiness</i>
+                  <p>
+                    <i>Sturdiness</i>
+                  </p>
                 </td>
                 <td>Self-Effect</td>
                 <td>
@@ -2089,7 +2241,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={scrytreasures} />
-                  <i>Scry Treasures</i>
+                  <p>
+                    <i>Scry Treasures</i>
+                  </p>
                 </td>
                 <td>Divine Target</td>
                 <td>
@@ -2112,7 +2266,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={divinefortress} />
-                  <i>Divine Fortress</i>
+                  <p>
+                    <i>Divine Fortress</i>
+                  </p>
                 </td>
                 <td>Ground Target</td>
                 <td>
@@ -2137,7 +2293,9 @@ export const spells: Spells = {
               <tr>
                 <td>
                   <img src={holybeam} />
-                  <i>Holy Beam</i>
+                  <p>
+                    <i>Holy Beam</i>
+                  </p>
                 </td>
                 <td>Projectile</td>
                 <td>
@@ -2202,6 +2360,1439 @@ export const spells: Spells = {
                   <b>Thaumaturgy</b>
                   <br />
                   <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </>
+      ),
+    },
+
+    {
+      sectionName: "Mysticism Spells",
+      sectionContent: (
+        <>
+          <table>
+            <tbody>
+              <tr>
+                <th>
+                  <i>
+                    <b>Spell</b>
+                  </i>
+                </th>
+                <th>
+                  <i>
+                    <b>Spell Type</b>
+                  </i>
+                </th>
+                <th>
+                  <i>
+                    <b>Description</b>
+                  </i>
+                </th>
+                <th>
+                  <i>
+                    <b>Notes</b>
+                  </i>
+                </th>
+                <th>
+                  <i>
+                    <b>Cost</b>
+                  </i>
+                </th>
+                <th>
+                  <i>
+                    <b>School and Skill Tier</b>
+                  </i>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <img src={confuse} />
+                  <p>
+                    <i>Confuse</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Inflicts confuse
+                  <p>Confused enemies attack each other</p>
+                  <p>
+                    Confused shopkeepers are able to trade with monster players
+                  </p>
+                </td>
+                <td>
+                  A joker spell by default
+                  <p>A spell granted by imp form</p>
+                </td>
+                <td>
+                  <b>-16 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={maximise} />
+                  <p>
+                    <i>maximise</i>
+                  </p>
+                </td>
+                <td>Touch Target</td>
+                <td>
+                  Inflicts +1 Enhance; +1 more enhance per 25% PWR
+                  <p>+STR + CON -DEX</p>
+                  Enhanced targets provide more exp when killed, +2 exp or +10%
+                  exp when killed per enhance stack,whichever is greater,
+                  <p>maximum is +10 exp or +50% exp at +5 Enhance</p>
+                  <p>Effects increase from repeated casts</p>
+                </td>
+                <td>
+                  Can be used on other players or allies as well
+                  <p>Cancels out Minimize</p>
+                </td>
+                <td>
+                  <b>-5 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={germinate} />
+                  <p>
+                    <i>Myconids Germinate</i>
+                  </p>
+                </td>
+                <td>Ground Target</td>
+                <td>
+                  Plants a Mushroom:
+                  <p>+5 magic damage</p>
+                  <p>Inflicts poison and knockback</p>
+                  Drops forageables on expiry
+                  <p>Consumes foliage to summon</p>
+                </td>
+                <td>Exclusive to myconid players</td>
+                <td>
+                  <b>-10 MP</b>
+                  <p>1 tier of growth</p>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={projectspirit} />
+                  <p>
+                    <i>Spell of Project Spirit</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Become a <i>Fowl Spirit</i> leaving your physical body behind
+                  for a time
+                  <p>Effect ends if body receives harm</p>
+                  <p>Can interact with doors/levers and push items</p>
+                  <p>Has the ability to quack to draw enemies attention</p>
+                </td>
+                <td>
+                  Exclusive to hermit class
+                  <p>Cannot be obtained by other means.</p>
+                </td>
+                <td>
+                  <b>-5 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={spiritweapon} />
+                  <p>
+                    <i>Spirit Weapon</i>
+                  </p>
+                </td>
+                <td>Ground Target</td>
+                <td>
+                  Summons a Spirit Weapon to fight nearby for a time with 5 Str
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-9 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={ratform} />
+                  <p>
+                    <i>Rat Form</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Shapeshift temporarily into a different form Rat form grants
+                  +DEX +INT +PER (Shaman only)Grants speed and detect food
+                  spells
+                </td>
+                <td>A shaman spell by default</td>
+                <td>
+                  <b>-8 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={slow} />
+                  <p>
+                    <i>Slow</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>Inflicts slow</td>
+                <td>-</td>
+                <td>
+                  <b>-4 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={poison} />
+                  <p>
+                    <i>Poison</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  +10 Magic damage
+                  <p>Inflicts poison</p>
+                </td>
+                <td>
+                  A spell granted by arthropod (spider) form
+                  <p>A Conjurer spell by default</p>
+                </td>
+                <td>
+                  <b>-5 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={revertform} />
+                  <p>
+                    <i>Revert Form</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Removes active shapeshift or polymorph effects
+                  <p>Only removes one effect at a time</p>
+                </td>
+                <td>
+                  A shaman spell by default
+                  <p>
+                    Can be obtained by reading a spellbook of rat form,
+                    arthropod (spider) form, troll form or imp form, revert form
+                    is granted in addition to the spell taught by the book.
+                  </p>
+                </td>
+                <td>
+                  <b>-5 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>I</b> <i>(None)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={sleep} />
+                  <p>
+                    <i>Sleep</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>Inflicts sleep</td>
+                <td>A sexton spell by default</td>
+                <td>
+                  <b>-4 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={minimise} />
+                  <p>
+                    <i>Minimise</i>
+                  </p>
+                </td>
+                <td>Touch Target</td>
+                <td>
+                  Inflicts +1 Diminish; +1 more Diminish per 25% PWR
+                  <p>-STR - CON +DEX</p>
+                  Diminished targets provide less exp when killed, -2 exp or
+                  -10% exp when killed per diminish stack,whichever is
+                  greater,maximum is -10 exp or -50% exp at +5 Diminish
+                  <p>Effects increase from repeated casts</p>
+                </td>
+                <td>
+                  Can be used on other players or allies as well
+                  <p>Cancels out Maximize</p>
+                </td>
+                <td>
+                  <b>-5 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={defyflesh} />
+                  <p>
+                    <i>Defy Flesh</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Inflicts Torment
+                  <p>Deals +5 Magic Damage as target is hit</p>
+                  <p>Higher target HP increases quantity of damage instances</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-8 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={envenomweapon} />
+                  <p>
+                    <i>Envenom Weapon</i>
+                  </p>
+                </td>
+                <td>Sustained</td>
+                <td>
+                  Grants Physical Damage:50%
+                  <p>+3 Damage</p>
+                  <p>Inflicts Poison</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-5 MP</b> to cast, <b>-1 MP</b> every 5 seconds
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={spores} />
+                  <p>
+                    <i>Spores</i>
+                  </p>
+                </td>
+                <td>Sustained</td>
+                <td>
+                  Grants Spores
+                  <p>Leaves behind Slow and Poison hazardous areas when hit</p>
+                </td>
+                <td>Myconid players innately begin with this spell</td>
+                <td>
+                  <b>-5 MP</b> to cast, <b>-1 MP</b> every 4 seconds
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={seekally} />
+                  <p>
+                    <i>Seek Ally</i>
+                  </p>
+                </td>
+                <td>Touch Target</td>
+                <td>
+                  Commands target to seek out an ally on the current dungeon
+                  floor
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-6 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={cowardice} />
+                  <p>
+                    <i>Cowardice</i>
+                  </p>
+                </td>
+                <td>Touch Target</td>
+                <td>
+                  Inflicts +3 Cowardice
+                  <p>Forces retreat in combat</p>
+                  <p>-STR - CON</p>
+                </td>
+                <td>
+                  Can be used on other players or allies as well, even if its
+                  detrimental
+                </td>
+                <td>
+                  <b>-10 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={reshapeweapon} />
+                  <p>
+                    <i>Reshape Weapon</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Transmutes basic weapons into different types
+                  <p>
+                    Gold cost reduces with power, 1% PWR is 4% of total gold
+                    value reduction,
+                  </p>
+                  <p>Maxes out at 50% gold discount reachable at 113% PWR</p>
+                </td>
+                <td>Cannot reshape quarter staff</td>
+                <td>
+                  <b>-1 MP to cast</b>
+                  <p>
+                    Costs <b>10 MP</b> to reshape
+                  </p>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={alterinstrument} />
+                  <p>
+                    <i>Alter Instrument</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Transmutes a musical instrument into another
+                  <p>
+                    Gold cost reduces with power, 1% PWR is 4 gold value
+                    reduction,
+                  </p>
+                  <p>Maxes out at 50% gold discount reachable at 125% PWR</p>
+                </td>
+                <td>
+                  Exclusive to the bard class
+                  <p>Cannot be obtained by other means.</p>
+                </td>
+                <td>
+                  <b>-1 MP to cast</b>
+                  <p>
+                    Costs <b>15 MP</b> to reshape
+                  </p>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={alterarrow} />
+                  <p>
+                    <i>Alter Arrow</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Transmutes quivers and gems into other quivers
+                  <p>
+                    Gold cost reduces with power, 1% PWR is 4% of total gold
+                    value reduction,
+                  </p>
+                  <p>
+                    Maxes out at 50% gold discount reachable at 113% PWR; Gold
+                    cost vary per quiver
+                  </p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-1 MP to cast</b>
+                  <p>
+                    Costs <b>5 MP</b> to reshape if ammo count is under 10,
+                    raises price by <b>1 MP</b>
+                    per 10 ammo;maxes out at <b>10 MP</b> cost
+                  </p>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={leadbolt} />
+                  <p>
+                    <i>Lead Bolt</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  +15 Damage
+                  <p>Inflicts Knockback</p>
+                  <p>
+                    Gold cost reduces with power, 1% PWR is 1 gold value
+                    reduction,
+                  </p>
+                  <p>
+                    Maxes out at 50 gold value reduction reachable at 150% PWR
+                  </p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>0 MP to cast</b>
+                  <p>
+                    <b>100 Gold to cast</b>
+                  </p>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={arcanemark} />
+                  <p>
+                    <i>Arcane Mark</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Inflicts nullify and reveals a targets location on the map
+                  Nullify removes damage type weaknesses and resistances from
+                  the target
+                  <br />
+                  <p>
+                    <i>Note: It gives the bosses 50% weakness instead of 0%</i>
+                  </p>
+                  <p>
+                    Marked targets refocus teleportation spells around the
+                    target
+                  </p>
+                  <p>-50% Cost for teleportation spells while active</p>
+                  <p>
+                    Casting teleportation moves the caster to the marked target
+                  </p>
+                  <p>
+                    Casting teleport other moves marked target in front of
+                    caster
+                  </p>
+                </td>
+                <td>Incubus players innately begin with this spell</td>
+                <td>
+                  <b>-5 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={locking} />
+                  <p>
+                    <i>Locking</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>Locks doors and containers</td>
+                <td>A sexton spell by default</td>
+                <td>
+                  <b>-11 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={opening} />
+                  <p>
+                    <i>Opening</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>Opens doors, gates and locked containers</td>
+                <td>A sexton spell by default</td>
+                <td>
+                  <b>-6 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>II</b> <i>(Basic)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={greasespray} />
+                  <p>
+                    <i>Grease Spray</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Inflicts Greasy on hit
+                  <p>Covers ground in slippery and flammable grease</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-13 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={weakness} />
+                  <p>
+                    <i>Weakness</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Inflicts Weakness:
+                  <p>
+                    -20% Attack power; Every 25% PWR over 100 increase it by 10%
+                  </p>
+                  <p>Maximum is -80% Attack power at 250%PWR</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-15 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={incoherence} />
+                  <p>
+                    <i>Incoherence</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Inflicts Incoherence:
+                  <p>
+                    -20% Spell power; Every 25% PWR over 100 increase it by 10%
+                  </p>
+                  <p>Maximum is -80% Spell power at 250% PWR</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-15 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={deepshade} />
+                  <p>
+                    <i>Deep Shade</i>
+                  </p>
+                </td>
+                <td>Sustained</td>
+                <td>
+                  Summons a Deep Shade to follow the caster
+                  <p>Deep Shade reduces visibility to enemies</p>
+                </td>
+                <td>A hermit spell by default</td>
+                <td>
+                  <b>-4 MP</b> to cast, <b>-1 MP</b> every 10 seconds to sustain
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={overcharge} />
+                  <p>
+                    <i>Overcharge</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Grants +2 Overcharge for the next memorized spell
+                  <p>
+                    Increases Overcharge stacks by 1 for every 50% PWR over 100%
+                    PWR; Maxes out at +5 Overcharge at 250% PWR
+                  </p>
+                  Reduces MP costs by half, allows HP to be expended when out of
+                  MP and reduces recast time
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-10 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={forgekey} />
+                  <p>
+                    <i>Forge Key</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Transmutes keys or gems into various keys
+                  <p>
+                    Gold cost reduces with power, 1% PWR is 4% of total gold
+                    value reduction,
+                  </p>
+                  <p>Maxes out at 50% gold discount reachable at 113% PWR;</p>
+                  <p>
+                    Every 100 gold of a gem's value further reduces cost by
+                    12.5;
+                  </p>
+                  <p>Forging Keys into next tier ones has price reduction</p>
+                </td>
+                <td>
+                  Price reduction maxes out depending on key:
+                  <p>
+                    Iron key: Max price reduction is 75; achievable by forging
+                    amethyst and further priced gems
+                  </p>
+                  <p>
+                    Bronze key: Max price reduction is 112, achievable by
+                    forging amber and further priced gems
+                  </p>
+                  <p>
+                    Silver key: Max price reduction is 175, achievable by
+                    forging emerald and further priced gems
+                  </p>
+                  <p>
+                    Gold key: Max price reduction is 375, achievable only by
+                    forging diamond
+                  </p>
+                </td>
+                <td>
+                  <b>-1 MP to cast</b>
+                  <p>Different keys cost different amount of mana to forge:</p>
+                  <p>
+                    Iron:<b>10 MP</b>
+                  </p>
+                  <p>
+                    Bronze:<b>20 MP</b>
+                  </p>
+                  <p>
+                    Silver:<b>30 MP</b>
+                  </p>
+                  <p>
+                    Gold:<b>50 MP</b>
+                  </p>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={forgejewel} />
+                  <p>
+                    <i>Forge Jewel</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Transmutes gems into Jewels
+                  <p>
+                    Value ranges for what the value of the gem will produce:
+                  </p>
+                  <p>From 0-200 gold: Cracked Jewels;</p>
+                  <p>From 300-400 gold: Rough Jewels;</p>
+                  <p>From 600-850 gold: Flawed Jewels;</p>
+                  <p>From 1000-3000 gold: Flawless Jewels;</p>
+                  <p>Transmutes Jewels into higher quality variants</p>
+                  <p>
+                    Gold cost reduces with power, 1% PWR is 2% of total gold
+                    value reduction,
+                  </p>
+                  <p>Maxes out at 50% gold discount reachable at 150% PWR;</p>
+                </td>
+                <td>
+                  Exclusive to gnome players
+                  <p>Cannot be obtained by other means.</p>
+                </td>
+                <td>
+                  <b>-1 MP to cast</b>
+                  <p>Costs various amount of mana to forge:</p>
+                  <p>
+                    Cracked Jewels:<b>20 MP</b>
+                  </p>
+                  <p>
+                    Rough Jewels:<b>25 MP</b>
+                  </p>
+                  <p>
+                    Flawed Jewels:<b>30 MP</b>
+                  </p>
+                  <p>
+                    Flawless Jewels:<b>40 MP</b>
+                  </p>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={bloodletting} />
+                  <p>
+                    <i>Bloodletting</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  +18 Magic damage
+                  <p>Inflicts bleed and slow</p>
+                </td>
+                <td>
+                  Vampire players innately begin with this spell
+                  <p>
+                    Used innately by the succubus consorts, Vampires, Bram
+                    Kindly, Baphomet, Orpheus and Erudyce
+                  </p>
+                </td>
+                <td>
+                  <b>-11 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={arthropodform} />
+                  <p>
+                    <i>Arthropod Form</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Shapeshift temporarily into a different form Arthropod
+                  (spider) form grants +STR +CON +PER Grants poison and spray
+                  web spells
+                  <p>Charged attacks have 25% chance to poison the target</p>
+                  <p>
+                    Players in Arthropod (spider) form can recruit Arthropod,
+                    scarabs and scorpions
+                  </p>
+                </td>
+                <td>
+                  A spell awarded to shaman players upon reaching level 3
+                  <p>Dropped by Anansi and rarely found in the dungeon.</p>
+                </td>
+                <td>
+                  <b>-16 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={conjureskeleton} />
+                  <p>
+                    <i>Conjure Skeleton</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Summons 2 skeleton ally(s)
+                  <p>
+                    Summoned ally's levels are kept between casts, improving
+                    equipment every five levels (max at level 30)
+                  </p>
+                  <p>MP cost increases with summons level</p>
+                  <p>
+                    Expert (60) magic skill + intelligence stat creates an
+                    additional summon
+                  </p>
+                  <p>
+                    Summons have the relinquish soul command that destroys the
+                    summon and restores MP to the caster
+                  </p>
+                </td>
+                <td>
+                  Exclusive to conjurer class
+                  <p>Cannot be obtained any other way.</p>
+                </td>
+                <td>
+                  <b>-17 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={summonearthsprite} />
+                  <p>
+                    <i>Summon Earth Sprite</i>
+                  </p>
+                </td>
+                <td>Touch Target</td>
+                <td>
+                  Summons Earth Sprite
+                  <p>
+                    +5 Trap Damage when summoned; +1 Trap Damage per 10% PWR
+                  </p>
+                  Requires a ceiling to summonEarth Sprite LVL starts at 5; +1
+                  LVL per 10% PWR
+                  <p>Maxes out at LVL 20 at 250% PWR</p>
+                </td>
+                <td>Exclusive to the scion class</td>
+                <td>
+                  <b>-20 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>III</b> <i>(Skilled)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={fear} />
+                  <p>
+                    <i>Fear</i>
+                  </p>
+                </td>
+                <td>Area</td>
+                <td>
+                  Inflicts fear on nearby enemies
+                  <p>
+                    Enemies inflicted with fear are unable to attack and focus
+                    their attention on the caster
+                  </p>
+                </td>
+                <td>A spell granted by troll form</td>
+                <td>
+                  <b>-28 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={numbingbolt} />
+                  <p>
+                    <i>Numbing Bolt</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Inflicts Numb
+                  <p>Prevents target from being alerted on next hit</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-13 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={compel} />
+                  <p>
+                    <i>Compel</i>
+                  </p>
+                </td>
+                <td>Touch Target</td>
+                <td>Compels non followers to obey one Command</td>
+                <td>A mesmer spell by default</td>
+                <td>
+                  <b>-8 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={psychicspear} />
+                  <p>
+                    <i>Psychic Spear</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  +20 Magic Damage+40 Magic Damage based on target's remaining
+                  HP%
+                  <p>
+                    Targets above 50% of their maximum HP take additional damage
+                  </p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-12 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={curseflesh} />
+                  <p>
+                    <i>Curse Flesh</i>
+                  </p>
+                </td>
+                <td>Touch Target</td>
+                <td>
+                  Inflicts Lesser Haunting Spawns a Revenant Skull follower when
+                  target dies under the effectRevenant Skull LVL starts at 5;+1
+                  LVL per 10% PWR
+                  <p>Maxes out at LVL 20 at 250% PWR</p>
+                </td>
+                <td>Has no effect on Skeletons</td>
+                <td>
+                  <b>-16 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={metallugry} />
+                  <p>
+                    <i>Metallugry</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Transmutes metal items into gold
+                  <p>75% of gold value is lost upon transmuting</p>
+                  <p>
+                    Amount of gold value transmuted increases with power, 1% PWR
+                    is 1% of total gold value increase,
+                  </p>
+                  <p>
+                    Maxes out at 100% gold value transmuted reachable at 175%
+                    PWR
+                  </p>
+                </td>
+                <td>
+                  Gold value transmuted varies based on item Quality and
+                  Beatitude
+                </td>
+                <td>
+                  <b>-1 MP to cast</b>
+                  <p>
+                    Costs <b>10 MP</b> to transmute items into 200 gold or less
+                  </p>
+                  <p>Any gold amount transmuted over 200 gold costs</p>
+                  <p>
+                    additional <b>1 MP</b> for every 20 gold over 200
+                  </p>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={voidchest} />
+                  <p>
+                    <i>Void Chest</i>
+                  </p>
+                </td>
+                <td>Touch Target</td>
+                <td>
+                  Grants Void Storage access within chests
+                  <p>
+                    Items within Void Storage persist throughout the dungeon
+                  </p>
+                </td>
+                <td>
+                  If a mimic is turned into a Void Chest, any items it steals
+                  will be added into the Void Storage
+                </td>
+                <td>
+                  <b>-14 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={polymorph} />
+                  <p>
+                    <i>Polymorph</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Polymorph temporarily into a random humanoid
+                  <p>Non humans always polymorph into humans</p>
+                  <p>
+                    Polymorph effects dissipate upon entering or consuming water
+                  </p>
+                </td>
+                <td>Succubus players innately begin with this spell</td>
+                <td>
+                  <b>-40 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={vampiricaura} />
+                  <p>
+                    <i>Vampiric Aura</i>
+                  </p>
+                </td>
+                <td>Sustained</td>
+                <td>
+                  Grants unarmed attack lifesteal and bleed chance Increases
+                  STR/DEX -100% HP regeneration
+                  <p>Increases starvation rate while active</p>
+                  <p>
+                    Grants the ability to drink blood in addition to regular
+                    food
+                  </p>
+                  <p>Blood is now dropped by certain enemies</p>
+                </td>
+                <td>
+                  Guaranteed as a spellbook if playing as the Accursed class and
+                  visiting The Mystic Library
+                </td>
+                <td>
+                  <b>-5 MP</b> to cast, <b>-1 MP</b> every 0.33 seconds
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={trollform} />
+                  <p>
+                    <i>Troll Form</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Shapeshift temporarily into a different form Troll form grants
+                  +STR +CON -DEX (Shaman only) Grants the Troll's Blood, Power
+                  Strike and Fear spells
+                  <p>
+                    Players in Troll Form can recruit Trolls and become neutral
+                    to Gnomes
+                  </p>
+                </td>
+                <td>
+                  A spell awarded to shaman players upon reaching level six
+                  <p>Rarely found in the dungeon</p>
+                </td>
+                <td>
+                  <b>-24 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>IV</b> <i>(Expert)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={stoneblood} />
+                  <p>
+                    <i>Stoneblood</i>
+                  </p>
+                </td>
+                <td>3x Projectile</td>
+                <td>Inflicts paralysis</td>
+                <td>Used innately by cockatrice enemies</td>
+                <td>
+                  <b>-21 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={bloodwaves} />
+                  <p>
+                    <i>Blood Waves</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  +15 Magic Damage
+                  <p>Extra +2 Magic Damage every INT point</p>
+                  <p>Passes through creatures</p>{" "}
+                  <p>Consumes 25% HP on cast;Cannot reduce below 10% HP</p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>-15 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={charmmonster} />
+                  <p>
+                    <i>Charm Monster</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Attempts to charm a monster into an ally Inflicts pacify if
+                  unable to charm
+                  <p>Success varies with monster type</p>
+                  <p>You may only have one charmed monster at a time</p>
+                  <p>+30% Chance on drunk or confused monsters</p>
+                  <p>+X% Chance, where X is your intelligence 2x</p>
+                  <p>
+                    Additional chance based on your leadership skill and
+                    charisma stat
+                  </p>
+                </td>
+                <td>
+                  A mesmer spell by default
+                  <p>Used innately by succubus and incubus enemies</p>
+                </td>
+                <td>
+                  <b>-50 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={innerdemon} />
+                  <p>
+                    <i>Inner Demon</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Exorcises an inner demon that provokes its victim
+                  <p>Damage dealt to the demon is returned to the attacker</p>
+                  <p>Spell consumes health equal to 10% of caster's max HP </p>
+                  <p>Demon's stats are based on caster</p>
+                  <p>Only works once per enemy</p>
+                </td>
+                <td>
+                  A punisher spell by default
+                  <p>
+                    Only appears in high tier treasure vaults in the Citadel
+                  </p>
+                </td>
+                <td>
+                  <b>-25 MP</b>
+                  <p>
+                    <b>-10%</b> of caster's max HP
+                  </p>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={impform} />
+                  <p>
+                    <i>Imp Form</i>
+                  </p>
+                </td>
+                <td>Self-Effect</td>
+                <td>
+                  Shapeshift temporarily into a different form Imp form grants
+                  +PER +INT and levitation (Shaman only)Grants lightning,
+                  confuse and elemental focus spells
+                  <p>Players in imp form can recruit imps</p>
+                </td>
+                <td>
+                  A spell awarded to shaman players upon reaching level twelve
+                  <p>Rarely found in the dungeon</p>
+                </td>
+                <td>
+                  <b>-32 MP</b>
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>V</b> <i>(Master)</i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src={dominate} />
+                  <p>
+                    <i>Dominate</i>
+                  </p>
+                </td>
+                <td>Projectile</td>
+                <td>
+                  Forcefully converts an enemy into an ally
+                  <p>
+                    Dominated ally limit:1, every 67% PWR increase limit by 1,
+                  </p>
+                  Dominating monsters allows exceeding the Leadership skill ally
+                  limit <p>Consumes HP to cast when MP is depleted </p>
+                  <p>
+                    HP cannot, however, be used for the base 21 cost of the
+                    spell
+                  </p>
+                </td>
+                <td>-</td>
+                <td>
+                  <b>
+                    <i>-</i>21 MP
+                  </b>{" "}
+                  + the current health points of the target
+                </td>
+                <td>
+                  <b>Mysticism</b>
+                  <br />
+                  <b>VI</b> <i>(Legend)</i>
                 </td>
               </tr>
             </tbody>
