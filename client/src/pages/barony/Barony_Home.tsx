@@ -8,6 +8,7 @@ import StatIcon from "../../assets/Perception_Icon.png";
 import MonsterIcon from "../../assets/Skeleton_Male_Icon.png";
 import LevelIcon from "../../assets/Magic_Mapping_Icon.png";
 import SkillIcon from "../../assets/Stealth_Icon.png";
+import SpellsIcon from "../../assets/fireball.webp";
 
 type NavItem = {
   label: string;
@@ -37,6 +38,8 @@ function Barony_Home() {
     { label: "Levels", to: "/Barony/Levels", img: LevelIcon },
 
     { label: "Skills", to: "/Barony/Skills", img: SkillIcon },
+
+    { label: "Spells", to: "/Barony/Spells", img: SpellsIcon },
   ];
 
   return (
