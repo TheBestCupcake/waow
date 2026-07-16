@@ -106,6 +106,7 @@ body{
     grid-area: main;
     width:100%;
     border: 1px solid #dabfff;
+    color:white;
 }
 
 .baronyGrid h1{
