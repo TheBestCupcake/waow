@@ -13,7 +13,7 @@ function Barony_Level() {
   }
 
   return (
-    <div className="baronyGrid">
+    <div className="barony">
       <h1>{levelInfo.id}</h1>
 
       {levelInfo.levelSections.map((section) => (
